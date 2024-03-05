@@ -1,12 +1,16 @@
+import Banner from "@/components/home/banner";
 import React from "react";
 
 const Home = () => {
   return (
-    <div className="container">
-      <div className="flex">
-        <div className="basis-full">Content</div>
+    <>
+      <Banner />
+      <div className="container">
+        <div className="flex">
+          <div className="basis-full">Content</div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

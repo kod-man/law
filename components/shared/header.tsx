@@ -71,10 +71,10 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  <li className="group">
                     <Link
                       href="http://bsmthemes.com/demo/lawyero/who-we-are/"
-                      className="py-7 block"
+                      className="py-7 block relative after:transition-transform duration-300 ease-in-out after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main group-hover:after:scale-x-100"
                     >
                       Who We Are
                     </Link>
