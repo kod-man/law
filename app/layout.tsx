@@ -3,6 +3,14 @@ import { Albert_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/header";
 import Footer from "@/components/shared/footer";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCheckSquare,
+  faChevronDown,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab, faChevronDown, faCheckSquare);
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],

@@ -73,6 +73,9 @@
     @apply border-border;
   }
   body {
-    @apply text-foreground;
+    @apply text-foreground font-albert;
+  }
+  .primary-button {
+    @apply inline-block py-4 px-7 font-bold uppercase bg-primary-main transition-all hover:pr-10;
   }
 }
