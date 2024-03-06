@@ -22,13 +22,13 @@ const Footer = () => {
                   </p>
                 </div>
                 <Link
-                  className="bg-primary-main text-sm font-bold uppercase text-white hover:text-[#14cab4] py-4 px-7 inline-block border-2 border-[#14cab4] hover:bg-transparent relative transition-padding duration-300 ease-in-out hover:pr-11"
+                  className="group bg-primary-main text-sm font-bold uppercase text-white hover:text-[#14cab4] py-4 px-7 inline-block hover:pr-11 border-2 border-[#14cab4] hover:bg-transparent relative transition-padding duration-300 ease-in-out hover:pr-11"
                   href="#"
                 >
                   Buy Now
                   <FontAwesomeIcon
                     icon="chevron-right"
-                    className="w-3 absolute"
+                    className="w-3 absolute top-1/2 opacity-0 right-1/3 -translate-y-1/2 group-hover:right-5 group-hover:opacity-100 h-[15px]"
                   />
                 </Link>
               </div>
@@ -52,27 +52,51 @@ const Footer = () => {
                 <span className="text-[#14cab4] font-bold">Opening </span> Hour
               </h3>
               <ul className="text-white text-sm leading-6">
-                <li className="flex my-2">
+                <li className="flex my-2 pl-5 relative">
+                  <FontAwesomeIcon
+                      icon="chevron-right"
+                      className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                    />
                   <span className="w-1/2 font-bold">Mon</span>
                   <span className="w-1/2">9:00am - 5:00pm</span>
                 </li>
-                <li className="flex my-2">
+                <li className="flex my-2 pl-5 relative">
+                  <FontAwesomeIcon
+                      icon="chevron-right"
+                      className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                    />
                   <span className="w-1/2 font-bold">Tues</span>
                   <span className="w-1/2">9:00am - 5:00pm</span>
                 </li>
-                <li className="flex my-2">
+                <li className="flex my-2 pl-5 relative">
+                  <FontAwesomeIcon
+                      icon="chevron-right"
+                      className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                    />
                   <span className="w-1/2 font-bold">Wed</span>
                   <span className="w-1/2">9:00am - 5:00pm</span>
                 </li>
-                <li className="flex my-2">
+                <li className="flex my-2 pl-5 relative">
+                  <FontAwesomeIcon
+                      icon="chevron-right"
+                      className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                    />
                   <span className="w-1/2 font-bold">Thurs</span>
                   <span className="w-1/2">9:00am - 5:00pm</span>
                 </li>
-                <li className="flex my-2">
+                <li className="flex my-2 pl-5 relative">
+                  <FontAwesomeIcon
+                      icon="chevron-right"
+                      className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                    />
                   <span className="w-1/2 font-bold">Fri</span>
                   <span className="w-1/2">9:00am - 5:00pm</span>
                 </li>
-                <li className="flex my-2">
+                <li className="flex my-2 pl-5 relative">
+                  <FontAwesomeIcon
+                      icon="chevron-right"
+                      className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                    />
                   <span className="w-1/2 font-bold">Sat - Sun</span>
                   <span className="w-1/2">Closed</span>
                 </li>
