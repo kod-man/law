@@ -5,11 +5,6 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <div className="container">
-        <div className="flex">
-          <div className="basis-full">Content</div>
-        </div>
-      </div>
     </>
   );
 };

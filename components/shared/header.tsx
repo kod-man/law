@@ -23,8 +23,7 @@ const Header = () => {
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="py-5">
-              <Link
-                href="http://bsmthemes.com/demo/lawyero">
+              <Link href="http://bsmthemes.com/demo/lawyero">
                 <Image src={logo} alt="Logo" width={166} height={30} />
               </Link>
             </div>
@@ -46,7 +45,8 @@ const Header = () => {
                       href="#"
                       className="py-7 block relative after:transition-transform duration-300 ease-in-out after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main group-hover:after:scale-x-100"
                     >
-                      Home <FontAwesomeIcon icon="chevron-down" />
+                      Home{" "}
+                      <FontAwesomeIcon icon="chevron-down" className="hidden" />
                     </Link>
                     <ul
                       className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"

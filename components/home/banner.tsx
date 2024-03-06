@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
-import Link from "next/link";
 import { bannerItems } from "@/constants/homeBanner";
+import ButtonCustom from "../global/button";
 
 const Banner = () => {
   return (
@@ -24,9 +24,7 @@ const Banner = () => {
                   <h2 className="font-bold text-6xl uppercase w-2/3 mb-5 max-w-full leading-tight">
                     {item.content}
                   </h2>
-                  <Link className="primary-button" href={item.linkHref}>
-                    {item.linkText}
-                  </Link>
+                  <ButtonCustom href={item.linkHref} text={item.linkText} />
                 </div>
               </div>
             </div>
