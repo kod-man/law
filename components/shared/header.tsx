@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/assets/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   return (
-    <header className="font-albert">
+    <header className="font-albert z-10">
       <div className="container py-2">
         <div className="flex justify-between">
           <div>
@@ -45,10 +46,10 @@ const Header = () => {
                       href="#"
                       className="py-7 block relative after:transition-transform duration-300 ease-in-out after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main group-hover:after:scale-x-100"
                     >
-                      Home
+                      Home <FontAwesomeIcon icon="chevron-down" />
                     </Link>
                     <ul
-                      className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500"
+                      className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
                       role="list"
                     >
                       <li>
