@@ -23,9 +23,7 @@ const Header = () => {
           <div className="flex justify-between items-center">
             <div className="py-5">
               <Link
-                href="http://bsmthemes.com/demo/lawyero"
-                className="op-logo"
-              >
+                href="http://bsmthemes.com/demo/lawyero">
                 <Image src={logo} alt="Logo" width={166} height={30} />
               </Link>
             </div>
