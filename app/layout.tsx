@@ -6,11 +6,11 @@ import Footer from "@/components/shared/footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
-  faCheckSquare,
   faChevronDown,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faChevronDown, faCheckSquare);
+library.add(fab, faChevronDown, faChevronRight);
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],

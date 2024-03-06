@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {  
+@layer base {
   :root {
     --background: #1a2431;
     --foreground: 222.2 84% 4.9%;
@@ -76,6 +76,6 @@
     @apply text-foreground font-albert;
   }
   .primary-button {
-    @apply inline-block py-4 px-7 font-bold uppercase bg-primary-main transition-all hover:pr-10;
+    @apply inline-block py-4 px-7 font-bold uppercase bg-primary-main transition-all hover:pr-10 text-white;
   }
 }
