@@ -25,6 +25,8 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        grey: "var(--grey-bg)",
+        lightgrey: "var(--light-grey-bg)",
         background: "var(--background)",
         foreground: "hsl(var(--foreground))",
         primary: {

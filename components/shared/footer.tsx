@@ -50,7 +50,7 @@ const Footer = () => {
                     className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Mon</span>
-                  <span className="w-1/2">9:00am - 5:00pm</span>
+                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                 </li>
                 <li className="flex my-2 pl-5 relative">
                   <FontAwesomeIcon
@@ -58,7 +58,7 @@ const Footer = () => {
                     className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Tues</span>
-                  <span className="w-1/2">9:00am - 5:00pm</span>
+                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                 </li>
                 <li className="flex my-2 pl-5 relative">
                   <FontAwesomeIcon
@@ -66,7 +66,7 @@ const Footer = () => {
                     className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Wed</span>
-                  <span className="w-1/2">9:00am - 5:00pm</span>
+                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                 </li>
                 <li className="flex my-2 pl-5 relative">
                   <FontAwesomeIcon
@@ -74,7 +74,7 @@ const Footer = () => {
                     className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Thurs</span>
-                  <span className="w-1/2">9:00am - 5:00pm</span>
+                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                 </li>
                 <li className="flex my-2 pl-5 relative">
                   <FontAwesomeIcon
@@ -82,7 +82,7 @@ const Footer = () => {
                     className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Fri</span>
-                  <span className="w-1/2">9:00am - 5:00pm</span>
+                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                 </li>
                 <li className="flex my-2 pl-5 relative">
                   <FontAwesomeIcon
@@ -90,7 +90,7 @@ const Footer = () => {
                     className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Sat - Sun</span>
-                  <span className="w-1/2">Closed</span>
+                  <span className="w-1/2 text-right">Closed</span>
                 </li>
               </ul>
             </div>
@@ -99,22 +99,32 @@ const Footer = () => {
       </div>
       <div className="bg-primary-main py-7">
         <div className="container">
-          <div className="flex">
+          <div className="flex items-center">
             <div className="basis-1/2">
               <p className="text-white text-sm leading-6">
                 &copy; Copyrights Lawyero 2024. All Rights Reserved.
               </p>
             </div>
             <div className="basis-1/2">
-              <ul>
-                <li>
+              <ul className="flex justify-end items-center">
+                <li className="w-8 ml-3">
                   <Link href="#">
-                    <FontAwesomeIcon icon={["fab", "facebook"]} />
+                    <FontAwesomeIcon className="text-white" icon={["fab", "facebook"]} />
                   </Link>
                 </li>
-                <li>
+                <li className="w-8 ml-3">
                   <Link href="#">
-                    <FontAwesomeIcon icon={["fab", "twitter"]} />
+                    <FontAwesomeIcon className="text-white" icon={["fab", "twitter"]} />
+                  </Link>
+                </li>
+                <li className="w-8 ml-3">
+                  <Link href="#">
+                    <FontAwesomeIcon className="text-white" icon={["fab", "linkedin"]} />
+                  </Link>
+                </li>
+                <li className="w-8 ml-3">
+                  <Link href="#">
+                    <FontAwesomeIcon className="text-white" icon={["fab", "youtube"]} />
                   </Link>
                 </li>
               </ul>
