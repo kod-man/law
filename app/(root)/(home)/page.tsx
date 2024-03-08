@@ -3,9 +3,19 @@ import React from "react";
 import Image from "next/image";
 import library from "@/public/assets/library-home.jpg";
 import libraryicon from "@/public/assets/library-icon.svg";
+import homefirmimage from "@/public/assets/home-member1.jpg";
+import homeserviceimage from "@/public/assets/home-service-image.jpg";
+import homeblogbefore from "@/public/assets/home-blog-before.svg";
+import homeblog1 from "@/public/assets/home-blog-1.jpg";
+import homeblog2 from "@/public/assets/home-blog-2.jpg";
+import homeblog3 from "@/public/assets/home-blog-3.jpg";
+import homeblog4 from "@/public/assets/home-blog-4.jpg";
+import homeblog5 from "@/public/assets/home-blog-5.jpg";
+import homeblog6 from "@/public/assets/home-blog-6.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ButtonCustomdark from "@/components/global/button-dark";
 import PrimaryHeadline from "@/components/global/primary-headline";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -101,7 +111,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="container pt-20 pb-14">
+      <div className="container pt-20 pb-20">
         <div className="flex gap-8">
           <div className="basis-[70%]">
             <PrimaryHeadline text="About Firm" />
@@ -122,9 +132,316 @@ const Home = () => {
             </div>
             <ButtonCustomdark href="#" text="Learn More" />
           </div>
-          <div className="basis-[30%]"></div>
+          <div className="basis-[30%]">
+            <Image
+            src={homefirmimage}
+            alt="Home Firm Image"
+            className="rounded-full"
+          />
+          </div>
         </div>
       </div>
+
+      <div className="flex gap-12 bg-grey">
+        <div className="basis-1/2 relative">
+          <Image
+              src={homeserviceimage}
+              alt="Home Service Image"
+              fill={true}
+        className="object-cover"
+            />
+        </div>
+        <div className="basis-1/2 pt-20 pb-4">
+          <div className="flex mb-14 pr-20">
+              <div className="flex-shrink-0 pr-7">
+                <FontAwesomeIcon
+                  icon="link"
+                  className="w-14 h-14 border-2 p-3 border-primary-main text-primary-main"
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-2 text-black">
+                  PERSONAL SERVICE
+                </h3>
+                <p className="text-base">
+                  Our attorneys are committed to you and will work vigorously to obtain the best possible recovery in your case.
+                </p>
+              </div>
+          </div>
+          <div className="flex mb-14 pr-20">
+              <div className="flex-shrink-0 pr-7">
+                <FontAwesomeIcon
+                  icon="phone"
+                  className="w-14 h-14 border-2 p-3 border-primary-main text-primary-main"
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-2 text-black">
+                  SCREENING FREE
+                </h3>
+                <p className="text-base">
+                At the our law Firm, you do not have to go through a call screen. You will get to speak to an attorney directly, preferably the one who will be handling your case.
+                </p>
+              </div>
+          </div>
+          <div className="flex mb-14 pr-20">
+              <div className="flex-shrink-0 pr-7">
+                <FontAwesomeIcon
+                  icon="mug-hot"
+                  className="w-14 h-14 border-2 p-3 border-primary-main text-primary-main"
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-2 text-black">
+                  ALWAYS RESPONSIVE
+                </h3>
+                <p className="text-base">
+                Your attorney will address any problems quickly and respect your time by promptly replying to your inquiries.
+                </p>
+              </div>
+          </div>
+          <div className="flex mb-14 pr-20">
+              <div className="flex-shrink-0 pr-7">
+                <FontAwesomeIcon
+                  icon="suitcase"
+                  className="w-14 h-14 border-2 p-3 border-primary-main text-primary-main"
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-2 text-black">
+                  CASE EXPERIENCE
+                </h3>
+                <p className="text-base">
+                  Our attorneys are experienced and can handle any type of injury case for you.
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-background py-6">
+        <div className="container">
+          <div className="flex items-center">
+            <div className="basis-1/2">
+              <h3 className="text-xl text-white">Get the consultation For Most Complex Legal Issues.</h3>
+            </div>
+            <div className="basis-1/2 text-right">
+            <ButtonCustomdark href="#" text="Contact Us" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container pt-20 pb-32 relative">
+        <PrimaryHeadline text="Practice Areas" />
+        <div className="flex gap-8">
+          <div className="basis-1/4 bg-primary-main min-h-64 text-center group mb-7">
+            <Link className="flex justify-center items-center h-full w-full flex-col transition-box-shadow duration-500 ease-in-out group-hover:shadow-[0_6px_13px_rgba(26,36,49,0.35)]" href="#">
+              <span className="inline-block">          
+                <FontAwesomeIcon
+                    icon="scale-balanced"
+                    className="w-14 h-14 text-white"
+                  />
+              </span>
+              <h3 className="text-2xl text-white font-semibold mt-5">Family Law</h3>
+            </Link>
+          </div>
+          <div className="basis-1/4 bg-background min-h-64 text-center group mb-7">
+            <Link className="flex justify-center items-center h-full w-full flex-col transition-box-shadow duration-500 ease-in-out group-hover:shadow-[0_6px_13px_rgba(26,36,49,0.35)]" href="#">
+              <span className="inline-block">          
+                <FontAwesomeIcon
+                    icon="child"
+                    className="w-14 h-14 text-white"
+                  />
+              </span>
+              <h3 className="text-2xl text-white font-semibold mt-5">Child Custody</h3>
+            </Link>
+          </div>
+          <div className="basis-1/4 bg-primary-main min-h-64 text-center group mb-7">
+            <Link className="flex justify-center items-center h-full w-full flex-col transition-box-shadow duration-500 ease-in-out group-hover:shadow-[0_6px_13px_rgba(26,36,49,0.35)]" href="#">
+              <span className="inline-block">          
+                <FontAwesomeIcon
+                    icon="car"
+                    className="w-14 h-14 text-white"
+                  />
+              </span>
+              <h3 className="text-2xl text-white font-semibold mt-5">Auto Accidents</h3>
+            </Link>
+          </div>
+          <div className="basis-1/4 bg-background min-h-64 text-center group mb-7">
+            <Link className="flex justify-center items-center h-full w-full flex-col transition-box-shadow duration-500 ease-in-out group-hover:shadow-[0_6px_13px_rgba(26,36,49,0.35)]" href="#">
+              <span className="inline-block">          
+                <FontAwesomeIcon
+                    icon="sterling-sign"
+                    className="w-14 h-14 text-white"
+                  />
+              </span>
+              <h3 className="text-2xl text-white font-semibold mt-5">Business Law</h3>
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-8">
+          <div className="basis-1/4 bg-background min-h-64 text-center group mb-7">
+            <Link className="flex justify-center items-center h-full w-full flex-col transition-box-shadow duration-500 ease-in-out group-hover:shadow-[0_6px_13px_rgba(26,36,49,0.35)]" href="#">
+              <span className="inline-block">          
+                <FontAwesomeIcon
+                    icon="print"
+                    className="w-14 h-14 text-white"
+                  />
+              </span>
+              <h3 className="text-2xl text-white font-semibold mt-5">Internet Fraud</h3>
+            </Link>
+          </div>
+          <div className="basis-1/4 bg-primary-main min-h-64 text-center group mb-7">
+            <Link className="flex justify-center items-center h-full w-full flex-col transition-box-shadow duration-500 ease-in-out group-hover:shadow-[0_6px_13px_rgba(26,36,49,0.35)]" href="#">
+              <span className="inline-block">          
+                <FontAwesomeIcon
+                    icon="futbol"
+                    className="w-14 h-14 text-white"
+                  />
+              </span>
+              <h3 className="text-2xl text-white font-semibold mt-5">Sports Injury</h3>
+            </Link>
+          </div>
+          <div className="basis-1/4 bg-background min-h-64 text-center group mb-7">
+            <Link className="flex justify-center items-center h-full w-full flex-col transition-box-shadow duration-500 ease-in-out group-hover:shadow-[0_6px_13px_rgba(26,36,49,0.35)]" href="#">
+              <span className="inline-block">          
+                <FontAwesomeIcon
+                    icon="truck-medical"
+                    className="w-14 h-14 text-white"
+                  />
+              </span>
+              <h3 className="text-2xl text-white font-semibold mt-5">Emergency Law</h3>
+            </Link>
+          </div>
+          <div className="basis-1/4 bg-primary-main min-h-64 text-center group mb-7">
+            <Link className="flex justify-center items-center h-full w-full flex-col transition-box-shadow duration-500 ease-in-out group-hover:shadow-[0_6px_13px_rgba(26,36,49,0.35)]" href="#">
+              <span className="inline-block">          
+                <FontAwesomeIcon
+                    icon="futbol"
+                    className="w-14 h-14 text-white"
+                  />
+              </span>
+              <h3 className="text-2xl text-white font-semibold mt-5">Drowning Law</h3>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+    <div className="relative bg-grey pt-20">
+      <Image
+            src={homeblogbefore}
+            alt="Home BLog"
+            className="absolute -top-[56px] z-[3] w-full"
+          />
+      <div className="container">
+        <PrimaryHeadline text="News & Insights" />
+        <div className="flex flex-wrap">
+          <div className="basis-1/3 group">
+            <div className="overflow-hidden">
+              <Image
+                src={homeblog1}
+                alt="Home BLog Post"
+                className="transition-transform scale-[1.1] duration-500 ease-in-out group-hover:scale-[1]"
+              />
+            </div>
+            <div className="p-5 bg-white"> 
+              <span className="text-sm text-primary-main mb-4 inline-block">Dec, 25 2024</span>
+              <h3>
+                <Link href="#" className="inline-block text-base text-background font-semibold cursor-pointer hover:text-primary-main">
+                When to seek legal help? Important to know when
+                </Link>
+              </h3>
+            </div>
+          </div>
+          <div className="basis-1/3 group">
+            <div className="overflow-hidden">
+              <Image
+                src={homeblog2}
+                alt="Home BLog Post"
+                className="transition-transform scale-[1.1] duration-500 ease-in-out group-hover:scale-[1]"
+              />
+            </div>
+            <div className="p-5 bg-white"> 
+              <span className="text-sm text-primary-main mb-4 inline-block">Dec, 25 2024</span>
+              <h3>
+                <Link href="#" className="inline-block text-base text-background font-semibold cursor-pointer hover:text-primary-main">
+                Seek immediate legal advice when most needed
+                </Link>
+              </h3>
+            </div>
+          </div>
+          <div className="basis-1/3 group">
+            <div className="overflow-hidden">
+              <Image
+                src={homeblog3}
+                alt="Home BLog Post"
+                className="transition-transform scale-[1.1] duration-500 ease-in-out group-hover:scale-[1]"
+              />
+            </div>
+            <div className="p-5 bg-white"> 
+              <span className="text-sm text-primary-main mb-4 inline-block">Dec, 25 2024</span>
+              <h3>
+                <Link href="#" className="inline-block text-base text-background font-semibold cursor-pointer hover:text-primary-main">
+                What it takes to be a lawyer (the untold story)
+                </Link>
+              </h3>
+            </div>
+          </div>
+          <div className="basis-1/3 group">
+            <div className="overflow-hidden">
+              <Image
+                src={homeblog4}
+                alt="Home BLog Post"
+                className="transition-transform scale-[1.1] duration-500 ease-in-out group-hover:scale-[1]"
+              />
+            </div>
+            <div className="p-5 bg-white"> 
+              <span className="text-sm text-primary-main mb-4 inline-block">Dec, 25 2024</span>
+              <h3>
+                <Link href="#" className="inline-block text-base text-background font-semibold cursor-pointer hover:text-primary-main">
+                When to seek legal help? Important to know when
+                </Link>
+              </h3>
+            </div>
+          </div>
+          <div className="basis-1/3 group  mb-12">
+            <div className="overflow-hidden">
+              <Image
+                src={homeblog5}
+                alt="Home BLog Post"
+                className="transition-transform scale-[1.1] duration-500 ease-in-out group-hover:scale-[1]"
+              />
+            </div>
+            <div className="p-5 bg-white"> 
+              <span className="text-sm text-primary-main mb-4 inline-block">Dec, 25 2024</span>
+              <h3>
+                <Link href="#" className="inline-block text-base text-background font-semibold cursor-pointer hover:text-primary-main">
+                Seek immediate legal advice when most needed
+                </Link>
+              </h3>
+            </div>
+          </div>
+          <div className="basis-1/3 group  mb-12">
+            <div className="overflow-hidden">
+              <Image
+                src={homeblog6}
+                alt="Home BLog Post"
+                className="transition-transform scale-[1.1] duration-500 ease-in-out group-hover:scale-[1]"
+              />
+            </div>
+            <div className="p-5 bg-white"> 
+              <span className="text-sm text-primary-main mb-4 inline-block">Dec, 25 2024</span>
+              <h3>
+                <Link href="#" className="inline-block text-base text-background font-semibold cursor-pointer hover:text-primary-main">
+                What it takes to be a lawyer (the untold story)
+                </Link>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </>
   );
 };
