@@ -12,8 +12,10 @@ import homeblog3 from "@/public/assets/home-blog-3.jpg";
 import homeblog4 from "@/public/assets/home-blog-4.jpg";
 import homeblog5 from "@/public/assets/home-blog-5.jpg";
 import homeblog6 from "@/public/assets/home-blog-6.jpg";
+import homeconsultationcall from "@/public/assets/home-request-consultation.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ButtonCustomdark from "@/components/global/button-dark";
+import SecondaryButtonCustom from "@/components/global/secondary-button";
 import PrimaryHeadline from "@/components/global/primary-headline";
 import Link from "next/link";
 
@@ -328,7 +330,7 @@ const Home = () => {
         </div>
       </div>
 
-    <div className="relative bg-grey pt-20">
+    <div className="relative bg-grey pt-20 pb-24">
       <Image
             src={homeblogbefore}
             alt="Home BLog"
@@ -337,7 +339,7 @@ const Home = () => {
       <div className="container">
         <PrimaryHeadline text="News & Insights" />
         <div className="flex flex-wrap">
-          <div className="basis-1/3 group">
+          <div className="basis-1/3 group pr-2 mb-12">
             <div className="overflow-hidden">
               <Image
                 src={homeblog1}
@@ -354,7 +356,7 @@ const Home = () => {
               </h3>
             </div>
           </div>
-          <div className="basis-1/3 group">
+          <div className="basis-1/3 group pr-3 pl-2 mb-12">
             <div className="overflow-hidden">
               <Image
                 src={homeblog2}
@@ -371,7 +373,7 @@ const Home = () => {
               </h3>
             </div>
           </div>
-          <div className="basis-1/3 group">
+          <div className="basis-1/3 group pl-3 mb-12">
             <div className="overflow-hidden">
               <Image
                 src={homeblog3}
@@ -388,7 +390,7 @@ const Home = () => {
               </h3>
             </div>
           </div>
-          <div className="basis-1/3 group">
+          <div className="basis-1/3 group pr-3 mb-12">
             <div className="overflow-hidden">
               <Image
                 src={homeblog4}
@@ -405,7 +407,7 @@ const Home = () => {
               </h3>
             </div>
           </div>
-          <div className="basis-1/3 group  mb-12">
+          <div className="basis-1/3 group pr-3 pl-3  mb-12">
             <div className="overflow-hidden">
               <Image
                 src={homeblog5}
@@ -422,7 +424,7 @@ const Home = () => {
               </h3>
             </div>
           </div>
-          <div className="basis-1/3 group  mb-12">
+          <div className="basis-1/3 group pl-3  mb-12">
             <div className="overflow-hidden">
               <Image
                 src={homeblog6}
@@ -440,8 +442,35 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="text-center">
+          <SecondaryButtonCustom href="#" text="Read More Posts" />
+        </div>
       </div>
+      <Image
+          src={homeblogbefore}
+          alt="Home BLog"
+          className="absolute -bottom-[56px] z-[3] w-full rotate-180"
+        />
     </div>
+    <div className="container pt-20 pb-24">
+      <PrimaryHeadline text="Our Team" />
+    </div>
+    <div className="bg-black py-20 relative overflow-hidden before:bg-[#1a2431] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
+        <Image
+          src={homeconsultationcall}
+          alt="Home Consultation Call"
+          fill={true}
+          className="object-cover"
+        />
+        <div className="container relative z-[3] text-center">
+          <h2 className="text-[40px] text-white font-bold px-14 text-center mb-5 inline-block">We Treat Every Case Equally With Same Attention And Dedication Because Every Client Matters.</h2>
+          <Link className="border-[3px] border-white text-base font-bold text-white px-3 py-4 inline-block" href="#">
+            Request Free Consultation
+          </Link>
+
+        </div>
+
+      </div>
     </>
   );
 };
