@@ -463,7 +463,7 @@ const Home = () => {
           className="object-cover"
         />
         <div className="container relative z-[3] text-center">
-          <h2 className="text-[40px] text-white font-bold px-14 text-center mb-5 inline-block">We Treat Every Case Equally With Same Attention And Dedication Because Every Client Matters.</h2>
+          <h2 className="text-[40px] text-white font-bold px-14 text-center mb-9 inline-block leading-10">We Treat Every Case Equally With Same Attention And Dedication Because Every Client Matters.</h2>
           <Link className="border-[3px] border-white text-base font-bold text-white px-3 py-4 inline-block" href="#">
             Request Free Consultation
           </Link>
