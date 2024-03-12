@@ -595,10 +595,46 @@ const Home = () => {
             </div>
             
           </div>
-          <div className="basis-2/3 py-24 px-12 relative before:z-[-1] before:top-0 before:absolute before:bg-lightgrey before:content-[''] before:h-full before:w-[80vw] before:left-0">
+          <div className="basis-2/3 py-24 pl-12 pr-20 relative before:z-[-1] before:top-0 before:absolute before:bg-lightgrey before:content-[''] before:h-full before:w-[80vw] before:left-0">
             <h3 className="text-3xl pb-5 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
               Schedule A Free Consultation
             </h3>
+            <form action="">
+              <div className="mb-8">
+                <label htmlFor="fname">
+                    <input type="text" placeholder="First Name" id="fname" className="h-12 px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] placeholder:text-base placeholder:text-background font-bold placeholder:font-normal"/>
+                  </label>
+              </div>
+              <div className="mb-8">
+                <label htmlFor="lname">
+                    <input type="text" placeholder="Last Name" id="lname" className="h-12 px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] placeholder:text-base placeholder:text-background font-bold placeholder:font-normal" />
+                  </label>
+              </div>
+              <div className="mb-8">
+                <label htmlFor="email">
+                    <input type="email" placeholder="Email" id="email" className="h-12 px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] placeholder:text-base placeholder:text-background font-bold placeholder:font-normal" />
+                  </label>
+              </div>
+              <div className="mb-8">
+                <label>
+                  <select className="h-12 px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] placeholder:text-base placeholder:text-background font-bold placeholder:font-normal">
+                    <option>Your Case Falls In</option>
+                    <option>Family Law</option>
+                    <option>Child Custody</option>
+                  </select>
+                </label>
+              </div>
+              <div className="mb-8">
+                <label htmlFor="tmessage">
+                  <textarea  id="tmessage"  placeholder="Tell Us About Your Case" className="h-12 px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] placeholder:text-base placeholder:text-background font-bold placeholder:font-normal h-48 resize-none"></textarea>
+                </label>
+              </div>
+              <div className="pt-2">
+                <label htmlFor="submit">
+                  <input type="button" value="Contact Us" className="text-base font-bold bg-primary-main uppercase text-white border-[1px] px-7 py-[14px] hover:border-primary-main hover:bg-white hover:text-primary-main" />
+                </label>
+              </div>
+            </form>
           </div>
         </div>
       </div>
