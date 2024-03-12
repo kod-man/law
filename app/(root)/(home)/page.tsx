@@ -330,7 +330,7 @@ const Home = () => {
         </div>
       </div>
 
-    <div className="relative bg-grey pt-20 pb-24">
+    <div className="relative bg-grey pt-20 pb-20">
       <Image
             src={homeblogbefore}
             alt="Home BLog"
@@ -452,7 +452,7 @@ const Home = () => {
           className="absolute -bottom-[56px] z-[3] w-full rotate-180"
         />
     </div>
-    <div className="container pt-20 pb-24">
+    <div className="container pt-28 pb-24">
       <PrimaryHeadline text="Our Team" />
     </div>
     <div className="bg-black py-20 relative overflow-hidden before:bg-[#1a2431] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
@@ -467,10 +467,142 @@ const Home = () => {
           <Link className="border-[3px] border-white text-base font-bold text-white px-3 py-4 inline-block" href="#">
             Request Free Consultation
           </Link>
-
         </div>
-
+    </div>
+    <div className="bg-grey pt-20 pb-11">
+      <div className="container">
+        <PrimaryHeadline text="Frequently Asked Questions" />
+        <div className="flex pt-3 flex-wrap">
+          <div className="basis-1/2 pr-6 mb-12">
+            <div className="flex">
+              <FontAwesomeIcon
+                icon="question-circle"
+                className="w-7 h-7 text-primary-main flex-shrink-0 mt-1"
+              />
+              <div className="pl-4">
+                <h3 className="text-2xl text-background font-bold mb-3">Do I Have A Case?</h3>
+                <p className="text-base text-[#333]">The answer of this question depends upon situation to situation. The best answer can only be achieved once you contact one of attorney who will guide you.</p>
+              </div>
+            </div>
+          </div>
+          <div className="basis-1/2 pl-6 mb-12">
+            <div className="flex">
+              <FontAwesomeIcon
+                icon="question-circle"
+                className="w-7 h-7 text-primary-main flex-shrink-0 mt-1"
+              />
+              <div className="pl-4">
+                <h3 className="text-2xl text-background font-bold mb-3">Which Areas Do You Cover?</h3>
+                <p className="text-base text-[#333]">We cover multiple areas mainly involving Family Law, Child Law, Emergency Law and Business Law. The complete list of all the practice areas can be found on this website.</p>
+              </div>
+            </div>
+          </div>
+          <div className="basis-1/2 pr-6 mb-12">
+            <div className="flex">
+              <FontAwesomeIcon
+                icon="question-circle"
+                className="w-7 h-7 text-primary-main flex-shrink-0 mt-1"
+              />
+              <div className="pl-4">
+                <h3 className="text-2xl text-background font-bold mb-3">Do Hiring You Guarantee Results?</h3>
+                <p className="text-base text-[#333]">The short answer to this question is No. Every case is different and prior results although show very high success rate but it still doesnt guarantee the same outcome.</p>
+              </div>
+            </div>
+          </div>
+          <div className="basis-1/2 pl-6 mb-12">
+            <div className="flex">
+              <FontAwesomeIcon
+                icon="question-circle"
+                className="w-7 h-7 text-primary-main flex-shrink-0 mt-1"
+              />
+              <div className="pl-4">
+                <h3 className="text-2xl text-background font-bold mb-3">What Is Attorney Customer Relationship?</h3>
+                <p className="text-base text-[#333]">The initial consultation doesnt include Attorney Customer relationship. Only once you hire us then the attorney customer relationship is built.</p>
+              </div>
+            </div>
+          </div>
+          <div className="basis-1/2 pr-6 mb-12">
+            <div className="flex">
+              <FontAwesomeIcon
+                icon="question-circle"
+                className="w-7 h-7 text-primary-main flex-shrink-0 mt-1"
+              />
+              <div className="pl-4">
+                <h3 className="text-2xl text-background font-bold mb-3">What Is Your Consultation Fees?</h3>
+                <p className="text-base text-[#333]">The consultation is absolutely free. Yes you have read it right absolutely free. Once you hire us for your case we only charge then.</p>
+              </div>
+            </div>
+          </div>
+          <div className="basis-1/2 pl-6 mb-12">
+            <div className="flex">
+              <FontAwesomeIcon
+                icon="question-circle"
+                className="w-7 h-7 text-primary-main flex-shrink-0 mt-1"
+              />
+              <div className="pl-4">
+                <h3 className="text-2xl text-background font-bold mb-3">Do You Screen All The Information You Get?</h3>
+                <p className="text-base text-[#333]">At lawyero we treat privacy very strictly. All the information that you provide is confidential and wont be leaked under any circumstances.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div className="overflow-hidden">
+      <div className="container">
+        <div className="flex">
+          <div className="basis-1/3 py-24 relative before:z-[-1] before:top-0 before:absolute before:bg-grey before:content-[''] before:h-full before:w-[50vw] before:right-0">
+            <h3 className="text-3xl pb-5 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+              Get In Touch
+            </h3>
+            <ul>
+              <li className="flex items-center mb-[10px]">
+                <FontAwesomeIcon
+                    icon="phone"
+                    className="w-3 h-4 text-background"
+                  />
+                <a className="inline-block text-base text-background ml-2" href="tel:123-456-7890">123-456-7890</a>
+              </li>
+              <li className="flex items-center mb-[10px]">
+                <FontAwesomeIcon
+                  icon="fax"
+                  className="w-3 h-4 text-background"
+                />
+                <a className="inline-block text-base text-background ml-2" href="#">123-456-7890</a>
+              </li>
+            </ul>
+            <div>
+              <div className="mt-7">
+                <h3 className="text-2xl text-[#333] font-bold mb-4">Head Office</h3>
+                <div className="flex">
+                  <FontAwesomeIcon
+                    icon="location-dot"
+                    className="w-2 h-4 text-background mt-[2px]"
+                  />
+                  <p className="pl-2 text-background">4th Floor ABC Plaza Downtown, March <br/> Street, Sydney.</p>
+                </div>
+              </div>
+              <div className="mt-7">
+                <h3 className="text-2xl text-[#333] font-bold mb-4">Regional Office</h3>
+                <div className="flex">
+                  <FontAwesomeIcon
+                    icon="location-dot"
+                    className="w-2 h-4 text-background mt-[2px]"
+                  />
+                  <p className="pl-2 text-background">4th Floor ABC Plaza Downtown, March <br/> Street, Sydney.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div className="basis-2/3 py-24 px-12 relative before:z-[-1] before:top-0 before:absolute before:bg-lightgrey before:content-[''] before:h-full before:w-[80vw] before:left-0">
+            <h3 className="text-3xl pb-5 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+              Schedule A Free Consultation
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
     </>
   );
 };
