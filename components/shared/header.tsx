@@ -23,7 +23,7 @@ const Header = () => {
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="py-5">
-              <Link href="http://bsmthemes.com/demo/lawyero">
+              <Link href="/">
                 <Image src={logo} alt="Logo" width={166} height={30} />
               </Link>
             </div>
@@ -42,7 +42,7 @@ const Header = () => {
                 <ul className="flex gap-8">
                   <li className="group">
                     <Link
-                      href="#"
+                      href="/"
                       className="py-7 block relative after:transition-transform duration-300 ease-in-out after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main group-hover:after:scale-x-100"
                     >
                       Home{" "}
@@ -53,18 +53,12 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link
-                          href="http://bsmthemes.com/demo/lawyero/"
-                          className="px-5 py-4 block"
-                        >
+                        <Link href="/" className="px-5 py-4 block">
                           Home 1
                         </Link>
                       </li>
                       <li>
-                        <Link
-                          href="http://bsmthemes.com/demo/lawyero/home2/"
-                          className="px-5 py-4 block"
-                        >
+                        <Link href="/home2/" className="px-5 py-4 block">
                           Home2
                         </Link>
                       </li>
@@ -72,7 +66,7 @@ const Header = () => {
                   </li>
                   <li className="group">
                     <Link
-                      href="http://bsmthemes.com/demo/lawyero/who-we-are/"
+                      href="/who-we-are/"
                       className="py-7 block relative after:transition-transform duration-300 ease-in-out after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main group-hover:after:scale-x-100"
                     >
                       Who We Are
