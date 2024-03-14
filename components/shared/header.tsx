@@ -89,8 +89,13 @@ const Header = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link href="practice-area-3column" className="px-5 py-4 block">
+                        <Link href="/practice-area-var-column/" className="px-5 py-4 block">
                           3 Column Layout
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/single-practice-area/" className="px-5 py-4 block">
+                          Individual Practice Area
                         </Link>
                       </li>
                     </ul>

@@ -1,18 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import InnerBanner from "@/components/global/inner-banner";
-import PrimaryHeadline from "@/components/global/primary-headline";
-import ButtonCustom from "@/components/global/button";
 import Image from "next/image";
+import singlepabanner from "@/public/assets/single-practice-banner.jpg";
 import paimage1 from "@/public/assets/pa-img-1.jpg";
-import paimage2 from "@/public/assets/pa-img-2.jpg";
-import paimage3 from "@/public/assets/pa-img-3.jpg";
-import paimage4 from "@/public/assets/pa-img-4.jpg";
-import paimage5 from "@/public/assets/pa-img-5.jpg";
-import paimage6 from "@/public/assets/pa-img-6.jpg";
-import paimage7 from "@/public/assets/pa-img-7.jpg";
-import paimage8 from "@/public/assets/pa-img-8.jpg";
-import Link from "next/link";
+import SecondaryButtonCustom from "@/components/global/secondary-button";
 
 
 
@@ -20,38 +11,49 @@ import Link from "next/link";
 const page = () => {
   return (
     <> 
-      <InnerBanner text="PRACTICE AREAS 3 COLUMN" />
+      
 
-      <div className="container pt-20 pb-7">
-        <PrimaryHeadline text="Practice Areas" />
-        <div className="pt-2 px-10 text-center">
-          <p className="text-base leading-6 text-[#333]">At lawyero we practice almost all areas of life. Some of the most notable practice areas in which we have helped number of our clients to achieve their goals according to the laws are as follows:</p>
+      <div className="py-[70px] relative overflow-hidden before:bg-background before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
+      <Image
+          src={singlepabanner}
+          alt="Single Practice Arae Banner"
+          fill={true}
+          className="object-cover"
+        />
+        <div className="container relative z-[3]">
+          <h1 className="text-[40px] text-white font-bold text-center">FAMILY LAW</h1>
         </div>
       </div>
-
-      <div className="container pb-10">
-        <div className="flex flex-wrap -mx-2">
-        <div className="basis-1/3 mb-14 pr-3 pl-3">
-            <div className="border-[1px] border-[#ccc] rounded">
-              <div className="">
-                <Image
-                  src={paimage1}
-                  alt="Practice Area Image"
-                  className="w-full"
-                />
-              </div>
-              <div className="p-5">
-                <Link href="#" className="text-2xl text-background font-bold hover:text-primary-main mb-2 inline-block">
-                  Family Law
-                </Link>
-                <p className="text-sm text-[#333]">Family law involves a range of matters that are usually very personal, unique and emotionally challenging.</p>
-                <div className="pt-4">
-                  <ButtonCustom href="#" text="Learn More" />
-                </div>
-              </div>
+      <div className="container py-24">
+        <div className="flex gap-10">
+          <div className="basis-4/6">
+            <h3 className="text-[40px] pb-4 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+            Overview
+            </h3>
+            <p className="text-base mb-5 text-[#333]">Family law involves a range of matters that are usually very personal, unique and emotionally challenging. Decisions involving your children and your financial well-being can be complex and nuanced and the results can last a lifetime. In these situations, you need more than just an attorney who has experience and knowledge of the law. You need someone who will provide you with guidance, creative thinking, and who understands the big picture and the impact your decisions will have on you.</p>
+            <p className="text-base mb-5 text-[#333]">The family law attorneys at lawyero are committed to providing our clients with the skill and expertise necessary to meet the client’s objectives and goalswhile providing a trusted source of representation. We are responsive to our clients’ needs and we pride ourselves on our attentiveness and availability to handle client matters with care, respect and sensitivity.</p>
+          </div>
+          <div className="basis-1/3">
+            <Image
+                src={paimage1}
+                alt="Practice Area Image"
+                className="w-full rounded"
+              />
+          </div>
+        </div>
+      </div>
+      <div className="bg-primary-main py-6">
+        <div className="container">
+          <div className="flex items-center">
+            <div className="basis-1/2">
+              <h3 className="text-xl text-white">
+                Get the consultation For Most Complex Legal Issues.
+              </h3>
+            </div>
+            <div className="basis-1/2 text-right">
+              <SecondaryButtonCustom href="#" text="Contact Us" />
             </div>
           </div>
-          
         </div>
       </div>
 
