@@ -72,6 +72,29 @@ const Header = () => {
                       Who We Are
                     </Link>
                   </li>
+                  <li className="group">
+                    <Link
+                      href="#"
+                      className="py-7 block relative after:transition-transform duration-300 ease-in-out after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main group-hover:after:scale-x-100"
+                    >
+                      Practice Areas
+                    </Link>
+                    <ul
+                      className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                      role="list"
+                    >
+                      <li>
+                        <Link href="/practice-area/" className="px-5 py-4 block">
+                          2 Column Layout
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="practice-area-3column" className="px-5 py-4 block">
+                          3 Column Layout
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
               </nav>
             </div>

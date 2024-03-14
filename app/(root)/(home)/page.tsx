@@ -405,7 +405,7 @@ const Home = () => {
                 </h3>
               </div>
             </div>
-            <div className="basis-1/3 group pr-3 pl-2 mb-12">
+            <div className="basis-1/3 group pr-3 pl-3 mb-12">
               <div className="overflow-hidden">
                 <Image
                   src={homeblog2}
@@ -766,6 +766,7 @@ const Home = () => {
                 <div className="mb-8">
                   <label>
                     <select className="h-12 px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] placeholder:text-base placeholder:text-background font-bold placeholder:font-normal">
+                      <option>---</option>
                       <option>Your Case Falls In</option>
                       <option>Family Law</option>
                       <option>Child Custody</option>
@@ -786,7 +787,7 @@ const Home = () => {
                     <input
                       type="button"
                       value="Contact Us"
-                      className="text-base font-bold bg-primary-main uppercase text-white border-[1px] px-7 py-[14px] hover:border-primary-main hover:bg-white hover:text-primary-main"
+                      className="text-base font-bold bg-primary-main uppercase text-white border-[1px] px-7 py-[14px] hover:border-primary-main hover:bg-white hover:text-primary-main transition-colors ease-in duration-300"
                     />
                   </label>
                 </div>

@@ -28,10 +28,13 @@ import {
   faCircleQuestion,
   faFax,
   faLocationDot,
+  faGraduationCap,
+  faFaceSmile,
+  faVolumeHigh,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faFacebook, faChevronDown, faChevronRight, faTwitter, faLinkedin, faYoutube, faUser, faBagShopping, faTrophy, faHandshake, faDollar,
-  faThumbsUp, faPhone, faLink, faMugHot, faSuitcase, faScaleBalanced, faChild, faCar, faSterlingSign, faPrint,  faFutbol, faTruckMedical, faCircleQuestion, faFax, faLocationDot);
+  faThumbsUp, faPhone, faLink, faMugHot, faSuitcase, faScaleBalanced, faChild, faCar, faSterlingSign, faPrint,  faFutbol, faTruckMedical, faCircleQuestion, faFax, faLocationDot, faGraduationCap, faFaceSmile, faVolumeHigh);
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],
