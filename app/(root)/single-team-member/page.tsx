@@ -1,7 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Image from "next/image";
-import singlepabanner from "@/public/assets/single-practice-banner.jpg";
+import singleteambanner from "@/public/assets/single-team-members-banner.jpg";
+import homefirmimage from "@/public/assets/home-member1.jpg";
+import Link from "next/link";
 import paimage1 from "@/public/assets/pa-img-1.jpg";
 import paimagetopcontent from "@/public/assets/single-pa-top-content.jpg";
 import SecondaryButtonCustom from "@/components/global/secondary-button";
@@ -16,102 +18,64 @@ const page = () => {
 
       <div className="py-[70px] relative overflow-hidden before:bg-background before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
       <Image
-          src={singlepabanner}
+          src={singleteambanner}
           alt="Single Practice Arae Banner"
           fill={true}
           className="object-cover"
         />
         <div className="container relative z-[3]">
-          <h1 className="text-[40px] text-white font-bold text-center">FAMILY LAW</h1>
+          <h1 className="text-[40px] text-white font-bold text-center">ROBERT DARREN</h1>
         </div>
       </div>
-      <div className="container py-24">
-        <div className="flex gap-10">
-          <div className="basis-4/6">
-            <h3 className="text-[40px] pb-4 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
-            Overview
-            </h3>
-            <p className="text-base mb-5 text-[#333]">Family law involves a range of matters that are usually very personal, unique and emotionally challenging. Decisions involving your children and your financial well-being can be complex and nuanced and the results can last a lifetime. In these situations, you need more than just an attorney who has experience and knowledge of the law. You need someone who will provide you with guidance, creative thinking, and who understands the big picture and the impact your decisions will have on you.</p>
-            <p className="text-base mb-5 text-[#333]">The family law attorneys at lawyero are committed to providing our clients with the skill and expertise necessary to meet the client’s objectives and goalswhile providing a trusted source of representation. We are responsive to our clients’ needs and we pride ourselves on our attentiveness and availability to handle client matters with care, respect and sensitivity.</p>
-          </div>
-          <div className="basis-1/3">
+      <div className="container pt-20 pb-20">
+        <div className="flex gap-8">
+        <div className="basis-[30%]">
             <Image
-                src={paimage1}
-                alt="Practice Area Image"
-                className="w-full rounded"
-              />
+              src={homefirmimage}
+              alt="Home Firm Image"
+              className="rounded-md"
+            />
+            <ul className="flex justify-end items-center">
+                <li className="w-8 ml-3">
+                  <Link href="#">
+                    <FontAwesomeIcon className="text-background" icon={["fab", "facebook-square"]} />
+                  </Link>
+                </li>
+                <li className="w-8 ml-3">
+                  <Link href="#">
+                    <FontAwesomeIcon className="text-background" icon={["fab", "twitter-square"]} />
+                  </Link>
+                </li>
+                <li className="w-8 ml-3">
+                  <Link href="#">
+                    <FontAwesomeIcon className="text-background" icon={["fab", "linkedin-in"]} />
+                  </Link>
+                </li>
+                <li className="w-8 ml-3">
+                  <Link href="#">
+                    <FontAwesomeIcon className="text-background" icon={["fab", "youtube-square"]} />
+                  </Link>
+                </li>
+              </ul>
           </div>
-        </div>
-      </div>
-      <div className="bg-primary-main py-6">
-        <div className="container">
-          <div className="flex items-center">
-            <div className="basis-1/2">
-              <h3 className="text-xl text-white">
-                Get the consultation For Most Complex Legal Issues.
-              </h3>
-            </div>
-            <div className="basis-1/2 text-right">
-              <SecondaryButtonCustom href="#" text="Contact Us" />
+          <div className="basis-[70%]">
+          <h3 className="text-[32px] pb-3 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+            About Attorney</h3>
+            <div className="text-base text-[#333]">
+              <p className="mb-6">
+              Robert has been practicing law for last 13 years and have been very successful in getting his clients the protection within the jurisdictions of Law.
+              </p>
+              <p className="mb-6">
+              Robert earned his Juris Doctorate from Villanova University School of Law in Villanova, Pennsylvania in 2001.  He earned his undergraduate degree from Denison University in 1998, having studied Philosophy with additional emphasis in ancient political thought.  While at Villanova University School of Law, Robert served as a summer associate at Greenberg Traurig in Los Angeles, California as well as the Editor of Outside Articles of the Villanova University School of Law Environmental Law Journal.
+              </p>
+              <p className="mb-6">
+              Mr. Robert is a firm believer of the fact that in order to be able to succeed in this industry you have to dedicate your time, work and emotions for the clients to get the best result out and keeping the clients in a state of mind that they ca
+              </p>
+              <p className="mb-6">
+              He has helped his clients recover over $150,000 in various cases and has nearly perfect success ratio.
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="flex gap-8">
-        <div className="basis-1/2 relative">
-          <Image
-            src={paimagetopcontent}
-            alt="Single Practice Area Top"
-            fill={true}
-            className="object-cover"
-          />
-        </div>
-        <div className="basis-1/2 pt-24 pb-16 pl-11 pr-20">
-          <h3 className="text-[40px] pb-3 mb-7 font-bold text-background relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1] pr-6">
-          History In Family Law Cases
-          </h3>
-          <p className="text-base leading-6 text-[#333] mb-5">For almost 20 years, Lawyero family law attorneys have helped our clients with the following matters</p>
-          <ul>
-            <li className="text-base leading-6 text-[#313131] py-4 pl-5 relative border-b-[1px] border-[#313131]">
-            <FontAwesomeIcon
-              icon="chevron-right"
-              className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%] font-bold"
-            />
-              Divorce</li>
-              <li className="text-base leading-6 text-[#313131] py-4 pl-5 relative border-b-[1px] border-[#313131]">
-            <FontAwesomeIcon
-              icon="chevron-right"
-              className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%]"
-            />
-              Financial Matters
-            </li>
-            <li className="text-base leading-6 text-[#313131] py-4 pl-5 relative border-b-[1px] border-[#313131]">
-            <FontAwesomeIcon
-              icon="chevron-right"
-              className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%]"
-            />
-            Agreements</li>
-            <li className="text-base leading-6 text-[#313131] py-4 pl-5 relative border-b-[1px] border-[#313131]">
-            <FontAwesomeIcon
-              icon="chevron-right"
-              className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%]"
-            />
-            Spouse Abuse</li>
-            <li className="text-base leading-6 text-[#313131] py-4 pl-5 relative border-b-[1px] border-[#313131]">
-            <FontAwesomeIcon
-              icon="chevron-right"
-              className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%]"
-            />
-            Childern</li>
-            <li className="text-base leading-6 text-[#313131] py-4 pl-5 relative mb-2">
-            <FontAwesomeIcon
-              icon="chevron-right"
-              className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%]"
-            />
-            Martial Matters</li>
-          </ul>
-          <p className="text-base leading-6 text-[#333] font-bold mb-5">Contact us today for an initial case evaluation. You will speak with one of our attorneys to discuss your situation. You will receive information concerning your particular matter and you can evaluate whether our attorney fits your needs and comfort level. You can decide whether our attorney is right for you. Contact us today at 1911-462-242.</p>
         </div>
       </div>
 
