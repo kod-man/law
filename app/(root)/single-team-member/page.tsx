@@ -4,6 +4,8 @@ import Image from "next/image";
 import singleteambanner from "@/public/assets/single-team-members-banner.jpg";
 import homefirmimage from "@/public/assets/home-member1.jpg";
 import Link from "next/link";
+import library from "@/public/assets/library-home.jpg";
+import libraryicon from "@/public/assets/library-icon.svg";
 import paimage1 from "@/public/assets/pa-img-1.jpg";
 import paimagetopcontent from "@/public/assets/single-pa-top-content.jpg";
 import SecondaryButtonCustom from "@/components/global/secondary-button";
@@ -35,25 +37,25 @@ const page = () => {
               alt="Home Firm Image"
               className="rounded-md"
             />
-            <ul className="flex justify-end items-center">
+            <ul className="flex justify-center items-center py-5">
                 <li className="w-8 ml-3">
                   <Link href="#">
-                    <FontAwesomeIcon className="text-background" icon={["fab", "facebook-square"]} />
+                    <FontAwesomeIcon className="text-background hover:text-primary-main hover:transition-all" icon={["fab", "facebook-square"]} />
                   </Link>
                 </li>
                 <li className="w-8 ml-3">
                   <Link href="#">
-                    <FontAwesomeIcon className="text-background" icon={["fab", "twitter-square"]} />
+                    <FontAwesomeIcon className="text-background hover:text-primary-main hover:transition-all" icon={["fab", "twitter-square"]} />
                   </Link>
                 </li>
                 <li className="w-8 ml-3">
                   <Link href="#">
-                    <FontAwesomeIcon className="text-background" icon={["fab", "linkedin-in"]} />
+                    <FontAwesomeIcon className="text-background hover:text-primary-main hover:transition-all" icon={["fab", "linkedin-in"]} />
                   </Link>
                 </li>
                 <li className="w-8 ml-3">
                   <Link href="#">
-                    <FontAwesomeIcon className="text-background" icon={["fab", "youtube-square"]} />
+                    <FontAwesomeIcon className="text-background hover:text-primary-main hover:transition-all" icon={["fab", "youtube-square"]} />
                   </Link>
                 </li>
               </ul>
@@ -78,6 +80,190 @@ const page = () => {
           </div>
         </div>
       </div>
+
+      <div className="bg-black pt-28 pb-20 relative overflow-hidden before:bg-[#1a2431] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
+        <Image
+            src={libraryicon}
+            alt="library-icon"
+            className="absolute top-0 z-[3] w-full rotate-180"
+          />
+        <Image
+          src={library}
+          alt="library"
+          fill={true}
+          className="object-cover"
+        />
+        <div className="container relative z-[3]">
+          <div className="flex justify-between">
+            <div className="flex items-center">
+              <FontAwesomeIcon
+                icon="hand-scissors"
+                className="w-[75px] h-[75px] border-2 p-4 border-white text-white"
+              />
+              <h3 className="text-3xl font-bold mt-5 mb-3 text-white pl-8">
+                <span className="block">20,000+</span> Cases Solved
+              </h3>
+            </div>
+            <div className="flex items-center">
+              <FontAwesomeIcon
+                icon="smile"
+                className="w-[75px] h-[75px] border-2 p-4 border-white text-white"
+              />
+              <h3 className="text-3xl font-bold mt-5 mb-3 text-white pl-8">
+                <span className="block">2,000+</span> Happy Clients
+              </h3>
+            </div>
+            <div className="flex items-center">
+              <FontAwesomeIcon
+                icon="handshake"
+                className="w-[75px] h-[75px] border-2 p-4 border-white text-white"
+              />
+              <h3 className="text-3xl font-bold mt-5 mb-3 text-white pl-8">
+                <span className="block">98%</span> Success Rate
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-primary-main py-6">
+        <div className="container">
+          <div className="flex items-center">
+            <div className="basis-1/2">
+              <h3 className="text-xl text-white">
+                Get the consultation For Most Complex Legal Issues.
+              </h3>
+            </div>
+            <div className="basis-1/2 text-right">
+              <SecondaryButtonCustom href="#" text="Contact Us" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div className="overflow-hidden">
+        <div className="container">
+          <div className="flex">
+            <div className="basis-2/5 pt-24 pb-16 pl-12 pr-14 relative before:z-[-1] before:top-0 before:absolute before:bg-grey before:content-[''] before:h-full before:w-[50vw] before:right-0">
+              <h3 className="text-[32px] pb-4 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+                Attorney Background
+              </h3>
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-3 text-[#333]">
+                  <span className="inline-block text-primary-main">Attorney</span> Of Law
+                </h3>
+                <ol>
+                  <li className="text-base text-[#333] mb-3">1. Texas Southern University – Thurgood Marshall School of Law, Juris Doctor (J.D.), Houston, TX</li>
+                  <li className="text-base text-[#333] mb-3">2. Paul Quinn College, Bachelor of Science (B.S.), Dallas, TX</li>
+                </ol>
+              </div>
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-3 text-[#333]">
+                  <span className="inline-block text-primary-main">Admission</span> Bar
+                </h3>
+                <ol>
+                  <li className="text-base text-[#333] mb-3">1. State Bar of Texas, 2010</li>
+                  <li className="text-base text-[#333] mb-3">2. U.S. District Court – Northern District of Texas</li>
+                </ol>
+              </div>
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-3 text-[#333]">
+                  <span className="inline-block text-primary-main">Bar </span>Membership
+                </h3>
+                <ol>
+                  <li className="text-base text-[#333] mb-3">1. Texas Trial Lawyer’s Association</li>
+                  <li className="text-base text-[#333] mb-3">2. Dallas Association of Young Lawyers</li>
+                </ol>
+              </div>
+            </div>
+            <div className="basis-3/5 pt-24 pb-16 pl-12 pr-11 relative before:z-[-1] before:top-0 before:absolute before:bg-white before:content-[''] before:h-full before:w-[80vw] before:left-0">
+              <h3 className="text-[32px] pb-4 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+                Practice Areas
+              </h3>
+              <div className="flex mb-8 pr-20">
+            <div className="flex-shrink-0 pr-7">
+              <FontAwesomeIcon
+                icon="scale-balanced"
+                className="w-14 h-14 border-2 p-3 border-background text-background"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-2 text-[#333]">
+                Family Law
+              </h3>
+              <p className="text-base">
+                Robert has been working as a family law attorney for more than 10 years and have solved tons of cases with his expertise.
+              </p>
+            </div>
+          </div>
+          <div className="flex mb-8 pr-20">
+            <div className="flex-shrink-0 pr-7">
+              <FontAwesomeIcon
+                icon="child"
+                className="w-14 h-14 border-2 p-3 border-background text-background"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-2 text-[#333]">
+              Child Custody
+              </h3>
+              <p className="text-base">
+              One of the most difficult and emotional area of law is related to the children law. Robert uses his experience to get these matters solved.
+              </p>
+            </div>
+          </div>
+          <div className="flex mb-8 pr-20">
+            <div className="flex-shrink-0 pr-7">
+              <FontAwesomeIcon
+                icon="sterling-sign"
+                className="w-14 h-14 border-2 p-3 border-background text-background"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-2 text-[#333]">
+                Business Law
+              </h3>
+              <p className="text-base">
+              Business laws are sometimes quite complex to figure out because of things become complicated when not sure about the laws. Robert is best when it comes to business law.
+              </p>
+            </div>
+          </div>
+          <div className="flex mb-8 pr-20">
+            <div className="flex-shrink-0 pr-7">
+              <FontAwesomeIcon
+                icon="volume-high"
+                className="w-14 h-14 border-2 p-3 border-background text-background"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-2 text-[#333]">
+                Emergency Law
+              </h3>
+              <p className="text-base">
+              Robert has done well in the past 10 years tackling with emergency situations and have successfully taken clients case which lead them to protection under law.
+              </p>
+            </div>
+          </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-primary-main">
+        <div className="container">
+          <div className="py-[75px] px-12 relative">
+            <FontAwesomeIcon
+              icon="quote-left"
+              className="text-white absolute w-9 z-0 opacity-40 top-[60px]"
+            />
+            <p className="text-xl	italic text-white">I was struggling to get my legal issues sorted out before i met Mr. John at Lawyero. I was amazed by his attitude and attention to detail and he sorted my case in no time understanding what i need to get done. Thankyou Mr. John.</p>
+          </div>
+        </div>
+      </div>
+
+
+
 
 
       <div className="overflow-hidden">

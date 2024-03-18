@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/shared/header";
 import Footer from "@/components/shared/footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faFacebook, faTwitter, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTwitter, faLinkedin, faYoutube, faFacebookSquare, faYoutubeSquare, faTwitterSquare,  faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import {
   faChevronDown,
   faChevronRight,
@@ -31,10 +31,12 @@ import {
   faGraduationCap,
   faFaceSmile,
   faVolumeHigh,
+  faHandScissors,
+  faQuoteLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faFacebook, faChevronDown, faChevronRight, faTwitter, faLinkedin, faYoutube, faUser, faBagShopping, faTrophy, faHandshake, faDollar,
-  faThumbsUp, faPhone, faLink, faMugHot, faSuitcase, faScaleBalanced, faChild, faCar, faSterlingSign, faPrint,  faFutbol, faTruckMedical, faCircleQuestion, faFax, faLocationDot, faGraduationCap, faFaceSmile, faVolumeHigh);
+  faThumbsUp, faPhone, faLink, faMugHot, faSuitcase, faScaleBalanced, faChild, faCar, faSterlingSign, faPrint,  faFutbol, faTruckMedical, faCircleQuestion, faFax, faLocationDot, faGraduationCap, faFaceSmile, faVolumeHigh, faFacebookSquare, faYoutubeSquare, faTwitterSquare, faLinkedinIn, faHandScissors, faQuoteLeft);
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],
