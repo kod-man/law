@@ -6,8 +6,6 @@ import homefirmimage from "@/public/assets/home-member1.jpg";
 import Link from "next/link";
 import library from "@/public/assets/library-home.jpg";
 import libraryicon from "@/public/assets/library-icon.svg";
-import paimage1 from "@/public/assets/pa-img-1.jpg";
-import paimagetopcontent from "@/public/assets/single-pa-top-content.jpg";
 import SecondaryButtonCustom from "@/components/global/secondary-button";
 
 

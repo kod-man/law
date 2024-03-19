@@ -33,10 +33,11 @@ import {
   faVolumeHigh,
   faHandScissors,
   faQuoteLeft,
+  faExclamationCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faFacebook, faChevronDown, faChevronRight, faTwitter, faLinkedin, faYoutube, faUser, faBagShopping, faTrophy, faHandshake, faDollar,
-  faThumbsUp, faPhone, faLink, faMugHot, faSuitcase, faScaleBalanced, faChild, faCar, faSterlingSign, faPrint,  faFutbol, faTruckMedical, faCircleQuestion, faFax, faLocationDot, faGraduationCap, faFaceSmile, faVolumeHigh, faFacebookSquare, faYoutubeSquare, faTwitterSquare, faLinkedinIn, faHandScissors, faQuoteLeft);
+  faThumbsUp, faPhone, faLink, faMugHot, faSuitcase, faScaleBalanced, faChild, faCar, faSterlingSign, faPrint,  faFutbol, faTruckMedical, faCircleQuestion, faFax, faLocationDot, faGraduationCap, faFaceSmile, faVolumeHigh, faFacebookSquare, faYoutubeSquare, faTwitterSquare, faLinkedinIn, faHandScissors, faQuoteLeft, faExclamationCircle);
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],

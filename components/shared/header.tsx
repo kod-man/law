@@ -84,12 +84,12 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/practice-area/" className="px-5 py-4 block">
+                        <Link href="/practice-areas-2-column/" className="px-5 py-4 block">
                           2 Column Layout
                         </Link>
                       </li>
                       <li>
-                        <Link href="/practice-area-var-column/" className="px-5 py-4 block">
+                        <Link href="/practice-areas-3-column-layout/" className="px-5 py-4 block">
                           3 Column Layout
                         </Link>
                       </li>
@@ -118,7 +118,7 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="group">
+                  <li className="group relative">
                     <Link
                       href="#"
                       className="py-7 block relative after:transition-transform duration-300 ease-in-out after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main group-hover:after:scale-x-100"
@@ -130,11 +130,42 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/single-team-member/" className="px-5 py-4 block">
+                        <Link href="/faqs/" className="px-5 py-4 block">
                           Faqs
                         </Link>
                       </li>
+                      <li>
+                        <Link href="/404/" className="px-5 py-4 block">
+                          404 Page
+                        </Link>
+                      </li>
                     </ul>
+                  </li>
+                  <li className="group relative">
+                    <Link
+                      href="#"
+                      className="py-7 block relative after:transition-transform duration-300 ease-in-out after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main group-hover:after:scale-x-100"
+                    >
+                      BLog
+                    </Link>
+                    <ul
+                      className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                      role="list"
+                    >
+                      <li>
+                        <Link href="/blog/" className="px-5 py-4 block">
+                          Blog With Sidebar
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="group relative">
+                    <Link
+                      href="/contact/"
+                      className="py-7 block relative after:transition-transform duration-300 ease-in-out after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main group-hover:after:scale-x-100"
+                    >
+                      Contact
+                    </Link>
                   </li>
                   
                       
