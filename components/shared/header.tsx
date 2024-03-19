@@ -157,6 +157,11 @@ const Header = () => {
                           Blog With Sidebar
                         </Link>
                       </li>
+                      <li>
+                        <Link href="/blog-grid/" className="px-5 py-4 block">
+                          Blog Grid
+                        </Link>
+                      </li>
                     </ul>
                   </li>
                   <li className="group relative">

@@ -3,7 +3,12 @@ import homeblog2 from "@/public/assets/home-blog-2.jpg";
 import homeblog4 from "@/public/assets/home-blog-4.jpg";
 import homeblog5 from "@/public/assets/home-blog-5.jpg";
 import homeblog6 from "@/public/assets/home-blog-6.jpg";
-
+import sideblog1 from "@/public/assets/blog-side-bar-1.jpg";
+import sideblog2 from "@/public/assets/blog-side-bar-2.jpg";
+import sideblog3 from "@/public/assets/blog-side-bar-3.jpg";
+import sideblog4 from "@/public/assets/blog-side-bar-4.jpg";
+import sideblog5 from "@/public/assets/blog-side-bar-5.jpg";
+import sideblog6 from "@/public/assets/blog-side-bar-6.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -499,9 +504,7 @@ const page = () => {
                     </Link>
                   </li>
                 </ul>
-              </div>
-              <div className="container"></div>
-              
+              </div>              
               <div className="mt-8">
                 <h3 className="text-[32px] pb-3 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
                   Recent <span className="text-background">Tags</span>
@@ -530,7 +533,159 @@ const page = () => {
                   </li>
                 </ul>
               </div>
+              <div className="mt-12">
+                <h3 className="text-[32px] pb-3 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+                  About <span className="text-background">Lawyero</span>
+                </h3>
+                <p className="text-base text-[#333]">We never take that trust for granted. We learn our clients’ needs and expectations; we communicate openly; we follow up frequently; we respond timely; and we are always available. In short, we develop a relationship with our clients. Our clients’ goals become our goals. We provide aggressive and professional legal representation to every client in order to ensure his or her issue is resolved in the best possible manner.</p>
+              </div>
+
+              <div className="mt-12">
+                <h3 className="text-[32px] pb-3 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+                  Browse <span className="text-background">Our Gallery</span>
+                </h3>
+                <ul className="flex flex-wrap justify-between">
+                  <li className="basis-[30%] mb-2">
+                    <Link
+                    className="inline-block h-[105px] w-[105px]" 
+                    href="#">
+                      <Image
+                        src={sideblog1}
+                        alt="BLog Post Img"
+                        className="w-full h-full"
+                      />
+                    </Link>
+                  </li>
+                  <li className="basis-[30%] mb-2">
+                    <Link 
+                    className="inline-block h-[105px] w-[105px]" 
+                    href="#">
+                      <Image
+                        src={sideblog2}
+                        alt="BLog Post Img"
+                        className="w-full h-full"
+                      />
+                    </Link>
+                  </li>
+                  <li className="basis-[30%] mb-2">
+                    <Link
+                    className="inline-block h-[105px] w-[105px]"  
+                    href="#">
+                      <Image
+                        src={sideblog3}
+                        alt="BLog Post Img"
+                        className="w-full h-full"
+                      />
+                    </Link>
+                  </li>
+                  <li className="basis-[30%] mb-2">
+                    <Link
+                    className="inline-block h-[105px] w-[105px]" 
+                    href="#">
+                      <Image
+                        src={sideblog4}
+                        alt="BLog Post Img"
+                        className="w-full h-full"
+                      />
+                    </Link>
+                  </li>
+                  <li className="basis-[30%] mb-2">
+                    <Link
+                    className="inline-block h-[105px] w-[105px]" 
+                    href="#">
+                      <Image
+                        src={sideblog5}
+                        alt="BLog Post Img"
+                        className="w-full h-full"
+                      />
+                    </Link>
+                  </li>
+                  <li className="basis-[30%] mb-2">
+                    <Link
+                    className="inline-block h-[105px] w-[105px]" 
+                    href="#">
+                      <Image
+                        src={sideblog6}
+                        alt="BLog Post Img"
+                        className="w-full h-full"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
               
+              <div className="mt-10">
+                <h3 className="text-[32px] pb-3 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+                  Archives
+                </h3>
+                <ul>
+                  <li className="py-4 pl-5 relative">
+                    <Link href="#"
+                    className="text-base leading-6 text-[#313131] hover:text-primary-main"
+                    >
+                      <FontAwesomeIcon
+                        icon="chevron-right"
+                        className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%] font-bold"
+                      />
+                        December 2024
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="mt-10">
+                <h3 className="text-[32px] pb-3 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+                  Meta <span className="text-background">Menu</span>
+                </h3>
+                <ul>
+                  <li className="py-4 pl-5 relative">
+                    <Link href="#"
+                    className="text-base leading-6 text-[#313131] hover:text-primary-main"
+                    >
+                      <FontAwesomeIcon
+                        icon="chevron-right"
+                        className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%] font-bold"
+                      />
+                        Log In
+                    </Link>
+                  </li>
+
+                  <li className="py-4 pl-5 relative border-b-[1px] border-[#313131]">
+                    <Link href="#"
+                    className="text-base leading-6 text-[#313131] hover:text-primary-main"
+                    >
+                      <FontAwesomeIcon
+                        icon="chevron-right"
+                        className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%] font-bold"
+                      />
+                        Entries RSS
+                    </Link>
+                  </li>
+
+                  <li className="py-4 pl-5 relative border-b-[1px] border-[#313131]">
+                    <Link href="#"
+                    className="text-base leading-6 text-[#313131] hover:text-primary-main"
+                    >
+                      <FontAwesomeIcon
+                        icon="chevron-right"
+                        className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%] font-bold"
+                      />
+                        Comments RSS
+                    </Link>
+                  </li>
+
+                  <li className="py-4 pl-5 relative border-b-[1px] border-[#313131]">
+                    <Link href="#"
+                    className="text-base leading-6 text-[#313131] hover:text-primary-main"
+                    >
+                      <FontAwesomeIcon
+                        icon="chevron-right"
+                        className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%] font-bold"
+                      />
+                        WordPress.Org
+                    </Link>
+                  </li>
+                </ul>
+              </div>
 
 
 
