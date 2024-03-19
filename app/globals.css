@@ -87,6 +87,6 @@
     @apply text-[40px] text-primary-main font-bold relative mb-10 pb-2 text-center before:absolute before:bottom-0 before:left-0 before:m-auto before:right-0 before:bg-[#313131] before:w-[150px] before:h-[3px] after:absolute after:bottom-0 after:left-0 after:m-auto after:right-0 after:bg-primary-main after:w-[70px] after:h-[3px]
   }
   .secondary-button{
-    @apply inline-block py-[13px] px-7 border-2 border-transparent font-bold uppercase bg-background transition-all hover:pr-11 text-white relative hover:bg-transparent hover:text-background hover:border-background;
+    @apply inline-block py-[11px] px-7 border-2 border-transparent font-bold uppercase bg-background transition-all hover:pr-11 text-white relative hover:bg-transparent hover:text-background hover:border-background;
   }
 }
