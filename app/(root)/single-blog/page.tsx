@@ -80,15 +80,61 @@ const page = () => {
                   <div>
                     <h3 className="text-2xl mb-4 text-[#333] font-bold">Tags:</h3>
                     <ul className="flex">
-                      <li><Link href="#" className="inline-block text-base leading-[1.62] font-semibold hover:text-primary-main hover:underline mr-3 pr-3 relative ">Accident</Link></li>
-                      <li><Link href="#" className="inline-block text-base leading-[1.62] font-semibold hover:text-primary-main hover:underline mr-3 pr-3 relative ">Attorney</Link></li>
+                      <li><Link href="#" className="inline-block text-base leading-[1.62] font-semibold hover:text-primary-main hover:underline mr-3 pr-3 relative before:absolute before:top-[11px] before:-right-[2.5px] before:h-[5px] before:bg-primary-main before:rounded-full before:w-[5px] before:content-['']">Accident</Link></li>
+                      <li><Link href="#" className="inline-block text-base leading-[1.62] font-semibold hover:text-primary-main hover:underline mr-3 pr-3 relative before:absolute before:top-[11px] before:-right-[2.5px] before:h-[5px] before:bg-primary-main before:rounded-full before:w-[5px] before:content-['']">Attorney</Link></li>
                       <li><Link href="#" className="inline-block text-base leading-[1.62] font-semibold hover:text-primary-main hover:underline">Law</Link></li>
                     </ul>
                     <Link href="#" className="text-base text-white capitalize bg-background py-3 px-4 inline-block font-semibold mt-6">Prev Post</Link>
                   </div>
                 </div>
               </div>
-              
+              <div>
+                <h3 className="text-[32px] pb-3 mb-7 font-bold text-background relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+                  Leave A Reply
+                </h3>
+                <p className="text-base text-[#333] mb-5">Your email address will not be published. Required fields are marked *</p>
+                <form action="">
+                  <label htmlFor="tmessage" className="text-base leading-[1.62] font-bold text-[#333]">Comment
+                    <textarea
+                      id="tmessage"
+                      className="px-4 py-2 w-full text-background border-[2px] border-[#e8e6e6] h-24 resize-none mb-6 mt-1"
+                    ></textarea>
+                  </label>
+                  <label htmlFor="name" className="text-base leading-[1.62] font-bold text-[#333]">Name *
+                    <input
+                      id="name"
+                      className="px-4 py-2 w-full text-background border-[2px] border-[#e8e6e6] mt-1 mb-6"
+                    ></input>
+                  </label>
+                  <label htmlFor="email" className="text-base leading-[1.62] font-bold text-[#333]">Email *
+                    <input
+                      id="email"
+                      className="px-4 py-2 w-full text-background border-[2px] border-[#e8e6e6] mt-1 mb-6"
+                    ></input>
+                  </label>
+                  <label htmlFor="website" className="text-base leading-[1.62] font-bold text-[#333]">Website
+                    <input
+                      id="website"
+                      className="px-4 py-2 w-full text-background border-[2px] border-[#e8e6e6] mt-1 mb-6"
+                    ></input>
+                  </label>
+                  <div className="pt-3">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="inline-block text-base text-[#333] leading-[1.62] font-bold pl-3">Save my name, email, and website in this browser for the next time I comment.</span>
+                    </label>
+                  </div>
+                  <div className="pt-6">
+                    <label htmlFor="submit">
+                      <input
+                        type="button"
+                        value="Post Comment"
+                        className="text-base font-bold bg-primary-main uppercase text-white border-[1px] px-7 py-4 hover:border-primary-main hover:bg-white hover:text-primary-main transition-colors ease-in duration-300"
+                      />
+                    </label>
+                  </div>
+                </form>
+              </div>
             </div>
             <div className="basis-[30%]">
               <div className="relative">
@@ -359,7 +405,7 @@ const page = () => {
                   Meta <span className="text-background">Menu</span>
                 </h3>
                 <ul>
-                  <li className="py-4 pl-5 relative">
+                  <li className="py-4 pl-5 relative border-b-[1px] border-[#313131]">
                     <Link href="#"
                     className="text-base leading-6 text-[#313131] hover:text-primary-main"
                     >

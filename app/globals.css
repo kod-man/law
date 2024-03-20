@@ -89,4 +89,4 @@
   .secondary-button{
     @apply inline-block py-[11px] px-7 border-2 border-transparent font-bold uppercase bg-background transition-all hover:pr-11 text-white relative hover:bg-transparent hover:text-background hover:border-background;
   }
-}
+}    

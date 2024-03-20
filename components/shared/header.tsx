@@ -53,13 +53,14 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/" className="px-5 py-4 block hover:text-primary-main relative group">
-                          <FontAwesomeIcon icon="chevron-right" className="absolute h-[10px] w-[10px] top-1/2 opacity-0 right-0 -translate-y-1/2 group-hover:right-5 group-hover:opacity-100" />
+                        <Link href="/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                          <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           Home 1
                         </Link>
                       </li>
                       <li>
-                        <Link href="/home2/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/home2/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           Home2
                         </Link>
                       </li>
@@ -85,17 +86,20 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/practice-areas-2-column/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/practice-areas-2-column/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           2 Column Layout
                         </Link>
                       </li>
                       <li>
-                        <Link href="/practice-areas-3-column-layout/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/practice-areas-3-column-layout/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           3 Column Layout
                         </Link>
                       </li>
                       <li>
-                        <Link href="/single-practice-area/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/single-practice-area/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           Individual Practice Area
                         </Link>
                       </li>
@@ -113,7 +117,8 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/single-team-member/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/single-team-member/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           Robert Darren
                         </Link>
                       </li>
@@ -131,12 +136,14 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/faqs/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/faqs/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           Faqs
                         </Link>
                       </li>
                       <li>
-                        <Link href="/404/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/404/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           404 Page
                         </Link>
                       </li>
@@ -154,23 +161,27 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/blog/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/blog/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           Blog With Sidebar
                         </Link>
                       </li>
                       <li>
-                        <Link href="/blog-full-page/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/blog-full-page/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           Blog Full page
                         </Link>
                       </li>
                       
                       <li>
-                        <Link href="/blog-chess-style/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/blog-chess-style/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           Blog Chess Style
                         </Link>
                       </li>
                       <li>
-                        <Link href="/blog-grid/" className="px-5 py-4 block hover:text-primary-main">
+                        <Link href="/blog-grid/" className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7">
+                        <FontAwesomeIcon icon="chevron-right" className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300" />
                           Blog Grid
                         </Link>
                       </li>
