@@ -21,13 +21,11 @@ const page = () => {
           <div className="flex flex-wrap">
               <div className="basis-1/2 pr-5">
                 <div className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
-                  <div className="overflow-hidden">
                     <Image
                       src={homeblog1}
                       alt="Home BLog Post"
                       className=""
                     />
-                  </div>
                   <div className=" bg-white">
                     <h3 className="my-6">
                       <Link
@@ -77,13 +75,11 @@ const page = () => {
               </div>
               <div className="basis-1/2 pl-5">
                 <div className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
-                  <div className="overflow-hidden">
                     <Image
                       src={homeblog2}
                       alt="Home BLog Post"
                       className=""
                     />
-                  </div>
                   <div className=" bg-white">
                     <h3 className="my-6">
                       <Link
@@ -187,13 +183,11 @@ const page = () => {
               </div>
               <div className="basis-1/2 pl-5">
                 <div className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
-                  <div className="overflow-hidden">
                     <Image
                       src={homeblog4}
                       alt="Home BLog Post"
                       className=""
                     />
-                  </div>
                   <div className=" bg-white">
                     <h3 className="my-6">
                       <Link
@@ -243,13 +237,11 @@ const page = () => {
               </div>
               <div className="basis-1/2 pr-5">
                 <div className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
-                  <div className="overflow-hidden">
                     <Image
                       src={homeblog5}
                       alt="Home BLog Post"
                       className=""
                     />
-                  </div>
                   <div className=" bg-white">
                     <h3 className="my-6">
                       <Link
@@ -299,13 +291,11 @@ const page = () => {
               </div>
               <div className="basis-1/2 pl-5">
                 <div className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
-                  <div className="overflow-hidden">
                     <Image
                       src={homeblog6}
                       alt="Home BLog Post"
                       className=""
                     />
-                  </div>
                   <div className=" bg-white">
                     <h3 className="my-6">
                       <Link

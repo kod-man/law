@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/shared/header";
 import Footer from "@/components/shared/footer";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faFacebook, faTwitter, faLinkedin, faYoutube, faFacebookSquare, faYoutubeSquare, faTwitterSquare,  faLinkedinIn, faLess } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTwitter, faLinkedin, faYoutube, faFacebookSquare, faYoutubeSquare, faTwitterSquare,  faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import {
   faChevronDown,
   faChevronRight,

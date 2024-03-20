@@ -53,12 +53,13 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/" className="px-5 py-4 block">
+                        <Link href="/" className="px-5 py-4 block hover:text-primary-main relative group">
+                          <FontAwesomeIcon icon="chevron-right" className="absolute h-[10px] w-[10px] top-1/2 opacity-0 right-0 -translate-y-1/2 group-hover:right-5 group-hover:opacity-100" />
                           Home 1
                         </Link>
                       </li>
                       <li>
-                        <Link href="/home2/" className="px-5 py-4 block">
+                        <Link href="/home2/" className="px-5 py-4 block hover:text-primary-main">
                           Home2
                         </Link>
                       </li>
@@ -84,17 +85,17 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/practice-areas-2-column/" className="px-5 py-4 block">
+                        <Link href="/practice-areas-2-column/" className="px-5 py-4 block hover:text-primary-main">
                           2 Column Layout
                         </Link>
                       </li>
                       <li>
-                        <Link href="/practice-areas-3-column-layout/" className="px-5 py-4 block">
+                        <Link href="/practice-areas-3-column-layout/" className="px-5 py-4 block hover:text-primary-main">
                           3 Column Layout
                         </Link>
                       </li>
                       <li>
-                        <Link href="/single-practice-area/" className="px-5 py-4 block">
+                        <Link href="/single-practice-area/" className="px-5 py-4 block hover:text-primary-main">
                           Individual Practice Area
                         </Link>
                       </li>
@@ -112,7 +113,7 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/single-team-member/" className="px-5 py-4 block">
+                        <Link href="/single-team-member/" className="px-5 py-4 block hover:text-primary-main">
                           Robert Darren
                         </Link>
                       </li>
@@ -130,12 +131,12 @@ const Header = () => {
                       role="list"
                     >
                       <li>
-                        <Link href="/faqs/" className="px-5 py-4 block">
+                        <Link href="/faqs/" className="px-5 py-4 block hover:text-primary-main">
                           Faqs
                         </Link>
                       </li>
                       <li>
-                        <Link href="/404/" className="px-5 py-4 block">
+                        <Link href="/404/" className="px-5 py-4 block hover:text-primary-main">
                           404 Page
                         </Link>
                       </li>
@@ -146,19 +147,30 @@ const Header = () => {
                       href="#"
                       className="py-7 block relative after:transition-transform duration-300 ease-in-out after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main group-hover:after:scale-x-100"
                     >
-                      BLog
+                      Blog
                     </Link>
                     <ul
                       className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
                       role="list"
                     >
                       <li>
-                        <Link href="/blog/" className="px-5 py-4 block">
+                        <Link href="/blog/" className="px-5 py-4 block hover:text-primary-main">
                           Blog With Sidebar
                         </Link>
                       </li>
                       <li>
-                        <Link href="/blog-grid/" className="px-5 py-4 block">
+                        <Link href="/blog-full-page/" className="px-5 py-4 block hover:text-primary-main">
+                          Blog Full page
+                        </Link>
+                      </li>
+                      
+                      <li>
+                        <Link href="/blog-chess-style/" className="px-5 py-4 block hover:text-primary-main">
+                          Blog Chess Style
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/blog-grid/" className="px-5 py-4 block hover:text-primary-main">
                           Blog Grid
                         </Link>
                       </li>
