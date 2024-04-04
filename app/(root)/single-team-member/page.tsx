@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Image from "next/image";
 import singleteambanner from "@/public/assets/single-team-members-banner.jpg";
-import Link from "next/link";
 import library from "@/public/assets/library-home.jpg";
 import libraryicon from "@/public/assets/library-icon.svg";
 import SecondaryButtonCustom from "@/components/global/secondary-button";
