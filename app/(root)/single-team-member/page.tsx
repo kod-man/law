@@ -2,89 +2,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Image from "next/image";
 import singleteambanner from "@/public/assets/single-team-members-banner.jpg";
-import homefirmimage from "@/public/assets/home-member1.jpg";
 import Link from "next/link";
 import library from "@/public/assets/library-home.jpg";
 import libraryicon from "@/public/assets/library-icon.svg";
 import SecondaryButtonCustom from "@/components/global/secondary-button";
-
-
-
+import InnerBanner from "@/components/global/inner-banner";
+import MemberDetails from "@/components/team/single/MemberDetails";
 
 const page = () => {
   return (
-    <> 
-      
+    <>
+      <InnerBanner text="Robert Darren" image={singleteambanner} />
 
-      <div className="py-[70px] relative overflow-hidden before:bg-background before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
-      <Image
-          src={singleteambanner}
-          alt="Single Practice Arae Banner"
-          fill={true}
-          className="object-cover"
-        />
-        <div className="container relative z-[3]">
-          <h1 className="text-[40px] text-white font-bold text-center">ROBERT DARREN</h1>
-        </div>
-      </div>
-      <div className="container pt-20 pb-20">
-        <div className="flex gap-8">
-        <div className="basis-[30%]">
-            <Image
-              src={homefirmimage}
-              alt="Home Firm Image"
-              className="rounded-md"
-            />
-            <ul className="flex justify-center items-center py-5">
-                <li className="w-8 ml-3">
-                  <Link href="#">
-                    <FontAwesomeIcon className="text-background hover:text-primary-main hover:transition-all" icon={["fab", "facebook-square"]} />
-                  </Link>
-                </li>
-                <li className="w-8 ml-3">
-                  <Link href="#">
-                    <FontAwesomeIcon className="text-background hover:text-primary-main hover:transition-all" icon={["fab", "twitter-square"]} />
-                  </Link>
-                </li>
-                <li className="w-8 ml-3">
-                  <Link href="#">
-                    <FontAwesomeIcon className="text-background hover:text-primary-main hover:transition-all" icon={["fab", "linkedin-in"]} />
-                  </Link>
-                </li>
-                <li className="w-8 ml-3">
-                  <Link href="#">
-                    <FontAwesomeIcon className="text-background hover:text-primary-main hover:transition-all" icon={["fab", "youtube-square"]} />
-                  </Link>
-                </li>
-              </ul>
-          </div>
-          <div className="basis-[70%]">
-          <h3 className="text-[32px] pb-3 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
-            About Attorney</h3>
-            <div className="text-base text-[#333]">
-              <p className="mb-6">
-              Robert has been practicing law for last 13 years and have been very successful in getting his clients the protection within the jurisdictions of Law.
-              </p>
-              <p className="mb-6">
-              Robert earned his Juris Doctorate from Villanova University School of Law in Villanova, Pennsylvania in 2001.  He earned his undergraduate degree from Denison University in 1998, having studied Philosophy with additional emphasis in ancient political thought.  While at Villanova University School of Law, Robert served as a summer associate at Greenberg Traurig in Los Angeles, California as well as the Editor of Outside Articles of the Villanova University School of Law Environmental Law Journal.
-              </p>
-              <p className="mb-6">
-              Mr. Robert is a firm believer of the fact that in order to be able to succeed in this industry you have to dedicate your time, work and emotions for the clients to get the best result out and keeping the clients in a state of mind that they ca
-              </p>
-              <p className="mb-6">
-              He has helped his clients recover over $150,000 in various cases and has nearly perfect success ratio.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MemberDetails />
 
       <div className="bg-black pt-28 pb-20 relative overflow-hidden before:bg-[#1a2431] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
         <Image
-            src={libraryicon}
-            alt="library-icon"
-            className="absolute top-0 z-[3] w-full rotate-180"
-          />
+          src={libraryicon}
+          alt="library-icon"
+          className="absolute top-0 z-[3] w-full rotate-180"
+        />
         <Image
           src={library}
           alt="library"
@@ -138,8 +75,6 @@ const page = () => {
         </div>
       </div>
 
-
-
       <div className="overflow-hidden">
         <div className="container">
           <div className="flex">
@@ -149,29 +84,50 @@ const page = () => {
               </h3>
               <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-3 text-[#333]">
-                  <span className="inline-block text-primary-main">Attorney</span> Of Law
+                  <span className="inline-block text-primary-main">
+                    Attorney
+                  </span>{" "}
+                  Of Law
                 </h3>
                 <ol>
-                  <li className="text-base text-[#333] mb-3">1. Texas Southern University – Thurgood Marshall School of Law, Juris Doctor (J.D.), Houston, TX</li>
-                  <li className="text-base text-[#333] mb-3">2. Paul Quinn College, Bachelor of Science (B.S.), Dallas, TX</li>
+                  <li className="text-base text-[#333] mb-3">
+                    1. Texas Southern University – Thurgood Marshall School of
+                    Law, Juris Doctor (J.D.), Houston, TX
+                  </li>
+                  <li className="text-base text-[#333] mb-3">
+                    2. Paul Quinn College, Bachelor of Science (B.S.), Dallas,
+                    TX
+                  </li>
                 </ol>
               </div>
               <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-3 text-[#333]">
-                  <span className="inline-block text-primary-main">Admission</span> Bar
+                  <span className="inline-block text-primary-main">
+                    Admission
+                  </span>{" "}
+                  Bar
                 </h3>
                 <ol>
-                  <li className="text-base text-[#333] mb-3">1. State Bar of Texas, 2010</li>
-                  <li className="text-base text-[#333] mb-3">2. U.S. District Court – Northern District of Texas</li>
+                  <li className="text-base text-[#333] mb-3">
+                    1. State Bar of Texas, 2010
+                  </li>
+                  <li className="text-base text-[#333] mb-3">
+                    2. U.S. District Court – Northern District of Texas
+                  </li>
                 </ol>
               </div>
               <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-3 text-[#333]">
-                  <span className="inline-block text-primary-main">Bar </span>Membership
+                  <span className="inline-block text-primary-main">Bar </span>
+                  Membership
                 </h3>
                 <ol>
-                  <li className="text-base text-[#333] mb-3">1. Texas Trial Lawyer’s Association</li>
-                  <li className="text-base text-[#333] mb-3">2. Dallas Association of Young Lawyers</li>
+                  <li className="text-base text-[#333] mb-3">
+                    1. Texas Trial Lawyer’s Association
+                  </li>
+                  <li className="text-base text-[#333] mb-3">
+                    2. Dallas Association of Young Lawyers
+                  </li>
                 </ol>
               </div>
             </div>
@@ -180,70 +136,77 @@ const page = () => {
                 Practice Areas
               </h3>
               <div className="flex mb-8 pr-20">
-            <div className="flex-shrink-0 pr-7">
-              <FontAwesomeIcon
-                icon="scale-balanced"
-                className="w-14 h-14 border-2 p-3 border-background text-background"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2 text-[#333]">
-                Family Law
-              </h3>
-              <p className="text-base">
-                Robert has been working as a family law attorney for more than 10 years and have solved tons of cases with his expertise.
-              </p>
-            </div>
-          </div>
-          <div className="flex mb-8 pr-20">
-            <div className="flex-shrink-0 pr-7">
-              <FontAwesomeIcon
-                icon="child"
-                className="w-14 h-14 border-2 p-3 border-background text-background"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2 text-[#333]">
-              Child Custody
-              </h3>
-              <p className="text-base">
-              One of the most difficult and emotional area of law is related to the children law. Robert uses his experience to get these matters solved.
-              </p>
-            </div>
-          </div>
-          <div className="flex mb-8 pr-20">
-            <div className="flex-shrink-0 pr-7">
-              <FontAwesomeIcon
-                icon="sterling-sign"
-                className="w-14 h-14 border-2 p-3 border-background text-background"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2 text-[#333]">
-                Business Law
-              </h3>
-              <p className="text-base">
-              Business laws are sometimes quite complex to figure out because of things become complicated when not sure about the laws. Robert is best when it comes to business law.
-              </p>
-            </div>
-          </div>
-          <div className="flex mb-8 pr-20">
-            <div className="flex-shrink-0 pr-7">
-              <FontAwesomeIcon
-                icon="volume-high"
-                className="w-14 h-14 border-2 p-3 border-background text-background"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-2 text-[#333]">
-                Emergency Law
-              </h3>
-              <p className="text-base">
-              Robert has done well in the past 10 years tackling with emergency situations and have successfully taken clients case which lead them to protection under law.
-              </p>
-            </div>
-          </div>
-              
+                <div className="flex-shrink-0 pr-7">
+                  <FontAwesomeIcon
+                    icon="scale-balanced"
+                    className="w-14 h-14 border-2 p-3 border-background text-background"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 text-[#333]">
+                    Family Law
+                  </h3>
+                  <p className="text-base">
+                    Robert has been working as a family law attorney for more
+                    than 10 years and have solved tons of cases with his
+                    expertise.
+                  </p>
+                </div>
+              </div>
+              <div className="flex mb-8 pr-20">
+                <div className="flex-shrink-0 pr-7">
+                  <FontAwesomeIcon
+                    icon="child"
+                    className="w-14 h-14 border-2 p-3 border-background text-background"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 text-[#333]">
+                    Child Custody
+                  </h3>
+                  <p className="text-base">
+                    One of the most difficult and emotional area of law is
+                    related to the children law. Robert uses his experience to
+                    get these matters solved.
+                  </p>
+                </div>
+              </div>
+              <div className="flex mb-8 pr-20">
+                <div className="flex-shrink-0 pr-7">
+                  <FontAwesomeIcon
+                    icon="sterling-sign"
+                    className="w-14 h-14 border-2 p-3 border-background text-background"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 text-[#333]">
+                    Business Law
+                  </h3>
+                  <p className="text-base">
+                    Business laws are sometimes quite complex to figure out
+                    because of things become complicated when not sure about the
+                    laws. Robert is best when it comes to business law.
+                  </p>
+                </div>
+              </div>
+              <div className="flex mb-8 pr-20">
+                <div className="flex-shrink-0 pr-7">
+                  <FontAwesomeIcon
+                    icon="volume-high"
+                    className="w-14 h-14 border-2 p-3 border-background text-background"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 text-[#333]">
+                    Emergency Law
+                  </h3>
+                  <p className="text-base">
+                    Robert has done well in the past 10 years tackling with
+                    emergency situations and have successfully taken clients
+                    case which lead them to protection under law.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -255,14 +218,15 @@ const page = () => {
               icon="quote-left"
               className="text-white absolute w-9 z-0 opacity-40 top-[60px]"
             />
-            <p className="text-xl	italic text-white">I was struggling to get my legal issues sorted out before i met Mr. John at Lawyero. I was amazed by his attitude and attention to detail and he sorted my case in no time understanding what i need to get done. Thankyou Mr. John.</p>
+            <p className="text-xl	italic text-white">
+              I was struggling to get my legal issues sorted out before i met
+              Mr. John at Lawyero. I was amazed by his attitude and attention to
+              detail and he sorted my case in no time understanding what i need
+              to get done. Thankyou Mr. John.
+            </p>
           </div>
         </div>
       </div>
-
-
-
-
 
       <div className="overflow-hidden">
         <div className="container">

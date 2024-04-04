@@ -10,7 +10,7 @@ interface BlogCardProps {
 
 const BlogCard = ({ imageURL, date, linkHref, title }: BlogCardProps) => {
   return (
-    <div className="basis-1/3 group pr-2 mb-12">
+    <div className="basis-1/3 group">
       <div className="overflow-hidden">
         <Image
           src={imageURL}

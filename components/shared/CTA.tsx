@@ -5,18 +5,27 @@ import Image from "next/image";
 import homeconsultationcall from "@/public/assets/home-request-consultation.jpg";
 
 interface CTAProps {
+  bgClass?: string;
   headline: string;
   buttonLink: string;
   buttonText: string;
   ctaType: string;
+  buttonType?: string;
 }
 
-const CTA = ({ headline, buttonLink, buttonText, ctaType }: CTAProps) => {
+const CTA = ({
+  bgClass,
+  headline,
+  buttonLink,
+  buttonText,
+  ctaType,
+  buttonType,
+}: CTAProps) => {
   let CTAWithImage;
 
   ctaType == "withBg" &&
     (CTAWithImage = (
-      <div className="bg-background py-6">
+      <div className={`${bgClass ? bgClass : "bg-background"} py-6`}>
         <div className="container">
           <div className="flex items-center">
             <div className="basis-1/2">
@@ -26,7 +35,7 @@ const CTA = ({ headline, buttonLink, buttonText, ctaType }: CTAProps) => {
               <ButtonCustom
                 href={buttonLink}
                 text={buttonText}
-                buttonType="secondary"
+                buttonType={`${buttonType ? buttonType : "secondary"}`}
               />
             </div>
           </div>

@@ -9,7 +9,7 @@ const BlogPosts = () => {
       <div className="relative bg-grey pt-20 pb-20">
         <div className="container">
           <PrimaryHeadline text="News & Insights" />
-          <div className="flex flex-wrap">
+          <div className="grid grid-rows-2 grid-cols-3 gap-7">
             {blogPosts.map((item) => (
               <BlogCard
                 key={item.id}
@@ -20,7 +20,7 @@ const BlogPosts = () => {
               />
             ))}
           </div>
-          <div className="text-center">
+          <div className="text-center mt-12">
             <ButtonCustom href="#" text="Read More Posts" buttonType="dark" />
           </div>
         </div>
