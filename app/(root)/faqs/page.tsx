@@ -4,13 +4,43 @@ import InnerBanner from "@/components/global/inner-banner";
 import PrimaryHeadline from "@/components/global/primary-headline";
 import Image from "next/image";
 import libraryicon from "@/public/assets/library-icon.svg";
-
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 
 const page = () => {
   return (
     <> 
       <InnerBanner text="FAQS" />
+      <div className="container pt-[85px] pb-20">
+          <PrimaryHeadline text="Frequently Asked Questions Accordion" />
+          <Accordion className="pt-3" type="single" collapsible>
+            <AccordionItem className="border-b-0 mb-5" value="item-1">
+              <AccordionTrigger className="text-base text-background font-semibold py-2 px-4 border-2 border-background hover:no-underline rounded-md focus:bg-background focus:text-white">Which Areas Do You Cover?</AccordionTrigger>
+              <AccordionContent className="mt-5 border-2 border-background rounded-md text-base leading-6 p-4 relative before:absolute before:-top-[22px] before:left-[30px] before:content-[''] before:bg-background before:w-[2px] before:h-5 after:absolute after:-top-[22px] after:right-[30px] after:content-[''] after:bg-background after:w-[2px] after:h-5">
+              We cover multiple areas mainly involving Family Law, Child Law, Emergency Law and Business Law. The complete list of all the practice areas can be found on this website.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem className="border-b-0 mb-5" value="item-2">
+              <AccordionTrigger className="text-base text-background font-semibold py-2 px-4 border-2 border-background hover:no-underline rounded-md focus:bg-background focus:text-white">What Is Attorney Customer Relationship?</AccordionTrigger>
+              <AccordionContent className="mt-5 border-2 border-background rounded-md text-base leading-6 p-4 relative before:absolute before:-top-[22px] before:left-[30px] before:content-[''] before:bg-background before:w-[2px] before:h-5 after:absolute after:-top-[22px] after:right-[30px] after:content-[''] after:bg-background after:w-[2px] after:h-5">
+              The initial consultation doesnt include Attorney Customer relationship. Only once you hire us then the attorney customer relationship is built.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem className="border-b-0 mb-5" value="item-3">
+              <AccordionTrigger className="text-base text-background font-semibold py-2 px-4 border-2 border-background hover:no-underline rounded-md focus:bg-background focus:text-white">Do You Screen All The Information You Get?</AccordionTrigger>
+              <AccordionContent className="mt-5 border-2 border-background rounded-md text-base leading-6 p-4 relative before:absolute before:-top-[22px] before:left-[30px] before:content-[''] before:bg-background before:w-[2px] before:h-5 after:absolute after:-top-[22px] after:right-[30px] after:content-[''] after:bg-background after:w-[2px] after:h-5">
+              At lawyero we treat privacy very strictly. All the information that you provide is confidential and wont be leaked under any circumstances.
+              </AccordionContent>
+            </AccordionItem>
+            
+            
+          </Accordion>
+      </div>
       <div className="bg-grey pt-20 pb-11 overflow-hidden relative">
       <Image
             src={libraryicon}
