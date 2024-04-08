@@ -138,6 +138,33 @@ export const StatsWithIcon: StatsWithIconProps[] = [
   },
 ];
 
+export const StatsWithIconTeam: StatsWithIconProps[] = [
+  {
+    id: 1,
+    amountPreText: "",
+    amount: "2000",
+    amountPostText: "+",
+    text: "Happy Clients",
+    iconName: "smile",
+  },
+  {
+    id: 3,
+    amountPreText: "",
+    amount: "98",
+    amountPostText: "%",
+    text: "Success Rato",
+    iconName: "thumbs-up",
+  },
+  {
+    id: 2,
+    amountPreText: "$",
+    amount: "20000000",
+    amountPostText: "",
+    text: "Recovered",
+    iconName: "dollar",
+  },
+];
+
 interface FeaturesProps {
   id: number;
   headline: string;
@@ -220,6 +247,37 @@ export const WeAreBestData: FeaturesProps[] = [
     headline: "WE LEAD YOU TO SUCCESS",
     content:
       "Our ultimate goal is to help you and we believe that client is our asset.",
+    iconName: "volume-high",
+  },
+];
+
+export const AttorneyPAList: FeaturesProps[] = [
+  {
+    id: 1,
+    headline: "Family Law",
+    content:
+      "Robert has been working as a family law attorney for more than 10 years and have solved tons of cases with his expertise.",
+    iconName: "scale-balanced",
+  },
+  {
+    id: 2,
+    headline: "Child Custody",
+    content:
+      "One of the most difficult and emotional area of law is related to the children law. Robert uses his experience to get these matters solved.",
+    iconName: "child",
+  },
+  {
+    id: 3,
+    headline: "Business Law",
+    content:
+      "Business laws are sometimes quite complex to figure out because of things become complicated when not sure about the laws. Robert is best when it comes to business law.",
+    iconName: "sterling-sign",
+  },
+  {
+    id: 4,
+    headline: "Emergency Law",
+    content:
+      "Robert has done well in the past 10 years tackling with emergency situations and have successfully taken clients case which lead them to protection under law.",
     iconName: "volume-high",
   },
 ];
@@ -375,7 +433,7 @@ export const blogPosts: blogPostsProps[] = [
   },
 ];
 
-interface FAQsProps {
+export interface FAQsProps {
   id: number;
   question: string;
   answer: string;
@@ -594,5 +652,59 @@ export const PAData: PADataProps[] = [
     title: "Criminal Law",
     text: "Criminal law involves a range of matters that are usually very personal, unique and emotionally challenging.",
     image: paimage4,
+  },
+];
+
+interface attorneyEducatonProps {
+  id: number;
+  title: string;
+  details: {
+    id: number;
+    text: string;
+  }[];
+}
+
+export const attorneyEducaton: attorneyEducatonProps[] = [
+  {
+    id: 1,
+    title: "Attorney of Law",
+    details: [
+      {
+        id: 11,
+        text: "Texas Southern University – Thurgood Marshall School of Law, Juris Doctor (J.D.), Houston, TX",
+      },
+      {
+        id: 12,
+        text: "Paul Quinn College, Bachelor of Science (B.S.), Dallas, TX",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Admission Bar",
+    details: [
+      {
+        id: 21,
+        text: "State Bar of Texas, 2010",
+      },
+      {
+        id: 22,
+        text: "U.S. District Court – Northern District of Texas",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Bar Membership",
+    details: [
+      {
+        id: 31,
+        text: "Texas Trial Lawyer’s Association",
+      },
+      {
+        id: 32,
+        text: "Dallas Association of Young Lawyers",
+      },
+    ],
   },
 ];

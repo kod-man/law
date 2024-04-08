@@ -1,13 +1,19 @@
 interface headlineProps {
   text: string;
   additionalClass?: string;
+  headlineType?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 }
 
-const PrimaryHeadline = ({ text, additionalClass }: headlineProps) => {
+const PrimaryHeadline = ({
+  text,
+  additionalClass,
+  headlineType,
+}: headlineProps) => {
+  const Tag = headlineType || "h2";
   if (additionalClass) {
-    return <h2 className={`${additionalClass}`}>{text}</h2>;
+    return <Tag className={`${additionalClass}`}>{text}</Tag>;
   }
-  return <h2 className="primary-headline">{text}</h2>;
+  return <Tag className="primary-headline">{text}</Tag>;
 };
 
 export default PrimaryHeadline;

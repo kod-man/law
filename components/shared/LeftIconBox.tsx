@@ -10,7 +10,7 @@ interface LeftIconBoxProps {
 
 const LeftIconBox = ({ iconName, headline, content }: LeftIconBoxProps) => {
   return (
-    <div className="flex mb-14 pr-20">
+    <div className="flex mb-10 pr-20">
       <div className="flex-shrink-0 pr-7">
         <FontAwesomeIcon
           icon={iconName}
