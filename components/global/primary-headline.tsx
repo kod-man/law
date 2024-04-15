@@ -1,19 +1,27 @@
+import { splitHeadline } from "@/lib/utilFunctons";
+
 interface headlineProps {
   text: string;
   additionalClass?: string;
   headlineType?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  formatTwoColor?: boolean;
 }
 
 const PrimaryHeadline = ({
   text,
   additionalClass,
   headlineType,
+  formatTwoColor,
 }: headlineProps) => {
+  let formattedText: string | React.ReactNode = text;
   const Tag = headlineType || "h2";
-  if (additionalClass) {
-    return <Tag className={`${additionalClass}`}>{text}</Tag>;
+  {
+    formatTwoColor && (formattedText = splitHeadline(text));
   }
-  return <Tag className="primary-headline">{text}</Tag>;
+  if (additionalClass) {
+    return <Tag className={`${additionalClass}`}>{formattedText}</Tag>;
+  }
+  return <Tag className="primary-headline">{formattedText}</Tag>;
 };
 
 export default PrimaryHeadline;

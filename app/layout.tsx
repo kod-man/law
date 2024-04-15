@@ -15,6 +15,7 @@ import {
 import {
   faChevronDown,
   faChevronRight,
+  faChevronLeft,
   faUser,
   faBagShopping,
   faTrophy,
@@ -91,7 +92,8 @@ library.add(
   faComment,
   faLessThan,
   faGreaterThan,
-  faSearch
+  faSearch,
+  faChevronLeft
 );
 
 const albertSans = Albert_Sans({

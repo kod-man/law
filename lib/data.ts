@@ -24,6 +24,7 @@ import paimage8 from "@/public/assets/pa-img-8.jpg";
 
 import image, { StaticImageData } from "next/image";
 import { title } from "process";
+import { date } from "zod";
 
 export const BannerImages = [
   {
@@ -349,7 +350,10 @@ interface blogPostsProps {
   };
   title: string;
   linkHref: string;
+  excerpt: string;
   date: string;
+  author: string;
+  comments: number;
 }
 
 // WP returned type
@@ -372,9 +376,13 @@ export const blogPosts: blogPostsProps[] = [
         mediaItem: homeblog1,
       },
     },
-    linkHref: "#",
+    linkHref: "/blog/1",
     title: "When to seek legal help? Important to know when",
+    excerpt:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
     date: "2024-03-19T12:24:34",
+    author: "Lawyero",
+    comments: 1,
   },
   {
     id: 2,
@@ -383,9 +391,13 @@ export const blogPosts: blogPostsProps[] = [
         mediaItem: homeblog2,
       },
     },
-    linkHref: "#",
+    linkHref: "/blog/2",
     title: "Seek immediate legal advice when most needed",
+    excerpt:
+      "Every person have suffered from violence at work, home, school or any other place at least once in their life time. Most people dont share their experiences as they think this will be inappropriate to...",
     date: "2024-03-19T12:24:34",
+    author: "Lawyero",
+    comments: 0,
   },
   {
     id: 3,
@@ -394,9 +406,13 @@ export const blogPosts: blogPostsProps[] = [
         mediaItem: homeblog3,
       },
     },
-    linkHref: "#",
+    linkHref: "/blog/3",
     title: "What it takes to be a lawyer (the untold story)",
+    excerpt:
+      "Emergency can be caused anywhere and can happen to anybody. People in the US have Emergency coverage provided by the government but it involves filling your case with great attention and need to be persuaded...",
     date: "2024-03-19T12:24:34",
+    author: "Lawyero",
+    comments: 0,
   },
   {
     id: 4,
@@ -405,9 +421,13 @@ export const blogPosts: blogPostsProps[] = [
         mediaItem: homeblog4,
       },
     },
-    linkHref: "#",
+    linkHref: "/blog/4",
     title: "When to seek legal help? Important to know when",
+    excerpt:
+      "Whenever you are involved in an accident always avoid giving any statement before contacting you attorney. Legal advise is really important in these matters and your initial reaction can be make or break for your...",
     date: "2024-03-19T12:24:34",
+    author: "Lawyero",
+    comments: 0,
   },
   {
     id: 5,
@@ -416,9 +436,13 @@ export const blogPosts: blogPostsProps[] = [
         mediaItem: homeblog5,
       },
     },
-    linkHref: "#",
+    linkHref: "/blog/5",
     title: "Seek immediate legal advice when most needed",
+    excerpt:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
     date: "2024-03-19T12:24:34",
+    author: "Lawyero",
+    comments: 0,
   },
   {
     id: 6,
@@ -427,9 +451,13 @@ export const blogPosts: blogPostsProps[] = [
         mediaItem: homeblog6,
       },
     },
-    linkHref: "#",
+    linkHref: "/blog/6",
     title: "When to seek legal help? Important to know when",
+    excerpt:
+      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
     date: "2024-03-19T12:24:34",
+    author: "Lawyero",
+    comments: 2,
   },
 ];
 
@@ -706,5 +734,53 @@ export const attorneyEducaton: attorneyEducatonProps[] = [
         text: "Dallas Association of Young Lawyers",
       },
     ],
+  },
+];
+
+interface blogCategoriesProps {
+  id: number;
+  title: string;
+}
+
+export const blogCategories: blogCategoriesProps[] = [
+  {
+    id: 1,
+    title: "Attorney Law",
+  },
+  {
+    id: 2,
+    title: "Family Law",
+  },
+  {
+    id: 3,
+    title: "Criminal Law",
+  },
+  {
+    id: 4,
+    title: "Real Estate Law",
+  },
+  {
+    id: 5,
+    title: "Immigration Law",
+  },
+];
+
+interface blogTagsProps {
+  id: number;
+  name: string;
+}
+
+export const blogTags: blogTagsProps[] = [
+  {
+    id: 1,
+    name: "Accident",
+  },
+  {
+    id: 2,
+    name: "Law",
+  },
+  {
+    id: 3,
+    name: "Attorney",
   },
 ];

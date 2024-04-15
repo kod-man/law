@@ -1,5 +1,4 @@
 import PrimaryHeadline from "../global/primary-headline";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FAQData } from "@/lib/data";
 import FAQItem from "../shared/FAQItem";
 
