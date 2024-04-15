@@ -13,6 +13,7 @@ import Testimonials from "@/components/home/Testimonials";
 const Home = () => {
   return (
     <>
+      <div className=" h-screen w-full bg-primary-main"></div>
       <PostBannerBox />
       <IconsWithCounters />
       <TwoColumnTextWithImage />
