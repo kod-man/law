@@ -4,7 +4,7 @@
 
 ### thing
 
-### this thing is aweseom
+### this thing is
 
 First, run the development server:
 
