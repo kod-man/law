@@ -5,7 +5,7 @@ import HeadlineWithText from "@/components/shared/HeadlineWithText";
 import PAList from "@/components/practice-areas/PAList";
 import PreFooter from "@/components/shared/PreFooter";
 
-const page = () => {
+const page = () => { 
   return (
     <>
       <InnerBanner text="PRACTICE AREAS 2 COLUMN" />

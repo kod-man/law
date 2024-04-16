@@ -8,15 +8,15 @@ import { StatsWithIconTeam } from "@/lib/data";
 
 const Stats = () => {
   return (
-    <div className="bg-black pt-28 pb-20 relative overflow-hidden before:bg-[#1a2431] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
+    <div className="bg-black lg:pt-28 pt-20 lg:pb-20 pb-16 relative overflow-hidden before:bg-[#1a2431] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
       <Image
-        src={libraryicon}
+        src={libraryicon}    
         alt="library-icon"
         className="absolute top-0 z-[3] w-full rotate-180"
       />
       <Image src={library} alt="library" fill={true} className="object-cover" />
       <div className="container relative z-[3]">
-        <div className="flex justify-between">
+        <div className="flex justify-between lg:flex-nowrap sm:flex-wrap">
           {StatsWithIconTeam.map((item) => {
             return (
               <StatsCounterIconBox

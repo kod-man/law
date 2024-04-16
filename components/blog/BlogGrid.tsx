@@ -8,10 +8,9 @@ import ButtonCustom from "../global/button";
 import SecondaryButtonCustom from "../global/secondary-button";
 const BlogGrid = () => {
   return (
-    <>
+    <>   
       {blogPosts.map((item) => (
-        <div key={item.id}>
-          <div className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+          <div className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]" key={item.id}>
             <Image src={item.featuredImage.node.mediaItem} alt="Blog Post" />
             <div className=" bg-white">
               <h3 className="my-6">
@@ -56,7 +55,6 @@ const BlogGrid = () => {
               </div>
             </div>
           </div>
-        </div>
       ))}
       <ul className="flex justify-center w-full col-span-2">
         <li className="group h-12 w-12 border-2 border-background bg-white flex justify-center items-center hover:bg-background cursor-pointer mr-3">

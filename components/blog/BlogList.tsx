@@ -7,7 +7,7 @@ import ButtonCustom from "../global/button";
 
 const BlogList = ({ layoutClass }: { layoutClass: string }) => {
   return (
-    <div className={`pr-8 ${layoutClass}`}>
+    <div className={`lg:pr-8 pr-0 ${layoutClass}`}>
       {blogPosts.map((item) => (
         <div
           className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]"

@@ -8,8 +8,8 @@ const PAList = ({ layout }: { layout: string }) => {
 
   layout === "2-column" &&
     (content = (
-      <div className="container pb-28">
-        <div className="grid grid-rows-4 grid-cols-2 gap-8">
+      <div className="container lg:pb-28 pb-20">
+        <div className="grid grid-rows-4 lg:grid-cols-2 grid-cols-1 gap-8">
           {PAData.map((item) => (
             <div key={item.id}>
               <div className="flex p-4 border-[1px] border-[#ccc] rounded">
@@ -45,8 +45,8 @@ const PAList = ({ layout }: { layout: string }) => {
 
   layout === "3-column" &&
     (content = (
-      <div className="container pb-28">
-        <div className="grid grid-rows-4 grid-cols-3 gap-8">
+      <div className="container lg:pb-28 pb-20">
+        <div className="grid grid-rows-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
           {PAData.map((item) => (
             <div key={item.id}>
               <div className="border-[1px] border-[#ccc] rounded overflow-hidden">

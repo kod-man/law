@@ -8,7 +8,7 @@ interface FAQProp {
 
 const FAQItem = ({ question, answer }: FAQProp) => {
   return (
-    <div className="lg:basis-1/2 md:basis-1/2 sm:basis-full pr-6 mb-12">
+    <div className="lg:basis-1/2 sm:basis-full pr-6 mb-12">
       <div className="flex">
         <FontAwesomeIcon
           icon="question-circle"

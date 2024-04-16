@@ -6,14 +6,14 @@ import { WeAreBestData } from "@/lib/data";
 
 const WeAreBest = () => {
   return (
-    <div className="flex bg-lightgrey">
-      <div className="basis-1/2 pt-24 pb-16 px-11">
+    <div className="flex bg-lightgrey lg:flex-nowrap flex-wrap">
+      <div className="lg:pt-24 lg:pb-16 pt-16 pb-12 px-11 basis-full lg:basis-1/2 sm:basis-full relative">
         <PrimaryHeadline
           text="We Are Best In Business"
           additionalClass="primary-headline-left"
         />
         {WeAreBestData.map((item) => (
-          <div className="flex mb-8 pr-20" key={item.id}>
+          <div className="flex mb-8 lg:pr-20 pr-0" key={item.id}>
             <div className="flex-shrink-0 pr-7">
               <FontAwesomeIcon
                 icon={item.iconName}
@@ -29,7 +29,7 @@ const WeAreBest = () => {
           </div>
         ))}
       </div>
-      <div className="basis-1/2 relative">
+      <div className="basis-full lg:basis-1/2 sm:basis-full relative lg:min-h-[100%] sm:min-h-96">
         <Image
           src={whowecontent2}
           alt="Who We Content"

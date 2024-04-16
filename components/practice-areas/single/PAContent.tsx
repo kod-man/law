@@ -4,9 +4,9 @@ import paimage1 from "@/public/assets/pa-img-1.jpg";
 
 const PAContent = () => {
   return (
-    <div className="container py-24">
-      <div className="flex gap-10">
-        <div className="basis-4/6">
+    <div className="container lg:py-24 py-16">
+      <div className="flex lg:gap-10 gap-0 lg:flex-nowrap flex-wrap">
+        <div className="lg:basis-4/6 basis-full">
           <PrimaryHeadline
             text="Overview"
             additionalClass="primary-headline-left"
@@ -30,7 +30,7 @@ const PAContent = () => {
             matters with care, respect and sensitivity.
           </p>
         </div>
-        <div className="basis-1/3">
+        <div className="lg:basis-1/3 basis-full lg:pt-0 pt-7">
           <Image
             src={paimage1}
             alt="Practice Area Image"

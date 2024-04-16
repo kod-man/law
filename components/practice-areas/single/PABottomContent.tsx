@@ -13,9 +13,9 @@ const listData: string[] = [
 ];
 
 const PABottomContent = () => {
-  return (
-    <div className="flex gap-8">
-      <div className="basis-1/2 relative">
+  return (    
+    <div className="flex lg:gap-8 gap-0 lg:flex-nowrap flex-wrap">
+      <div className="basis-full lg:basis-1/2 sm:basis-full relative lg:min-h-[100%] sm:min-h-96">
         <Image
           src={paimagetopcontent}
           alt="Single Practice Area Top"
@@ -23,7 +23,7 @@ const PABottomContent = () => {
           className="object-cover"
         />
       </div>
-      <div className="basis-1/2 pt-24 pb-16 pl-11 pr-20">
+      <div className="lg:basis-1/2 basis-full lg:pt-24 lg:pb-16 pt-16 pb-16 lg:pl-11 pl-8 lg:pr-20 pr-8 lg:order-2 sm:-order-1">
         <PrimaryHeadline
           text="History In Family Law Cases"
           additionalClass="primary-headline-left"

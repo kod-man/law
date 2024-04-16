@@ -5,7 +5,7 @@ import { FAQData } from "@/lib/data";
 
 const FAQsAccordion = () => {
   return (
-    <div className="container pt-[85px] pb-20">
+    <div className="container lg:pt-[85px] pt-[70px] lg:pb-20 pb-16">
       <PrimaryHeadline text="FAQs Accordion" />
       <Accordions data={FAQData} />
     </div>

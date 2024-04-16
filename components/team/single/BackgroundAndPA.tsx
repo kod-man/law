@@ -9,8 +9,8 @@ const BackgroundAndPA = () => {
   return (
     <div className="overflow-hidden">
       <div className="container">
-        <div className="flex">
-          <div className="basis-2/5 pt-24 pb-16 pl-12 pr-14 relative before:z-[-1] before:top-0 before:absolute before:bg-grey before:content-[''] before:h-full before:w-[50vw] before:right-0">
+        <div className="flex lg:flex-nowrap flex-wrap">
+          <div className="lg:basis-2/5 basis-full lg:pt-24 lg:pb-16 pt-20 pb-12 lg:pl-12 pl-0 lg:pr-14 pr-0 relative before:z-[-1] before:top-0 before:absolute before:bg-grey before:content-[''] before:h-full lg:before:w-[50vw] before:w-[150vw] lg:before:right-0 before:-right-[25%]">
             <PrimaryHeadline
               text="Attorney Background"
               additionalClass="primary-headline-left text-[32px]"
@@ -35,7 +35,7 @@ const BackgroundAndPA = () => {
               </div>
             ))}
           </div>
-          <div className="basis-3/5 pt-24 pb-16 pl-12 pr-11 relative before:z-[-1] before:top-0 before:absolute before:bg-white before:content-[''] before:h-full before:w-[80vw] before:left-0">
+          <div className="lg:basis-3/5 basis-full lg:pt-24 pt-16 lg:pb-16 pb-10 lg:pl-12 lg:pr-11 pl-0 pr-0 relative before:z-[-1] before:top-0 before:absolute before:bg-white before:content-[''] before:h-full before:w-[80vw] before:left-0">
             <PrimaryHeadline
               text="Practice Areas"
               additionalClass="primary-headline-left text-[32px]"

@@ -31,9 +31,9 @@ const memberSocialLinks: { name: string; link: string; icon: IconName }[] = [
 
 const MemberDetails = () => {
   return (
-    <div className="container pt-20 pb-20">
-      <div className="flex gap-8">
-        <div className="basis-[30%]">
+    <div className="container lg:pt-20 lg:pb-20 pt-16 pb-16">
+      <div className="flex gap-8 lg:flex-nowrap flex-wrap">
+        <div className="lg:basis-[30%] basis-full">
           <Image
             src={homefirmimage}
             alt="Home Firm Image"
@@ -52,7 +52,7 @@ const MemberDetails = () => {
             ))}
           </ul>
         </div>
-        <div className="basis-[70%]">
+        <div className="lg:basis-[70%] basis-full">
           <PrimaryHeadline
             text="About Attorney"
             additionalClass="primary-headline-left"

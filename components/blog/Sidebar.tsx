@@ -7,7 +7,7 @@ import { Input } from "../ui/input";
 
 const Sidebar = () => {
   return (
-    <div className="basis-[30%]">
+    <div className="lg:basis-[30%] basis-full lg:pt-0 pt-20">
       <div className="relative">
         <FontAwesomeIcon
           icon="search"

@@ -10,21 +10,21 @@ const BlogListTwoColumns = ({ listStyle }: { listStyle?: string }) => {
     <>
       {blogPosts.map((item, index) => (
         <div
-          className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1] flex"
+          className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1] flex lg:flex-nowrap flex-wrap"
           key={item.id}
         >
           <div
-            className={`basis-1/2 ${
+            className={`lg:basis-1/2 basis-full ${
               listStyle === "chess" && index % 2 == 1
-                ? "pl-8 order-" + (index % 2)
+                ? "lg:pl-8 pl-0 lg:pb-0 pb-7 order-" + (index % 2)
                 : "pl-0"
             }`}
           >
             <Image src={item.featuredImage.node.mediaItem} alt="Blog Post" />
           </div>
           <div
-            className={`basis-1/2 ${
-              listStyle === "chess" && index % 2 == 1 ? "pl-0" : "pl-8"
+            className={`lg:basis-1/2 basis-full ${
+              listStyle === "chess" && index % 2 == 1 ? "pl-0" : "lg:pl-8 pl-0 lg:pt-0 pt-7"
             }`}
           >
             <div className=" bg-white">

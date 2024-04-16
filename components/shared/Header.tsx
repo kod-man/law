@@ -2,6 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
 
 const Header = () => {
   return (
@@ -21,13 +30,278 @@ const Header = () => {
       </div>
       <div className="bg-background relative">
         <div className="container">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center  min-h-[80px] lg:min-h-full">
             <div className="py-5 basis-[166px] flex-shrink-0">
               <Link href="/">
                 <Image src={logo} alt="Logo" width={166} height={30} />
               </Link>
             </div>
             <div className="text-white">
+            <Sheet>
+              <SheetTrigger className="sm:block lg:hidden">
+                <span className="h-[3px] w-7 block rounded-md bg-white mb-1"></span>
+                <span className="h-[3px] w-7 block rounded-md bg-white mb-1"></span>
+                <span className="h-[3px] w-7 block rounded-md bg-white"></span>
+              </SheetTrigger>
+              <SheetContent className="text-white">
+                <SheetHeader>
+                  <SheetTitle>
+                    <Link href="/">
+                      <Image src={logo} alt="Logo" width={166} height={30} />
+                    </Link>
+                  </SheetTitle>
+                  <SheetDescription>
+                    <ul className="flex xl:gap-8 lg:gap-4 sm:block lg:hidden *:text-white pt-8">
+                    <li className="group relative">
+                      <Link
+                        href="/"
+                        className="py-3 pr-4 block relative after:transition-transform duration-300 ease-in-out border-b border-white">
+                        Home
+                        <FontAwesomeIcon
+                          icon="chevron-down"
+                          className="absolute top-1/2 -translate-y-1/2 right-0 w-2.5"
+                        />
+                      </Link>
+                      <ul
+                        className="absolute bg-background lg:min-w-52 w-full top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                        role="list"
+                      >
+                        <li>
+                          <Link
+                            href="/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            Home 1
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/home-2/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            Home2
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="group relative">
+                      <Link
+                        href="/who-we-are/"
+                        className="text-white py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                      >
+                        Who We Are
+                      </Link>
+                    </li>
+                    <li className="group relative">
+                      <Link
+                        href="#"
+                        className="py-3 pr-4 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                      >
+                        Practice Areas
+                        <FontAwesomeIcon
+                          icon="chevron-down"
+                          className="absolute top-1/2 -translate-y-1/2 right-0 w-2.5"
+                        />
+                      </Link>
+                      <ul
+                        className="absolute bg-background w-full top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                        role="list"
+                      >
+                        <li>
+                          <Link
+                            href="/practice-areas-2-column/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            2 Column Layout
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/practice-areas-3-column-layout/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            3 Column Layout
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/single-practice-area/"
+                            className="text-white px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            Individual Practice Area
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="group relative">
+                      <Link
+                        href="#"
+                        className="text-white py-3 pr-4 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                      >
+                        Team Members
+                        <FontAwesomeIcon
+                          icon="chevron-down"
+                          className="absolute top-1/2 -translate-y-1/2 right-0 w-2.5"
+                        />
+                      </Link>
+                      <ul
+                        className="absolute bg-background w-full top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                        role="list"
+                      >
+                        <li>
+                          <Link
+                            href="/single-team-member/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            Robert Darren
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="group relative">
+                      <Link
+                        href="#"
+                        className="text-white py-3 pr-4 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                      >
+                        Pages
+                        <FontAwesomeIcon
+                          icon="chevron-down"
+                          className="absolute top-1/2 -translate-y-1/2 right-0 w-2.5"
+                        />
+                      </Link>
+                      <ul
+                        className="absolute bg-background w-full top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                        role="list"
+                      >
+                        <li>
+                          <Link
+                            href="/faqs/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            Faqs
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/404/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            404 Page
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="group relative">
+                      <Link
+                        href="#"
+                        className="py-3 pr-4 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                      >
+                        Blog
+                        <FontAwesomeIcon
+                          icon="chevron-down"
+                          className="absolute top-1/2 -translate-y-1/2 right-0 w-2.5"
+                        />
+                      </Link>
+                      <ul
+                        className="absolute bg-background w-full lg:right-0 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                        role="list"
+                      >
+                        <li>
+                          <Link
+                            href="/blog/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            Blog With Sidebar
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/blog-full-page/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            Blog Full page
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link
+                            href="/blog-chess-style/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            Blog Chess Style
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/blog-grid/"
+                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                          >
+                            <FontAwesomeIcon
+                              icon="chevron-right"
+                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                            />
+                            Blog Grid
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="group relative">
+                      <Link
+                        href="/contact/"
+                        className="py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                      >
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                  </SheetDescription>
+                </SheetHeader>  
+              </SheetContent>
+            </Sheet>
               <nav className="navbar navbar-default">
                 <button type="button" className="hidden">
                   <i className="sr-only">Toggle navigation</i>
@@ -39,7 +313,7 @@ const Header = () => {
                   <span className="icon-bar"></span>
                 </button>
 
-                <ul className="flex xl:gap-8 lg:gap-4">
+                <ul className="flex xl:gap-8 lg:gap-4 sm:hidden lg:flex">
                   <li className="group">
                     <Link
                       href="/"

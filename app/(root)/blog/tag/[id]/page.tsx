@@ -15,7 +15,7 @@ const Page = ({ params }: URLParams) => {
       <div className="relative py-[90px]">
         <div className="container">
           <div className="flex sm:flex-wrap lg:flex-nowrap">
-            <BlogList layoutClass="basis-[70%]" />
+            <BlogList layoutClass="lg:basis-[70%] basis-full" />
             <Sidebar />
           </div>
         </div>

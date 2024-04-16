@@ -17,7 +17,7 @@ const InnerBanner = ({
         className="object-cover"
       />
       <div className="container relative z-[3]">
-        <h1 className="text-[40px] text-white font-bold text-center">{text}</h1>
+        <h1 className="lg:text-[40px] text-[30px] text-white font-bold text-center">{text}</h1>
       </div>
     </div>
   );

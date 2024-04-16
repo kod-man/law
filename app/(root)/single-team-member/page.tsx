@@ -14,7 +14,7 @@ const page = () => {
       <InnerBanner text="Robert Darren" image={singleteambanner} />
 
       <MemberDetails />
-
+   
       <Stats />
 
       <CTA
