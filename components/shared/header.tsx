@@ -11,7 +11,7 @@ const Header = () => {
           <div>
             Call Us:
             <Link className="font-bold" href="tel:1911462242">
-              1911-462-242s
+              1911-462-2425
             </Link>
           </div>
           <Link href="#" className="font-bold">
