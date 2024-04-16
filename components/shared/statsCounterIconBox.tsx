@@ -17,7 +17,7 @@ const StatsCounterIconBox = ({
   text,
 }: StatsCounterIconBoxProps) => {
   return (
-    <div className="flex items-center md:basis-1/2 sm:basis-full sm:justify-center md:justify-start">
+    <div className="flex items-center sm:basis-full sm:justify-start md:justify-start">
       <FontAwesomeIcon
         icon={iconName}
         className="w-[75px] h-[75px] border-2 p-2 border-white text-white"

@@ -3,7 +3,7 @@ import IconBox from "../shared/IconBox";
 
 const postBannerBox = () => {
   return (
-    <div className="container lg:-mt-36 md:mt-0 relative z-[3]">
+    <div className="container lg:px-8 sm:px-0 lg:-mt-36 md:mt-0 relative z-[3]">
       <div className="flex lg:flex-nowrap sm:flex-wrap">
         {BannerIconBoxes.map((item) => {
           return (

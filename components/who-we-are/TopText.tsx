@@ -1,8 +1,8 @@
 const TopText = () => {
   return (
-    <div className="container pt-24 pb-36">
-      <div className="flex gap-11">
-        <div className="basis-8/12">
+    <div className="container lg:pt-24 pt-16 lg:pb-36 pb-20">
+      <div className="flex lg:gap-11 gap-6 lg:flex-nowrap flex-wrap">
+        <div className="lg:basis-8/12 basis-full">
           <h2 className="text-[40px] text-background font-bold mb-2">
             We Are All About Our Clients
           </h2>
@@ -28,7 +28,7 @@ const TopText = () => {
             a Call.
           </p>
         </div>
-        <div className="basis-1/3">
+        <div className="lg:basis-1/3 basis-full">
           <div className="bg-background p-8">
             <h3 className="text-[32px] text-white mb-2">Our Mission</h3>
             <p className="text-base text-white mb-4">

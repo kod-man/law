@@ -22,7 +22,7 @@ const Header = () => {
       <div className="bg-background relative">
         <div className="container">
           <div className="flex justify-between items-center">
-            <div className="py-5">
+            <div className="py-5 basis-[166px] flex-shrink-0">
               <Link href="/">
                 <Image src={logo} alt="Logo" width={166} height={30} />
               </Link>
@@ -39,7 +39,7 @@ const Header = () => {
                   <span className="icon-bar"></span>
                 </button>
 
-                <ul className="flex gap-8">
+                <ul className="flex xl:gap-8 lg:gap-4">
                   <li className="group">
                     <Link
                       href="/"
@@ -52,7 +52,7 @@ const Header = () => {
                       />
                     </Link>
                     <ul
-                      className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                      className="absolute bg-background lg:min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
                       role="list"
                     >
                       <li>
@@ -101,7 +101,7 @@ const Header = () => {
                       />
                     </Link>
                     <ul
-                      className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                      className="absolute bg-background lg:min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
                       role="list"
                     >
                       <li>
@@ -154,7 +154,7 @@ const Header = () => {
                       />
                     </Link>
                     <ul
-                      className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                      className="absolute bg-background lg:min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
                       role="list"
                     >
                       <li>
@@ -183,7 +183,7 @@ const Header = () => {
                       />
                     </Link>
                     <ul
-                      className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                      className="absolute bg-background lg:min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
                       role="list"
                     >
                       <li>
@@ -224,7 +224,7 @@ const Header = () => {
                       />
                     </Link>
                     <ul
-                      className="2xl:absolute bg-background min-w-52 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                      className="absolute bg-background lg:min-w-52 lg:right-0 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
                       role="list"
                     >
                       <li>

@@ -27,7 +27,7 @@ const TwoColumnTextWithImage = () => {
           </div>
           <ButtonCustom href="#" text="Learn More" buttonType="secondary" />
         </div>
-        <div className="lg:basis-[30%] sm:basis-full">
+        <div className="lg:basis-[30%] sm:basis-full sm:text-center lg:block sm:flex sm:justify-center">
           <Image
             src={homefirmimage}
             alt="Home Firm Image"
