@@ -11,7 +11,7 @@ const page = ({ params }: URLParams) => {
     <>
       <div className="relative py-[90px]">
         <div className="container">
-          <div className="flex flex-wrap">
+          <div className="flex sm:flex-wrap lg:flex-nowrap">
             <div className="basis-[70%] pr-8">
               <div className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0">
                 {blogPosts

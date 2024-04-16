@@ -18,10 +18,10 @@ const Banner = () => {
               fill={true}
               className="object-cover"
             />
-            <div className="relative pt-[300px] pb-[300px] top-0 z-10 w-full">
+            <div className="relative sm:pt-[150px] lg:pt-[300px] lg:pb-[300px] sm:pb-[150px] top-0 z-10 w-full">
               <div className="container">
                 <div className="carousel-caption">
-                  <h2 className="font-bold text-6xl uppercase w-2/3 mb-5 max-w-full leading-tight">
+                  <h2 className="font-bold lg:text-6xl md:text-5xl sm:text-4xl uppercase lg:w-2/3 sm:w-full mb-5 max-w-full leading-tight">
                     {item.content}
                   </h2>
                   <ButtonCustom href={item.linkHref} text={item.linkText} />

@@ -7,7 +7,7 @@ const page = () => {
       <InnerBanner text="Blog Full Page" />
       <div className="relative py-[90px]">
         <div className="container">
-          <div className="flex flex-wrap">
+          <div className="flex sm:flex-wrap lg:flex-nowrap">
             <BlogListTwoColumns />
           </div>
         </div>

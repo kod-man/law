@@ -7,7 +7,7 @@ import PracticeAreas from "@/components/home/PracticeAreas";
 import BlogPosts from "@/components/home/BlogPosts";
 import FAQs from "@/components/home/FAQs";
 import TeamMembers from "@/components/home/TeamMembers";
-import Banner from "@/components/home/Banner";
+import Banner from "@/components/home/banner";
 import PreFooter from "@/components/shared/PreFooter";
 import Testimonials from "@/components/home/Testimonials";
 

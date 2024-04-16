@@ -20,7 +20,7 @@ export function TestimonialsCarousel() {
       <CarouselContent>
         {Testimonials.map((item) => (
           <CarouselItem key={item.id}>
-            <div className="*:text-white w-[850px] m-auto">
+            <div className="*:text-white lg:w-[850px] lg:px-0 sm:px-[90px] sm:w-full m-auto">
               <Image
                 src={item.image}
                 alt="Testimonial Img"

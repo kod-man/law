@@ -4,7 +4,7 @@ import IconCardWithLink from "../shared/IconCardWithLink";
 
 const PracticeAreas = () => {
   return (
-    <div className="container pt-20 pb-32 relative">
+    <div className="container pt-20 lg:pb-32 md:pb-20 relative">
       <PrimaryHeadline text="Practice Areas" />
       <div className="flex flex-wrap -mx-2">
         {HomepagePAs.map((item, index) => (

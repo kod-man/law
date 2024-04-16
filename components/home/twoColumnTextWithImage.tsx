@@ -7,8 +7,8 @@ import homefirmimage from "@/public/assets/home-member1.jpg";
 const TwoColumnTextWithImage = () => {
   return (
     <div className="container pt-20 pb-20">
-      <div className="flex gap-8">
-        <div className="basis-[70%]">
+      <div className="flex gap-8 sm:flex-wrap lg:flex-nowrap">
+        <div className="lg:basis-[70%] sm:basis-full">
           <PrimaryHeadline text="About Firm" />
           <div className="text-base text-[#333]">
             <p className="mb-6">
@@ -27,7 +27,7 @@ const TwoColumnTextWithImage = () => {
           </div>
           <ButtonCustom href="#" text="Learn More" buttonType="secondary" />
         </div>
-        <div className="basis-[30%]">
+        <div className="lg:basis-[30%] sm:basis-full">
           <Image
             src={homefirmimage}
             alt="Home Firm Image"

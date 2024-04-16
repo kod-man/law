@@ -17,12 +17,12 @@ const StatsCounterIconBox = ({
   text,
 }: StatsCounterIconBoxProps) => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center md:basis-1/2 sm:basis-full sm:justify-center md:justify-start">
       <FontAwesomeIcon
         icon={iconName}
         className="w-[75px] h-[75px] border-2 p-2 border-white text-white"
       />
-      <h3 className="text-3xl font-bold mt-5 mb-3 text-white pl-8">
+      <h3 className="text-3xl font-bold mt-5 mb-3 md:mb-5 text-white pl-8">
         <span className="block">
           {amountPreText ? amountPreText : ""}
           {amount}

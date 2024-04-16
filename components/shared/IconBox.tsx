@@ -11,7 +11,7 @@ interface propTypes {
 
 const IconBox = ({ iconName, headline, content, type }: propTypes) => {
   return (
-    <div className={`basis-1/3 ${type} px-10 pt-10 pb-8`}>
+    <div className={`lg:basis-1/3 sm:basis-full ${type} px-10 pt-10 pb-8`}>
       <FontAwesomeIcon
         icon={iconName}
         className="w-14 border-2 p-3 border-primary-main text-primary-main"

@@ -20,7 +20,7 @@ export function TeamMembersCarousel({ textColor }: { textColor?: string }) {
     >
       <CarouselContent className="pt-3">
         {TeamMembers.map((item) => (
-          <CarouselItem key={item.id} className="basis-1/4">
+          <CarouselItem key={item.id} className="lg:basis-1/4 md:basis-1/2">
             <Link href={item.href} className="group">
               <div className="relative before:absolute before:bg-black before:opacity-30 before::content-[''] before:h-full before:w-0 before:transition-all before:duration-300 before:ease-in group-hover:before:w-full before:left-0 before:top-0 cursor-pointer">
                 <Image

@@ -6,8 +6,8 @@ import homeserviceimage from "@/public/assets/home-service-image.jpg";
 const Features = () => {
   return (
     <>
-      <div className="flex gap-12 bg-grey">
-        <div className="basis-1/2 relative">
+      <div className="flex gap-12 bg-grey lg:flex-nowrap sm:flex-wrap">
+        <div className="lg:basis-1/2 sm:basis-full relative lg:min-h-[100%] md:min-h-80">
           <Image
             src={homeserviceimage}
             alt="Home Service Image"
@@ -15,7 +15,7 @@ const Features = () => {
             className="object-cover"
           />
         </div>
-        <div className="basis-1/2 pt-20 pb-4">
+        <div className="lg:basis-1/2 sm:basis-full pt-20 pb-4 lg:pl-8 md:pl-8 lg:order-2 md:-order-1">
           {HomepageFeatures.map((item) => (
             <LeftIconBox
               key={item.id}
