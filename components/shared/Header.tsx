@@ -9,15 +9,13 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
 
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible"
-
-
+} from "@/components/ui/collapsible";
 
 const Header = () => {
   return (
@@ -44,301 +42,309 @@ const Header = () => {
               </Link>
             </div>
             <div className="text-white">
-            <Sheet>
-              <SheetTrigger className="block lg:hidden">
-                <span className="h-[3px] w-7 block rounded-md bg-white mb-1"></span>
-                <span className="h-[3px] w-7 block rounded-md bg-white mb-1"></span>
-                <span className="h-[3px] w-7 block rounded-md bg-white"></span>
-              </SheetTrigger>
-              <SheetContent className="text-white">
-                <SheetHeader>
-                  <SheetTitle>
-                    <Link href="/">
-                      <Image src={logo} alt="Logo" width={166} height={30} />
-                    </Link>
-                  </SheetTitle>
-                  <SheetDescription>
-                    <ul className="xl:gap-8 lg:gap-4 block lg:hidden *:text-white pt-8 text-left">
-                    <li className="relative">
-                      <Link
-                          href="/"
-                          className="py-3 pr-0 block relative after:transition-transform duration-300 ease-in-out border-b border-white">
-                          <Collapsible>
-                            <CollapsibleTrigger>
-                                Home
-                                <FontAwesomeIcon
-                                  icon="chevron-down"
-                                  className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
-                                />                          
-                            </CollapsibleTrigger>
-                            <CollapsibleContent>
-                      <ul className="bg-background lg:min-w-52 w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
-                        role="list"
-                      >
-                        <li>
-                          <Link
-                            href="/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            Home 1
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/home-2/"
-                            className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            Home2
-                          </Link>
-                        </li>
-                      </ul>
-                            </CollapsibleContent>
-                          </Collapsible>
-                      </Link>
-                    </li>
-                    <li className="group relative">
-                      <Link
-                        href="/who-we-are/"
-                        className="text-white py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
-                      >
-                        Who We Are
-                      </Link>
-                    </li>
-                    <li className="relative">
-                      <Link
-                        href="#"
-                        className="py-3  block relative after:transition-transform duration-300 ease-in-out border-b border-white"
-                      >
-                        <Collapsible>
-                            <CollapsibleTrigger>
-                        Practice Areas
-                        <FontAwesomeIcon
-                          icon="chevron-down"
-                          className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
-                        />
-                        </CollapsibleTrigger>
-                            <CollapsibleContent>
-                      
-                      <ul
-                        className="bg-background w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
-                        role="list"
-                      >
-                        <li>
-                          <Link
-                            href="/practice-areas-2-column/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            2 Column Layout
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/practice-areas-3-column-layout/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            3 Column Layout
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/single-practice-area/"
-                            className="text-white px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            Individual Practice Area
-                          </Link>
-                        </li>
-                      </ul>
-                      </CollapsibleContent>
-                          </Collapsible>
-                          </Link>
-                    </li>
-                    <li className="relative">
-                      <Link
-                        href="#"
-                        className="text-white py-3  block relative after:transition-transform duration-300 ease-in-out border-b border-white"
-                      >
-                        <Collapsible>
-                            <CollapsibleTrigger>
-                        Team Members
-                        <FontAwesomeIcon
-                          icon="chevron-down"
-                          className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
-                        />
-                      </CollapsibleTrigger>
-                            <CollapsibleContent>
-                      <ul
-                        className="bg-background w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
-                        role="list"
-                      >
-                        <li>
-                          <Link
-                            href="/single-team-member/"
-                            className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            Robert Darren
-                          </Link>
-                        </li>
-                      </ul>
-                      </CollapsibleContent>
-                          </Collapsible>
-                          </Link>
-                    </li>
-                    <li className="relative">
-                      <Link
-                        href="#"
-                        className="text-white py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
-                      >
-                        <Collapsible>
-                            <CollapsibleTrigger>
-                        Pages
-                        <FontAwesomeIcon
-                          icon="chevron-down"
-                          className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
-                        />
-                      </CollapsibleTrigger>
-                            <CollapsibleContent>
-                      <ul
-                        className="bg-background w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
-                        role="list"
-                      >
-                        <li>
-                          <Link
-                            href="/faqs/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            Faqs
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/404/"
-                            className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            404 Page
-                          </Link>
-                        </li>
-                      </ul>
-                      </CollapsibleContent>
-                          </Collapsible>
-                          </Link>
-                    </li>
-                    <li className="relative">
-                      <Link
-                        href="#"
-                        className="py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
-                      >
-                        <Collapsible>
-                            <CollapsibleTrigger>
-                        Blog
-                        <FontAwesomeIcon
-                          icon="chevron-down"
-                          className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
-                        />
-                      </CollapsibleTrigger>
-                            <CollapsibleContent>
-                      <ul
-                        className=" bg-background w-full lg:right-0 top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
-                        role="list"
-                      >
-                        <li>
-                          <Link
-                            href="/blog/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            Blog With Sidebar
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/blog-full-page/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            Blog Full page
-                          </Link>
-                        </li>
+              <Sheet>
+                <SheetTrigger className="block lg:hidden">
+                  <span className="h-[3px] w-7 block rounded-md bg-white mb-1"></span>
+                  <span className="h-[3px] w-7 block rounded-md bg-white mb-1"></span>
+                  <span className="h-[3px] w-7 block rounded-md bg-white"></span>
+                </SheetTrigger>
+                <SheetContent className="text-white p-0 border-none">
+                  <div className="h-full overflow-y-auto p-6">
+                    <SheetHeader>
+                      <SheetTitle>
+                        <Link href="/">
+                          <Image
+                            src={logo}
+                            alt="Logo"
+                            width={166}
+                            height={30}
+                          />
+                        </Link>
+                      </SheetTitle>
+                      <SheetDescription>
+                        <ul className="xl:gap-8 lg:gap-4 block lg:hidden *:text-white pt-8 text-left">
+                          <li className="relative">
+                            <Link
+                              href="/"
+                              className="py-3 pr-0 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                            >
+                              <Collapsible>
+                                <CollapsibleTrigger>
+                                  Home
+                                  <FontAwesomeIcon
+                                    icon="chevron-down"
+                                    className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
+                                  />
+                                </CollapsibleTrigger>
+                                <CollapsibleContent>
+                                  <ul
+                                    className="bg-background lg:min-w-52 w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
+                                    role="list"
+                                  >
+                                    <li>
+                                      <Link
+                                        href="/"
+                                        className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        Home 1
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        href="/home-2/"
+                                        className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        Home2
+                                      </Link>
+                                    </li>
+                                  </ul>
+                                </CollapsibleContent>
+                              </Collapsible>
+                            </Link>
+                          </li>
+                          <li className="group relative">
+                            <Link
+                              href="/who-we-are/"
+                              className="text-white py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                            >
+                              Who We Are
+                            </Link>
+                          </li>
+                          <li className="relative">
+                            <Link
+                              href="#"
+                              className="py-3  block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                            >
+                              <Collapsible>
+                                <CollapsibleTrigger>
+                                  Practice Areas
+                                  <FontAwesomeIcon
+                                    icon="chevron-down"
+                                    className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
+                                  />
+                                </CollapsibleTrigger>
+                                <CollapsibleContent>
+                                  <ul
+                                    className="bg-background w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
+                                    role="list"
+                                  >
+                                    <li>
+                                      <Link
+                                        href="/practice-areas-2-column/"
+                                        className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        2 Column Layout
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        href="/practice-areas-3-column-layout/"
+                                        className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        3 Column Layout
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        href="/single-practice-area/"
+                                        className="text-white px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        Individual Practice Area
+                                      </Link>
+                                    </li>
+                                  </ul>
+                                </CollapsibleContent>
+                              </Collapsible>
+                            </Link>
+                          </li>
+                          <li className="relative">
+                            <Link
+                              href="#"
+                              className="text-white py-3  block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                            >
+                              <Collapsible>
+                                <CollapsibleTrigger>
+                                  Team Members
+                                  <FontAwesomeIcon
+                                    icon="chevron-down"
+                                    className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
+                                  />
+                                </CollapsibleTrigger>
+                                <CollapsibleContent>
+                                  <ul
+                                    className="bg-background w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
+                                    role="list"
+                                  >
+                                    <li>
+                                      <Link
+                                        href="/single-team-member/"
+                                        className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        Robert Darren
+                                      </Link>
+                                    </li>
+                                  </ul>
+                                </CollapsibleContent>
+                              </Collapsible>
+                            </Link>
+                          </li>
+                          <li className="relative">
+                            <Link
+                              href="#"
+                              className="text-white py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                            >
+                              <Collapsible>
+                                <CollapsibleTrigger>
+                                  Pages
+                                  <FontAwesomeIcon
+                                    icon="chevron-down"
+                                    className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
+                                  />
+                                </CollapsibleTrigger>
+                                <CollapsibleContent>
+                                  <ul
+                                    className="bg-background w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
+                                    role="list"
+                                  >
+                                    <li>
+                                      <Link
+                                        href="/faqs/"
+                                        className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        Faqs
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        href="/404/"
+                                        className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        404 Page
+                                      </Link>
+                                    </li>
+                                  </ul>
+                                </CollapsibleContent>
+                              </Collapsible>
+                            </Link>
+                          </li>
+                          <li className="relative">
+                            <Link
+                              href="#"
+                              className="py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                            >
+                              <Collapsible>
+                                <CollapsibleTrigger>
+                                  Blog
+                                  <FontAwesomeIcon
+                                    icon="chevron-down"
+                                    className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
+                                  />
+                                </CollapsibleTrigger>
+                                <CollapsibleContent>
+                                  <ul
+                                    className=" bg-background w-full lg:right-0 top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
+                                    role="list"
+                                  >
+                                    <li>
+                                      <Link
+                                        href="/blog/"
+                                        className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        Blog With Sidebar
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        href="/blog-full-page/"
+                                        className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        Blog Full page
+                                      </Link>
+                                    </li>
 
-                        <li>
-                          <Link
-                            href="/blog-chess-style/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            Blog Chess Style
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/blog-grid/"
-                            className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
-                          >
-                            <FontAwesomeIcon
-                              icon="chevron-right"
-                              className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
-                            />
-                            Blog Grid
-                          </Link>
-                        </li>
-                      </ul>
-                      </CollapsibleContent>
-                          </Collapsible>
-                          </Link>
-                    </li>
-                    <li className="group relative">
-                      <Link
-                        href="/contact/"
-                        className="py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
-                      >
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                  </SheetDescription>
-                </SheetHeader>  
-              </SheetContent>
-            </Sheet>
+                                    <li>
+                                      <Link
+                                        href="/blog-chess-style/"
+                                        className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        Blog Chess Style
+                                      </Link>
+                                    </li>
+                                    <li>
+                                      <Link
+                                        href="/blog-grid/"
+                                        className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                                      >
+                                        <FontAwesomeIcon
+                                          icon="chevron-right"
+                                          className="absolute h-[12px] w-[12px] top-1/2 opacity-0 left-0 -translate-y-1/2 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:ease-menu group-hover/subItem:delay-100 group-hover/subItem:duration-300"
+                                        />
+                                        Blog Grid
+                                      </Link>
+                                    </li>
+                                  </ul>
+                                </CollapsibleContent>
+                              </Collapsible>
+                            </Link>
+                          </li>
+                          <li className="group relative">
+                            <Link
+                              href="/contact/"
+                              className="py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                            >
+                              Contact
+                            </Link>
+                          </li>
+                        </ul>
+                      </SheetDescription>
+                    </SheetHeader>
+                  </div>
+                </SheetContent>
+              </Sheet>
               <nav className="navbar navbar-default">
                 <button type="button" className="hidden">
                   <i className="sr-only">Toggle navigation</i>
