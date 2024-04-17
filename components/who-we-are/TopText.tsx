@@ -3,7 +3,7 @@ const TopText = () => {
     <div className="container lg:pt-24 pt-16 lg:pb-36 pb-20">
       <div className="flex lg:gap-11 gap-6 lg:flex-nowrap flex-wrap">
         <div className="lg:basis-8/12 basis-full">
-          <h2 className="text-[40px] text-background font-bold mb-2">
+          <h2 className="text-[25px] sm:text-[40px] text-background font-bold mb-2">
             We Are All About Our Clients
           </h2>
           <p className="text-base text-background mb-5">

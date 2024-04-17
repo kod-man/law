@@ -16,7 +16,7 @@ const IconCardWithLink = ({
   cardBgClass,
 }: IconCardWithLinkProps) => {
   return (
-    <div className="px-2 lg:basis-1/4 md:basis-1/2 sm:basis-full min-h-64 text-center group mb-4 flex">
+    <div className="px-2 lg:basis-1/4 md:basis-1/2 basis-full min-h-64 text-center group mb-4 flex">
       <div className={`${cardBgClass}  w-full`}>
         <Link
           className="flex justify-center items-center h-full w-full flex-col transition-box-shadow duration-500 ease-in-out group-hover:shadow-[0_6px_13px_rgba(26,36,49,0.35)]"

@@ -18,8 +18,8 @@ const page = () => {
 
       <div className="overflow-hidden">
         <div className="container">
-          <div className="flex">
-            <div className="basis-2/3 pt-24 pb-20 pr-12 relative before:z-[-1]">
+          <div className="flex lg:flex-nowrap flex-wrap">
+            <div className="lg:basis-2/3 basis-full lg:pt-24 pt-16 pb-20 pr-0 lg:pr-12 relative before:z-[-1]">
               <PrimaryHeadline
                 text="Schedule A Free Consultation"
                 additionalClass="text-3xl primary-headline-left"
@@ -32,7 +32,7 @@ const page = () => {
               </p>
               <ContactForm />
             </div>
-            <div className="basis-1/3 pt-24 pb-20 relative">
+            <div className="lg:basis-1/3 basis-full lg:pt-24 pt-0 lg:pb-20 pb-16 relative">
               <PrimaryHeadline
                 text="Get In Touch"
                 additionalClass="text-3xl primary-headline-left"

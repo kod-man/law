@@ -9,8 +9,8 @@ const Footer = () => {
     <>
       <div className="bg-background">
         <div className="container pt-20 pb-14">
-          <div className="flex lg:flex-nowrap sm:flex-wrap gap-8">
-            <div className="lg:basis-1/3 sm:basis-full">
+          <div className="flex lg:flex-nowrap flex-wrap gap-8">
+            <div className="lg:basis-1/3 basis-full">
               <div>
                 <Link href="http://bsmthemes.com/demo/lawyero">
                   <Image src={logo} alt="Logo" width={166} height={30} />
@@ -25,7 +25,7 @@ const Footer = () => {
                 <ButtonCustom href="#" text="Buy Now" />
               </div>
             </div>
-            <div className="lg:basis-1/3 sm:basis-full">
+            <div className="lg:basis-1/3 basis-full">
               <h3 className="text-3xl text-white font-bold mb-6">
                 <span className="text-[#14cab4]">Legal</span> Advert
               </h3>
@@ -39,7 +39,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="lg:basis-1/3 sm:basis-full">
+            <div className="lg:basis-1/3 basis-full">
               <h3 className="text-3xl text-white font-bold mb-6">
                 <span className="text-[#14cab4] font-bold">Opening </span> Hour
               </h3>
@@ -99,14 +99,14 @@ const Footer = () => {
       </div>
       <div className="bg-primary-main py-7">
         <div className="container">
-          <div className="flex items-center lg:flex-nowrap sm:flex-wrap">
-            <div className="lg:basis-1/2 sm:basis-full">
-              <p className="text-white lg:text-left sm:text-center lg:mb-0 sm:mb-4 text-sm leading-6">
+          <div className="flex items-center lg:flex-nowrap flex-wrap">
+            <div className="lg:basis-1/2 basis-full">
+              <p className="text-white lg:text-left text-center lg:mb-0 mb-4 text-sm leading-6">
                 &copy; Copyrights Lawyero 2024. All Rights Reserved.
               </p>
             </div>
-            <div className="lg:basis-1/2 sm:basis-full">
-              <ul className="flex lg:justify-end sm:justify-center items-center">
+            <div className="lg:basis-1/2 basis-full">
+              <ul className="flex lg:justify-end justify-center items-center">
                 <li className="w-8 ml-3">
                   <Link href="#">
                     <FontAwesomeIcon className="text-white" icon={["fab", "facebook"]} />

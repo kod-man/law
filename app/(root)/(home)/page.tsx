@@ -14,7 +14,7 @@ import Testimonials from "@/components/home/Testimonials";
 const Home = () => {
   return (
     <>
-      <Banner />
+      <Banner />    
       <PostBannerBox />
       <IconsWithCounters />
       <TwoColumnTextWithImage />

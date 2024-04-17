@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className="font-albert z-10">
       <div className="container py-2">
-        <div className="flex justify-between">
+        <div className="flex sm:justify-between justify-center sm:flex-nowrap flex-wrap">
           <div>
             Call Us:
             <Link className="font-bold" href="tel:1911462242">
@@ -38,7 +38,7 @@ const Header = () => {
             </div>
             <div className="text-white">
             <Sheet>
-              <SheetTrigger className="sm:block lg:hidden">
+              <SheetTrigger className="block lg:hidden">
                 <span className="h-[3px] w-7 block rounded-md bg-white mb-1"></span>
                 <span className="h-[3px] w-7 block rounded-md bg-white mb-1"></span>
                 <span className="h-[3px] w-7 block rounded-md bg-white"></span>
@@ -51,7 +51,7 @@ const Header = () => {
                     </Link>
                   </SheetTitle>
                   <SheetDescription>
-                    <ul className="flex xl:gap-8 lg:gap-4 sm:block lg:hidden *:text-white pt-8">
+                    <ul className="xl:gap-8 lg:gap-4 block lg:hidden *:text-white pt-8 text-left">
                     <li className="group relative">
                       <Link
                         href="/"
@@ -313,7 +313,7 @@ const Header = () => {
                   <span className="icon-bar"></span>
                 </button>
 
-                <ul className="flex xl:gap-8 lg:gap-4 sm:hidden lg:flex">
+                <ul className="xl:gap-8 lg:gap-4 hidden lg:flex">
                   <li className="group">
                     <Link
                       href="/"

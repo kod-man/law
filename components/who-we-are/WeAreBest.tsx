@@ -7,7 +7,7 @@ import { WeAreBestData } from "@/lib/data";
 const WeAreBest = () => {
   return (
     <div className="flex bg-lightgrey lg:flex-nowrap flex-wrap">
-      <div className="lg:pt-24 lg:pb-16 pt-16 pb-12 px-11 basis-full lg:basis-1/2 sm:basis-full relative">
+      <div className="lg:pt-24 lg:pb-16 pt-16 sm:pb-12 pb-8 px-8 lg:px-11 lg:basis-1/2 basis-full relative">
         <PrimaryHeadline
           text="We Are Best In Business"
           additionalClass="primary-headline-left"
@@ -29,7 +29,7 @@ const WeAreBest = () => {
           </div>
         ))}
       </div>
-      <div className="basis-full lg:basis-1/2 sm:basis-full relative lg:min-h-[100%] sm:min-h-96">
+      <div className="lg:basis-1/2 basis-full relative lg:min-h-[100%] min-h-96">
         <Image
           src={whowecontent2}
           alt="Who We Content"

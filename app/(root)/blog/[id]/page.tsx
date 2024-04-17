@@ -13,7 +13,7 @@ const page = ({ params }: URLParams) => {
         <div className="container">
           <div className="flex flex-wrap lg:flex-nowrap">
             <div className="lg:basis-[70%] basis-full lg:pr-8 pr-0">
-              <div className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0">
+              <div className="lg:mb-12 mb-0 lg:pb-12 pb-0 relative before:absolute before:bottom-0 before:left-0">
                 {blogPosts
                   .filter((item) => item.id === +params.id)
                   .map((filteredItem) => (
@@ -24,11 +24,11 @@ const page = ({ params }: URLParams) => {
                         className=""
                       />
                       <div className=" bg-white">
-                        <h2 className="my-6 text-[32px] leading-9 text-background font-bold capitalize">
+                        <h2 className="my-6 text-[25px] sm:text-[32px] leading-9 text-background font-bold capitalize">
                           {filteredItem.title}
                         </h2>
-                        <ul className="flex pb-6">
-                          <li className="flex items-center mr-5">
+                        <ul className="flex pb-6 sm:flex-nowrap flex-wrap">
+                          <li className="flex items-center mr-5 sm:basis-auto basis-full sm:mb-0 mb-4">
                             <FontAwesomeIcon
                               icon="calendar-day"
                               className="w-4"
@@ -37,7 +37,7 @@ const page = ({ params }: URLParams) => {
                               {formatDate(filteredItem.date)}
                             </span>
                           </li>
-                          <li className="flex items-center  mr-5">
+                          <li className="flex items-center  mr-5 sm:basis-auto basis-full sm:mb-0 mb-4">
                             <FontAwesomeIcon icon="user" className="w-4" />
                             <Link
                               className="text-base text-[#313131] hover:text-primary-main pl-2"
@@ -46,14 +46,14 @@ const page = ({ params }: URLParams) => {
                               {filteredItem.author}
                             </Link>
                           </li>
-                          <li className="text-base text-[#313131] flex items-center  mr-5">
+                          <li className="text-base text-[#313131] flex items-center  mr-5 sm:basis-auto basis-full">
                             <FontAwesomeIcon icon="comment" className="w-4" />
                             <span className="pl-2">
                               {filteredItem.comments} Comments
                             </span>
                           </li>
                         </ul>
-                        <ul className="flex pb-5">
+                        <ul className="flex md:flex-nowrap flex-wrap pb-5">
                           {blogCategories.map((item, index) => (
                             <li key={item.id}>
                               <Link
@@ -89,7 +89,7 @@ const page = ({ params }: URLParams) => {
                           over the years, sometimes by accident, sometimes on
                           purpose (injected humour and the like).
                         </p>
-                        <h3 className="text-[32px] text-[#333] font-bold pr-12 mb-3">
+                        <h3 className="text-[25px] sm:text-[32px] text-[#333] font-bold lg:pr-12 pr-0 mb-3">
                           What To Do First When Encounter An Accident?
                         </h3>
                         <p className="text-base text-[#333] leading-[1.62] mb-4">

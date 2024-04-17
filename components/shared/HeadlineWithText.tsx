@@ -7,9 +7,9 @@ interface HeadlineWithTextProps {
 
 const HeadlineWithText = ({ headlineText, text }: HeadlineWithTextProps) => {
   return (
-    <div className="container pt-20 pb-7">
+    <div className="container sm:pt-20 pt-14 pb-7">
       <PrimaryHeadline text={headlineText} />
-      <div className="pt-2 px-10 text-center">
+      <div className="pt-2 lg:px-10 px-0 text-center">
         <p className="text-base leading-6 text-[#333]">{text}</p>
       </div>
     </div>

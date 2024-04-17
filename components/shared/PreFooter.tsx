@@ -5,8 +5,8 @@ const PreFooter = () => {
   return (
     <div className="overflow-hidden">
       <div className="container">
-        <div className="flex lg:flex-nowrap sm:flex-wrap">
-          <div className="lg:basis-1/3 sm:basis-full lg:py-24 sm:py-16 relative before:z-[-1] before:top-0 before:absolute before:bg-grey before:content-[''] before:h-full lg:before:w-[50vw] sm:before:w-[150vw] lg:before:right-0 sm:before:-right-[25%]">
+        <div className="flex lg:flex-nowrap flex-wrap">
+          <div className="lg:basis-1/3 basis-full lg:py-24 py-16 relative before:z-[-1] before:top-0 before:absolute before:bg-grey before:content-[''] before:h-full lg:before:w-[50vw] before:w-[150vw] lg:before:right-0 before:-right-[25%]">
             <h3 className="text-3xl pb-5 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
               Get In Touch
             </h3>
@@ -67,7 +67,7 @@ const PreFooter = () => {
               </div>
             </div>
           </div>
-          <div className="lg:basis-2/3 sm:basis-full lg:py-24 sm:py-16 lg:pl-12 sm:pl-0 lg:pr-20 sm:pr-0 relative before:z-[-1] before:top-0 before:absolute before:bg-lightgrey before:content-[''] before:h-full lg:before:w-[80vw] lg:before:left-0 sm:before:w-[150vw] sm:before:-left-[25%]">
+          <div className="lg:basis-2/3 basis-full lg:py-24 py-16 lg:pl-12 pl-0 lg:pr-20 pr-0 relative before:z-[-1] before:top-0 before:absolute before:bg-lightgrey before:content-[''] before:h-full lg:before:w-[80vw] lg:before:left-0 before:w-[150vw] before:-left-[25%]">
             <h3 className="text-3xl pb-5 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
               Schedule A Free Consultation
             </h3>

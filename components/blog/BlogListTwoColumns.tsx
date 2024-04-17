@@ -13,7 +13,7 @@ const BlogListTwoColumns = ({ listStyle }: { listStyle?: string }) => {
           className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1] flex lg:flex-nowrap flex-wrap"
           key={item.id}
         >
-          <div
+          <div   
             className={`lg:basis-1/2 basis-full ${
               listStyle === "chess" && index % 2 == 1
                 ? "lg:pl-8 pl-0 lg:pb-0 pb-7 order-" + (index % 2)
@@ -31,13 +31,13 @@ const BlogListTwoColumns = ({ listStyle }: { listStyle?: string }) => {
               <h3 className="mb-6">
                 <Link
                   href={item.linkHref}
-                  className="inline-block text-[32px] leading-9 text-background font-bold cursor-pointer hover:text-primary-main capitalize"
+                  className="inline-block sm:text-[32px] text-[25px] leading-9 text-background font-bold cursor-pointer hover:text-primary-main capitalize"
                 >
                   {item.title}
                 </Link>
               </h3>
-              <ul className="flex pb-6 flex-wrap">
-                <li className="flex items-center mr-5">
+              <ul className="flex pb-6  sm:flex-nowrap flex-wrap">
+                <li className="flex items-center mr-5 sm:basis-auto basis-full sm:mb-0 mb-4">
                   <FontAwesomeIcon icon="calendar-day" className="w-4" />
                   <Link
                     className="text-base text-[#313131] hover:text-primary-main pl-2"
@@ -46,7 +46,7 @@ const BlogListTwoColumns = ({ listStyle }: { listStyle?: string }) => {
                     {formatDate(item.date)}
                   </Link>
                 </li>
-                <li className="flex items-center  mr-5">
+                <li className="flex items-center  mr-5 sm:basis-auto basis-full sm:mb-0 mb-4">
                   <FontAwesomeIcon icon="user" className="w-4" />
                   <Link
                     className="text-base text-[#313131] hover:text-primary-main pl-2"
@@ -55,7 +55,7 @@ const BlogListTwoColumns = ({ listStyle }: { listStyle?: string }) => {
                     {item.author}
                   </Link>
                 </li>
-                <li className="text-base text-[#313131] flex items-center mr-5">
+                <li className="text-base text-[#313131] flex items-center mr-5 sm:basis-auto basis-full">
                   <FontAwesomeIcon icon="comment" className="w-4" />
                   <span className="pl-2">{item.comments} Comments</span>
                 </li>

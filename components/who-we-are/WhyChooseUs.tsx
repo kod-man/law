@@ -7,7 +7,7 @@ import { WhyChooseUsData } from "@/lib/data";
 const WhyChooseUs = () => {
   return (
     <div className="flex bg-lightgrey lg:flex-nowrap flex-wrap">
-      <div className="basis-full lg:basis-1/2 sm:basis-full relative lg:min-h-[100%] sm:min-h-96">
+      <div className="lg:basis-1/2 basis-full relative lg:min-h-[100%] min-h-96">
         <Image
           src={whowecontent}
           alt="Who We Content"
@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
           className="object-cover"
         />
       </div>
-      <div className="lg:pb-16 pb-8 lg:pl-11 lg:basis-1/2 sm:basis-full lg:pt-24 pt-14 md:pb-4 sm:pl-8 lg:order-2 sm:-order-1">
+      <div className="lg:pb-16 pb-8 lg:pl-11 lg:basis-1/2 basis-full lg:pt-24 pt-14 md:pb-4 pl-8 lg:order-2 -order-1">
         <PrimaryHeadline
           text="Why Choose Us"
           additionalClass="primary-headline-left"

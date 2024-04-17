@@ -27,11 +27,11 @@ const CTA = ({
     (CTAWithImage = (
       <div className={`${bgClass ? bgClass : "bg-background"} py-6`}>
         <div className="container">
-          <div className="flex lg:flex-nowrap sm:flex-wrap items-center">
-            <div className="lg:basis-1/2 sm:basis-full">
-              <h3 className="text-xl lg:text-left sm:text-center text-white">{headline}</h3>
+          <div className="flex lg:flex-nowrap flex-wrap items-center">
+            <div className="lg:basis-1/2 basis-full">
+              <h3 className="text-xl lg:text-left text-center text-white">{headline}</h3>
             </div>
-            <div className="lg:basis-1/2 sm:basis-full lg:text-right sm:text-center lg:mt-0 sm:mt-7">
+            <div className="lg:basis-1/2 basis-full lg:text-right text-center lg:mt-0 mt-7">
               <ButtonCustom
                 href={buttonLink}
                 text={buttonText}
@@ -53,7 +53,7 @@ const CTA = ({
           className="object-cover"
         />
         <div className="container relative z-[3] text-center">
-          <h2 className="text-[40px] text-white font-bold lg:px-14 sm:px-0 text-center mb-9 inline-block leading-10">
+          <h2 className="sm:text-[40px] text-[25px] text-white font-bold lg:px-14 sm:px-0 text-center mb-9 inline-block leading-10">
             {headline}
           </h2>
           <Link

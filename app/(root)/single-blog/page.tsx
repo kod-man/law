@@ -14,8 +14,8 @@ const page = () => {
     <>
       <div className="relative py-[90px]">
         <div className="container">
-          <div className="flex flex-wrap">
-            <div className="basis-[70%] pr-8">
+          <div className="flex lg:flex-nowrap flex-wrap">
+            <div className="lg:basis-[70%] basis-full lg:pr-8 pr-0">
               <div className="mb-12 pb-12 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[150px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
                 <Image src={homeblog1} alt="Home BLog Post" className="" />
                 <div className=" bg-white">
@@ -24,7 +24,7 @@ const page = () => {
                       href="#"
                       className="inline-block text-[32px] leading-9 text-background font-bold cursor-pointer hover:text-primary-main capitalize"
                     >
-                      When to seek legal help? Important to know when
+                      When to seek legal help? Important to know whens
                     </Link>
                   </h2>
                   <ul className="flex pb-6">
@@ -246,7 +246,7 @@ const page = () => {
                 </form>
               </div>
             </div>
-            <div className="basis-[30%]">
+            <div className="lg:basis-[30%] basis-full lg:pt-0 pt-20">
               <div className="relative">
                 <FontAwesomeIcon
                   icon="search"
@@ -448,9 +448,9 @@ const page = () => {
                 <h3 className="text-[32px] pb-3 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
                   Browse <span className="text-background">Our Gallery</span>
                 </h3>
-                <ul className="flex flex-wrap justify-between">
-                  <li className="basis-[30%] mb-2">
-                    <Link className="inline-block h-[105px] w-[105px]" href="#">
+                <ul className="lg:flex grid flex-wrap justify-between grid-cols-3 lg:gap-0 gap-5">
+                  <li className="lg:basis-[30%] basis-1/3 mb-2">
+                    <Link className="inline-block lg:h-[105px] h-full lg:w-[105px] w-full" href="#">
                       <Image
                         src={sideblog1}
                         alt="BLog Post Img"
@@ -458,8 +458,8 @@ const page = () => {
                       />
                     </Link>
                   </li>
-                  <li className="basis-[30%] mb-2">
-                    <Link className="inline-block h-[105px] w-[105px]" href="#">
+                  <li className="lg:basis-[30%] basis-1/3 mb-2">
+                    <Link className="inline-block lg:h-[105px] h-full lg:w-[105px] w-full" href="#">
                       <Image
                         src={sideblog2}
                         alt="BLog Post Img"
@@ -467,8 +467,8 @@ const page = () => {
                       />
                     </Link>
                   </li>
-                  <li className="basis-[30%] mb-2">
-                    <Link className="inline-block h-[105px] w-[105px]" href="#">
+                  <li className="lg:basis-[30%] basis-1/3 mb-2">
+                    <Link className="inline-block lg:h-[105px] h-full lg:w-[105px] w-full" href="#">
                       <Image
                         src={sideblog3}
                         alt="BLog Post Img"
@@ -476,8 +476,8 @@ const page = () => {
                       />
                     </Link>
                   </li>
-                  <li className="basis-[30%] mb-2">
-                    <Link className="inline-block h-[105px] w-[105px]" href="#">
+                  <li className="lg:basis-[30%] basis-1/3 mb-2">
+                    <Link className="inline-block lg:h-[105px] h-full lg:w-[105px] w-full" href="#">
                       <Image
                         src={sideblog4}
                         alt="BLog Post Img"
@@ -485,8 +485,8 @@ const page = () => {
                       />
                     </Link>
                   </li>
-                  <li className="basis-[30%] mb-2">
-                    <Link className="inline-block h-[105px] w-[105px]" href="#">
+                  <li className="lg:basis-[30%] basis-1/3 mb-2">
+                    <Link className="inline-block lg:h-[105px] h-full lg:w-[105px] w-full" href="#">
                       <Image
                         src={sideblog5}
                         alt="BLog Post Img"
@@ -494,8 +494,8 @@ const page = () => {
                       />
                     </Link>
                   </li>
-                  <li className="basis-[30%] mb-2">
-                    <Link className="inline-block h-[105px] w-[105px]" href="#">
+                  <li className="lg:basis-[30%] basis-1/3 mb-2">
+                    <Link className="inline-block lg:h-[105px] h-full lg:w-[105px] w-full" href="#">
                       <Image
                         src={sideblog6}
                         alt="BLog Post Img"

@@ -7,8 +7,8 @@ import Link from "next/link";
 const page = () => {
   return (
     <> 
-      <div className="container py-[90px] text-center">
-        <h1 className="text-[40px] text-[#333] font-bold mb-8">OOPS! SOMETHING WENT WRONG</h1>
+      <div className="container sm:py-[90px] py-[70px] text-center">
+        <h1 className="sm:text-[40px] text-[25px] text-[#333] font-bold mb-8">OOPS! SOMETHING WENT WRONG</h1>
         <FontAwesomeIcon
           icon="exclamation-circle"
           className="w-20 h-20 text-background m-auto"

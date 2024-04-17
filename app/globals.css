@@ -78,19 +78,19 @@
     @apply text-foreground font-albert;
   }
   .primary-button {
-    @apply inline-block py-[15px] px-7 font-bold uppercase bg-primary-main transition-all hover:pr-11 text-white relative;
+    @apply inline-block sm:py-[15px] py-[10px] px-7 font-bold uppercase bg-primary-main transition-all hover:pr-11 text-white relative;
   }
   .primary-button-dark {
-    @apply inline-block py-[15px] px-7 border-2 border-transparent font-bold uppercase bg-primary-main transition-all hover:pr-11 text-white relative hover:bg-transparent hover:text-primary-main hover:border-primary-main;
+    @apply inline-block sm:py-[15px] py-[10px] px-7 border-2 border-transparent font-bold uppercase bg-primary-main transition-all hover:pr-11 text-white relative hover:bg-transparent hover:text-primary-main hover:border-primary-main;
   }
   .primary-headline {
-    @apply text-[40px] text-primary-main font-bold relative mb-10 pb-2 text-center before:absolute before:bottom-0 before:left-0 before:m-auto before:right-0 before:bg-[#313131] before:w-[150px] before:h-[3px] after:absolute after:bottom-0 after:left-0 after:m-auto after:right-0 after:bg-primary-main after:w-[70px] after:h-[3px];
+    @apply sm:text-[40px] text-[25px] text-primary-main font-bold relative mb-10 pb-2 text-center before:absolute before:bottom-0 before:left-0 before:m-auto before:right-0 before:bg-[#313131] before:w-[150px] before:h-[3px] after:absolute after:bottom-0 after:left-0 after:m-auto after:right-0 after:bg-primary-main after:w-[70px] after:h-[3px];
   }
   .primary-headline-left {
-    @apply text-[40px] pb-4 mb-9 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1];
+    @apply sm:text-[40px] text-[25px] pb-4 mb-9 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1];
   }
   .secondary-headline {
-    @apply text-[40px] text-white font-bold relative mb-10 pb-2 text-center before:absolute before:bottom-0 before:left-0 before:m-auto before:right-0 before:bg-[#fff] before:w-[150px] before:h-[3px] after:absolute after:bottom-0 after:left-0 after:m-auto after:right-0 after:bg-primary-main after:w-[70px] after:h-[3px];
+    @apply sm:text-[40px] text-[25px] text-white font-bold relative mb-10 pb-2 text-center before:absolute before:bottom-0 before:left-0 before:m-auto before:right-0 before:bg-[#fff] before:w-[150px] before:h-[3px] after:absolute after:bottom-0 after:left-0 after:m-auto after:right-0 after:bg-primary-main after:w-[70px] after:h-[3px];
   }
   .secondary-button {
     @apply inline-block py-[11px] px-7 border-2 border-transparent font-bold uppercase bg-background transition-all hover:pr-11 text-white relative hover:bg-transparent hover:text-background hover:border-background;

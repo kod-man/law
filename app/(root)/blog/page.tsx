@@ -9,7 +9,7 @@ const Page = () => {
 
       <div className="relative py-[90px]">
         <div className="container">
-          <div className="flex sm:flex-wrap lg:flex-nowrap">
+          <div className="flex flex-wrap lg:flex-nowrap">
             <BlogList layoutClass="lg:basis-[70%] basis-full" />
             <Sidebar />
           </div>
