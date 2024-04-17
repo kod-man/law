@@ -22,7 +22,7 @@ const Header = () => {
     <header className="font-albert z-10">
       <div className="container py-2">
         <div className="flex sm:justify-between justify-center sm:flex-nowrap flex-wrap">
-          <div>
+          <div className="sm:basis-auto basis-full sm:text-left text-center">
             Call Us:
             <Link className="font-bold" href="tel:1911462242">
               1911-462-2425
