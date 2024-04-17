@@ -11,6 +11,13 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible"
+
+
 
 const Header = () => {
   return (
@@ -52,18 +59,20 @@ const Header = () => {
                   </SheetTitle>
                   <SheetDescription>
                     <ul className="xl:gap-8 lg:gap-4 block lg:hidden *:text-white pt-8 text-left">
-                    <li className="group relative">
+                    <li className="relative">
                       <Link
-                        href="/"
-                        className="py-3 pr-4 block relative after:transition-transform duration-300 ease-in-out border-b border-white">
-                        Home
-                        <FontAwesomeIcon
-                          icon="chevron-down"
-                          className="absolute top-1/2 -translate-y-1/2 right-0 w-2.5"
-                        />
-                      </Link>
-                      <ul
-                        className="absolute bg-background lg:min-w-52 w-full top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                          href="/"
+                          className="py-3 pr-0 block relative after:transition-transform duration-300 ease-in-out border-b border-white">
+                          <Collapsible>
+                            <CollapsibleTrigger>
+                                Home
+                                <FontAwesomeIcon
+                                  icon="chevron-down"
+                                  className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
+                                />                          
+                            </CollapsibleTrigger>
+                            <CollapsibleContent>
+                      <ul className="bg-background lg:min-w-52 w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
                         role="list"
                       >
                         <li>
@@ -81,7 +90,7 @@ const Header = () => {
                         <li>
                           <Link
                             href="/home-2/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                            className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
                           >
                             <FontAwesomeIcon
                               icon="chevron-right"
@@ -91,6 +100,9 @@ const Header = () => {
                           </Link>
                         </li>
                       </ul>
+                            </CollapsibleContent>
+                          </Collapsible>
+                      </Link>
                     </li>
                     <li className="group relative">
                       <Link
@@ -100,19 +112,23 @@ const Header = () => {
                         Who We Are
                       </Link>
                     </li>
-                    <li className="group relative">
+                    <li className="relative">
                       <Link
                         href="#"
-                        className="py-3 pr-4 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                        className="py-3  block relative after:transition-transform duration-300 ease-in-out border-b border-white"
                       >
+                        <Collapsible>
+                            <CollapsibleTrigger>
                         Practice Areas
                         <FontAwesomeIcon
                           icon="chevron-down"
-                          className="absolute top-1/2 -translate-y-1/2 right-0 w-2.5"
+                          className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
                         />
-                      </Link>
+                        </CollapsibleTrigger>
+                            <CollapsibleContent>
+                      
                       <ul
-                        className="absolute bg-background w-full top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                        className="bg-background w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
                         role="list"
                       >
                         <li>
@@ -142,7 +158,7 @@ const Header = () => {
                         <li>
                           <Link
                             href="/single-practice-area/"
-                            className="text-white px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                            className="text-white px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
                           >
                             <FontAwesomeIcon
                               icon="chevron-right"
@@ -152,26 +168,32 @@ const Header = () => {
                           </Link>
                         </li>
                       </ul>
+                      </CollapsibleContent>
+                          </Collapsible>
+                          </Link>
                     </li>
-                    <li className="group relative">
+                    <li className="relative">
                       <Link
                         href="#"
-                        className="text-white py-3 pr-4 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                        className="text-white py-3  block relative after:transition-transform duration-300 ease-in-out border-b border-white"
                       >
+                        <Collapsible>
+                            <CollapsibleTrigger>
                         Team Members
                         <FontAwesomeIcon
                           icon="chevron-down"
-                          className="absolute top-1/2 -translate-y-1/2 right-0 w-2.5"
+                          className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
                         />
-                      </Link>
+                      </CollapsibleTrigger>
+                            <CollapsibleContent>
                       <ul
-                        className="absolute bg-background w-full top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                        className="bg-background w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
                         role="list"
                       >
                         <li>
                           <Link
                             href="/single-team-member/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                            className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
                           >
                             <FontAwesomeIcon
                               icon="chevron-right"
@@ -181,20 +203,26 @@ const Header = () => {
                           </Link>
                         </li>
                       </ul>
+                      </CollapsibleContent>
+                          </Collapsible>
+                          </Link>
                     </li>
-                    <li className="group relative">
+                    <li className="relative">
                       <Link
                         href="#"
-                        className="text-white py-3 pr-4 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                        className="text-white py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
                       >
+                        <Collapsible>
+                            <CollapsibleTrigger>
                         Pages
                         <FontAwesomeIcon
                           icon="chevron-down"
-                          className="absolute top-1/2 -translate-y-1/2 right-0 w-2.5"
+                          className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
                         />
-                      </Link>
+                      </CollapsibleTrigger>
+                            <CollapsibleContent>
                       <ul
-                        className="absolute bg-background w-full top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                        className="bg-background w-full top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
                         role="list"
                       >
                         <li>
@@ -212,7 +240,7 @@ const Header = () => {
                         <li>
                           <Link
                             href="/404/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                            className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
                           >
                             <FontAwesomeIcon
                               icon="chevron-right"
@@ -222,20 +250,26 @@ const Header = () => {
                           </Link>
                         </li>
                       </ul>
+                      </CollapsibleContent>
+                          </Collapsible>
+                          </Link>
                     </li>
-                    <li className="group relative">
+                    <li className="relative">
                       <Link
                         href="#"
-                        className="py-3 pr-4 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
+                        className="py-3 block relative after:transition-transform duration-300 ease-in-out border-b border-white"
                       >
+                        <Collapsible>
+                            <CollapsibleTrigger>
                         Blog
                         <FontAwesomeIcon
                           icon="chevron-down"
-                          className="absolute top-1/2 -translate-y-1/2 right-0 w-2.5"
+                          className="absolute top-[21px] -translate-y-1/2 right-0 w-2.5"
                         />
-                      </Link>
+                      </CollapsibleTrigger>
+                            <CollapsibleContent>
                       <ul
-                        className="absolute bg-background w-full lg:right-0 top-full rounded-b-lg divide-y divide-[#29374a] opacity-0 scale-y-0 origin-top-left group-hover:opacity-100 group-hover:scale-y-100 transition ease-menu delay-100 duration-500  z-10"
+                        className=" bg-background w-full lg:right-0 top-full rounded-b-lg divide-y divide-white transition ease-menu delay-100 duration-500  z-10"
                         role="list"
                       >
                         <li>
@@ -278,7 +312,7 @@ const Header = () => {
                         <li>
                           <Link
                             href="/blog-grid/"
-                            className="px-5 py-4 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
+                            className="px-5 py-4 pb-0 block hover:text-primary-main relative group/subItem transition-all hover:pl-7"
                           >
                             <FontAwesomeIcon
                               icon="chevron-right"
@@ -288,6 +322,9 @@ const Header = () => {
                           </Link>
                         </li>
                       </ul>
+                      </CollapsibleContent>
+                          </Collapsible>
+                          </Link>
                     </li>
                     <li className="group relative">
                       <Link

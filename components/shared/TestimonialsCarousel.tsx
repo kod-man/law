@@ -40,8 +40,8 @@ export function TestimonialsCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="left-0 border-2 border-white opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-white bg-transparent" />
-      <CarouselNext className="right-0 border-2 border-white opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-white bg-transparent" />
+      <CarouselPrevious className="left-0 border-2 sm:top-1/2 top-[112%] border-white opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-white bg-transparent" />
+      <CarouselNext className="right-0 border-2 sm:top-1/2 top-[112%] border-white opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-white bg-transparent" />
     </Carousel>
   );
 }
