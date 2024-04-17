@@ -1,7 +1,8 @@
 import { BannerIconBoxes } from "@/lib/data";
 import IconBox from "../shared/IconBox";
+import { useRef } from "react";
 
-const postBannerBox = () => {
+const PostBannerBox = () => {
   return (
     <div className="container lg:px-8 px-0 lg:-mt-36 md:mt-0 relative z-[3]">
       <div className="flex lg:flex-nowrap flex-wrap">
@@ -21,4 +22,4 @@ const postBannerBox = () => {
   );
 };
 
-export default postBannerBox;
+export default PostBannerBox;
