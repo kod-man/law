@@ -1,5 +1,5 @@
 export interface bannerItemsType {
-  id: string;
+  id: number;
   content: string;
   linkText: string;
   image: StaticImageData;

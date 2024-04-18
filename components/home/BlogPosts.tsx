@@ -12,7 +12,7 @@ const BlogPosts = () => {
           <div className="grid grid-rows-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-7">
             {blogPosts.map((item) => (
               <BlogCard
-                key={item.id}
+                key={`blog${item.id}`}
                 imageURL={item.featuredImage.node.mediaItem}
                 date={item.date}
                 linkHref={item.linkHref}

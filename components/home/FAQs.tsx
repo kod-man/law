@@ -10,7 +10,7 @@ const FAQs = () => {
         <div className="flex pt-3 flex-wrap">
           {FAQData.map((item) => (
             <FAQItem
-              key={item.id}
+              key={`faq${item.id}`}
               question={item.question}
               answer={item.answer}
             />

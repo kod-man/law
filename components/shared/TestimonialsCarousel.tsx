@@ -19,7 +19,7 @@ export function TestimonialsCarousel() {
     >
       <CarouselContent>
         {Testimonials.map((item) => (
-          <CarouselItem key={item.id}>
+          <CarouselItem key={`testimonial${item.id}`}>
             <div className="*:text-white lg:w-[850px] lg:px-0 sm:px-[90px] sm:w-full m-auto">
               <Image
                 src={item.image}
@@ -40,8 +40,8 @@ export function TestimonialsCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-        <CarouselPrevious className="sm:left-0 left-auto sm:right-auto right-[60px] border-2 sm:top-1/2 top-[112%] border-white opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-white bg-transparent" />
-        <CarouselNext className="right-0 border-2 sm:top-1/2 top-[112%] border-white opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-white bg-transparent" />
+      <CarouselPrevious className="sm:left-0 left-auto sm:right-auto right-[60px] border-2 sm:top-1/2 top-[112%] border-white opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-white bg-transparent" />
+      <CarouselNext className="right-0 border-2 sm:top-1/2 top-[112%] border-white opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-white bg-transparent" />
     </Carousel>
   );
 }

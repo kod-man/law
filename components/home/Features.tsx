@@ -18,7 +18,7 @@ const Features = () => {
         <div className="lg:basis-1/2 basis-full pt-20 md:pb-4 lg:pl-8 pl-8 lg:order-2 -order-1">
           {HomepageFeatures.map((item) => (
             <LeftIconBox
-              key={item.id}
+              key={`features${item.id}`}
               iconName={item.iconName}
               headline={item.headline}
               content={item.content}

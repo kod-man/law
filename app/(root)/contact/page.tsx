@@ -3,7 +3,6 @@ import InnerBanner from "@/components/global/inner-banner";
 import { ContactForm } from "@/components/global/ContactForm";
 import PrimaryHeadline from "@/components/global/primary-headline";
 import { Suspense } from "react";
-import Loading from "../loading";
 import Iframe from "@/components/shared/Iframe";
 
 const page = () => {
@@ -11,9 +10,7 @@ const page = () => {
     <>
       <InnerBanner text="Contact Page" />
       <div className="w-full">
-        <Suspense fallback={<Loading />}>
-          <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.3198605784473!2d151.2501603754003!3d-33.88141516051197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12adea8d78a407%3A0x1bd0d69402d8e8ed!2sMarch%20St%2C%20Bellevue%20Hill%20NSW%202023%2C%20Australia!5e0!3m2!1sen!2s!4v1710833934772!5m2!1sen!2s" />
-        </Suspense>
+        <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.3198605784473!2d151.2501603754003!3d-33.88141516051197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12adea8d78a407%3A0x1bd0d69402d8e8ed!2sMarch%20St%2C%20Bellevue%20Hill%20NSW%202023%2C%20Australia!5e0!3m2!1sen!2s!4v1710833934772!5m2!1sen!2s" />
       </div>
 
       <div className="overflow-hidden">

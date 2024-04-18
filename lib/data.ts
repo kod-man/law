@@ -1,4 +1,4 @@
-import { IconProp, text } from "@fortawesome/fontawesome-svg-core";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import homeblog1 from "@/public/assets/home-blog-1.jpg";
 import homeblog2 from "@/public/assets/home-blog-2.jpg";
 import homeblog3 from "@/public/assets/home-blog-3.jpg";
@@ -22,10 +22,7 @@ import paimage6 from "@/public/assets/pa-img-6.jpg";
 import paimage7 from "@/public/assets/pa-img-7.jpg";
 import paimage8 from "@/public/assets/pa-img-8.jpg";
 
-import image, { StaticImageData } from "next/image";
-import { title } from "process";
-import { date } from "zod";
-
+import { StaticImageData } from "next/image";
 export const BannerImages = [
   {
     caption: "Your Consultant for every legal Issue",
@@ -68,45 +65,10 @@ export const BannerImages = [
   },
 ];
 
-interface BannerIconBoxesProps {
-  id: number;
-  headline: string;
-  content: string;
-  iconName: IconProp;
-  type: string;
-}
-
-export const BannerIconBoxes: BannerIconBoxesProps[] = [
-  {
-    id: 1,
-    headline: "20+ Years Of Experience",
-    content:
-      "We are in the law industry for more than 20 years with more than 98% of client satisfaction",
-    iconName: "user",
-    type: "bg-grey",
-  },
-  {
-    id: 2,
-    headline: "Qualified And Experienced Attorneys",
-    content:
-      "Our team is the best in the business. We are team of attorneys which are passionate about their jobs.",
-    iconName: "shopping-bag",
-    type: "bg-lightgrey",
-  },
-  {
-    id: 3,
-    headline: "Awards And Achievements",
-    content:
-      "We at lawyero earned the best law firm award in 2017 with a success ratio of 99%.",
-    iconName: "trophy",
-    type: "bg-grey",
-  },
-];
-
 interface StatsWithIconProps {
   id: number;
   amountPreText: string;
-  amount: string;
+  amount: number;
   amountPostText: string;
   text: string;
   iconName: IconProp;
@@ -116,7 +78,7 @@ export const StatsWithIcon: StatsWithIconProps[] = [
   {
     id: 1,
     amountPreText: "",
-    amount: "150",
+    amount: 150,
     amountPostText: "+",
     text: "Customers",
     iconName: "handshake",
@@ -124,7 +86,7 @@ export const StatsWithIcon: StatsWithIconProps[] = [
   {
     id: 2,
     amountPreText: "$",
-    amount: "20000000",
+    amount: 20000000,
     amountPostText: "",
     text: "Recovered",
     iconName: "dollar",
@@ -132,7 +94,7 @@ export const StatsWithIcon: StatsWithIconProps[] = [
   {
     id: 3,
     amountPreText: "",
-    amount: "98",
+    amount: 98,
     amountPostText: "%",
     text: "Success Rato",
     iconName: "thumbs-up",
@@ -143,7 +105,7 @@ export const StatsWithIconTeam: StatsWithIconProps[] = [
   {
     id: 1,
     amountPreText: "",
-    amount: "2000",
+    amount: 2000,
     amountPostText: "+",
     text: "Happy Clients",
     iconName: "smile",
@@ -151,7 +113,7 @@ export const StatsWithIconTeam: StatsWithIconProps[] = [
   {
     id: 3,
     amountPreText: "",
-    amount: "98",
+    amount: 98,
     amountPostText: "%",
     text: "Success Rato",
     iconName: "thumbs-up",
@@ -159,7 +121,7 @@ export const StatsWithIconTeam: StatsWithIconProps[] = [
   {
     id: 2,
     amountPreText: "$",
-    amount: "20000000",
+    amount: 20000000,
     amountPostText: "",
     text: "Recovered",
     iconName: "dollar",
@@ -571,7 +533,7 @@ export const Testimonials: TestimonialsProps[] = [
     designation: "CEO Operations",
   },
   {
-    id: 1,
+    id: 2,
     image: testimonialimg2,
     name: "John Kerry",
     text: "Our business was stuck in one of complex legal issue and one of our clients suggest team Lawyero. Now they are our official legal team which help us in numerous cases. Recommended to all!",
@@ -579,7 +541,7 @@ export const Testimonials: TestimonialsProps[] = [
     designation: "Founder",
   },
   {
-    id: 1,
+    id: 3,
     image: testimonialimg3,
     name: "Grant Josh",
     text: "Team Lawyero is the best. Their team is awesome and when we visited their office their team welcomed us and make us feel really at home. They not only took our case but also helped us understand the complexity of the case. They fought for us and get the desired results soon. Thank you team lawyero! You are AWESOME.",

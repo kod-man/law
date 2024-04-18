@@ -5,21 +5,21 @@ import { bannerItemsType } from "@/types";
 
 export const bannerItems: bannerItemsType[] = [
   {
-    id: "banner1",
+    id: 1,
     content: "Your Consultant for every legal Issue",
     linkText: "Find out More",
     image: banner1,
     linkHref: "#",
   },
   {
-    id: "banner2",
+    id: 2,
     content: "Your Consultant for every legal Issue",
     linkText: "Find out More",
     image: banner2,
     linkHref: "#",
   },
   {
-    id: "banner3",
+    id: 3,
     content: "Your Consultant for every legal Issue",
     linkText: "Find out More",
     image: banner3,

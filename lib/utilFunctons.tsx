@@ -22,3 +22,15 @@ export function formatDate(inputDate: string): string {
   };
   return date.toLocaleDateString("en-GB", options);
 }
+
+export const formatCurrency = (amount: number) => {
+  // Format the number as currency without the dollar sign
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  })
+    .format(amount)
+    .replace("$", "");
+};

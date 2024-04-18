@@ -9,7 +9,7 @@ const PracticeAreas = () => {
       <div className="flex flex-wrap -mx-2">
         {HomepagePAs.map((item, index) => (
           <IconCardWithLink
-            key={item.id}
+            key={`PA${item.id}`}
             link={item.link}
             pa={item.PA}
             iconName={item.iconName}
