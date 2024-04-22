@@ -1,4 +1,4 @@
-import { Accessibility, Award } from "lucide-react";
+import {Award, User, BriefcaseBusiness, Trophy, Link, Phone, Coffee, Scale, PersonStanding, CarFront, PoundSterling, Tv, CircleGauge, Ambulance, CirclePlay, } from "lucide-react";
 
 interface BannerIconBoxesProps {
   id: number;
@@ -15,7 +15,7 @@ export const BannerIconBoxes: BannerIconBoxesProps[] = [
     content:
       "We are in the law industry for more than 20 years with more than 98% of client satisfaction",
     iconName: (
-      <Award
+      <User 
         size="70"
         className="border-2 p-3 border-primary-main text-primary-main"
       />
@@ -28,7 +28,7 @@ export const BannerIconBoxes: BannerIconBoxesProps[] = [
     content:
       "Our team is the best in the business. We are team of attorneys which are passionate about their jobs.",
     iconName: (
-      <Accessibility
+      <BriefcaseBusiness 
         size="70"
         className="border-2 p-3 border-primary-main text-primary-main"
       />
@@ -41,7 +41,7 @@ export const BannerIconBoxes: BannerIconBoxesProps[] = [
     content:
       "We at lawyero earned the best law firm award in 2017 with a success ratio of 99%.",
     iconName: (
-      <Accessibility
+      <Trophy 
         size="70"
         className="border-2 p-3 border-primary-main text-primary-main"
       />
@@ -64,7 +64,7 @@ export const HomepageFeatures: FeaturesProps[] = [
     content:
       "Our attorneys are committed to you and will work vigorously to obtain the best possible recovery in your case.",
     iconName: (
-      <Award
+      <Link
         size={42}
         className="w-14 h-14 border-2 p-3 border-primary-main text-primary-main"
       />
@@ -75,21 +75,36 @@ export const HomepageFeatures: FeaturesProps[] = [
     headline: "SCREENING FREE",
     content:
       "At the our law Firm, you do not have to go through a call screen. You will get to speak to an attorney directly, preferably the one who will be handling your case.",
-    iconName: "phone",
+    iconName: (
+    <Phone
+        size={42}
+        className="w-14 h-14 border-2 p-3 border-primary-main text-primary-main"
+      />
+    ),
   },
   {
     id: 3,
     headline: "ALWAYS RESPONSIVE",
     content:
-      "Your attorney will address any problems quickly and respect your time by promptly replying to your inquiries.",
-    iconName: "mug-hot",
+      "Your attorney will address any problems quickly and respect your time by promptly replying to your inquiries.", 
+    iconName: (
+      <Coffee
+          size={42}
+          className="w-14 h-14 border-2 p-3 border-primary-main text-primary-main"
+        />
+      ),
   },
   {
     id: 4,
     headline: "CASE EXPERIENCE",
     content:
       "Our attorneys are experienced and can handle any type of injury case for you.",
-    iconName: "suitcase",
+    iconName: (
+      <BriefcaseBusiness
+          size={42}
+          className="w-14 h-14 border-2 p-3 border-primary-main text-primary-main"
+        />
+      ),
   },
 ];
 
@@ -169,5 +184,104 @@ export const AttorneyPAList: FeaturesProps[] = [
     content:
       "Robert has done well in the past 10 years tackling with emergency situations and have successfully taken clients case which lead them to protection under law.",
     iconName: "volume-high",
+  },
+];
+
+
+interface HomepagePAsProps {
+  id: number;
+  link: string;
+  PA: string;
+  iconName: React.ReactNode;
+}
+
+export const HomepagePAs: HomepagePAsProps[] = [
+  {
+    id: 1,
+    link: "#",
+    PA: "Family Law",
+    iconName: (
+      <Scale 
+          size={60}
+          className="w-15 h-14 border-2 border-none text-white"
+        />
+      ),
+  },
+  {
+    id: 2,
+    link: "#",
+    PA: "Child Custody",
+    iconName: (
+      <PersonStanding  
+          size={60}
+          className="w-15 h-14 border-2 border-none text-white"
+        />
+      ),
+  },
+  {
+    id: 3,
+    link: "#",
+    PA: "Auto Accidents",
+    iconName: (
+      <CarFront 
+        size={60}
+          className="w-15 h-14 border-2 border-none text-white"
+        />
+      ),
+  },
+  { 
+    id: 4,
+    link: "#",
+    PA: "Business Law",
+    iconName: (
+      <PoundSterling 
+        size={60}
+          className="w-15 h-14 border-2 border-none text-white"
+        />
+      ),
+  },
+  {
+    id: 5,
+    link: "#",
+    PA: "Internet Fraud",
+    iconName: (
+      <Tv 
+        size={60}
+          className="w-15 h-14 border-2 border-none text-white"
+        />
+      ),
+  },
+  {
+    id: 6,
+    link: "#",
+    PA: "Sports Injury",
+    iconName: (
+      <CircleGauge  
+        size={60}
+          className="w-15 h-14 border-2 border-none text-white"
+        />
+      ),
+  },
+  {
+    id: 7,
+    link: "#",
+    PA: "Emergency Law",
+    iconName: (
+      <Ambulance 
+        size={60}
+          className="w-15 h-14 border-2 border-none text-white"
+        />
+      ),
+  },
+  {
+    id: 8,
+    link: "#",
+    PA: "Drowning Law",
+    iconName: (
+      <CirclePlay  
+        size={60}
+          className="w-15 h-14 border-2 border-none text-white"
+        />
+      ),
   },
 ];

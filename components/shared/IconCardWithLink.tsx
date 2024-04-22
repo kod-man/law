@@ -1,10 +1,8 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 interface IconCardWithLinkProps {
   link: string;
-  iconName: IconProp;
+  iconName: React.ReactNode;
   pa: string;
   cardBgClass: string;
 }
@@ -23,7 +21,7 @@ const IconCardWithLink = ({
           href={link}
         >
           <span className="inline-block">
-            <FontAwesomeIcon icon={iconName} className="w-14 h-14 text-white" />
+            {iconName}
           </span>
           <h3 className="text-2xl text-white font-semibold mt-5">{pa}</h3>
         </Link>

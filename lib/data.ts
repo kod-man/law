@@ -128,63 +128,6 @@ export const StatsWithIconTeam: StatsWithIconProps[] = [
   },
 ];
 
-interface HomepagePAsProps {
-  id: number;
-  link: string;
-  PA: string;
-  iconName: IconProp;
-}
-
-export const HomepagePAs: HomepagePAsProps[] = [
-  {
-    id: 1,
-    link: "#",
-    PA: "Family Law",
-    iconName: "scale-balanced",
-  },
-  {
-    id: 2,
-    link: "#",
-    PA: "Child Custody",
-    iconName: "child",
-  },
-  {
-    id: 3,
-    link: "#",
-    PA: "Auto Accidents",
-    iconName: "car",
-  },
-  {
-    id: 4,
-    link: "#",
-    PA: "Business Law",
-    iconName: "sterling-sign",
-  },
-  {
-    id: 5,
-    link: "#",
-    PA: "Internet Fraud",
-    iconName: "print",
-  },
-  {
-    id: 6,
-    link: "#",
-    PA: "Sports Injury",
-    iconName: "futbol",
-  },
-  {
-    id: 7,
-    link: "#",
-    PA: "Emergency Law",
-    iconName: "truck-medical",
-  },
-  {
-    id: 8,
-    link: "#",
-    PA: "Drowning Law",
-    iconName: "futbol",
-  },
-];
 
 interface blogPostsProps {
   id: number;
