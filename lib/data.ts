@@ -21,6 +21,7 @@ import paimage5 from "@/public/assets/pa-img-5.jpg";
 import paimage6 from "@/public/assets/pa-img-6.jpg";
 import paimage7 from "@/public/assets/pa-img-7.jpg";
 import paimage8 from "@/public/assets/pa-img-8.jpg";
+import homepageTypewriter from "@/public/assets/lawyer-ticker-min.jpg";
 
 import { StaticImageData } from "next/image";
 export const BannerImages = [
@@ -629,3 +630,19 @@ export const blogTags: blogTagsProps[] = [
     name: "Attorney",
   },
 ];
+
+interface homeBannerTypewriterProps {
+  image: StaticImageData;
+  words: string[];
+}
+
+export const homeBannerTypewriter: homeBannerTypewriterProps = {
+  image: homepageTypewriter,
+  words: [
+    "Criminal Law",
+    "Divorce Law",
+    "Family Law",
+    "Immigration Law",
+    "Real Estate Law",
+  ],
+};
