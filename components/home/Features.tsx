@@ -1,6 +1,6 @@
 import Image from "next/image";
 import LeftIconBox from "../shared/LeftIconBox";
-import { HomepageFeatures } from "@/lib/data";
+import { HomepageFeatures } from "@/lib/dataWithJSX";
 import homeserviceimage from "@/public/assets/home-service-image.jpg";
 
 const Features = () => {

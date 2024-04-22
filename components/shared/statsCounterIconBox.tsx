@@ -39,6 +39,15 @@ const StatsCounterIconBox = ({
         trigger: amountRef.current,
         start: "top 70%",
       },
+      onUpdate: () => {
+        if (amountRef.current) {
+          const currentValue = parseFloat(
+            amountRef.current.innerHTML.replace(/[^0-9.-]+/g, "")
+          );
+          amountRef.current.innerHTML = formatCurrency(currentValue);
+        }
+      },
+
       onComplete: () => {
         if (amountRef.current) {
           amountRef.current.innerHTML = formatCurrency(endAmount);
