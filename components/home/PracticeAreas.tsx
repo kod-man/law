@@ -1,5 +1,5 @@
 import PrimaryHeadline from "../global/primary-headline";
-import { HomepagePAs } from "@/lib/data";
+import { HomepagePAs } from "@/lib/dataWithJSX";
 import IconCardWithLink from "../shared/IconCardWithLink";
 
 const PracticeAreas = () => {
