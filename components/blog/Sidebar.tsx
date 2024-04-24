@@ -1,22 +1,22 @@
 import { blogCategories, blogPosts, blogTags } from "@/lib/data";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 import PrimaryHeadline from "../global/primary-headline";
 import { Input } from "../ui/input";
+import { ChevronRight, SearchIcon } from "lucide-react";
 
 const Sidebar = () => {
   return (
-    <div className="lg:basis-[30%] basis-full lg:pt-0 pt-20">
+    <div className="basis-full pt-20 lg:basis-[30%] lg:pt-0">
       <div className="relative">
-        <FontAwesomeIcon
-          icon="search"
-          className="w-5 text-background absolute right-4 top-1/2 -translate-y-1/2"
+        <SearchIcon
+          size={20}
+          className="absolute right-4 top-1/2 -translate-y-1/2 text-background"
         />
         <Input
           type="text"
           placeholder="Search"
-          className="w-full h-12 text-[#1a2431] border-2 border-[#e8e6e6] py-4 px-3 bg-white rounded-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+          className="h-12 w-full rounded-none border-2 border-[#e8e6e6] bg-white px-3 py-4 text-[#1a2431] focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
         />
       </div>
       <div className="mt-12">
@@ -28,16 +28,16 @@ const Sidebar = () => {
         <ul>
           {blogCategories.map((item) => (
             <li
-              className="py-4 pl-5 relative border-b-[1px] border-[#313131]"
+              className="relative border-b border-[#313131] py-4 pl-6"
               key={item.id}
             >
               <Link
                 href={`/blog/category/${item.id}`}
                 className="text-base leading-6 text-[#313131] hover:text-primary-main"
               >
-                <FontAwesomeIcon
-                  icon="chevron-right"
-                  className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%] font-bold"
+                <ChevronRight
+                  size={20}
+                  className="absolute left-0 top-1/2 -translate-y-1/2 font-bold"
                 />
                 {item.title}
               </Link>
@@ -56,16 +56,16 @@ const Sidebar = () => {
         <ul>
           {blogPosts.slice(0, 5).map((item) => (
             <li
-              className="py-4 pl-5 relative border-b-[1px] border-[#313131]"
+              className="relative border-b border-[#313131] py-4 pl-6"
               key={item.id}
             >
               <Link
                 href="#"
                 className="text-base leading-6 text-[#313131] hover:text-primary-main"
               >
-                <FontAwesomeIcon
-                  icon="chevron-right"
-                  className="w-3 h-[15px] absolute top-7 left-0 translate-y-[-50%] font-bold"
+                <ChevronRight
+                  size={20}
+                  className="absolute left-0 top-[30px] -translate-y-1/2 font-bold"
                 />
                 {item.title}
               </Link>
@@ -84,7 +84,7 @@ const Sidebar = () => {
           {blogTags.map((item) => (
             <li key={item.id}>
               <Link
-                className="inline-block mr-2 hover:bg-white hover:text-primary-main text-[19px] border-2 border-primary-main font-bold bg-primary-main text-white py-[14px] px-4"
+                className="mr-2 inline-block border-2 border-primary-main bg-primary-main px-4 py-[14px] text-[19px] font-bold text-white hover:bg-white hover:text-primary-main"
                 href={`/blog/tag/${item.id}`}
               >
                 {item.name}

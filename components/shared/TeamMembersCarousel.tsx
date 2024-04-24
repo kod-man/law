@@ -22,10 +22,10 @@ export function TeamMembersCarousel({ textColor }: { textColor?: string }) {
         {TeamMembers.map((item) => (
           <CarouselItem
             key={`team${item.id}`}
-            className="lg:basis-1/4 md:basis-1/2"
+            className="md:basis-1/2 lg:basis-1/4"
           >
             <Link href={item.href} className="group">
-              <div className="relative before:absolute before:bg-black before:opacity-30 before::content-[''] before:h-full before:w-0 before:transition-all before:duration-300 before:ease-in group-hover:before:w-full before:left-0 before:top-0 cursor-pointer">
+              <div className="before::content-[''] relative cursor-pointer before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:bg-black before:opacity-30 before:transition-all before:duration-300 before:ease-in group-hover:before:w-full">
                 <Image
                   src={item.image}
                   alt="Team Member Img"
@@ -34,30 +34,30 @@ export function TeamMembersCarousel({ textColor }: { textColor?: string }) {
                 <Image
                   src={teammemberbefore}
                   alt="Team Member Before"
-                  className="w-11 h-11 absolute left-0 top-0"
+                  className="absolute left-0 top-0 size-11"
                 />
                 <Image
                   src={teammemberbefore}
                   alt="Team Member Before"
-                  className="w-11 h-11 absolute right-0 bottom-0 rotate-[180deg]"
+                  className="absolute bottom-0 right-0 size-11 rotate-180"
                 />
               </div>
               <div
                 className={`${
                   textColor ? "*:" + textColor : "*:text-primary-main"
-                } *:italic *:text-center px-2 py-4 border-b-2 border-primary-main`}
+                } border-b-2 border-primary-main px-2 py-4 *:text-center *:italic`}
               >
-                <h3 className="text-2xl mb-1">{item.name}</h3>
+                <h3 className="mb-1 text-2xl">{item.name}</h3>
                 <h4 className="text-xs">{item.designation}</h4>
               </div>
             </Link>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="w-full flex justify-center">
-        <div className="team-member-arrow absolute w-28 h-12 pt-14 mt-14">
-          <CarouselPrevious className="left-0 border-2 border-black opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-black  hover:bg-white bg-white" />
-          <CarouselNext className="right-0 border-2 border-black opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-black  hover:bg-white bg-white" />
+      <div className="flex w-full justify-center">
+        <div className="absolute mt-14 h-12 w-28 pt-14">
+          <CarouselPrevious className="left-0 size-12 rounded-none border-2 border-black bg-white text-black opacity-100 hover:bg-white  disabled:opacity-100" />
+          <CarouselNext className="right-0 size-12 rounded-none border-2 border-black bg-white text-black opacity-100 hover:bg-white  disabled:opacity-100" />
         </div>
       </div>
     </Carousel>

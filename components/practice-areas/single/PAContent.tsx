@@ -4,14 +4,14 @@ import paimage1 from "@/public/assets/pa-img-1.jpg";
 
 const PAContent = () => {
   return (
-    <div className="container lg:py-24 py-16">
-      <div className="flex lg:gap-10 gap-0 lg:flex-nowrap flex-wrap">
-        <div className="lg:basis-4/6 basis-full">
+    <div className="container py-16 lg:py-24">
+      <div className="flex flex-wrap gap-0 lg:flex-nowrap lg:gap-10">
+        <div className="basis-full lg:basis-4/6">
           <PrimaryHeadline
             text="Overview"
             additionalClass="primary-headline-left"
           />
-          <p className="text-base mb-5 text-[#333]">
+          <p className="mb-5 text-base text-[#333]">
             Family law involves a range of matters that are usually very
             personal, unique and emotionally challenging. Decisions involving
             your children and your financial well-being can be complex and
@@ -21,7 +21,7 @@ const PAContent = () => {
             creative thinking, and who understands the big picture and the
             impact your decisions will have on you.
           </p>
-          <p className="text-base mb-5 text-[#333]">
+          <p className="mb-5 text-base text-[#333]">
             The family law attorneys at lawyero are committed to providing our
             clients with the skill and expertise necessary to meet the client’s
             objectives and goalswhile providing a trusted source of
@@ -30,7 +30,7 @@ const PAContent = () => {
             matters with care, respect and sensitivity.
           </p>
         </div>
-        <div className="lg:basis-1/3 basis-full lg:pt-0 pt-7">
+        <div className="basis-full pt-7 lg:basis-1/3 lg:pt-0">
           <Image
             src={paimage1}
             alt="Practice Area Image"

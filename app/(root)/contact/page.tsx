@@ -1,9 +1,8 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import InnerBanner from "@/components/global/inner-banner";
 import { ContactForm } from "@/components/global/ContactForm";
 import PrimaryHeadline from "@/components/global/primary-headline";
-import { Suspense } from "react";
 import Iframe from "@/components/shared/Iframe";
+import { MapPin, PhoneCallIcon } from "lucide-react";
 
 const page = () => {
   return (
@@ -15,46 +14,40 @@ const page = () => {
 
       <div className="overflow-hidden">
         <div className="container">
-          <div className="flex lg:flex-nowrap flex-wrap">
-            <div className="lg:basis-2/3 basis-full lg:pt-24 pt-16 pb-20 pr-0 lg:pr-12 relative before:z-[-1]">
+          <div className="flex flex-wrap lg:flex-nowrap">
+            <div className="relative basis-full pb-20 pr-0 pt-16 before:z-[-1] lg:basis-2/3 lg:pr-12 lg:pt-24">
               <PrimaryHeadline
                 text="Schedule A Free Consultation"
                 additionalClass="text-3xl primary-headline-left"
                 headlineType="h3"
               />
-              <p className="text-base leading-7 text-[#333] mb-5">
+              <p className="mb-5 text-base leading-7 text-[#333]">
                 Give us a call to schedule a free consultation or fill out the
                 following form. One of our representatives will get back to you
                 within 24 hours.
               </p>
               <ContactForm />
             </div>
-            <div className="lg:basis-1/3 basis-full lg:pt-24 pt-0 lg:pb-20 pb-16 relative">
+            <div className="relative basis-full pb-16 pt-0 lg:basis-1/3 lg:pb-20 lg:pt-24">
               <PrimaryHeadline
                 text="Get In Touch"
                 additionalClass="text-3xl primary-headline-left"
                 headlineType="h3"
               />
               <ul>
-                <li className="flex items-center mb-[10px]">
-                  <FontAwesomeIcon
-                    icon="phone"
-                    className="w-3 h-4 text-background"
-                  />
+                <li className="mb-[10px] flex items-center">
+                  <PhoneCallIcon size={15} className="text-primary-main" />
                   <a
-                    className="inline-block text-base text-background ml-2"
+                    className="ml-2 inline-block text-base text-background"
                     href="tel:1911-462-242"
                   >
                     1911-462-242
                   </a>
                 </li>
-                <li className="flex items-center mb-[10px]">
-                  <FontAwesomeIcon
-                    icon="fax"
-                    className="w-3 h-4 text-background"
-                  />
+                <li className="mb-[10px] flex items-center">
+                  <PhoneCallIcon size={15} className="text-primary-main" />
                   <a
-                    className="inline-block text-base text-background ml-2"
+                    className="ml-2 inline-block text-base text-background"
                     href="#"
                   >
                     1911-462-281
@@ -63,47 +56,41 @@ const page = () => {
               </ul>
               <div>
                 <div className="mt-7">
-                  <h3 className="text-2xl text-[#333] font-bold mb-5">
+                  <h3 className="mb-5 text-2xl font-bold text-[#333]">
                     Head Office
                   </h3>
                   <div className="flex">
-                    <FontAwesomeIcon
-                      icon="location-dot"
-                      className="w-2 h-4 text-background mt-[2px]"
-                    />
+                    <MapPin size={15} className="mt-1 text-primary-main" />
                     <p className="pl-2 text-background">
                       4th Floor ABC Plaza Downtown, <br /> March Street, Sydney.
                     </p>
                   </div>
                 </div>
                 <div className="mt-7">
-                  <h3 className="text-2xl text-[#333] font-bold mb-5">
+                  <h3 className="mb-5 text-2xl font-bold text-[#333]">
                     Regional Office
                   </h3>
                   <div className="flex">
-                    <FontAwesomeIcon
-                      icon="location-dot"
-                      className="w-2 h-4 text-background mt-[2px]"
-                    />
+                    <MapPin size={15} className="mt-1 text-primary-main" />
                     <p className="pl-2 text-background">
                       4th Floor ABC Plaza Downtown, <br /> March Street, Sydney.
                     </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-2xl text-[#333] font-bold mb-7 mt-8">
+                  <h3 className="mb-7 mt-8 text-2xl font-bold text-[#333]">
                     Working Hours
                   </h3>
-                  <ul className="text-[#313131] text-base leading-6">
-                    <li className="flex relative py-4 border-b-[1px] border-[#313131]">
+                  <ul className="text-base leading-6 text-[#313131]">
+                    <li className="relative flex border-b border-[#313131] py-4">
                       <span className="w-1/2 font-bold">Mon-Wed</span>
                       <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                     </li>
-                    <li className="flex relative py-4 border-b-[1px] border-[#313131]">
+                    <li className="relative flex border-b border-[#313131] py-4">
                       <span className="w-1/2 font-bold">Thurs-Fri</span>
                       <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                     </li>
-                    <li className="flex relative py-4">
+                    <li className="relative flex py-4">
                       <span className="w-1/2 font-bold">Sat-Sun</span>
                       <span className="w-1/2 text-right">Closed</span>
                     </li>

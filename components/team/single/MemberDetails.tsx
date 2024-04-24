@@ -1,58 +1,59 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
 import homefirmimage from "@/public/assets/home-member1.jpg";
 import PrimaryHeadline from "@/components/global/primary-headline";
-import { IconName } from "@fortawesome/fontawesome-svg-core";
+import React from "react";
+import { Facebook, LinkedinIcon, Twitter, Youtube } from "lucide-react";
 
-const memberSocialLinks: { name: string; link: string; icon: IconName }[] = [
+const memberSocialLinks: {
+  name: string;
+  link: string;
+  icon: React.ReactNode;
+}[] = [
   {
     name: "Facebook",
     link: "#",
-    icon: "facebook",
+    icon: <Facebook size={30} />,
   },
   {
     name: "Twitter",
     link: "#",
-    icon: "twitter",
+    icon: <Twitter size={30} />,
   },
   {
     name: "LinkedIn",
     link: "#",
-    icon: "linkedin-in",
+    icon: <LinkedinIcon size={30} />,
   },
   {
     name: "Youtube",
     link: "#",
-    icon: "youtube",
+    icon: <Youtube size={30} />,
   },
 ];
 
 const MemberDetails = () => {
   return (
-    <div className="container lg:pt-20 lg:pb-20 pt-16 pb-16">
-      <div className="flex gap-8 lg:flex-nowrap flex-wrap">
-        <div className="lg:basis-[30%] basis-full">
+    <div className="container py-16 lg:py-20">
+      <div className="flex flex-wrap gap-8 lg:flex-nowrap">
+        <div className="basis-full lg:basis-[30%]">
           <Image
             src={homefirmimage}
             alt="Home Firm Image"
             className="rounded-md"
           />
-          <ul className="flex justify-center items-center py-5">
+          <ul className="flex items-center justify-center py-5">
             {memberSocialLinks.map((link) => (
-              <li className="w-8 ml-3" key={link.name}>
-                <Link href={link.link}>
-                  <FontAwesomeIcon
-                    className="text-background hover:text-primary-main hover:transition-all"
-                    icon={["fab", link.icon]}
-                  />
+              <li className="ml-3 w-8" key={link.name}>
+                <Link href={link.link} target="_blank">
+                  {link.icon}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-        <div className="lg:basis-[70%] basis-full">
+        <div className="basis-full lg:basis-[70%]">
           <PrimaryHeadline
             text="About Attorney"
             additionalClass="primary-headline-left"

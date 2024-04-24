@@ -1,22 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/assets/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ButtonCustom from "../global/button";
+import {
+  Facebook,
+  Twitter,
+  Youtube,
+  LinkedinIcon,
+  ChevronRight,
+} from "lucide-react";
 
 const Footer = () => {
   return (
     <>
       <div className="bg-background">
-        <div className="container pt-20 pb-14">
-          <div className="flex lg:flex-nowrap flex-wrap gap-8">
-            <div className="lg:basis-1/3 basis-full">
+        <div className="container pb-14 pt-20">
+          <div className="flex flex-wrap gap-8 lg:flex-nowrap">
+            <div className="basis-full lg:basis-1/3">
               <div>
                 <Link href="http://bsmthemes.com/demo/lawyero">
                   <Image src={logo} alt="Logo" width={166} height={30} />
                 </Link>
                 <div className="mt-5 pb-7">
-                  <p className="text-white text-sm leading-6">
+                  <p className="text-sm leading-6 text-white">
                     Lawyero is the ultimate theme for the attorneys and law
                     firms that best suits their requirements. It is composed of
                     large number of components and is made with love.
@@ -25,12 +31,12 @@ const Footer = () => {
                 <ButtonCustom href="#" text="Buy Now" />
               </div>
             </div>
-            <div className="lg:basis-1/3 basis-full">
-              <h3 className="text-3xl text-white font-bold mb-6">
+            <div className="basis-full lg:basis-1/3">
+              <h3 className="mb-6 text-3xl font-bold text-white">
                 <span className="text-[#14cab4]">Legal</span> Advert
               </h3>
               <div className="mt-5 lg:pb-7">
-                <p className="text-white text-sm leading-6">
+                <p className="text-sm leading-6 text-white">
                   The information on this website is for general information
                   purposes only. Nothing on this site should be taken as legal
                   advice for any individual case or situation. This information
@@ -39,55 +45,55 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="lg:basis-1/3 basis-full">
-              <h3 className="text-3xl text-white font-bold mb-6">
-                <span className="text-[#14cab4] font-bold">Opening </span> Hour
+            <div className="basis-full lg:basis-1/3">
+              <h3 className="mb-6 text-3xl font-bold text-white">
+                <span className="font-bold text-[#14cab4]">Opening </span> Hour
               </h3>
-              <ul className="text-white text-sm leading-6">
-                <li className="flex my-2 pl-5 relative">
-                  <FontAwesomeIcon
-                    icon="chevron-right"
-                    className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+              <ul className="text-sm leading-6 text-white">
+                <li className="relative my-2 flex pl-5">
+                  <ChevronRight
+                    size={15}
+                    className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Mon</span>
                   <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                 </li>
-                <li className="flex my-2 pl-5 relative">
-                  <FontAwesomeIcon
-                    icon="chevron-right"
-                    className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                <li className="relative my-2 flex pl-5">
+                  <ChevronRight
+                    size={15}
+                    className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Tues</span>
                   <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                 </li>
-                <li className="flex my-2 pl-5 relative">
-                  <FontAwesomeIcon
-                    icon="chevron-right"
-                    className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                <li className="relative my-2 flex pl-5">
+                  <ChevronRight
+                    size={15}
+                    className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Wed</span>
                   <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                 </li>
-                <li className="flex my-2 pl-5 relative">
-                  <FontAwesomeIcon
-                    icon="chevron-right"
-                    className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                <li className="relative my-2 flex pl-5">
+                  <ChevronRight
+                    size={15}
+                    className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Thurs</span>
                   <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                 </li>
-                <li className="flex my-2 pl-5 relative">
-                  <FontAwesomeIcon
-                    icon="chevron-right"
-                    className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                <li className="relative my-2 flex pl-5">
+                  <ChevronRight
+                    size={15}
+                    className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Fri</span>
                   <span className="w-1/2 text-right">9:00am - 5:00pm</span>
                 </li>
-                <li className="flex my-2 pl-5 relative">
-                  <FontAwesomeIcon
-                    icon="chevron-right"
-                    className="w-3 h-[12px] absolute top-1/2 left-0 -translate-y-1/2"
+                <li className="relative my-2 flex pl-5">
+                  <ChevronRight
+                    size={15}
+                    className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
                   <span className="w-1/2 font-bold">Sat - Sun</span>
                   <span className="w-1/2 text-right">Closed</span>
@@ -99,32 +105,32 @@ const Footer = () => {
       </div>
       <div className="bg-primary-main py-7">
         <div className="container">
-          <div className="flex items-center lg:flex-nowrap flex-wrap">
-            <div className="lg:basis-1/2 basis-full">
-              <p className="text-white lg:text-left text-center lg:mb-0 mb-4 text-sm leading-6">
+          <div className="flex flex-wrap items-center lg:flex-nowrap">
+            <div className="basis-full lg:basis-1/2">
+              <p className="mb-4 text-center text-sm leading-6 text-white lg:mb-0 lg:text-left">
                 &copy; Copyrights Lawyero 2024. All Rights Reserved.
               </p>
             </div>
-            <div className="lg:basis-1/2 basis-full">
-              <ul className="flex lg:justify-end justify-center items-center">
-                <li className="w-8 ml-3">
-                  <Link href="#">
-                    <FontAwesomeIcon className="text-white" icon={["fab", "facebook"]} />
+            <div className="basis-full lg:basis-1/2">
+              <ul className="flex items-center justify-center lg:justify-end">
+                <li className="ml-3 w-8">
+                  <Link href="#" target="_blank">
+                    <Facebook size={30} className="text-white" />
                   </Link>
                 </li>
-                <li className="w-8 ml-3">
-                  <Link href="#">
-                    <FontAwesomeIcon className="text-white" icon={["fab", "twitter"]} />
+                <li className="ml-3 w-8">
+                  <Link href="#" target="_blank">
+                    <Twitter size={30} className="text-white" />
                   </Link>
                 </li>
-                <li className="w-8 ml-3">
-                  <Link href="#">
-                    <FontAwesomeIcon className="text-white" icon={["fab", "linkedin"]} />
+                <li className="ml-3 w-8">
+                  <Link href="#" target="_blank">
+                    <LinkedinIcon size={30} className="text-white" />
                   </Link>
                 </li>
-                <li className="w-8 ml-3">
-                  <Link href="#">
-                    <FontAwesomeIcon className="text-white" icon={["fab", "youtube"]} />
+                <li className="ml-3 w-8">
+                  <Link href="#" target="_blank">
+                    <Youtube size={30} className="text-white" />
                   </Link>
                 </li>
               </ul>

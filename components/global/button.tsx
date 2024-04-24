@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 interface buttonCustomProps {
   text: string;
@@ -6,47 +7,48 @@ interface buttonCustomProps {
   buttonType?: string;
 }
 
-const ButtonCustom = ({ text, href, buttonType}: buttonCustomProps) => {
+const ButtonCustom = ({ text, href, buttonType }: buttonCustomProps) => {
   const buttonType1 = (
     <>
-      <Link className="group primary-button" href={href}>
-        {text}      
+      <Link className="primary-button group" href={href}>
+        {text}
+        <ChevronRight
+          size="15"
+          className="absolute right-1/3 top-1/2 -translate-y-1/2 opacity-0 group-hover:right-5 group-hover:opacity-100"
+        />
       </Link>
     </>
   );
 
-  const buttonType2 = buttonType == "secondary" && (
-    <Link className="group primary-button-dark" href={href}>
+  const buttonType2 = buttonType === "secondary" && (
+    <Link className="primary-button-dark group" href={href}>
       {text}
-      {/* <FontAwesomeIcon
-        icon="chevron-right"
-        className="text-main w-3 absolute top-1/2 opacity-0 right-1/3 -translate-y-1/2 group-hover:right-5 group-hover:opacity-100 h-[15px]"
-      /> */}
+      <ChevronRight
+        size="15"
+        className="absolute right-1/3 top-1/2 -translate-y-1/2 opacity-0 group-hover:right-5 group-hover:opacity-100"
+      />
     </Link>
   );
 
-  const buttonType3 = buttonType == "dark" && (
-    <Link className="group secondary-button" href={href}>
+  const buttonType3 = buttonType === "dark" && (
+    <Link className="secondary-button group" href={href}>
       {text}
-      {/* <FontAwesomeIcon
-        icon="chevron-right"
-        className="w-3 absolute top-1/2 opacity-0 right-1/3 -translate-y-1/2 group-hover:right-5 group-hover:opacity-100 h-[15px]"
-      /> */}
+      <ChevronRight
+        size="15"
+        className="absolute right-1/3 top-1/2 -translate-y-1/2 opacity-0 group-hover:right-5 group-hover:opacity-100"
+      />
     </Link>
   );
 
   switch (buttonType) {
     case "dark":
       return buttonType3;
-      break;
 
     case "secondary":
       return buttonType2;
-      break;
 
     default:
       return buttonType1;
-      break;
   }
 };
 

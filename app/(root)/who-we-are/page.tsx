@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import InnerBanner from "@/components/global/inner-banner";
 import TeamMembers from "@/components/who-we-are/TeamMembers";
@@ -8,7 +7,7 @@ import WeAreBest from "@/components/who-we-are/WeAreBest";
 import WhyChooseUs from "@/components/who-we-are/WhyChooseUs";
 import PreFooter from "@/components/shared/PreFooter";
 
-const page = () => {  
+const page = () => {
   return (
     <>
       <InnerBanner text="WHO WE ARE" />

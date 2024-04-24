@@ -1,35 +1,29 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ContactForm } from "../global/ContactForm";
+import { MapPin, PhoneCallIcon } from "lucide-react";
 
 const PreFooter = () => {
   return (
     <div className="overflow-hidden">
       <div className="container">
-        <div className="flex lg:flex-nowrap flex-wrap">
-          <div className="lg:basis-1/3 basis-full lg:py-24 py-16 relative before:z-[-1] before:top-0 before:absolute before:bg-grey before:content-[''] before:h-full lg:before:w-[50vw] before:w-[150vw] lg:before:right-0 before:-right-[25%]">
-            <h3 className="text-3xl pb-5 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+        <div className="flex flex-wrap lg:flex-nowrap">
+          <div className="relative basis-full py-16 before:absolute before:-right-1/4 before:top-0 before:z-[-1] before:h-full before:w-[150vw] before:bg-grey before:content-[''] lg:basis-1/3 lg:py-24 lg:before:right-0 lg:before:w-[50vw]">
+            <h3 className="relative mb-7 pb-5 text-3xl font-bold text-primary-main before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-[150px] before:bg-background before:content-[''] after:absolute after:bottom-0 after:left-0 after:z-[1] after:h-[3px] after:w-[40px] after:bg-primary-main after:content-['']">
               Get In Touch
             </h3>
             <ul>
-              <li className="flex items-center mb-[10px]">
-                <FontAwesomeIcon
-                  icon="phone"
-                  className="w-3 h-4 text-background"
-                />
+              <li className="mb-[10px] flex items-center">
+                <PhoneCallIcon size={15} className="text-background" />
                 <a
-                  className="inline-block text-base text-background ml-2"
+                  className="ml-2 inline-block text-base text-background"
                   href="tel:123-456-7890"
                 >
                   123-456-7890
                 </a>
               </li>
-              <li className="flex items-center mb-[10px]">
-                <FontAwesomeIcon
-                  icon="fax"
-                  className="w-3 h-4 text-background"
-                />
+              <li className="mb-[10px] flex items-center">
+                <PhoneCallIcon size={15} className="text-background" />
                 <a
-                  className="inline-block text-base text-background ml-2"
+                  className="ml-2 inline-block text-base text-background"
                   href="#"
                 >
                   123-456-7890
@@ -38,28 +32,22 @@ const PreFooter = () => {
             </ul>
             <div>
               <div className="mt-7">
-                <h3 className="text-2xl text-[#333] font-bold mb-4">
+                <h3 className="mb-4 text-2xl font-bold text-[#333]">
                   Head Office
                 </h3>
                 <div className="flex">
-                  <FontAwesomeIcon
-                    icon="location-dot"
-                    className="w-2 h-4 text-background mt-[2px]"
-                  />
+                  <MapPin size={15} className="mt-1 text-background" />
                   <p className="pl-2 text-background">
                     4th Floor ABC Plaza Downtown, March <br /> Street, Sydney.
                   </p>
                 </div>
               </div>
               <div className="mt-7">
-                <h3 className="text-2xl text-[#333] font-bold mb-4">
+                <h3 className="mb-4 text-2xl font-bold text-[#333]">
                   Regional Office
                 </h3>
                 <div className="flex">
-                  <FontAwesomeIcon
-                    icon="location-dot"
-                    className="w-2 h-4 text-background mt-[2px]"
-                  />
+                  <MapPin size={15} className="mt-1 text-background" />
                   <p className="pl-2 text-background">
                     4th Floor ABC Plaza Downtown, March <br /> Street, Sydney.
                   </p>
@@ -67,8 +55,8 @@ const PreFooter = () => {
               </div>
             </div>
           </div>
-          <div className="lg:basis-2/3 basis-full lg:py-24 py-16 lg:pl-12 pl-0 lg:pr-20 pr-0 relative before:z-[-1] before:top-0 before:absolute before:bg-lightgrey before:content-[''] before:h-full lg:before:w-[80vw] lg:before:left-0 before:w-[150vw] before:-left-[25%]">
-            <h3 className="text-3xl pb-5 mb-7 font-bold text-primary-main relative before:absolute before:bottom-0 before:left-0 before:w-[150px] before:h-[3px] before:content-[''] before:bg-background after:absolute after:content-[''] after:w-[40px] after:h-[3px] after:bg-primary-main after:bottom-0 after:left-0 after:z-[1]">
+          <div className="relative basis-full px-0 py-16 before:absolute before:-left-1/4 before:top-0 before:z-[-1] before:h-full before:w-[150vw] before:bg-lightgrey before:content-[''] lg:basis-2/3 lg:py-24 lg:pl-12 lg:pr-20 lg:before:left-0 lg:before:w-[80vw]">
+            <h3 className="relative mb-7 pb-5 text-3xl font-bold text-primary-main before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-[150px] before:bg-background before:content-[''] after:absolute after:bottom-0 after:left-0 after:z-[1] after:h-[3px] after:w-[40px] after:bg-primary-main after:content-['']">
               Schedule A Free Consultation
             </h3>
             <ContactForm />

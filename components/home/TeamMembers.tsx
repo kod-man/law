@@ -5,7 +5,7 @@ import { TeamMembersCarousel } from "../shared/TeamMembersCarousel";
 const TeamMembers = () => {
   return (
     <>
-      <div className="container lg:pt-28 sm:pt-20 pt-16 lg:pb-52 sm:pb-40 pb-40">
+      <div className="container pb-40 pt-16 sm:pb-40 sm:pt-20 lg:pb-52 lg:pt-28">
         <PrimaryHeadline text="Our Team" />
         <TeamMembersCarousel />
       </div>

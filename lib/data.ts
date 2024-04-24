@@ -1,4 +1,3 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import homeblog1 from "@/public/assets/home-blog-1.jpg";
 import homeblog2 from "@/public/assets/home-blog-2.jpg";
 import homeblog3 from "@/public/assets/home-blog-3.jpg";
@@ -65,70 +64,6 @@ export const BannerImages = [
     linkText: "Find out More",
   },
 ];
-
-interface StatsWithIconProps {
-  id: number;
-  amountPreText: string;
-  amount: number;
-  amountPostText: string;
-  text: string;
-  iconName: IconProp;
-}
-
-export const StatsWithIcon: StatsWithIconProps[] = [
-  {
-    id: 1,
-    amountPreText: "",
-    amount: 150,
-    amountPostText: "+",
-    text: "Customers",
-    iconName: "handshake",
-  },
-  {
-    id: 2,
-    amountPreText: "$",
-    amount: 23000000,
-    amountPostText: "",
-    text: "Recovered",
-    iconName: "dollar",
-  },
-  {
-    id: 3,
-    amountPreText: "",
-    amount: 98,
-    amountPostText: "%",
-    text: "Success Rato",
-    iconName: "thumbs-up",
-  },
-];
-
-export const StatsWithIconTeam: StatsWithIconProps[] = [
-  {
-    id: 1,
-    amountPreText: "",
-    amount: 2000,
-    amountPostText: "+",
-    text: "Happy Clients",
-    iconName: "smile",
-  },
-  {
-    id: 3,
-    amountPreText: "",
-    amount: 98,
-    amountPostText: "%",
-    text: "Success Rato",
-    iconName: "thumbs-up",
-  },
-  {
-    id: 2,
-    amountPreText: "$",
-    amount: 20000000,
-    amountPostText: "",
-    text: "Recovered",
-    iconName: "dollar",
-  },
-];
-
 
 interface blogPostsProps {
   id: number;

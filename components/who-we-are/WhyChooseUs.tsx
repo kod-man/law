@@ -1,13 +1,12 @@
 import whowecontent from "@/public/assets/who-we-content.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import PrimaryHeadline from "../global/primary-headline";
-import { WhyChooseUsData } from "@/lib/data";
+import { WhyChooseUsData } from "@/lib/dataWithJSX";
 
 const WhyChooseUs = () => {
   return (
-    <div className="flex bg-lightgrey lg:flex-nowrap flex-wrap">
-      <div className="lg:basis-1/2 basis-full relative lg:min-h-[100%] min-h-96">
+    <div className="flex flex-wrap bg-lightgrey lg:flex-nowrap">
+      <div className="relative min-h-96 basis-full lg:min-h-full lg:basis-1/2">
         <Image
           src={whowecontent}
           alt="Who We Content"
@@ -15,21 +14,16 @@ const WhyChooseUs = () => {
           className="object-cover"
         />
       </div>
-      <div className="lg:pb-16 pb-8 lg:pl-11 lg:basis-1/2 basis-full lg:pt-24 pt-14 md:pb-4 pl-8 lg:order-2 -order-1">
+      <div className="-order-1 basis-full pb-8 pl-8 pt-14 md:pb-4 lg:order-2 lg:basis-1/2 lg:pb-16 lg:pl-11 lg:pt-24">
         <PrimaryHeadline
           text="Why Choose Us"
           additionalClass="primary-headline-left"
         />
         {WhyChooseUsData.map((item) => (
-          <div className="flex mb-8 lg:pr-20 pr-8" key={item.id}>
-            <div className="flex-shrink-0 pr-7">
-              <FontAwesomeIcon
-                icon={item.iconName}
-                className="w-14 h-14 border-2 p-3 border-background text-background"
-              />
-            </div>
+          <div className="mb-8 flex pr-8 lg:pr-20" key={item.id}>
+            <div className="shrink-0 pr-7">{item.iconName}</div>
             <div>
-              <h3 className="text-2xl font-bold mb-2 text-black">
+              <h3 className="mb-2 text-2xl font-bold text-black">
                 {item.headline}
               </h3>
               <p className="text-base">{item.content}</p>

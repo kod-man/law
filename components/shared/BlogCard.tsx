@@ -1,3 +1,4 @@
+import { formatDate } from "@/lib/utilFunctons";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
@@ -10,22 +11,22 @@ interface BlogCardProps {
 
 const BlogCard = ({ imageURL, date, linkHref, title }: BlogCardProps) => {
   return (
-    <div className="basis-1/3 group">
+    <div className="group basis-1/3">
       <div className="overflow-hidden">
         <Image
           src={imageURL}
           alt="Home BLog Post"
-          className="transition-transform scale-[1.1] duration-500 ease-in-out group-hover:scale-[1]"
+          className="scale-110 transition-transform duration-500 ease-in-out group-hover:scale-100"
         />
       </div>
-      <div className="p-5 bg-white">
-        <span className="text-sm text-primary-main mb-4 inline-block">
-          {date}
+      <div className="bg-white p-5">
+        <span className="mb-4 inline-block text-sm text-primary-main">
+          {formatDate(date)}
         </span>
         <h3>
           <Link
             href={linkHref}
-            className="inline-block text-base text-background font-semibold cursor-pointer hover:text-primary-main"
+            className="inline-block cursor-pointer text-base font-semibold text-background hover:text-primary-main"
           >
             {title}
           </Link>

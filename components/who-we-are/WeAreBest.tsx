@@ -1,27 +1,21 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import whowecontent2 from "@/public/assets/who-we-content-2.jpg";
 import Image from "next/image";
 import PrimaryHeadline from "../global/primary-headline";
-import { WeAreBestData } from "@/lib/data";
+import { WeAreBestData } from "@/lib/dataWithJSX";
 
 const WeAreBest = () => {
   return (
-    <div className="flex bg-lightgrey lg:flex-nowrap flex-wrap">
-      <div className="lg:pt-24 lg:pb-16 pt-16 sm:pb-12 pb-8 px-8 lg:px-11 lg:basis-1/2 basis-full relative">
+    <div className="flex flex-wrap bg-lightgrey lg:flex-nowrap">
+      <div className="relative basis-full px-8 pb-8 pt-16 sm:pb-12 lg:basis-1/2 lg:px-11 lg:pb-16 lg:pt-24">
         <PrimaryHeadline
           text="We Are Best In Business"
           additionalClass="primary-headline-left"
         />
         {WeAreBestData.map((item) => (
-          <div className="flex mb-8 lg:pr-20 pr-0" key={item.id}>
-            <div className="flex-shrink-0 pr-7">
-              <FontAwesomeIcon
-                icon={item.iconName}
-                className="w-14 h-14 border-2 p-3 border-background text-background"
-              />
-            </div>
+          <div className="mb-8 flex pr-0 lg:pr-20" key={item.id}>
+            <div className="shrink-0 pr-7">{item.iconName}</div>
             <div>
-              <h3 className="text-2xl font-bold mb-2 text-black">
+              <h3 className="mb-2 text-2xl font-bold text-black">
                 {item.headline}
               </h3>
               <p className="text-base">{item.content}</p>
@@ -29,7 +23,7 @@ const WeAreBest = () => {
           </div>
         ))}
       </div>
-      <div className="lg:basis-1/2 basis-full relative lg:min-h-[100%] min-h-96">
+      <div className="relative min-h-96 basis-full lg:min-h-full lg:basis-1/2">
         <Image
           src={whowecontent2}
           alt="Who We Content"

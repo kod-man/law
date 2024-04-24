@@ -1,100 +1,12 @@
+/* eslint-disable camelcase */
+
 import type { Metadata } from "next";
 import { Albert_Sans } from "next/font/google";
 import "./globals.css";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faFacebook,
-  faTwitter,
-  faLinkedin,
-  faYoutube,
-  faFacebookSquare,
-  faYoutubeSquare,
-  faTwitterSquare,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faChevronDown,
-  faChevronRight,
-  faChevronLeft,
-  faUser,
-  faBagShopping,
-  faTrophy,
-  faHandshake,
-  faDollar,
-  faThumbsUp,
-  faPhone,
-  faLink,
-  faMugHot,
-  faSuitcase,
-  faScaleBalanced,
-  faChild,
-  faCar,
-  faSterlingSign,
-  faPrint,
-  faFutbol,
-  faTruckMedical,
-  faCircleQuestion,
-  faFax,
-  faLocationDot,
-  faGraduationCap,
-  faFaceSmile,
-  faVolumeHigh,
-  faHandScissors,
-  faQuoteLeft,
-  faExclamationCircle,
-  faCalendarDay,
-  faComment,
-  faLessThan,
-  faGreaterThan,
-  faSearch,
-} from "@fortawesome/free-solid-svg-icons";
+
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
-
-library.add(
-  faFacebook,
-  faChevronDown,
-  faChevronRight,
-  faTwitter,
-  faLinkedin,
-  faYoutube,
-  faUser,
-  faBagShopping,
-  faTrophy,
-  faHandshake,
-  faDollar,
-  faThumbsUp,
-  faPhone,
-  faLink,
-  faMugHot,
-  faSuitcase,
-  faScaleBalanced,
-  faChild,
-  faCar,
-  faSterlingSign,
-  faPrint,
-  faFutbol,
-  faTruckMedical,
-  faCircleQuestion,
-  faFax,
-  faLocationDot,
-  faGraduationCap,
-  faFaceSmile,
-  faVolumeHigh,
-  faFacebookSquare,
-  faYoutubeSquare,
-  faTwitterSquare,
-  faLinkedinIn,
-  faHandScissors,
-  faQuoteLeft,
-  faExclamationCircle,
-  faCalendarDay,
-  faComment,
-  faLessThan,
-  faGreaterThan,
-  faSearch,
-  faChevronLeft
-);
+import React from "react";
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],

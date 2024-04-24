@@ -1,22 +1,21 @@
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import library from "@/public/assets/library-home.jpg";
 import libraryicon from "@/public/assets/library-icon.svg";
 import StatsCounterIconBox from "@/components/shared/statsCounterIconBox";
-import { StatsWithIconTeam } from "@/lib/data";
+import { StatsWithIconTeam } from "@/lib/dataWithJSX";
 
 const Stats = () => {
   return (
-    <div className="bg-black lg:pt-28 pt-20 lg:pb-20 pb-16 relative overflow-hidden before:bg-[#1a2431] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
+    <div className="relative overflow-hidden bg-black pb-16 pt-20 before:absolute before:left-0 before:top-0 before:z-[2] before:size-full before:bg-[#1a2431] before:opacity-70 before:content-[''] lg:pb-20 lg:pt-28">
       <Image
-        src={libraryicon}    
+        src={libraryicon}
         alt="library-icon"
         className="absolute top-0 z-[3] w-full rotate-180"
       />
       <Image src={library} alt="library" fill={true} className="object-cover" />
       <div className="container relative z-[3]">
-        <div className="flex justify-between lg:flex-nowrap sm:flex-wrap">
+        <div className="flex justify-between sm:flex-wrap lg:flex-nowrap">
           {StatsWithIconTeam.map((item) => {
             return (
               <StatsCounterIconBox

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { URLParams } from "@/types";
 import { blogCategories, blogPosts, blogTags } from "@/lib/data";
 import { formatDate } from "@/lib/utilFunctons";
 
 import Sidebar from "@/components/blog/Sidebar";
+import { Calendar, User, MessageCircle } from "lucide-react";
 const page = ({ params }: URLParams) => {
   return (
     <>
@@ -29,16 +29,13 @@ const page = ({ params }: URLParams) => {
                         </h2>
                         <ul className="flex flex-wrap pb-6 sm:flex-nowrap">
                           <li className="mb-4 mr-5 flex basis-full items-center sm:mb-0 sm:basis-auto">
-                            <FontAwesomeIcon
-                              icon="calendar-day"
-                              className="w-4"
-                            />
+                            <Calendar className="w-5" />
                             <span className="pl-2 text-base text-[#313131]">
                               {formatDate(filteredItem.date)}
                             </span>
                           </li>
                           <li className="mb-4 mr-5  flex basis-full items-center sm:mb-0 sm:basis-auto">
-                            <FontAwesomeIcon icon="user" className="w-4" />
+                            <User className="w-5" />
                             <Link
                               className="pl-2 text-base text-[#313131] hover:text-primary-main"
                               href="#"
@@ -47,7 +44,7 @@ const page = ({ params }: URLParams) => {
                             </Link>
                           </li>
                           <li className="mr-5 flex basis-full items-center  text-base text-[#313131] sm:basis-auto">
-                            <FontAwesomeIcon icon="comment" className="w-4" />
+                            <MessageCircle className="w-5" />
                             <span className="pl-2">
                               {filteredItem.comments} Comments
                             </span>

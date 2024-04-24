@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/assets/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ChevronDown, ChevronRight } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -71,9 +71,9 @@ const Header = () => {
                               <Collapsible>
                                 <CollapsibleTrigger>
                                   Home
-                                  <FontAwesomeIcon
-                                    icon="chevron-down"
-                                    className="absolute right-0 top-[21px] w-2.5 -translate-y-1/2"
+                                  <ChevronDown
+                                    size="15"
+                                    className="absolute right-0 top-[21px] -translate-y-1/2"
                                   />
                                 </CollapsibleTrigger>
                                 <CollapsibleContent>
@@ -86,9 +86,9 @@ const Header = () => {
                                         href="/"
                                         className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         Home 1
                                       </Link>
@@ -98,9 +98,9 @@ const Header = () => {
                                         href="/home-2/"
                                         className="group/subItem relative block px-5 py-4 pb-0 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         Home2
                                       </Link>
@@ -126,9 +126,9 @@ const Header = () => {
                               <Collapsible>
                                 <CollapsibleTrigger>
                                   Practice Areas
-                                  <FontAwesomeIcon
-                                    icon="chevron-down"
-                                    className="absolute right-0 top-[21px] w-2.5 -translate-y-1/2"
+                                  <ChevronDown
+                                    size="15"
+                                    className="absolute right-0 top-[21px] -translate-y-1/2"
                                   />
                                 </CollapsibleTrigger>
                                 <CollapsibleContent>
@@ -141,9 +141,9 @@ const Header = () => {
                                         href="/practice-areas-2-column/"
                                         className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         2 Column Layout
                                       </Link>
@@ -153,9 +153,9 @@ const Header = () => {
                                         href="/practice-areas-3-column-layout/"
                                         className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         3 Column Layout
                                       </Link>
@@ -165,9 +165,9 @@ const Header = () => {
                                         href="/single-practice-area/"
                                         className="group/subItem relative block px-5 py-4 pb-0 text-white transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         Individual Practice Area
                                       </Link>
@@ -185,9 +185,9 @@ const Header = () => {
                               <Collapsible>
                                 <CollapsibleTrigger>
                                   Team Members
-                                  <FontAwesomeIcon
-                                    icon="chevron-down"
-                                    className="absolute right-0 top-[21px] w-2.5 -translate-y-1/2"
+                                  <ChevronDown
+                                    size="15"
+                                    className="absolute right-0 top-1/2 -translate-y-1/2"
                                   />
                                 </CollapsibleTrigger>
                                 <CollapsibleContent>
@@ -200,9 +200,9 @@ const Header = () => {
                                         href="/single-team-member/"
                                         className="group/subItem relative block px-5 py-4 pb-0 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         Robert Darren
                                       </Link>
@@ -220,9 +220,9 @@ const Header = () => {
                               <Collapsible>
                                 <CollapsibleTrigger>
                                   Pages
-                                  <FontAwesomeIcon
-                                    icon="chevron-down"
-                                    className="absolute right-0 top-[21px] w-2.5 -translate-y-1/2"
+                                  <ChevronDown
+                                    size="15"
+                                    className="absolute right-0 top-[21px] -translate-y-1/2"
                                   />
                                 </CollapsibleTrigger>
                                 <CollapsibleContent>
@@ -235,9 +235,9 @@ const Header = () => {
                                         href="/faqs/"
                                         className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         Faqs
                                       </Link>
@@ -247,9 +247,9 @@ const Header = () => {
                                         href="/404/"
                                         className="group/subItem relative block px-5 py-4 pb-0 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         404 Page
                                       </Link>
@@ -267,9 +267,9 @@ const Header = () => {
                               <Collapsible>
                                 <CollapsibleTrigger>
                                   Blog
-                                  <FontAwesomeIcon
-                                    icon="chevron-down"
-                                    className="absolute right-0 top-[21px] w-2.5 -translate-y-1/2"
+                                  <ChevronDown
+                                    size="15"
+                                    className="absolute right-0 top-[21px] -translate-y-1/2"
                                   />
                                 </CollapsibleTrigger>
                                 <CollapsibleContent>
@@ -282,9 +282,9 @@ const Header = () => {
                                         href="/blog/"
                                         className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         Blog With Sidebar
                                       </Link>
@@ -294,9 +294,9 @@ const Header = () => {
                                         href="/blog-full-page/"
                                         className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         Blog Full page
                                       </Link>
@@ -307,9 +307,9 @@ const Header = () => {
                                         href="/blog-chess-style/"
                                         className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         Blog Chess Style
                                       </Link>
@@ -319,9 +319,9 @@ const Header = () => {
                                         href="/blog-grid/"
                                         className="group/subItem relative block px-5 py-4 pb-0 transition-all hover:pl-7 hover:text-primary-main"
                                       >
-                                        <FontAwesomeIcon
-                                          icon="chevron-right"
-                                          className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                        <ChevronRight
+                                          size="15"
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                                         />
                                         Blog Grid
                                       </Link>
@@ -350,12 +350,12 @@ const Header = () => {
                   <li className="group">
                     <Link
                       href="/"
-                      className="relative block py-7 pr-4 duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main after:transition-transform after:content-[''] group-hover:after:scale-x-100"
+                      className="relative block py-7 pr-5 duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main after:transition-transform after:content-[''] group-hover:after:scale-x-100"
                     >
                       Home
-                      <FontAwesomeIcon
-                        icon="chevron-down"
-                        className="absolute right-0 top-1/2 w-2.5 -translate-y-1/2"
+                      <ChevronDown
+                        size="15"
+                        className="absolute right-0 top-1/2 -translate-y-1/2"
                       />
                     </Link>
                     <ul
@@ -367,9 +367,9 @@ const Header = () => {
                           href="/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           Home 1
                         </Link>
@@ -379,9 +379,9 @@ const Header = () => {
                           href="/home-2/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           Home2
                         </Link>
@@ -399,12 +399,12 @@ const Header = () => {
                   <li className="group">
                     <Link
                       href="#"
-                      className="relative block py-7 pr-4 duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main after:transition-transform after:content-[''] group-hover:after:scale-x-100"
+                      className="relative block py-7 pr-5 duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main after:transition-transform after:content-[''] group-hover:after:scale-x-100"
                     >
                       Practice Areas
-                      <FontAwesomeIcon
-                        icon="chevron-down"
-                        className="absolute right-0 top-1/2 w-2.5 -translate-y-1/2"
+                      <ChevronDown
+                        size="15"
+                        className="absolute right-0 top-1/2 -translate-y-1/2"
                       />
                     </Link>
                     <ul
@@ -416,9 +416,9 @@ const Header = () => {
                           href="/practice-areas-2-column/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           2 Column Layout
                         </Link>
@@ -428,9 +428,9 @@ const Header = () => {
                           href="/practice-areas-3-column-layout/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           3 Column Layout
                         </Link>
@@ -440,9 +440,9 @@ const Header = () => {
                           href="/single-practice-area/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           Individual Practice Area
                         </Link>
@@ -452,12 +452,12 @@ const Header = () => {
                   <li className="group">
                     <Link
                       href="#"
-                      className="relative block py-7 pr-4 duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main after:transition-transform after:content-[''] group-hover:after:scale-x-100"
+                      className="relative block py-7 pr-5 duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main after:transition-transform after:content-[''] group-hover:after:scale-x-100"
                     >
                       Team Members
-                      <FontAwesomeIcon
-                        icon="chevron-down"
-                        className="absolute right-0 top-1/2 w-2.5 -translate-y-1/2"
+                      <ChevronDown
+                        size="15"
+                        className="absolute right-0 top-1/2 -translate-y-1/2"
                       />
                     </Link>
                     <ul
@@ -469,9 +469,9 @@ const Header = () => {
                           href="/single-team-member/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           Robert Darren
                         </Link>
@@ -481,12 +481,12 @@ const Header = () => {
                   <li className="group relative">
                     <Link
                       href="#"
-                      className="relative block py-7 pr-4 duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main after:transition-transform after:content-[''] group-hover:after:scale-x-100"
+                      className="relative block py-7 pr-5 duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main after:transition-transform after:content-[''] group-hover:after:scale-x-100"
                     >
                       Pages
-                      <FontAwesomeIcon
-                        icon="chevron-down"
-                        className="absolute right-0 top-1/2 w-2.5 -translate-y-1/2"
+                      <ChevronDown
+                        size="15"
+                        className="absolute right-0 top-1/2 -translate-y-1/2"
                       />
                     </Link>
                     <ul
@@ -498,9 +498,9 @@ const Header = () => {
                           href="/faqs/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           Faqs
                         </Link>
@@ -510,9 +510,9 @@ const Header = () => {
                           href="/404/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           404 Page
                         </Link>
@@ -522,12 +522,12 @@ const Header = () => {
                   <li className="group relative">
                     <Link
                       href="#"
-                      className="relative block py-7 pr-4 duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main after:transition-transform after:content-[''] group-hover:after:scale-x-100"
+                      className="relative block py-7 pr-5 duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:bg-primary-main after:transition-transform after:content-[''] group-hover:after:scale-x-100"
                     >
                       Blog
-                      <FontAwesomeIcon
-                        icon="chevron-down"
-                        className="absolute right-0 top-1/2 w-2.5 -translate-y-1/2"
+                      <ChevronDown
+                        size="15"
+                        className="absolute right-0 top-1/2 -translate-y-1/2"
                       />
                     </Link>
                     <ul
@@ -539,9 +539,9 @@ const Header = () => {
                           href="/blog/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           Blog With Sidebar
                         </Link>
@@ -551,9 +551,9 @@ const Header = () => {
                           href="/blog-full-page/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           Blog Full page
                         </Link>
@@ -564,9 +564,9 @@ const Header = () => {
                           href="/blog-chess-style/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           Blog Chess Style
                         </Link>
@@ -576,9 +576,9 @@ const Header = () => {
                           href="/blog-grid/"
                           className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
-                          <FontAwesomeIcon
-                            icon="chevron-right"
-                            className="absolute left-0 top-1/2 size-[12px] -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                          <ChevronRight
+                            size="15"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
                           />
                           Blog Grid
                         </Link>
