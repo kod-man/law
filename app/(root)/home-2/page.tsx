@@ -16,17 +16,17 @@ import Image from "next/image";
 const Home = () => {
   return (
     <>
-      <section className="bg-primary-main relative">
+      <section className="relative bg-primary-main">
         <Image
           src={homeBannerTypewriter.image}
           alt="Homepage Image of a Lawyer"
           fill={true}
           className="object-cover object-top"
         />
-        <div className="container relative z-1">
-          <div className="h-[calc(90vh-32px)] w-full flex items-center">
+        <div className="container relative z-10">
+          <div className="flex h-[calc(90vh-32px)] w-full items-center">
             <div className="basis-1/2">
-              <h1 className="text-5xl text-bg-background font-bold uppercase">
+              <h1 className="text-5xl font-bold uppercase text-background">
                 CONSULT US FOR
                 <br />
                 <Typewriter homeBannerTypewriter={homeBannerTypewriter} />

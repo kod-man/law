@@ -3,8 +3,6 @@
 import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { homeBannerTypewriter } from "@/lib/data";
-import { string } from "zod";
 
 interface homeBannerTypewriterProps {
   homeBannerTypewriter: {

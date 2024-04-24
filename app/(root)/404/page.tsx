@@ -1,27 +1,34 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
- 
-
-
 const page = () => {
   return (
-    <> 
-      <div className="container sm:py-[90px] py-[70px] text-center">
-        <h1 className="sm:text-[40px] text-[25px] text-[#333] font-bold mb-8">OOPS! SOMETHING WENT WRONG</h1>
+    <>
+      <div className="container py-[70px] text-center sm:py-[90px]">
+        <h1 className="mb-8 text-[25px] font-bold text-[#333] sm:text-[40px]">
+          OOPS! SOMETHING WENT WRONG
+        </h1>
         <FontAwesomeIcon
           icon="exclamation-circle"
-          className="w-20 h-20 text-background m-auto"
+          className="m-auto size-20 text-background"
         />
-        <p className="text-sm text-[#333] font-bold mt-9">The Page You Are Trying To Access Is Not Accessable Or Moved To Another Location.</p>
-        <div className="flex mt-2 justify-center">
-          <span className="inline-block text-base text-[#333]">Click Here to go to </span>
-          <Link className="ml-1 inline-block text-base text-primary-main" href="/"> Go Back to Home</Link>
+        <p className="mt-9 text-sm font-bold text-[#333]">
+          The Page You Are Trying To Access Is Not Accessable Or Moved To
+          Another Location.
+        </p>
+        <div className="mt-2 flex justify-center">
+          <span className="inline-block text-base text-[#333]">
+            Click Here to go to{" "}
+          </span>
+          <Link
+            className="ml-1 inline-block text-base text-primary-main"
+            href="/"
+          >
+            {" "}
+            Go Back to Home
+          </Link>
         </div>
       </div>
-
-
-      
     </>
   );
 };

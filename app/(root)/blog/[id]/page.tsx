@@ -12,8 +12,8 @@ const page = ({ params }: URLParams) => {
       <div className="relative py-[90px]">
         <div className="container">
           <div className="flex flex-wrap lg:flex-nowrap">
-            <div className="lg:basis-[70%] basis-full lg:pr-8 pr-0">
-              <div className="lg:mb-12 mb-0 lg:pb-12 pb-0 relative before:absolute before:bottom-0 before:left-0">
+            <div className="basis-full pr-0 lg:basis-[70%] lg:pr-8">
+              <div className="relative mb-0 pb-0 before:absolute before:bottom-0 before:left-0 lg:mb-12 lg:pb-12">
                 {blogPosts
                   .filter((item) => item.id === +params.id)
                   .map((filteredItem) => (
@@ -24,41 +24,41 @@ const page = ({ params }: URLParams) => {
                         className=""
                       />
                       <div className=" bg-white">
-                        <h2 className="my-6 text-[25px] sm:text-[32px] leading-9 text-background font-bold capitalize">
+                        <h2 className="my-6 text-[25px] font-bold capitalize leading-9 text-background sm:text-[32px]">
                           {filteredItem.title}
                         </h2>
-                        <ul className="flex pb-6 sm:flex-nowrap flex-wrap">
-                          <li className="flex items-center mr-5 sm:basis-auto basis-full sm:mb-0 mb-4">
+                        <ul className="flex flex-wrap pb-6 sm:flex-nowrap">
+                          <li className="mb-4 mr-5 flex basis-full items-center sm:mb-0 sm:basis-auto">
                             <FontAwesomeIcon
                               icon="calendar-day"
                               className="w-4"
                             />
-                            <span className="text-base text-[#313131] pl-2">
+                            <span className="pl-2 text-base text-[#313131]">
                               {formatDate(filteredItem.date)}
                             </span>
                           </li>
-                          <li className="flex items-center  mr-5 sm:basis-auto basis-full sm:mb-0 mb-4">
+                          <li className="mb-4 mr-5  flex basis-full items-center sm:mb-0 sm:basis-auto">
                             <FontAwesomeIcon icon="user" className="w-4" />
                             <Link
-                              className="text-base text-[#313131] hover:text-primary-main pl-2"
+                              className="pl-2 text-base text-[#313131] hover:text-primary-main"
                               href="#"
                             >
                               {filteredItem.author}
                             </Link>
                           </li>
-                          <li className="text-base text-[#313131] flex items-center  mr-5 sm:basis-auto basis-full">
+                          <li className="mr-5 flex basis-full items-center  text-base text-[#313131] sm:basis-auto">
                             <FontAwesomeIcon icon="comment" className="w-4" />
                             <span className="pl-2">
                               {filteredItem.comments} Comments
                             </span>
                           </li>
                         </ul>
-                        <ul className="flex md:flex-nowrap flex-wrap pb-5">
+                        <ul className="flex flex-wrap pb-5 md:flex-nowrap">
                           {blogCategories.map((item, index) => (
                             <li key={item.id}>
                               <Link
                                 href={`/blog/category/${item.id}`}
-                                className="text-base text-primary-main pr-1"
+                                className="pr-1 text-base text-primary-main"
                               >
                                 {item.title}
                               </Link>
@@ -68,14 +68,14 @@ const page = ({ params }: URLParams) => {
                             </li>
                           ))}
                         </ul>
-                        <p className="text-base text-[#333] leading-[1.62] mb-4">
+                        <p className="mb-4 text-base leading-[1.62] text-[#333]">
                           Many people are not aware of their legal rights and
                           dont pay attention to the helping hand they can get
                           from legal advise. Therefore it is very important to
                           know that you are aware of your rights and seek legal
                           help when needed.
                         </p>
-                        <p className="text-base text-[#333] leading-[1.62] mb-4">
+                        <p className="mb-4 text-base leading-[1.62] text-[#333]">
                           It is a long established fact that a reader will be
                           distracted by the readable content of a page when
                           looking at its layout. The point of using Lorem Ipsum
@@ -89,10 +89,10 @@ const page = ({ params }: URLParams) => {
                           over the years, sometimes by accident, sometimes on
                           purpose (injected humour and the like).
                         </p>
-                        <h3 className="text-[25px] sm:text-[32px] text-[#333] font-bold lg:pr-12 pr-0 mb-3">
+                        <h3 className="mb-3 pr-0 text-[25px] font-bold text-[#333] sm:text-[32px] lg:pr-12">
                           What To Do First When Encounter An Accident?
                         </h3>
-                        <p className="text-base text-[#333] leading-[1.62] mb-4">
+                        <p className="mb-4 text-base leading-[1.62] text-[#333]">
                           There are many variations of passages of Lorem Ipsum
                           available, but the majority have suffered alteration
                           in some form, by injected humour, or randomised words
@@ -110,7 +110,7 @@ const page = ({ params }: URLParams) => {
                           non-characteristic words etc.
                         </p>
                         <div>
-                          <h3 className="text-2xl mb-4 text-[#333] font-bold">
+                          <h3 className="mb-4 text-2xl font-bold text-[#333]">
                             Tags:
                           </h3>
                           <ul className="flex">
@@ -118,9 +118,9 @@ const page = ({ params }: URLParams) => {
                               <li key={item.id}>
                                 <Link
                                   href={`/blog/tag/${item.id}`}
-                                  className={`inline-block text-base leading-[1.62] font-semibold hover:text-primary-main hover:underline mr-3 pr-3 relative ${
+                                  className={`relative mr-3 inline-block pr-3 text-base font-semibold leading-[1.62] hover:text-primary-main hover:underline ${
                                     blogTags.length - 1 !== index &&
-                                    'before:absolute before:top-[11px] before:-right-[2.5px] before:h-[5px] before:bg-primary-main before:rounded-full before:w-[5px] before:content-[""]'
+                                    'before:absolute before:right-[-2.5px] before:top-[11px] before:size-[5px] before:rounded-full before:bg-primary-main before:content-[""]'
                                   }`}
                                 >
                                   {item.name}
