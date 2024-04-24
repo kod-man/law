@@ -23,6 +23,7 @@ const IconBox = ({ iconName, headline, content, type }: propTypes) => {
 
   return (
     <div
+      // eslint-disable-next-line
       className={`sm:basis-full lg:basis-1/3 ${type} box translate-y-10 px-10 pb-8 pt-10 opacity-0`}
     >
       {iconName}
