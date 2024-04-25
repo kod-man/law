@@ -51,47 +51,6 @@ export const bannerItems: bannerItemsType[] = [
     linkHref: "#",
   },
 ];
-export const BannerImages = [
-  {
-    caption: "Your Consultant for every legal Issue",
-    link: "#",
-    image: {
-      node: {
-        uri: "/homepage/banner1/",
-        altText: "",
-        mediaItemUrl:
-          "http://localhost/lawyero/wp-content/uploads/2024/03/banner1.jpg",
-      },
-    },
-    linkText: "Find out More",
-  },
-  {
-    caption: "Your Consultant for every legal Issue",
-    link: "#",
-    image: {
-      node: {
-        uri: "/homepage/banner2/",
-        altText: "",
-        mediaItemUrl:
-          "http://localhost/lawyero/wp-content/uploads/2024/03/banner2.jpg",
-      },
-    },
-    linkText: "Find out More",
-  },
-  {
-    caption: "Your Consultant for every legal Issue",
-    link: "#",
-    image: {
-      node: {
-        uri: "/homepage/banner3/",
-        altText: "",
-        mediaItemUrl:
-          "http://localhost/lawyero/wp-content/uploads/2024/03/banner3.jpg",
-      },
-    },
-    linkText: "Find out More",
-  },
-];
 
 interface blogPostsProps {
   id: number;
@@ -107,18 +66,6 @@ interface blogPostsProps {
   author: string;
   comments: number;
 }
-
-// WP returned type
-// featuredImage: {
-//   node: {
-//     mediaItemUrl:
-//       "http://localhost/lawyero/wp-content/uploads/2024/03/banner2.jpg",
-//     mediaDetails: {
-//       height: 1080,
-//       width: 1920,
-//     },
-//   },
-// },
 
 export const blogPosts: blogPostsProps[] = [
   {
