@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { TriangleAlert } from "lucide-react";
 import Link from "next/link";
 
 const page = () => {
@@ -8,10 +8,9 @@ const page = () => {
         <h1 className="mb-8 text-[25px] font-bold text-[#333] sm:text-[40px]">
           OOPS! SOMETHING WENT WRONG
         </h1>
-        <FontAwesomeIcon
-          icon="exclamation-circle"
-          className="m-auto size-20 text-background"
-        />
+        <div className="flex w-full justify-center text-center">
+          <TriangleAlert size={60} />
+        </div>
         <p className="mt-9 text-sm font-bold text-[#333]">
           The Page You Are Trying To Access Is Not Accessable Or Moved To
           Another Location.

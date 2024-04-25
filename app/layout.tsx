@@ -4,9 +4,10 @@ import type { Metadata } from "next";
 import { Albert_Sans } from "next/font/google";
 import "./globals.css";
 
-import Footer from "@/components/shared/Footer";
+import { Toaster } from "@/components/ui/toaster";
 import Header from "@/components/shared/Header";
 import React from "react";
+import Footer from "@/components/shared/Footer";
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

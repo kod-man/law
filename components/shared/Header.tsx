@@ -4,6 +4,7 @@ import logo from "@/public/assets/logo.png";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -82,28 +83,32 @@ const Header = () => {
                                     role="list"
                                   >
                                     <li>
-                                      <Link
-                                        href="/"
-                                        className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        Home 1
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/"
+                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          Home 1
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                     <li>
-                                      <Link
-                                        href="/home-2/"
-                                        className="group/subItem relative block px-5 py-4 pb-0 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        Home2
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/home-2/"
+                                          className="group/subItem relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-[17px] opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          Home2
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                   </ul>
                                 </CollapsibleContent>
@@ -111,12 +116,14 @@ const Header = () => {
                             </Link>
                           </li>
                           <li className="group relative">
-                            <Link
-                              href="/who-we-are/"
-                              className="relative block border-b border-white py-3 text-white duration-300 ease-in-out after:transition-transform"
-                            >
-                              Who We Are
-                            </Link>
+                            <SheetClose asChild>
+                              <Link
+                                href="/who-we-are/"
+                                className="relative block border-b border-white py-3 text-white duration-300 ease-in-out after:transition-transform"
+                              >
+                                Who We Are
+                              </Link>
+                            </SheetClose>
                           </li>
                           <li className="relative">
                             <Link
@@ -137,40 +144,46 @@ const Header = () => {
                                     role="list"
                                   >
                                     <li>
-                                      <Link
-                                        href="/practice-areas-2-column/"
-                                        className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        2 Column Layout
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/practice-areas-2-column/"
+                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          2 Column Layout
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                     <li>
-                                      <Link
-                                        href="/practice-areas-3-column-layout/"
-                                        className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        3 Column Layout
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/practice-areas-3-column-layout/"
+                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          3 Column Layout
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                     <li>
-                                      <Link
-                                        href="/single-practice-area/"
-                                        className="group/subItem relative block px-5 py-4 pb-0 text-white transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        Individual Practice Area
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/single-practice-area/"
+                                          className="group/subItem relative block px-5 py-4 pb-1 text-white transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-[17px] opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          Individual Practice Area
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                   </ul>
                                 </CollapsibleContent>
@@ -196,16 +209,18 @@ const Header = () => {
                                     role="list"
                                   >
                                     <li>
-                                      <Link
-                                        href="/single-team-member/"
-                                        className="group/subItem relative block px-5 py-4 pb-0 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        Robert Darren
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/single-team-member/"
+                                          className="group/subItem relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-[17px] opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          Robert Darren
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                   </ul>
                                 </CollapsibleContent>
@@ -231,28 +246,32 @@ const Header = () => {
                                     role="list"
                                   >
                                     <li>
-                                      <Link
-                                        href="/faqs/"
-                                        className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        Faqs
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/faqs/"
+                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          Faqs
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                     <li>
-                                      <Link
-                                        href="/404/"
-                                        className="group/subItem relative block px-5 py-4 pb-0 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        404 Page
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/404/"
+                                          className="group/subItem relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-[17px] opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          404 Page
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                   </ul>
                                 </CollapsibleContent>
@@ -278,53 +297,61 @@ const Header = () => {
                                     role="list"
                                   >
                                     <li>
-                                      <Link
-                                        href="/blog/"
-                                        className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        Blog With Sidebar
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/blog/"
+                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          Blog With Sidebar
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                     <li>
-                                      <Link
-                                        href="/blog-full-page/"
-                                        className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        Blog Full page
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/blog-full-page/"
+                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          Blog Full page
+                                        </Link>
+                                      </SheetClose>
                                     </li>
 
                                     <li>
-                                      <Link
-                                        href="/blog-chess-style/"
-                                        className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        Blog Chess Style
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/blog-chess-style/"
+                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          Blog Chess Style
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                     <li>
-                                      <Link
-                                        href="/blog-grid/"
-                                        className="group/subItem relative block px-5 py-4 pb-0 transition-all hover:pl-7 hover:text-primary-main"
-                                      >
-                                        <ChevronRight
-                                          size="15"
-                                          className="absolute left-0 top-1/2 -translate-y-1/2 opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
-                                        />
-                                        Blog Grid
-                                      </Link>
+                                      <SheetClose asChild>
+                                        <Link
+                                          href="/blog-grid/"
+                                          className="group/subItem relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
+                                        >
+                                          <ChevronRight
+                                            size="15"
+                                            className="absolute left-0 top-[17px] opacity-0 group-hover/subItem:left-[10px] group-hover/subItem:opacity-100 group-hover/subItem:transition group-hover/subItem:delay-100 group-hover/subItem:duration-300 group-hover/subItem:ease-menu"
+                                          />
+                                          Blog Grid
+                                        </Link>
+                                      </SheetClose>
                                     </li>
                                   </ul>
                                 </CollapsibleContent>
@@ -332,12 +359,14 @@ const Header = () => {
                             </Link>
                           </li>
                           <li className="group relative">
-                            <Link
-                              href="/contact/"
-                              className="relative block border-b border-white py-3 duration-300 ease-in-out after:transition-transform"
-                            >
-                              Contact
-                            </Link>
+                            <SheetClose asChild>
+                              <Link
+                                href="/contact/"
+                                className="relative block border-b border-white py-3 duration-300 ease-in-out after:transition-transform"
+                              >
+                                Contact
+                              </Link>
+                            </SheetClose>
                           </li>
                         </ul>
                       </SheetDescription>

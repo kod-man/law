@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
-import { bannerItems } from "@/constants/homeBanner";
+import { bannerItems } from "@/lib/data";
 import ButtonCustom from "../global/button";
 import { type CarouselApi } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
