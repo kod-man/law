@@ -1,5 +1,4 @@
 import PrimaryHeadline from "@/components/global/primary-headline";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import libraryicon from "@/public/assets/library-icon.svg";
 import { FAQData } from "@/lib/data";
@@ -14,11 +13,11 @@ const FAQsList = ({
   headline: string;
   columns?: number;
   separator?: boolean;
-  bgType?: string;    
+  bgType?: string;
 }) => {
   return (
     <div
-      className={`bg-${bgType || "grey"} lg:pt-20 pt-16 lg:pb-11 pb-9 overflow-hidden relative`}
+      className={`bg-${bgType || "grey"} relative overflow-hidden pb-9 pt-16 lg:pb-11 lg:pt-20`}
     >
       {separator && (
         <Image
@@ -29,7 +28,7 @@ const FAQsList = ({
       )}
       <div className="container">
         <PrimaryHeadline text={headline} />
-        <div className={`grid lg:grid-cols-${columns || 1} grid-cols-1 pt-3`}>
+        <div className={`lg:grid-cols- grid${columns || 1} grid-cols-1 pt-3`}>
           {FAQData.map((item) => (
             <FAQItem
               key={item.id}
