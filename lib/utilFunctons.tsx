@@ -4,7 +4,7 @@ export function splitHeadline(headline: string) {
   const words = headline.split(" ");
   return words.map((word, index) => (
     <Fragment key={index}>
-      {index == 0 ? (
+      {index === 0 ? (
         <span className="inline-block text-primary-main">{word}</span>
       ) : (
         " " + word

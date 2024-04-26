@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import InnerBanner from "@/components/global/inner-banner";
 import TeamMembers from "@/components/who-we-are/TeamMembers";
@@ -7,8 +6,13 @@ import CTA from "@/components/shared/CTA";
 import WeAreBest from "@/components/who-we-are/WeAreBest";
 import WhyChooseUs from "@/components/who-we-are/WhyChooseUs";
 import PreFooter from "@/components/shared/PreFooter";
+import { Metadata } from "next";
 
-const page = () => {  
+export const metadata: Metadata = {
+  title: "Who we are - Lawyero",
+  description: "Your one stop solution for legal matters",
+};
+const page = () => {
   return (
     <>
       <InnerBanner text="WHO WE ARE" />

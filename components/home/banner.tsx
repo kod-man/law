@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
-import { bannerItems } from "@/constants/homeBanner";
+import { bannerItems } from "@/lib/data";
 import ButtonCustom from "../global/button";
 import { type CarouselApi } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
@@ -34,12 +34,12 @@ const Banner = () => {
         }),
       ]}
     >
-      <CarouselContent className="ml-0 relative">
+      <CarouselContent className="relative ml-0">
         {bannerItems.map((item) => (
           <CarouselItem
             key={item.id}
-            className={`pl-0 text-white relative overflow-hidden before:absolute before:content-[''] before:w-full before:h-full before:bg-black/15 before:z-10 ${
-              current == item.id ? "active" : ""
+            className={`relative overflow-hidden pl-0 text-white before:absolute before:z-10 before:size-full before:bg-black/15 before:content-[''] ${
+              current === item.id ? "active" : ""
             }`}
           >
             <Image
@@ -49,24 +49,24 @@ const Banner = () => {
               className="object-cover"
             />
             <div
-              className={`relative pt-[80px] md:pt-[150px] lg:pt-[300px] lg:pb-[300px] pb-[80px] md:pb-[150px] top-0 z-10 w-full`}
+              className={`relative top-0 z-10 w-full py-[80px] md:py-[150px] lg:py-[300px]`}
             >
               <div className="container">
                 <div className="carousel-caption">
                   <h2
-                    className={`font-bold lg:text-6xl md:text-5xl sm:text-4xl text-3xl uppercase lg:w-2/3 sm:w-full mb-5 max-w-full leading-tight transition duration-1000 delay-500 ${
-                      current == item.id
-                        ? "opacity-1 translate-y-0"
-                        : "opacity-0 translate-y-10"
+                    className={`mb-5 max-w-full text-3xl font-bold uppercase leading-tight transition delay-500 duration-1000 sm:w-full sm:text-4xl md:text-5xl lg:w-2/3 lg:text-6xl ${
+                      current === item.id
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-10 opacity-0"
                     }`}
                   >
                     {item.content}
                   </h2>
                   <div
                     className={`transition delay-700 duration-1000 ${
-                      current == item.id
-                        ? "opacity-1 translate-y-0"
-                        : "opacity-0 translate-y-10"
+                      current === item.id
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-10 opacity-0"
                     }`}
                   >
                     <ButtonCustom href={item.linkHref} text={item.linkText} />

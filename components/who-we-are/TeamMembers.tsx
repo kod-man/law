@@ -4,7 +4,7 @@ import { TeamMembersCarousel } from "../shared/TeamMembersCarousel";
 const TeamMembers = () => {
   return (
     <div className="bg-background">
-      <div className="container lg:pt-28 pt-20 lg:pb-52 pb-40">
+      <div className="container pb-40 pt-20 lg:pb-52 lg:pt-28">
         <PrimaryHeadline text="Our Team" additionalClass="secondary-headline" />
         <TeamMembersCarousel textColor="text-white" />
       </div>

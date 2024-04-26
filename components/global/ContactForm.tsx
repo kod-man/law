@@ -2,6 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+
 import { z } from "zod";
 import {
   Form,
@@ -20,6 +21,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
+import { useToast } from "../ui/use-toast";
 
 const formSchema = z.object({
   firstName: z.string().min(3, {
@@ -34,6 +36,8 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
+  const { toast } = useToast();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -46,7 +50,11 @@ export function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    toast({
+      title: "Form Submitted Successfully.",
+      className:
+        "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 bg-background text-white",
+    });
   }
 
   return (
@@ -61,7 +69,7 @@ export function ContactForm() {
                 <Input
                   placeholder="First Name"
                   {...field}
-                  className="h-12 px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] placeholder:text-base placeholder:text-background font-bold placeholder:font-normal bg-white rounded-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+                  className="h-12 w-full rounded-none border-DEFAULT border-[#e8e6e6] bg-white px-4 py-2 font-bold text-background placeholder:text-base placeholder:font-normal placeholder:text-background focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                 />
               </FormControl>
               <FormMessage />
@@ -78,7 +86,7 @@ export function ContactForm() {
                 <Input
                   placeholder="Last Name"
                   {...field}
-                  className="h-12 px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] placeholder:text-base placeholder:text-background font-bold placeholder:font-normal bg-white rounded-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+                  className="h-12 w-full rounded-none border-DEFAULT border-[#e8e6e6] bg-white px-4 py-2 font-bold text-background placeholder:text-base placeholder:font-normal placeholder:text-background focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                 />
               </FormControl>
               <FormMessage />
@@ -96,7 +104,7 @@ export function ContactForm() {
                   type="email"
                   placeholder="Email"
                   {...field}
-                  className="h-12 px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] placeholder:text-base placeholder:text-background font-bold placeholder:font-normal bg-white rounded-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+                  className="h-12 w-full rounded-none border-DEFAULT border-[#e8e6e6] bg-white px-4 py-2 font-bold text-background placeholder:text-base placeholder:font-normal placeholder:text-background focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                 />
               </FormControl>
               <FormMessage />
@@ -113,7 +121,7 @@ export function ContactForm() {
                   onValueChange={field.onChange}
                   defaultValue={field.value}
                 >
-                  <SelectTrigger className="h-12 px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] text-base placeholder:text-background placeholder:font-normal bg-white rounded-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">
+                  <SelectTrigger className="h-12 w-full rounded-none border-DEFAULT border-[#e8e6e6] bg-white px-4 py-2 text-base text-background placeholder:font-normal placeholder:text-background focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">
                     <SelectValue
                       placeholder="Your Case Falls In?"
                       className="font-normal"
@@ -140,7 +148,7 @@ export function ContactForm() {
                 <Textarea
                   placeholder="Type your message here."
                   {...field}
-                  className="px-4 py-2 w-full text-background border-[1px] border-[#e8e6e6] placeholder:text-base placeholder:text-background font-bold placeholder:font-normal h-48 resize-none bg-white rounded-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+                  className="h-48 w-full resize-none rounded-none border-DEFAULT border-[#e8e6e6] bg-white px-4 py-2 font-bold text-background placeholder:text-base placeholder:font-normal placeholder:text-background focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                 />
               </FormControl>
               <FormMessage />
@@ -150,7 +158,7 @@ export function ContactForm() {
 
         <Button
           type="submit"
-          className="text-base font-bold bg-primary-main uppercase text-white border-[1px] px-7 py-[14px] hover:border-primary-main hover:bg-white hover:text-primary-main transition-colors ease-in duration-300 rounded-none h-auto"
+          className="h-auto rounded-none border bg-primary-main px-7 py-[14px] text-base font-bold uppercase text-white transition-colors duration-300 ease-in hover:border-primary-main hover:bg-white hover:text-primary-main"
         >
           Contact Us
         </Button>

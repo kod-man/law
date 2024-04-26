@@ -7,6 +7,12 @@ import CTA from "@/components/shared/CTA";
 import PreFooter from "@/components/shared/PreFooter";
 import Quote from "@/components/shared/Quote";
 import BackgroundAndPA from "@/components/team/single/BackgroundAndPA";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Team Member - Lawyero",
+  description: "Your one stop solution for legal matters",
+};
 
 const page = () => {
   return (
@@ -14,7 +20,7 @@ const page = () => {
       <InnerBanner text="Robert Darren" image={singleteambanner} />
 
       <MemberDetails />
-   
+
       <Stats />
 
       <CTA

@@ -5,6 +5,12 @@ import PAContent from "@/components/practice-areas/single/PAContent";
 import CTA from "@/components/shared/CTA";
 import PreFooter from "@/components/shared/PreFooter";
 import PABottomContent from "@/components/practice-areas/single/PABottomContent";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Individual Practice Area - Lawyero",
+  description: "Your one stop solution for legal matters",
+};
 
 const page = () => {
   return (

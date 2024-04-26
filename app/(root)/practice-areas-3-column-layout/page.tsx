@@ -1,10 +1,14 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import InnerBanner from "@/components/global/inner-banner";
 import HeadlineWithText from "@/components/shared/HeadlineWithText";
 import PreFooter from "@/components/shared/PreFooter";
 import PAList from "@/components/practice-areas/PAList";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Practice Areas 3 Columns - Lawyero",
+  description: "Your one stop solution for legal matters",
+};
 const page = () => {
   return (
     <>

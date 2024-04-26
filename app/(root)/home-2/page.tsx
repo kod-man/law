@@ -9,11 +9,39 @@ import FAQs from "@/components/home/FAQs";
 import TeamMembers from "@/components/home/TeamMembers";
 import PreFooter from "@/components/shared/PreFooter";
 import Testimonials from "@/components/home/Testimonials";
+import Typewriter from "@/components/home/Typewriter";
+import { homeBannerTypewriter } from "@/lib/data";
+import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Welcome to Lawyero - Home 2",
+  description: "Your one stop solution for legal matters",
+};
 
 const Home = () => {
   return (
     <>
-      <div className=" h-screen w-full bg-primary-main"></div>
+      <section className="relative bg-primary-main">
+        <Image
+          src={homeBannerTypewriter.image}
+          alt="Homepage Image of a Lawyer"
+          fill={true}
+          className="object-cover object-top"
+        />
+        <div className="container relative z-10">
+          <div className="flex h-[calc(90vh-32px)] w-full items-center">
+            <div className="basis-1/2">
+              <h1 className="text-5xl font-bold uppercase text-background">
+                CONSULT US FOR
+                <br />
+                <Typewriter homeBannerTypewriter={homeBannerTypewriter} />
+                &nbsp;
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
       <PostBannerBox />
       <IconsWithCounters />
       <TwoColumnTextWithImage />

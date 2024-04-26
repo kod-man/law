@@ -4,10 +4,10 @@ import FAQItem from "../shared/FAQItem";
 
 const FAQs = () => {
   return (
-    <div className="bg-grey pt-20 pb-11">
+    <div className="bg-grey pb-11 pt-20">
       <div className="container">
         <PrimaryHeadline text="Frequently Asked Questions" />
-        <div className="flex pt-3 flex-wrap">
+        <div className="flex flex-wrap pt-3 ">
           {FAQData.map((item) => (
             <FAQItem
               key={`faq${item.id}`}

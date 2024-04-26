@@ -1,4 +1,3 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import homeblog1 from "@/public/assets/home-blog-1.jpg";
 import homeblog2 from "@/public/assets/home-blog-2.jpg";
 import homeblog3 from "@/public/assets/home-blog-3.jpg";
@@ -21,140 +20,46 @@ import paimage5 from "@/public/assets/pa-img-5.jpg";
 import paimage6 from "@/public/assets/pa-img-6.jpg";
 import paimage7 from "@/public/assets/pa-img-7.jpg";
 import paimage8 from "@/public/assets/pa-img-8.jpg";
+import homepageTypewriter from "@/public/assets/lawyer-ticker-min.jpg";
+import banner1 from "@/public/assets/banner/banner1.jpg";
+import banner2 from "@/public/assets/banner/banner2.jpg";
+import banner3 from "@/public/assets/banner/banner3.jpg";
+import {
+  FAQsProps,
+  PADataProps,
+  TeamMembersProps,
+  TestimonialsProps,
+  attorneyEducatonProps,
+  bannerItemsType,
+  blogCategoriesProps,
+  blogPostsProps,
+  blogTagsProps,
+  homeBannerTypewriterProps,
+} from "@/types";
 
-import { StaticImageData } from "next/image";
-export const BannerImages = [
-  {
-    caption: "Your Consultant for every legal Issue",
-    link: "#",
-    image: {
-      node: {
-        uri: "/homepage/banner1/",
-        altText: "",
-        mediaItemUrl:
-          "http://localhost/lawyero/wp-content/uploads/2024/03/banner1.jpg",
-      },
-    },
-    linkText: "Find out More",
-  },
-  {
-    caption: "Your Consultant for every legal Issue",
-    link: "#",
-    image: {
-      node: {
-        uri: "/homepage/banner2/",
-        altText: "",
-        mediaItemUrl:
-          "http://localhost/lawyero/wp-content/uploads/2024/03/banner2.jpg",
-      },
-    },
-    linkText: "Find out More",
-  },
-  {
-    caption: "Your Consultant for every legal Issue",
-    link: "#",
-    image: {
-      node: {
-        uri: "/homepage/banner3/",
-        altText: "",
-        mediaItemUrl:
-          "http://localhost/lawyero/wp-content/uploads/2024/03/banner3.jpg",
-      },
-    },
-    linkText: "Find out More",
-  },
-];
-
-interface StatsWithIconProps {
-  id: number;
-  amountPreText: string;
-  amount: number;
-  amountPostText: string;
-  text: string;
-  iconName: IconProp;
-}
-
-export const StatsWithIcon: StatsWithIconProps[] = [
+export const bannerItems: bannerItemsType[] = [
   {
     id: 1,
-    amountPreText: "",
-    amount: 150,
-    amountPostText: "+",
-    text: "Customers",
-    iconName: "handshake",
+    content: "Your Consultant for every legal Issue",
+    linkText: "Find out More",
+    image: banner1,
+    linkHref: "#",
   },
   {
     id: 2,
-    amountPreText: "$",
-    amount: 23000000,
-    amountPostText: "",
-    text: "Recovered",
-    iconName: "dollar",
+    content: "Your Consultant for every legal Issue",
+    linkText: "Find out More",
+    image: banner2,
+    linkHref: "#",
   },
   {
     id: 3,
-    amountPreText: "",
-    amount: 98,
-    amountPostText: "%",
-    text: "Success Rato",
-    iconName: "thumbs-up",
+    content: "Your Consultant for every legal Issue",
+    linkText: "Find out More",
+    image: banner3,
+    linkHref: "#",
   },
 ];
-
-export const StatsWithIconTeam: StatsWithIconProps[] = [
-  {
-    id: 1,
-    amountPreText: "",
-    amount: 2000,
-    amountPostText: "+",
-    text: "Happy Clients",
-    iconName: "smile",
-  },
-  {
-    id: 3,
-    amountPreText: "",
-    amount: 98,
-    amountPostText: "%",
-    text: "Success Rato",
-    iconName: "thumbs-up",
-  },
-  {
-    id: 2,
-    amountPreText: "$",
-    amount: 20000000,
-    amountPostText: "",
-    text: "Recovered",
-    iconName: "dollar",
-  },
-];
-
-
-interface blogPostsProps {
-  id: number;
-  featuredImage: {
-    node: {
-      mediaItem: StaticImageData;
-    };
-  };
-  title: string;
-  linkHref: string;
-  excerpt: string;
-  date: string;
-  author: string;
-  comments: number;
-}
-
-// WP returned type
-// featuredImage: {
-//   node: {
-//     mediaItemUrl:
-//       "http://localhost/lawyero/wp-content/uploads/2024/03/banner2.jpg",
-//     mediaDetails: {
-//       height: 1080,
-//       width: 1920,
-//     },
-//   },
-// },
 
 export const blogPosts: blogPostsProps[] = [
   {
@@ -249,12 +154,6 @@ export const blogPosts: blogPostsProps[] = [
   },
 ];
 
-export interface FAQsProps {
-  id: number;
-  question: string;
-  answer: string;
-}
-
 export const FAQData: FAQsProps[] = [
   {
     id: 1,
@@ -294,14 +193,6 @@ export const FAQData: FAQsProps[] = [
   },
 ];
 
-interface TeamMembersProps {
-  id: number;
-  name: string;
-  href: string;
-  image: StaticImageData;
-  designation: string;
-}
-
 export const TeamMembers: TeamMembersProps[] = [
   {
     id: 1,
@@ -340,15 +231,6 @@ export const TeamMembers: TeamMembersProps[] = [
   },
 ];
 
-interface TestimonialsProps {
-  id: number;
-  image: StaticImageData;
-  name: string;
-  text: string;
-  organization: string;
-  designation: string;
-}
-
 export const Testimonials: TestimonialsProps[] = [
   {
     id: 1,
@@ -375,14 +257,6 @@ export const Testimonials: TestimonialsProps[] = [
     designation: "Assistant Finance Manager",
   },
 ];
-
-interface PADataProps {
-  id: number;
-  href: string;
-  title: string;
-  text: string;
-  image: StaticImageData;
-}
 
 export const PAData: PADataProps[] = [
   {
@@ -471,15 +345,6 @@ export const PAData: PADataProps[] = [
   },
 ];
 
-interface attorneyEducatonProps {
-  id: number;
-  title: string;
-  details: {
-    id: number;
-    text: string;
-  }[];
-}
-
 export const attorneyEducaton: attorneyEducatonProps[] = [
   {
     id: 1,
@@ -525,11 +390,6 @@ export const attorneyEducaton: attorneyEducatonProps[] = [
   },
 ];
 
-interface blogCategoriesProps {
-  id: number;
-  title: string;
-}
-
 export const blogCategories: blogCategoriesProps[] = [
   {
     id: 1,
@@ -553,11 +413,6 @@ export const blogCategories: blogCategoriesProps[] = [
   },
 ];
 
-interface blogTagsProps {
-  id: number;
-  name: string;
-}
-
 export const blogTags: blogTagsProps[] = [
   {
     id: 1,
@@ -572,3 +427,14 @@ export const blogTags: blogTagsProps[] = [
     name: "Attorney",
   },
 ];
+
+export const homeBannerTypewriter: homeBannerTypewriterProps = {
+  image: homepageTypewriter,
+  words: [
+    "Criminal Law",
+    "Divorce Law",
+    "Family Law",
+    "Immigration Law",
+    "Real Estate Law",
+  ],
+};

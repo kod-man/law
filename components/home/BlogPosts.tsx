@@ -6,10 +6,10 @@ import PrimaryHeadline from "../global/primary-headline";
 const BlogPosts = () => {
   return (
     <>
-      <div className="relative bg-grey sm:pt-20 sm:pb-20 pt-14 pb-14">
+      <div className="relative bg-grey py-14 sm:py-20">
         <div className="container">
           <PrimaryHeadline text="News & Insights" />
-          <div className="grid grid-rows-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-7">
+          <div className="grid grid-rows-2 gap-7 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((item) => (
               <BlogCard
                 key={`blog${item.id}`}
@@ -20,7 +20,7 @@ const BlogPosts = () => {
               />
             ))}
           </div>
-          <div className="text-center mt-12">
+          <div className="mt-12 text-center">
             <ButtonCustom href="#" text="Read More Posts" buttonType="dark" />
           </div>
         </div>

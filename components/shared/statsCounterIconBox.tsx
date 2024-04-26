@@ -1,18 +1,16 @@
 "use client";
 
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { formatCurrency } from "@/lib/utilFunctons";
 
+gsap.registerPlugin(ScrollTrigger);
+
 interface StatsCounterIconBoxProps {
-  iconName: IconProp;
+  iconName: React.ReactNode;
   amountPreText: string;
   amount: number;
   amountPostText: string;
@@ -26,7 +24,7 @@ const StatsCounterIconBox = ({
   amountPostText,
   text,
 }: StatsCounterIconBoxProps) => {
-  const [endAmount, setAmount] = useState(amount);
+  const [endAmount] = useState(amount);
 
   const amountRef = useRef<HTMLSpanElement>(null);
 
@@ -58,15 +56,12 @@ const StatsCounterIconBox = ({
 
   return (
     <div className="flex items-center sm:basis-full sm:justify-start md:justify-start">
-      <FontAwesomeIcon
-        icon={iconName}
-        className="w-[75px] h-[75px] border-2 p-2 border-white text-white"
-      />
-      <h3 className="text-3xl font-bold mt-5 mb-3 md:mb-5 text-white pl-8">
+      {iconName}
+      <h3 className="mb-3 mt-5 pl-8 text-3xl font-bold text-white md:mb-5">
         <span className="block">
-          {amountPreText ? amountPreText : ""}
+          {amountPreText || ""}
           <span ref={amountRef}>0</span>
-          {amountPostText ? amountPostText : ""}
+          {amountPostText || ""}
         </span>{" "}
         {text}
       </h3>

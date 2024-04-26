@@ -1,6 +1,12 @@
 import BlogList from "@/components/blog/BlogList";
 import Sidebar from "@/components/blog/Sidebar";
 import InnerBanner from "@/components/global/inner-banner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog with Sidebar - Lawyero",
+  description: "Your one stop solution for legal matters",
+};
 
 const Page = () => {
   return (

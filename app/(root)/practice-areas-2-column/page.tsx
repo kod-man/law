@@ -1,11 +1,15 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import InnerBanner from "@/components/global/inner-banner";
 import HeadlineWithText from "@/components/shared/HeadlineWithText";
 import PAList from "@/components/practice-areas/PAList";
 import PreFooter from "@/components/shared/PreFooter";
+import { Metadata } from "next";
 
-const page = () => { 
+export const metadata: Metadata = {
+  title: "Practice Areas 2 Columns - Lawyero",
+  description: "Your one stop solution for legal matters",
+};
+const page = () => {
   return (
     <>
       <InnerBanner text="PRACTICE AREAS 2 COLUMN" />

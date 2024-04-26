@@ -23,10 +23,11 @@ const IconBox = ({ iconName, headline, content, type }: propTypes) => {
 
   return (
     <div
-      className={`lg:basis-1/3 sm:basis-full ${type} px-10 pt-10 pb-8 box opacity-0 translate-y-10`}
+      // eslint-disable-next-line
+      className={`sm:basis-full lg:basis-1/3 ${type} box translate-y-10 px-10 pb-8 pt-10 opacity-0`}
     >
       {iconName}
-      <h3 className="text-2xl font-bold mt-5 mb-3 text-black">{headline}</h3>
+      <h3 className="mb-3 mt-5 text-2xl font-bold text-black">{headline}</h3>
       <p className="text-base">{content}</p>
     </div>
   );

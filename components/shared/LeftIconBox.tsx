@@ -8,10 +8,10 @@ interface LeftIconBoxProps {
 
 const LeftIconBox = ({ iconName, headline, content }: LeftIconBoxProps) => {
   return (
-    <div className="flex mb-10 lg:pr-20 pr-0">
-      <div className="flex-shrink-0 pr-7">{iconName}</div>
+    <div className="mb-10 flex pr-0 lg:pr-20">
+      <div className="shrink-0 pr-7">{iconName}</div>
       <div>
-        <h3 className="text-2xl font-bold mb-2 text-black">{headline}</h3>
+        <h3 className="mb-2 text-2xl font-bold text-black">{headline}</h3>
         <p className="text-base">{content}</p>
       </div>
     </div>

@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import paimagetopcontent from "@/public/assets/single-pa-top-content.jpg";
 import PrimaryHeadline from "@/components/global/primary-headline";
+import { ChevronRight } from "lucide-react";
 
 const listData: string[] = [
   "Divorce",
@@ -13,9 +13,9 @@ const listData: string[] = [
 ];
 
 const PABottomContent = () => {
-  return (    
-    <div className="flex lg:gap-8 gap-0 lg:flex-nowrap flex-wrap">
-      <div className="basis-full lg:basis-1/2 sm:basis-full relative lg:min-h-[100%] sm:min-h-96">
+  return (
+    <div className="flex flex-wrap gap-0 lg:flex-nowrap lg:gap-8">
+      <div className="relative basis-full sm:min-h-96 sm:basis-full lg:min-h-full lg:basis-1/2">
         <Image
           src={paimagetopcontent}
           alt="Single Practice Area Top"
@@ -23,12 +23,12 @@ const PABottomContent = () => {
           className="object-cover"
         />
       </div>
-      <div className="lg:basis-1/2 basis-full lg:pt-24 lg:pb-16 pt-16 pb-16 lg:pl-11 pl-8 lg:pr-20 pr-8 lg:order-2 sm:-order-1">
+      <div className="basis-full px-8 py-16 sm:-order-1 lg:order-2 lg:basis-1/2 lg:pl-11 lg:pr-20">
         <PrimaryHeadline
           text="History In Family Law Cases"
           additionalClass="primary-headline-left"
         />
-        <p className="text-base leading-6 text-[#333] mb-5">
+        <p className="mb-5 text-base leading-6 text-[#333]">
           For almost 20 years, Lawyero family law attorneys have helped our
           clients with the following matters
         </p>
@@ -36,17 +36,17 @@ const PABottomContent = () => {
           {listData.map((item, index) => (
             <li
               key={index}
-              className="text-base leading-6 text-[#313131] py-4 pl-5 relative border-b-[1px] border-[#313131]"
+              className="relative border-b border-[#313131] py-4 pl-5 text-base leading-6 text-[#313131]"
             >
-              <FontAwesomeIcon
-                icon="chevron-right"
-                className="w-3 h-[15px] absolute top-1/2 left-0 translate-y-[-50%]"
+              <ChevronRight
+                size={15}
+                className="absolute left-0 top-1/2 -translate-y-1/2"
               />
               {item}
             </li>
           ))}
         </ul>
-        <p className="text-base leading-6 text-[#333] font-bold mb-5">
+        <p className="mb-5 text-base font-bold leading-6 text-[#333]">
           Contact us today for an initial case evaluation. You will speak with
           one of our attorneys to discuss your situation. You will receive
           information concerning your particular matter and you can evaluate
