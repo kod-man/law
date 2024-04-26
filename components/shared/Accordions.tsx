@@ -1,4 +1,4 @@
-import { FAQsProps } from "@/lib/data";
+import { FAQsProps } from "@/types";
 import {
   Accordion,
   AccordionItem,
@@ -11,14 +11,14 @@ const Accordions = ({ data }: { data: FAQsProps[] }) => {
     <Accordion className="pt-3" type="single" collapsible>
       {data.map((item) => (
         <AccordionItem
-          className="border-b-0 mb-5"
+          className="mb-5 border-b-0"
           value={`item-${item.id}`}
           key={item.id}
         >
-          <AccordionTrigger className="text-base text-background font-semibold py-2 px-4 border-2 border-background hover:no-underline rounded-md focus:bg-background focus:text-white text-left">
+          <AccordionTrigger className="rounded-md border-2 border-background px-4 py-2 text-left text-base font-semibold text-background hover:no-underline focus:bg-background focus:text-white">
             {item.question}
           </AccordionTrigger>
-          <AccordionContent className="mt-5 border-2 border-background rounded-md text-base leading-6 p-4 relative before:absolute before:-top-[22px] before:left-[30px] before:content-[''] before:bg-background before:w-[2px] before:h-5 after:absolute after:-top-[22px] after:right-[30px] after:content-[''] after:bg-background after:w-[2px] after:h-5">
+          <AccordionContent className="relative mt-5 rounded-md border-2 border-background p-4 text-base leading-6 before:absolute before:-top-[22px] before:left-[30px] before:h-5 before:w-[2px] before:bg-background before:content-[''] after:absolute after:-top-[22px] after:right-[30px] after:h-5 after:w-[2px] after:bg-background after:content-['']">
             {item.answer}
           </AccordionContent>
         </AccordionItem>
