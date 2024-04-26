@@ -1,5 +1,5 @@
 import { splitHeadline } from "@/lib/utilFunctons";
-
+import React from "react";
 interface headlineProps {
   text: string;
   additionalClass?: string;
@@ -15,12 +15,13 @@ const PrimaryHeadline = ({
 }: headlineProps) => {
   let formattedText: string | React.ReactNode = text;
   const Tag = headlineType || "h2";
-  {
-    formatTwoColor && (formattedText = splitHeadline(text));
-  }
+
+  formatTwoColor && (formattedText = splitHeadline(text));
+
   if (additionalClass) {
     return <Tag className={`${additionalClass}`}>{formattedText}</Tag>;
   }
+
   return <Tag className="primary-headline">{formattedText}</Tag>;
 };
 

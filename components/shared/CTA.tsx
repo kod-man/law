@@ -23,19 +23,21 @@ const CTA = ({
 }: CTAProps) => {
   let CTAWithImage;
 
-  ctaType == "withBg" &&
+  ctaType === "withBg" &&
     (CTAWithImage = (
-      <div className={`${bgClass ? bgClass : "bg-background"} py-6`}>
+      <div className={`${bgClass || "bg-background"} py-6`}>
         <div className="container">
-          <div className="flex lg:flex-nowrap flex-wrap items-center">
-            <div className="lg:basis-1/2 basis-full">
-              <h3 className="text-xl lg:text-left text-center text-white">{headline}</h3>
+          <div className="flex flex-wrap items-center lg:flex-nowrap">
+            <div className="basis-full lg:basis-1/2">
+              <h3 className="text-center text-xl text-white lg:text-left">
+                {headline}
+              </h3>
             </div>
-            <div className="lg:basis-1/2 basis-full lg:text-right text-center lg:mt-0 mt-7">
+            <div className="mt-7 basis-full text-center lg:mt-0 lg:basis-1/2 lg:text-right">
               <ButtonCustom
                 href={buttonLink}
                 text={buttonText}
-                buttonType={`${buttonType ? buttonType : "secondary"}`}
+                buttonType={`${buttonType || "secondary"}`}
               />
             </div>
           </div>
@@ -43,9 +45,9 @@ const CTA = ({
       </div>
     ));
 
-  ctaType == "withImage" &&
+  ctaType === "withImage" &&
     (CTAWithImage = (
-      <div className="bg-black py-20 relative overflow-hidden before:bg-[#1a2431] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:content-[''] before:opacity-70 before:z-[2]">
+      <div className="relative overflow-hidden bg-black py-20 before:absolute before:left-0 before:top-0 before:z-[2] before:size-full before:bg-[#1a2431] before:opacity-70 before:content-['']">
         <Image
           src={homeconsultationcall}
           alt="Home Consultation Call"
@@ -53,11 +55,11 @@ const CTA = ({
           className="object-cover"
         />
         <div className="container relative z-[3] text-center">
-          <h2 className="sm:text-[40px] text-[25px] text-white font-bold lg:px-14 sm:px-0 text-center mb-9 inline-block leading-10">
+          <h2 className="mb-9 inline-block text-center text-[25px] font-bold leading-10 text-white sm:px-0 sm:text-[40px] lg:px-14">
             {headline}
           </h2>
           <Link
-            className="border-[3px] border-white text-base font-bold text-white px-3 py-4 inline-block"
+            className="inline-block border-[3px] border-white px-3 py-4 text-base font-bold text-white"
             href={buttonLink}
           >
             {buttonText}
