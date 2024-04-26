@@ -3,7 +3,19 @@ import Sidebar from "@/components/blog/Sidebar";
 import InnerBanner from "@/components/global/inner-banner";
 import { blogTags } from "@/lib/data";
 import { URLParams } from "@/types";
+import { Metadata } from "next";
 
+export async function generateMetadata({
+  params,
+}: URLParams): Promise<Metadata> {
+  const blogTagsTitle = blogTags
+    .filter((item) => item.id === +params.id)
+    .map((filteredItem) => filteredItem.name);
+
+  return {
+    title: `${blogTagsTitle} - Lawyero`,
+  };
+}
 const Page = ({ params }: URLParams) => {
   return (
     <>

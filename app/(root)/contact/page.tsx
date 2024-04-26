@@ -3,6 +3,12 @@ import { ContactForm } from "@/components/global/ContactForm";
 import PrimaryHeadline from "@/components/global/primary-headline";
 import Iframe from "@/components/shared/Iframe";
 import { MapPin, PhoneCallIcon } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - Lawyero",
+  description: "Your one stop solution for legal matters",
+};
 
 const page = () => {
   return (

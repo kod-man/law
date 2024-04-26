@@ -12,6 +12,12 @@ import Testimonials from "@/components/home/Testimonials";
 import Typewriter from "@/components/home/Typewriter";
 import { homeBannerTypewriter } from "@/lib/data";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Welcome to Lawyero - Home 2",
+  description: "Your one stop solution for legal matters",
+};
 
 const Home = () => {
   return (

@@ -6,7 +6,22 @@ import { formatDate } from "@/lib/utilFunctons";
 
 import Sidebar from "@/components/blog/Sidebar";
 import { Calendar, User, MessageCircle } from "lucide-react";
-const page = ({ params }: URLParams) => {
+
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: URLParams): Promise<Metadata> {
+  const blogTitle = blogPosts
+    .filter((item) => item.id === +params.id)
+    .map((filteredItem) => filteredItem.title);
+
+  return {
+    title: `${blogTitle} - Lawyero`,
+  };
+}
+
+const Page = ({ params }: URLParams) => {
   return (
     <>
       <div className="relative py-[90px]">
@@ -139,4 +154,4 @@ const page = ({ params }: URLParams) => {
   );
 };
 
-export default page;
+export default Page;

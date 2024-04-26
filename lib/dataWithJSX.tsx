@@ -1,4 +1,10 @@
 import {
+  BannerIconBoxesProps,
+  FeaturesProps,
+  HomepagePAsProps,
+  StatsWithIconProps,
+} from "@/types";
+import {
   User,
   BriefcaseBusiness,
   Trophy,
@@ -20,15 +26,6 @@ import {
   ThumbsUp,
   DollarSign,
 } from "lucide-react";
-import React from "react";
-
-interface BannerIconBoxesProps {
-  id: number;
-  headline: string;
-  content: string;
-  iconName: React.ReactNode;
-  type: string;
-}
 
 export const BannerIconBoxes: BannerIconBoxesProps[] = [
   {
@@ -71,13 +68,6 @@ export const BannerIconBoxes: BannerIconBoxesProps[] = [
     type: "bg-grey",
   },
 ];
-
-interface FeaturesProps {
-  id: number;
-  headline: string;
-  content: string;
-  iconName: React.ReactNode;
-}
 
 export const HomepageFeatures: FeaturesProps[] = [
   {
@@ -245,13 +235,6 @@ export const AttorneyPAList: FeaturesProps[] = [
   },
 ];
 
-interface HomepagePAsProps {
-  id: number;
-  link: string;
-  PA: string;
-  iconName: React.ReactNode;
-}
-
 export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 1,
@@ -336,15 +319,6 @@ export const HomepagePAs: HomepagePAsProps[] = [
     ),
   },
 ];
-
-interface StatsWithIconProps {
-  id: number;
-  amountPreText: string;
-  amount: number;
-  amountPostText: string;
-  text: string;
-  iconName: React.ReactNode;
-}
 
 export const StatsWithIcon: StatsWithIconProps[] = [
   {

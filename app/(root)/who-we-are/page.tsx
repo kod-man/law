@@ -6,7 +6,12 @@ import CTA from "@/components/shared/CTA";
 import WeAreBest from "@/components/who-we-are/WeAreBest";
 import WhyChooseUs from "@/components/who-we-are/WhyChooseUs";
 import PreFooter from "@/components/shared/PreFooter";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Who we are - Lawyero",
+  description: "Your one stop solution for legal matters",
+};
 const page = () => {
   return (
     <>

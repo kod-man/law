@@ -24,9 +24,18 @@ import homepageTypewriter from "@/public/assets/lawyer-ticker-min.jpg";
 import banner1 from "@/public/assets/banner/banner1.jpg";
 import banner2 from "@/public/assets/banner/banner2.jpg";
 import banner3 from "@/public/assets/banner/banner3.jpg";
-import { bannerItemsType } from "@/types";
-
-import { StaticImageData } from "next/image";
+import {
+  FAQsProps,
+  PADataProps,
+  TeamMembersProps,
+  TestimonialsProps,
+  attorneyEducatonProps,
+  bannerItemsType,
+  blogCategoriesProps,
+  blogPostsProps,
+  blogTagsProps,
+  homeBannerTypewriterProps,
+} from "@/types";
 
 export const bannerItems: bannerItemsType[] = [
   {
@@ -51,21 +60,6 @@ export const bannerItems: bannerItemsType[] = [
     linkHref: "#",
   },
 ];
-
-interface blogPostsProps {
-  id: number;
-  featuredImage: {
-    node: {
-      mediaItem: StaticImageData;
-    };
-  };
-  title: string;
-  linkHref: string;
-  excerpt: string;
-  date: string;
-  author: string;
-  comments: number;
-}
 
 export const blogPosts: blogPostsProps[] = [
   {
@@ -160,12 +154,6 @@ export const blogPosts: blogPostsProps[] = [
   },
 ];
 
-export interface FAQsProps {
-  id: number;
-  question: string;
-  answer: string;
-}
-
 export const FAQData: FAQsProps[] = [
   {
     id: 1,
@@ -205,14 +193,6 @@ export const FAQData: FAQsProps[] = [
   },
 ];
 
-interface TeamMembersProps {
-  id: number;
-  name: string;
-  href: string;
-  image: StaticImageData;
-  designation: string;
-}
-
 export const TeamMembers: TeamMembersProps[] = [
   {
     id: 1,
@@ -251,15 +231,6 @@ export const TeamMembers: TeamMembersProps[] = [
   },
 ];
 
-interface TestimonialsProps {
-  id: number;
-  image: StaticImageData;
-  name: string;
-  text: string;
-  organization: string;
-  designation: string;
-}
-
 export const Testimonials: TestimonialsProps[] = [
   {
     id: 1,
@@ -286,14 +257,6 @@ export const Testimonials: TestimonialsProps[] = [
     designation: "Assistant Finance Manager",
   },
 ];
-
-interface PADataProps {
-  id: number;
-  href: string;
-  title: string;
-  text: string;
-  image: StaticImageData;
-}
 
 export const PAData: PADataProps[] = [
   {
@@ -382,15 +345,6 @@ export const PAData: PADataProps[] = [
   },
 ];
 
-interface attorneyEducatonProps {
-  id: number;
-  title: string;
-  details: {
-    id: number;
-    text: string;
-  }[];
-}
-
 export const attorneyEducaton: attorneyEducatonProps[] = [
   {
     id: 1,
@@ -436,11 +390,6 @@ export const attorneyEducaton: attorneyEducatonProps[] = [
   },
 ];
 
-interface blogCategoriesProps {
-  id: number;
-  title: string;
-}
-
 export const blogCategories: blogCategoriesProps[] = [
   {
     id: 1,
@@ -464,11 +413,6 @@ export const blogCategories: blogCategoriesProps[] = [
   },
 ];
 
-interface blogTagsProps {
-  id: number;
-  name: string;
-}
-
 export const blogTags: blogTagsProps[] = [
   {
     id: 1,
@@ -483,11 +427,6 @@ export const blogTags: blogTagsProps[] = [
     name: "Attorney",
   },
 ];
-
-interface homeBannerTypewriterProps {
-  image: StaticImageData;
-  words: string[];
-}
 
 export const homeBannerTypewriter: homeBannerTypewriterProps = {
   image: homepageTypewriter,

@@ -1,6 +1,11 @@
 import { TriangleAlert } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "Page Not Found - Lawyero",
+  description: "Your one stop solution for legal matters",
+};
 const page = () => {
   return (
     <>

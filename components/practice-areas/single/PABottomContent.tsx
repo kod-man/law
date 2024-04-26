@@ -23,7 +23,7 @@ const PABottomContent = () => {
           className="object-cover"
         />
       </div>
-      <div className="basis-full px-8 py-16 sm:-order-1 lg:order-2 lg:basis-1/2 lg:pb-16 lg:pl-11 lg:pr-20 lg:pt-24">
+      <div className="basis-full px-8 py-16 sm:-order-1 lg:order-2 lg:basis-1/2 lg:pl-11 lg:pr-20">
         <PrimaryHeadline
           text="History In Family Law Cases"
           additionalClass="primary-headline-left"
