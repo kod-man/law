@@ -27,6 +27,7 @@ import {
   DollarSign,
 } from "lucide-react";
 
+// Data for Homepage Banner Icon Boxes
 export const BannerIconBoxes: BannerIconBoxesProps[] = [
   {
     id: 1,
@@ -69,6 +70,7 @@ export const BannerIconBoxes: BannerIconBoxesProps[] = [
   },
 ];
 
+// Data for Homepage Features
 export const HomepageFeatures: FeaturesProps[] = [
   {
     id: 1,
@@ -120,6 +122,7 @@ export const HomepageFeatures: FeaturesProps[] = [
   },
 ];
 
+// Data for Why Choose Us Section
 export const WhyChooseUsData: FeaturesProps[] = [
   {
     id: 1,
@@ -159,6 +162,7 @@ export const WhyChooseUsData: FeaturesProps[] = [
   },
 ];
 
+// Data for We Are Best Section
 export const WeAreBestData: FeaturesProps[] = [
   {
     id: 1,
@@ -198,6 +202,7 @@ export const WeAreBestData: FeaturesProps[] = [
   },
 ];
 
+// Data for Attorney Practice Area List
 export const AttorneyPAList: FeaturesProps[] = [
   {
     id: 1,
@@ -235,6 +240,7 @@ export const AttorneyPAList: FeaturesProps[] = [
   },
 ];
 
+// Data for Homepage Practice Area
 export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 1,
@@ -320,6 +326,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   },
 ];
 
+// Data for Stats Counter
 export const StatsWithIcon: StatsWithIconProps[] = [
   {
     id: 1,
@@ -347,6 +354,7 @@ export const StatsWithIcon: StatsWithIconProps[] = [
   },
 ];
 
+// Data for Stats Counter
 export const StatsWithIconTeam: StatsWithIconProps[] = [
   {
     id: 1,

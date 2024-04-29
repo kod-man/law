@@ -37,6 +37,7 @@ import {
   homeBannerTypewriterProps,
 } from "@/types";
 
+// Data for Homepage Banner
 export const bannerItems: bannerItemsType[] = [
   {
     id: 1,
@@ -61,6 +62,7 @@ export const bannerItems: bannerItemsType[] = [
   },
 ];
 
+// Data for Blog Posts
 export const blogPosts: blogPostsProps[] = [
   {
     id: 1,
@@ -154,6 +156,7 @@ export const blogPosts: blogPostsProps[] = [
   },
 ];
 
+// Data for FAQs
 export const FAQData: FAQsProps[] = [
   {
     id: 1,
@@ -193,6 +196,7 @@ export const FAQData: FAQsProps[] = [
   },
 ];
 
+// Data for Team Members
 export const TeamMembers: TeamMembersProps[] = [
   {
     id: 1,
@@ -231,6 +235,7 @@ export const TeamMembers: TeamMembersProps[] = [
   },
 ];
 
+// Data for Testimonials
 export const Testimonials: TestimonialsProps[] = [
   {
     id: 1,
@@ -258,6 +263,7 @@ export const Testimonials: TestimonialsProps[] = [
   },
 ];
 
+// Data for Practice Areas
 export const PAData: PADataProps[] = [
   {
     id: 1,
@@ -345,6 +351,7 @@ export const PAData: PADataProps[] = [
   },
 ];
 
+// Data for Team Member Education
 export const attorneyEducaton: attorneyEducatonProps[] = [
   {
     id: 1,
@@ -390,6 +397,7 @@ export const attorneyEducaton: attorneyEducatonProps[] = [
   },
 ];
 
+// Data for Blog Categories
 export const blogCategories: blogCategoriesProps[] = [
   {
     id: 1,
@@ -413,6 +421,7 @@ export const blogCategories: blogCategoriesProps[] = [
   },
 ];
 
+// Data for Blog Tags
 export const blogTags: blogTagsProps[] = [
   {
     id: 1,
@@ -428,6 +437,7 @@ export const blogTags: blogTagsProps[] = [
   },
 ];
 
+// Data for Home Banner Typewriter
 export const homeBannerTypewriter: homeBannerTypewriterProps = {
   image: homepageTypewriter,
   words: [
