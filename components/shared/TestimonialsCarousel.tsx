@@ -20,28 +20,28 @@ export function TestimonialsCarousel() {
       <CarouselContent>
         {Testimonials.map((item) => (
           <CarouselItem key={`testimonial${item.id}`}>
-            <div className="*:text-white lg:w-[850px] lg:px-0 sm:px-[90px] sm:w-full m-auto">
+            <div className="m-auto *:text-white sm:w-full sm:px-[90px] lg:w-[850px] lg:px-0">
               <Image
                 src={item.image}
                 alt="Testimonial Img"
-                className="w-24 h-24 rounded-full m-auto border-4 border-white"
+                className="m-auto size-24 rounded-full border-4 border-white"
               />
-              <h3 className="text-[32px] text-center font-bold my-4">
+              <h3 className="my-4 text-center text-[32px] font-bold">
                 {item.organization}
               </h3>
-              <p className="italic  text-left  mb-[18px] text-base">
+              <p className="mb-[18px]  text-left  text-base italic">
                 {item.text}
               </p>
-              <h4 className="font-bold text-base text-center">
+              <h4 className="text-center text-base font-bold">
                 {item.designation}
               </h4>
-              <h4 className="text-base text-center">{item.name}</h4>
+              <h4 className="text-center text-base">{item.name}</h4>
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="sm:left-0 left-auto sm:right-auto right-[60px] border-2 sm:top-1/2 top-[112%] border-white opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-white bg-transparent" />
-      <CarouselNext className="right-0 border-2 sm:top-1/2 top-[112%] border-white opacity-100 disabled:opacity-100 rounded-none h-12 w-12 text-white bg-transparent" />
+      <CarouselPrevious className="left-auto right-[60px] top-[112%] size-12 rounded-none border-2 border-white bg-transparent text-white opacity-100 disabled:opacity-100 sm:left-0 sm:right-auto sm:top-1/2" />
+      <CarouselNext className="right-0 top-[112%] size-12 rounded-none border-2 border-white bg-transparent text-white opacity-100 disabled:opacity-100 sm:top-1/2" />
     </Carousel>
   );
 }

@@ -1,6 +1,6 @@
 const TopText = () => {
   return (
-    <div className="container pt-16 lg:py-24">
+    <div className="container py-16 lg:py-24">
       <div className="flex flex-wrap gap-6 lg:flex-nowrap lg:gap-11">
         <div className="basis-full lg:basis-8/12">
           <h2 className="mb-2 text-[25px] font-bold text-background sm:text-[40px]">
