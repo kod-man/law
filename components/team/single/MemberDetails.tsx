@@ -4,7 +4,7 @@ import Link from "next/link";
 import homefirmimage from "@/public/assets/home-member1.jpg";
 import PrimaryHeadline from "@/components/global/primary-headline";
 import React from "react";
-import { Facebook, LinkedinIcon, Twitter, Youtube } from "lucide-react";
+import { Facebook, LinkedinIcon, Youtube } from "lucide-react";
 
 const memberSocialLinks: {
   name: string;
@@ -15,11 +15,6 @@ const memberSocialLinks: {
     name: "Facebook",
     link: "#",
     icon: <Facebook size={30} />,
-  },
-  {
-    name: "Twitter",
-    link: "#",
-    icon: <Twitter size={30} />,
   },
   {
     name: "LinkedIn",

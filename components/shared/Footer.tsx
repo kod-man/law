@@ -2,13 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/assets/logo.png";
 import ButtonCustom from "../global/button";
-import {
-  Facebook,
-  Twitter,
-  Youtube,
-  LinkedinIcon,
-  ChevronRight,
-} from "lucide-react";
+import X from "@/public/assets/X.svg";
+import { Facebook, Youtube, LinkedinIcon, ChevronRight } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -120,7 +115,7 @@ const Footer = () => {
                 </li>
                 <li className="ml-3 w-8">
                   <Link href="#" target="_blank">
-                    <Twitter size={30} className="text-white" />
+                    <Image src={X} alt="Follow us on Twitter" className="w-6" />
                   </Link>
                 </li>
                 <li className="ml-3 w-8">
