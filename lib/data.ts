@@ -8,10 +8,7 @@ import teammember1 from "@/public/assets/team-member-1.jpg";
 import teammember2 from "@/public/assets/team-member-2.jpg";
 import teammember3 from "@/public/assets/team-member-3.jpg";
 import teammember4 from "@/public/assets/team-member-4.jpg";
-import teammember5 from "@/public/assets/team-member-5.jpg";
-import testimonialimg1 from "@/public/assets/home-testimonial-img-1.jpeg";
-import testimonialimg2 from "@/public/assets/home-testimonial-img-2.jpeg";
-import testimonialimg3 from "@/public/assets/home-testimonial-img-3.jpeg";
+
 import paimage1 from "@/public/assets/pa-img-1.jpg";
 import paimage2 from "@/public/assets/pa-img-2.jpg";
 import paimage3 from "@/public/assets/pa-img-3.jpg";
@@ -28,7 +25,6 @@ import {
   FAQsProps,
   PADataProps,
   TeamMembersProps,
-  TestimonialsProps,
   attorneyEducatonProps,
   bannerItemsType,
   blogCategoriesProps,
@@ -202,66 +198,33 @@ export const TeamMembers: TeamMembersProps[] = [
     id: 1,
     image: teammember1,
     href: "#",
-    name: "Robert Darren",
-    designation: "Bank & Finance Lawyer",
+    name: "Seyfullah Koyuncu",
+    designation: "Kurucu ve CEO",
   },
   {
     id: 2,
     image: teammember2,
     href: "#",
-    name: "Tady Walsh",
-    designation: "Child Custody Lawyer",
+    name: "Mustafa Koyuncu",
+    designation: "Avukat ve Arabulucu",
   },
   {
     id: 3,
     image: teammember3,
     href: "#",
-    name: "Alanna",
-    designation: "Business lawyer",
+    name: "Mesut Ayrancı",
+    designation: "Avukat ve Arabulucu",
   },
   {
     id: 4,
     image: teammember4,
     href: "#",
-    name: "Frank Moses",
-    designation: "Injury Expert lawyer",
-  },
-  {
-    id: 5,
-    image: teammember5,
-    href: "#",
-    name: "John Doe",
-    designation: "International Law lawyer",
+    name: "Adil Küçük",
+    designation: "Avukat ve Arabulucu",
   },
 ];
 
 // Data for Testimonials
-export const Testimonials: TestimonialsProps[] = [
-  {
-    id: 1,
-    image: testimonialimg1,
-    name: "Jessica Berrera",
-    text: "When we needed the legal assistance Lawyero came to our rescue. They took our case and get it solved in no time. Now when ever we need any assistance for legal matters we look no further then the lawyers at Lawyero. Thanks team Lawyero you are the best!",
-    organization: "Opus Internatational Ltd",
-    designation: "CEO Operations",
-  },
-  {
-    id: 2,
-    image: testimonialimg2,
-    name: "John Kerry",
-    text: "Our business was stuck in one of complex legal issue and one of our clients suggest team Lawyero. Now they are our official legal team which help us in numerous cases. Recommended to all!",
-    organization: "Parag States",
-    designation: "Founder",
-  },
-  {
-    id: 3,
-    image: testimonialimg3,
-    name: "Grant Josh",
-    text: "Team Lawyero is the best. Their team is awesome and when we visited their office their team welcomed us and make us feel really at home. They not only took our case but also helped us understand the complexity of the case. They fought for us and get the desired results soon. Thank you team lawyero! You are AWESOME.",
-    organization: "Daily Times Network",
-    designation: "Assistant Finance Manager",
-  },
-];
 
 // Data for Practice Areas
 export const PAData: PADataProps[] = [
