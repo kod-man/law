@@ -8,7 +8,7 @@ const BlogPosts = () => {
     <>
       <div className="relative bg-grey py-14 sm:py-20">
         <div className="container">
-          <PrimaryHeadline text="News & Insights" />
+          <PrimaryHeadline text="Makaleler" />
           <div className="grid grid-rows-2 gap-7 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((item) => (
               <BlogCard

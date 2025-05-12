@@ -174,7 +174,7 @@ export const AttorneyPAList: FeaturesProps[] = [
   },
   {
     id: 3,
-    headline: "Business Law",
+    headline: "İş Hukuku",
     content:
       "Business laws are sometimes quite complex to figure out because of things become complicated when not sure about the laws. Robert is best when it comes to business law.",
     iconName: (
@@ -197,7 +197,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 1,
     link: "#",
-    PA: "Family Law",
+    PA: "Aile Hukuku",
     iconName: (
       <Scale size={60} className="h-14 w-16 border-2 border-none text-white" />
     ),
@@ -205,7 +205,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 2,
     link: "#",
-    PA: "Child Custody",
+    PA: "Miras Hukuku",
     iconName: (
       <PersonStanding
         size={60}
@@ -216,7 +216,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 3,
     link: "#",
-    PA: "Auto Accidents",
+    PA: "Sigorta Hukuku",
     iconName: (
       <CarFront
         size={60}
@@ -227,7 +227,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 4,
     link: "#",
-    PA: "Business Law",
+    PA: "İş Hukuku",
     iconName: (
       <PoundSterling
         size={60}
@@ -238,7 +238,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 5,
     link: "#",
-    PA: "Internet Fraud",
+    PA: "Sosyal Medya ve İnternet Hukuku",
     iconName: (
       <Tv size={60} className="h-14 w-16 border-2 border-none text-white" />
     ),
@@ -246,7 +246,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 6,
     link: "#",
-    PA: "Sports Injury",
+    PA: "Spor Hukuku",
     iconName: (
       <CircleGauge
         size={60}
@@ -257,7 +257,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 7,
     link: "#",
-    PA: "Emergency Law",
+    PA: "Sağlık Hukuku",
     iconName: (
       <Ambulance
         size={60}
@@ -268,7 +268,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 8,
     link: "#",
-    PA: "Drowning Law",
+    PA: "Ceza Hukuku",
     iconName: (
       <CirclePlay
         size={60}

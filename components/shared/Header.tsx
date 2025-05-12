@@ -156,7 +156,7 @@ const Header = () => {
                             >
                               <Collapsible>
                                 <CollapsibleTrigger>
-                                  Practice Areas
+                                  Çalışma Alanlarımız
                                   <ChevronDown
                                     size="15"
                                     className="absolute right-0 top-[21px] -translate-y-1/2"

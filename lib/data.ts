@@ -68,7 +68,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/1",
-    title: "When to seek legal help? Important to know when",
+    title: "Kıdem Tazminatı Dava Süreçleri",
     excerpt:
       "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
     date: "2024-03-19T12:24:34",
@@ -83,7 +83,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/2",
-    title: "Seek immediate legal advice when most needed",
+    title: "Emeklilikte Kıdem Tazminatı Hakkı",
     excerpt:
       "Every person have suffered from violence at work, home, school or any other place at least once in their life time. Most people dont share their experiences as they think this will be inappropriate to...",
     date: "2024-03-19T12:24:34",
@@ -98,7 +98,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/3",
-    title: "What it takes to be a lawyer (the untold story)",
+    title: "İstanbul İş Mhkemesi Avukatı Nedir ve Neden Önemlidir ?",
     excerpt:
       "Emergency can be caused anywhere and can happen to anybody. People in the US have Emergency coverage provided by the government but it involves filling your case with great attention and need to be persuaded...",
     date: "2024-03-19T12:24:34",
@@ -113,7 +113,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/4",
-    title: "When to seek legal help? Important to know when",
+    title: "Kıdem Tazminatı Dava Süreçleri",
     excerpt:
       "Whenever you are involved in an accident always avoid giving any statement before contacting you attorney. Legal advise is really important in these matters and your initial reaction can be make or break for your...",
     date: "2024-03-19T12:24:34",
@@ -128,7 +128,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/5",
-    title: "Seek immediate legal advice when most needed",
+    title: "Emeklilikte Kıdem Tazminatı Hakkı",
     excerpt:
       "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
     date: "2024-03-19T12:24:34",
@@ -143,7 +143,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/6",
-    title: "When to seek legal help? Important to know when",
+    title: "Kıdem Tazminatı Dava Süreçleri",
     excerpt:
       "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
     date: "2024-03-19T12:24:34",
@@ -226,7 +226,7 @@ export const TeamMembers: TeamMembersProps[] = [
 
 // Data for Testimonials
 
-// Data for Practice Areas
+// Data for Faaliyet Alanlarımız
 export const PAData: PADataProps[] = [
   {
     id: 1,
