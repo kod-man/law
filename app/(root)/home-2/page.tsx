@@ -7,7 +7,7 @@ import BlogPosts from "@/components/home/BlogPosts";
 import FAQs from "@/components/home/FAQs";
 import TeamMembers from "@/components/home/TeamMembers";
 import PreFooter from "@/components/shared/PreFooter";
-import Testimonials from "@/components/home/Testimonials";
+
 import Typewriter from "@/components/home/Typewriter";
 import { homeBannerTypewriter } from "@/lib/data";
 import Image from "next/image";
@@ -61,7 +61,7 @@ const Home = () => {
         ctaType="withImage"
       />
       <FAQs />
-      <Testimonials />
+
       <PreFooter />
     </>
   );

@@ -8,7 +8,7 @@ import FAQs from "@/components/home/FAQs";
 import TeamMembers from "@/components/home/TeamMembers";
 import Banner from "@/components/home/banner";
 import PreFooter from "@/components/shared/PreFooter";
-import Testimonials from "@/components/home/Testimonials";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ const Home = () => {
         ctaType="withImage"
       />
       <FAQs />
-      <Testimonials />
+
       <PreFooter />
     </>
   );
