@@ -21,7 +21,7 @@ const BlogPosts = () => {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <ButtonCustom href="#" text="Read More Posts" buttonType="dark" />
+            <ButtonCustom href="#" text="Tüm Makaleler" buttonType="dark" />
           </div>
         </div>
       </div>

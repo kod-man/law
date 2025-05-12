@@ -55,7 +55,7 @@ const Home = () => {
       <BlogPosts />
       <TeamMembers />
       <CTA
-        headline="We Treat Every Case Equally With Same Attention And Dedication Because Every Client Matters."
+        headline="Her Müvekkil Önemlidir, Çünkü Her Davaya Aynı Dikkat ve Özveriyle Eşit Yaklaşıyoruz."
         buttonLink="#"
         buttonText="Request Free Consultation"
         ctaType="withImage"

@@ -6,7 +6,7 @@ const TeamMembers = () => {
     <div className="bg-background">
       <div className="container pb-40 pt-20 lg:pb-52 lg:pt-28">
         <PrimaryHeadline
-          text="Avukatlarımız"
+          text="Avukatlarımız ve Ortaklarımız"
           additionalClass="secondary-headline"
         />
         <TeamMembersCarousel textColor="text-white" />

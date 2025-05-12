@@ -156,19 +156,19 @@ export const blogPosts: blogPostsProps[] = [
 export const FAQData: FAQsProps[] = [
   {
     id: 1,
-    question: "Do I Have A Case?",
+    question: "Neden Pusula Hukuku Seçmelisiniz?",
     answer:
       "The answer of this question depends upon situation to situation. The best answer can only be achieved once you contact one of attorney who will guide you.",
   },
   {
     id: 2,
-    question: "Do Hiring You Guarantee Results?",
+    question: "İlk Görüşme Ücretli mi?",
     answer:
       "The short answer to this question is No. Every case is different and prior results although show very high success rate but it still doesnt guarantee the same outcome.",
   },
   {
     id: 3,
-    question: "What Is Your Consultation Fees?",
+    question: "Bir dava açmak istediğimde süreç nasıl işler?",
     answer:
       "The consultation is absolutely free. Yes you have read it right absolutely free. Once you hire us for your case we only charge then.",
   },
