@@ -21,8 +21,8 @@ import paimage6 from "@/public/assets/pa-img-6.jpg";
 import paimage7 from "@/public/assets/pa-img-7.jpg";
 import paimage8 from "@/public/assets/pa-img-8.jpg";
 import homepageTypewriter from "@/public/assets/lawyer-ticker-min.jpg";
-import banner1 from "@/public/assets/banner/banner1.jpg";
-import banner2 from "@/public/assets/banner/banner2.jpg";
+import banner4 from "@/public/assets/banner/banner4.jpg";
+import banner5 from "@/public/assets/banner/banner5.jpg";
 import banner3 from "@/public/assets/banner/banner3.jpg";
 import {
   FAQsProps,
@@ -41,22 +41,22 @@ import {
 export const bannerItems: bannerItemsType[] = [
   {
     id: 1,
-    content: "Your Consultant for every legal Issue",
-    linkText: "Find out More",
-    image: banner1,
+    content: "Pusula Hukuk Yenilikçi ve Özgün Çözümler",
+    linkText: "Bize Ulaşın",
+    image: banner4,
     linkHref: "#",
   },
   {
     id: 2,
-    content: "Your Consultant for every legal Issue",
-    linkText: "Find out More",
-    image: banner2,
+    content: "Pusula Hukuk Yenilikçi ve Özgün Çözümler",
+    linkText: "Bize Ulaşın",
+    image: banner5,
     linkHref: "#",
   },
   {
     id: 3,
-    content: "Your Consultant for every legal Issue",
-    linkText: "Find out More",
+    content: "Pusula Hukuk Yenilikçi ve Özgün Çözümler",
+    linkText: "Bize Ulaşın",
     image: banner3,
     linkHref: "#",
   },
