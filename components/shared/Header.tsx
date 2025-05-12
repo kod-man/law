@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/assets/logo.png";
+import logo from "@/public/assets/logo.jpeg";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import { CalendarIcon } from "@heroicons/react/24/solid";
-import { PhoneIcon } from "@heroicons/react/24/solid";
-import { EnvelopeIcon } from "@heroicons/react/24/solid";
+import {
+  CalendarIcon,
+  PhoneIcon,
+  EnvelopeIcon,
+} from "@heroicons/react/24/solid";
 
 import {
   Sheet,
@@ -56,7 +58,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className="relative bg-background">
+      <div className="relative bg-grey-bg">
         <div className="container">
           <div className="flex min-h-[80px] items-center  justify-between lg:min-h-full">
             <div className="shrink-0 basis-[166px] py-5">
@@ -64,14 +66,14 @@ const Header = () => {
                 <Image src={logo} alt="Logo" width={166} height={30} />
               </Link>
             </div>
-            <div className="text-white">
+            <div className="text-background">
               <Sheet>
                 <SheetTrigger className="block lg:hidden">
                   <span className="mb-1 block h-[3px] w-7 rounded-md bg-white"></span>
                   <span className="mb-1 block h-[3px] w-7 rounded-md bg-white"></span>
                   <span className="block h-[3px] w-7 rounded-md bg-white"></span>
                 </SheetTrigger>
-                <SheetContent className="border-none p-0 text-white">
+                <SheetContent className="border-none p-0 text-red-400">
                   <div className="h-full overflow-y-auto p-6">
                     <SheetHeader>
                       <SheetTitle>
@@ -108,7 +110,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/"
-                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -122,7 +124,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/home-2/"
-                                          className="group/subItem relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -169,7 +171,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/practice-areas-2-column/"
-                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -183,7 +185,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/practice-areas-3-column-layout/"
-                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -197,7 +199,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/single-practice-area/"
-                                          className="group/subItem relative block px-5 py-4 pb-1 text-white transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 pb-1 text-white transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -234,7 +236,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/single-team-member/"
-                                          className="group/subItem relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -271,7 +273,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/faqs/"
-                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -285,7 +287,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/404/"
-                                          className="group/subItem relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -322,7 +324,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/blog/"
-                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -336,7 +338,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/blog-full-page/"
-                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -351,7 +353,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/blog-chess-style/"
-                                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -365,7 +367,7 @@ const Header = () => {
                                       <SheetClose asChild>
                                         <Link
                                           href="/blog-grid/"
-                                          className="group/subItem relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
+                                          className="group/subItem text-grey-bg relative block px-5 py-4 pb-1 transition-all hover:pl-7 hover:text-primary-main"
                                         >
                                           <ChevronRight
                                             size="15"
@@ -432,7 +434,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/practice-areas-2-column/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"
@@ -444,7 +446,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/practice-areas-3-column-layout/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"
@@ -456,7 +458,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/single-practice-area/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"
@@ -485,7 +487,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/single-team-member/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"
@@ -497,7 +499,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/single-team-member/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"
@@ -509,7 +511,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/single-team-member/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"
@@ -521,7 +523,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/single-team-member/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"
@@ -551,7 +553,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/blog/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"
@@ -563,7 +565,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/blog-full-page/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"
@@ -576,7 +578,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/blog-chess-style/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"
@@ -588,7 +590,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="/blog-grid/"
-                          className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+                          className="group/subItem text-grey-bg relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
                         >
                           <ChevronRight
                             size="15"

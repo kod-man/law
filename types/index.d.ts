@@ -84,14 +84,6 @@ export interface homeBannerTypewriterProps {
   words: string[];
 }
 
-export interface BannerIconBoxesProps {
-  id: number;
-  headline: string;
-  content: string;
-  iconName: React.ReactNode;
-  type: string;
-}
-
 export interface FeaturesProps {
   id: number;
   headline: string;

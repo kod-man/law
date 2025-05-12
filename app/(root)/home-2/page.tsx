@@ -1,4 +1,3 @@
-import PostBannerBox from "@/components/home/postBannerBox";
 import IconsWithCounters from "@/components/home/iconsWithCounters";
 import TwoColumnTextWithImage from "@/components/home/twoColumnTextWithImage";
 import Features from "@/components/home/Features";
@@ -42,7 +41,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <PostBannerBox />
+
       <IconsWithCounters />
       <TwoColumnTextWithImage />
       <Features />

@@ -1,13 +1,6 @@
+import { FeaturesProps, HomepagePAsProps, StatsWithIconProps } from "@/types";
 import {
-  BannerIconBoxesProps,
-  FeaturesProps,
-  HomepagePAsProps,
-  StatsWithIconProps,
-} from "@/types";
-import {
-  User,
   BriefcaseBusiness,
-  Trophy,
   Link,
   Phone,
   Coffee,
@@ -28,47 +21,6 @@ import {
 } from "lucide-react";
 
 // Data for Homepage Banner Icon Boxes
-export const BannerIconBoxes: BannerIconBoxesProps[] = [
-  {
-    id: 1,
-    headline: "Aile Hukuku",
-    content:
-      "We are in the law industry for more than 20 years with more than 98% of client satisfaction",
-    iconName: (
-      <User
-        size="60"
-        className="border-2 border-primary-main p-4 text-primary-main"
-      />
-    ),
-    type: "bg-grey",
-  },
-  {
-    id: 2,
-    headline: "İş Hukuku",
-    content:
-      "Our team is the best in the business. We are team of attorneys which are passionate about their jobs.",
-    iconName: (
-      <BriefcaseBusiness
-        size="60"
-        className="border-2 border-primary-main p-4 text-primary-main"
-      />
-    ),
-    type: "bg-lightgrey",
-  },
-  {
-    id: 3,
-    headline: "Kaza ve Yaralanma Hukuku",
-    content:
-      "We at lawyero earned the best law firm award in 2017 with a success ratio of 99%.",
-    iconName: (
-      <Trophy
-        size="60"
-        className="border-2 border-primary-main p-4 text-primary-main"
-      />
-    ),
-    type: "bg-grey",
-  },
-];
 
 // Data for Homepage Features
 export const HomepageFeatures: FeaturesProps[] = [

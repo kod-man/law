@@ -1,4 +1,3 @@
-import PostBannerBox from "@/components/home/postBannerBox";
 import IconsWithCounters from "@/components/home/iconsWithCounters";
 import TwoColumnTextWithImage from "@/components/home/twoColumnTextWithImage";
 import Features from "@/components/home/Features";
@@ -20,7 +19,7 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <PostBannerBox />
+
       <IconsWithCounters />
       <TwoColumnTextWithImage />
       <Features />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/assets/logo.png";
+import logo from "@/public/assets/logo.jpeg";
 import ButtonCustom from "../global/button";
 import X from "@/public/assets/X.svg";
 import { Facebook, Youtube, LinkedinIcon, ChevronRight } from "lucide-react";

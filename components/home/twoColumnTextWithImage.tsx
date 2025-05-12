@@ -8,7 +8,7 @@ const TwoColumnTextWithImage = () => {
   return (
     <div className="container py-16 sm:py-20">
       <div className="flex flex-wrap gap-8 lg:flex-nowrap">
-        <div className="basis-full lg:basis-[70%]">
+        <div className="basis-full lg:basis-[50%]">
           <PrimaryHeadline text="Hakkımızda" />
           <div className="text-base text-[#333]">
             <p className="mb-6">
@@ -21,7 +21,7 @@ const TwoColumnTextWithImage = () => {
           </div>
           <ButtonCustom href="#" text="Devamını Oku" buttonType="secondary" />
         </div>
-        <div className="flex basis-full justify-center sm:text-center lg:block lg:basis-[30%]">
+        <div className="flex basis-full justify-center sm:text-center lg:block lg:basis-[50%]">
           <Image src={hakki} alt="Home Firm Image" className="object-cover" />
         </div>
       </div>
