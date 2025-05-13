@@ -26,9 +26,8 @@ import {
 export const HomepageFeatures: FeaturesProps[] = [
   {
     id: 1,
-    headline: "PERSONAL SERVICE",
-    content:
-      "Our attorneys are committed to you and will work vigorously to obtain the best possible recovery in your case.",
+    headline: "DENEYİMLİ KADRO",
+    content: "Tecrübeli ve yetkin kadromuz ile daima hizmetinizdeyiz.",
     iconName: (
       <Link
         size="60"
@@ -38,9 +37,9 @@ export const HomepageFeatures: FeaturesProps[] = [
   },
   {
     id: 2,
-    headline: "SCREENING FREE",
+    headline: "YÜKSEK PERFORMANS",
     content:
-      "At the our law Firm, you do not have to go through a call screen. You will get to speak to an attorney directly, preferably the one who will be handling your case.",
+      "Genç ve dinamik avukat kadromuz ile Çalışma Alanlarımız dahilinde ki konularda yardımcı olmaya hazırız.",
     iconName: (
       <Phone
         size="60"
@@ -50,9 +49,9 @@ export const HomepageFeatures: FeaturesProps[] = [
   },
   {
     id: 3,
-    headline: "ALWAYS RESPONSIVE",
+    headline: "ERİŞİLEBİLİRLİK VE ŞEFFAFLIK",
     content:
-      "Your attorney will address any problems quickly and respect your time by promptly replying to your inquiries.",
+      " Hukuki süreçler hakkında açık ve anlaşılır bilgiler sağlayarak, müvekkillerimizin bilinçli kararlar almasına yardımcı oluyoruz.",
     iconName: (
       <Coffee
         size="60"
@@ -62,9 +61,9 @@ export const HomepageFeatures: FeaturesProps[] = [
   },
   {
     id: 4,
-    headline: "CASE EXPERIENCE",
+    headline: "STRATEJİK VE PROAKTİF YAKLAŞIM",
     content:
-      "Our attorneys are experienced and can handle any type of injury case for you.",
+      " Yenilikçi ve stratejik hukuki çözümlerimizle, müvekkillerimizin hukuki ihtiyaçlarını öngörüyor ve proaktif stratejiler geliştiriyoruz.",
     iconName: (
       <BriefcaseBusiness
         size="60"
@@ -283,25 +282,25 @@ export const StatsWithIcon: StatsWithIconProps[] = [
   {
     id: 1,
     amountPreText: "",
-    amount: 150,
+    amount: 50,
     amountPostText: "+",
-    text: "Customers",
+    text: "Dava ve Dosya Takibi",
     iconName: <Handshake size={72} className="border-2 p-4 text-white" />,
   },
   {
     id: 2,
-    amountPreText: "$",
-    amount: 23000000,
+    amountPreText: "+",
+    amount: 23,
     amountPostText: "",
-    text: "Recovered",
+    text: "Hukuki Danışmanlık",
     iconName: <DollarSign size={72} className="border-2 p-4 text-white" />,
   },
   {
     id: 3,
-    amountPreText: "",
+    amountPreText: "+",
     amount: 98,
-    amountPostText: "%",
-    text: "Success Rato",
+    amountPostText: "",
+    text: "Arabuluculuk İşlemleri",
     iconName: <ThumbsUp size={72} className="border-2 p-4 text-white" />,
   },
 ];

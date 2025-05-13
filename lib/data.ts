@@ -164,31 +164,32 @@ export const FAQData: FAQsProps[] = [
     id: 2,
     question: "İlk Görüşme Ücretli mi?",
     answer:
-      "The short answer to this question is No. Every case is different and prior results although show very high success rate but it still doesnt guarantee the same outcome.",
+      "İlk hukuki görüşme sürecimiz, durumunuzun ve ihtiyaçlarınızın değerlendirilmesi için genellikle ücretsizdir. Bu görüşme, nasıl bir hukuki yardıma ihtiyacınız olduğunu belirlememize yardımcı olur.",
   },
   {
     id: 3,
     question: "Bir dava açmak istediğimde süreç nasıl işler?",
     answer:
-      "The consultation is absolutely free. Yes you have read it right absolutely free. Once you hire us for your case we only charge then.",
+      "Dava açma kararı verildiğinde, ilk olarak durumunuzun detaylı bir analizini yapar, ardından hukuki stratejinizi belirler ve gerekli tüm hukuki işlemleri yürütürüz.",
   },
   {
     id: 4,
-    question: "Which Areas Do You Cover?",
+    question:
+      "Dava açılırken masraflar ne kadardır? Bu masrafları kim karşılar?",
     answer:
-      "We cover multiple areas mainly involving Family Law, Child Law, Emergency Law and Business Law. The complete list of all the practice areas can be found on this website.",
+      "Dava açma işlemi sırasında, ilk olarak ‘dava harcı’ adı verilen bir ücret ödenmesi gereklidir. Bu harç miktarı, davanın türüne bağlı olarak farklılık gösterebilir. Dava açılışında gerekli masraflar başlangıçta davacı tarafından karşılanır. Harç miktarları, her yıl yasal düzenlemelere göre güncellenir ve değişebilir. Bunun yanı sıra, tebligat, keşif, bilirkişi ve tanık ücretleri gibi ek masraflar için de bir avans ödemesi yapılması gerekebilir. Davanın sonucunda mahkeme, yargılama giderlerinin kim tarafından karşılanacağına ilişkin bir karar verir.",
   },
   {
     id: 5,
-    question: "What Is Attorney Customer Relationship?",
+    question: "Hukuki sorunumuzu mahkemeye taşımadan çözebilir miyiz?",
     answer:
-      "The initial consultation doesnt include Attorney Customer relationship. Only once you hire us then the attorney customer relationship is built.",
+      "Evet, anlaşmazlıklarınızı mahkemeye taşımadan çözmeniz mümkündür. Alternatif uyuşmazlık çözüm yolları (arabuluculuk, tahkim, vb.) konusunda sizlere rehberlik edebiliriz.",
   },
   {
     id: 6,
-    question: "Do You Screen All The Information You Get?",
+    question: "Dava sürecinde karşılaşabileceğim riskler nelerdir?",
     answer:
-      "At lawyero we treat privacy very strictly. All the information that you provide is confidential and wont be leaked under any circumstances.",
+      "Her dava, finansal, itibari veya diğer riskler içerebilir. Bu riskleri, ilk görüşme sırasında ve dava sürecinde detaylıca tartışacağız.",
   },
 ];
 
