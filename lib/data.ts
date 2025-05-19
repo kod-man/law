@@ -8,10 +8,7 @@ import teammember1 from "@/public/assets/team-member-1.jpg";
 import teammember2 from "@/public/assets/team-member-2.jpg";
 import teammember3 from "@/public/assets/team-member-3.jpg";
 import teammember4 from "@/public/assets/team-member-4.jpg";
-import teammember5 from "@/public/assets/team-member-5.jpg";
-import testimonialimg1 from "@/public/assets/home-testimonial-img-1.jpeg";
-import testimonialimg2 from "@/public/assets/home-testimonial-img-2.jpeg";
-import testimonialimg3 from "@/public/assets/home-testimonial-img-3.jpeg";
+
 import paimage1 from "@/public/assets/pa-img-1.jpg";
 import paimage2 from "@/public/assets/pa-img-2.jpg";
 import paimage3 from "@/public/assets/pa-img-3.jpg";
@@ -28,7 +25,6 @@ import {
   FAQsProps,
   PADataProps,
   TeamMembersProps,
-  TestimonialsProps,
   attorneyEducatonProps,
   bannerItemsType,
   blogCategoriesProps,
@@ -72,7 +68,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/1",
-    title: "When to seek legal help? Important to know when",
+    title: "Kıdem Tazminatı Dava Süreçleri",
     excerpt:
       "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
     date: "2024-03-19T12:24:34",
@@ -87,7 +83,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/2",
-    title: "Seek immediate legal advice when most needed",
+    title: "Emeklilikte Kıdem Tazminatı Hakkı",
     excerpt:
       "Every person have suffered from violence at work, home, school or any other place at least once in their life time. Most people dont share their experiences as they think this will be inappropriate to...",
     date: "2024-03-19T12:24:34",
@@ -102,7 +98,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/3",
-    title: "What it takes to be a lawyer (the untold story)",
+    title: "İstanbul İş Mhkemesi Avukatı Nedir ve Neden Önemlidir ?",
     excerpt:
       "Emergency can be caused anywhere and can happen to anybody. People in the US have Emergency coverage provided by the government but it involves filling your case with great attention and need to be persuaded...",
     date: "2024-03-19T12:24:34",
@@ -117,7 +113,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/4",
-    title: "When to seek legal help? Important to know when",
+    title: "Kıdem Tazminatı Dava Süreçleri",
     excerpt:
       "Whenever you are involved in an accident always avoid giving any statement before contacting you attorney. Legal advise is really important in these matters and your initial reaction can be make or break for your...",
     date: "2024-03-19T12:24:34",
@@ -132,7 +128,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/5",
-    title: "Seek immediate legal advice when most needed",
+    title: "Emeklilikte Kıdem Tazminatı Hakkı",
     excerpt:
       "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
     date: "2024-03-19T12:24:34",
@@ -147,7 +143,7 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/6",
-    title: "When to seek legal help? Important to know when",
+    title: "Kıdem Tazminatı Dava Süreçleri",
     excerpt:
       "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
     date: "2024-03-19T12:24:34",
@@ -160,39 +156,40 @@ export const blogPosts: blogPostsProps[] = [
 export const FAQData: FAQsProps[] = [
   {
     id: 1,
-    question: "Do I Have A Case?",
+    question: "Neden Pusula Hukuku Seçmelisiniz?",
     answer:
       "The answer of this question depends upon situation to situation. The best answer can only be achieved once you contact one of attorney who will guide you.",
   },
   {
     id: 2,
-    question: "Do Hiring You Guarantee Results?",
+    question: "İlk Görüşme Ücretli mi?",
     answer:
-      "The short answer to this question is No. Every case is different and prior results although show very high success rate but it still doesnt guarantee the same outcome.",
+      "İlk hukuki görüşme sürecimiz, durumunuzun ve ihtiyaçlarınızın değerlendirilmesi için genellikle ücretsizdir. Bu görüşme, nasıl bir hukuki yardıma ihtiyacınız olduğunu belirlememize yardımcı olur.",
   },
   {
     id: 3,
-    question: "What Is Your Consultation Fees?",
+    question: "Bir dava açmak istediğimde süreç nasıl işler?",
     answer:
-      "The consultation is absolutely free. Yes you have read it right absolutely free. Once you hire us for your case we only charge then.",
+      "Dava açma kararı verildiğinde, ilk olarak durumunuzun detaylı bir analizini yapar, ardından hukuki stratejinizi belirler ve gerekli tüm hukuki işlemleri yürütürüz.",
   },
   {
     id: 4,
-    question: "Which Areas Do You Cover?",
+    question:
+      "Dava açılırken masraflar ne kadardır? Bu masrafları kim karşılar?",
     answer:
-      "We cover multiple areas mainly involving Family Law, Child Law, Emergency Law and Business Law. The complete list of all the practice areas can be found on this website.",
+      "Dava açma işlemi sırasında, ilk olarak ‘dava harcı’ adı verilen bir ücret ödenmesi gereklidir. Bu harç miktarı, davanın türüne bağlı olarak farklılık gösterebilir. Dava açılışında gerekli masraflar başlangıçta davacı tarafından karşılanır. Harç miktarları, her yıl yasal düzenlemelere göre güncellenir ve değişebilir. Bunun yanı sıra, tebligat, keşif, bilirkişi ve tanık ücretleri gibi ek masraflar için de bir avans ödemesi yapılması gerekebilir. Davanın sonucunda mahkeme, yargılama giderlerinin kim tarafından karşılanacağına ilişkin bir karar verir.",
   },
   {
     id: 5,
-    question: "What Is Attorney Customer Relationship?",
+    question: "Hukuki sorunumuzu mahkemeye taşımadan çözebilir miyiz?",
     answer:
-      "The initial consultation doesnt include Attorney Customer relationship. Only once you hire us then the attorney customer relationship is built.",
+      "Evet, anlaşmazlıklarınızı mahkemeye taşımadan çözmeniz mümkündür. Alternatif uyuşmazlık çözüm yolları (arabuluculuk, tahkim, vb.) konusunda sizlere rehberlik edebiliriz.",
   },
   {
     id: 6,
-    question: "Do You Screen All The Information You Get?",
+    question: "Dava sürecinde karşılaşabileceğim riskler nelerdir?",
     answer:
-      "At lawyero we treat privacy very strictly. All the information that you provide is confidential and wont be leaked under any circumstances.",
+      "Her dava, finansal, itibari veya diğer riskler içerebilir. Bu riskleri, ilk görüşme sırasında ve dava sürecinde detaylıca tartışacağız.",
   },
 ];
 
@@ -202,68 +199,35 @@ export const TeamMembers: TeamMembersProps[] = [
     id: 1,
     image: teammember1,
     href: "#",
-    name: "Robert Darren",
-    designation: "Bank & Finance Lawyer",
+    name: "Seyfullah Koyuncu",
+    designation: "Kurucu ve CEO",
   },
   {
     id: 2,
     image: teammember2,
     href: "#",
-    name: "Tady Walsh",
-    designation: "Child Custody Lawyer",
+    name: "Mustafa Koyuncu",
+    designation: "Avukat ve Arabulucu",
   },
   {
     id: 3,
     image: teammember3,
     href: "#",
-    name: "Alanna",
-    designation: "Business lawyer",
+    name: "Mesut Ayrancı",
+    designation: "Avukat ve Arabulucu",
   },
   {
     id: 4,
     image: teammember4,
     href: "#",
-    name: "Frank Moses",
-    designation: "Injury Expert lawyer",
-  },
-  {
-    id: 5,
-    image: teammember5,
-    href: "#",
-    name: "John Doe",
-    designation: "International Law lawyer",
+    name: "Adil Küçük",
+    designation: "Avukat ve Arabulucu",
   },
 ];
 
 // Data for Testimonials
-export const Testimonials: TestimonialsProps[] = [
-  {
-    id: 1,
-    image: testimonialimg1,
-    name: "Jessica Berrera",
-    text: "When we needed the legal assistance Lawyero came to our rescue. They took our case and get it solved in no time. Now when ever we need any assistance for legal matters we look no further then the lawyers at Lawyero. Thanks team Lawyero you are the best!",
-    organization: "Opus Internatational Ltd",
-    designation: "CEO Operations",
-  },
-  {
-    id: 2,
-    image: testimonialimg2,
-    name: "John Kerry",
-    text: "Our business was stuck in one of complex legal issue and one of our clients suggest team Lawyero. Now they are our official legal team which help us in numerous cases. Recommended to all!",
-    organization: "Parag States",
-    designation: "Founder",
-  },
-  {
-    id: 3,
-    image: testimonialimg3,
-    name: "Grant Josh",
-    text: "Team Lawyero is the best. Their team is awesome and when we visited their office their team welcomed us and make us feel really at home. They not only took our case but also helped us understand the complexity of the case. They fought for us and get the desired results soon. Thank you team lawyero! You are AWESOME.",
-    organization: "Daily Times Network",
-    designation: "Assistant Finance Manager",
-  },
-];
 
-// Data for Practice Areas
+// Data for Faaliyet Alanlarımız
 export const PAData: PADataProps[] = [
   {
     id: 1,

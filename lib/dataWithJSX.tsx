@@ -1,23 +1,24 @@
 import { FeaturesProps, HomepagePAsProps, StatsWithIconProps } from "@/types";
 import {
-  BriefcaseBusiness,
-  Link,
-  Phone,
-  Coffee,
-  Scale,
-  PersonStanding,
-  CarFront,
-  PoundSterling,
-  Tv,
-  CircleGauge,
   Ambulance,
+  BriefcaseBusiness,
+  CarFront,
+  CircleGauge,
   CirclePlay,
-  Handshake,
-  GraduationCap,
-  Smile,
-  Volume2,
-  ThumbsUp,
+  Coffee,
   DollarSign,
+  GraduationCap,
+  Handshake,
+  Link,
+  PersonStanding,
+  Phone,
+  PoundSterling,
+  Scale,
+  Smile,
+  SpeechIcon,
+  ThumbsUp,
+  Tv,
+  Volume2,
 } from "lucide-react";
 
 // Data for Homepage Banner Icon Boxes
@@ -26,9 +27,8 @@ import {
 export const HomepageFeatures: FeaturesProps[] = [
   {
     id: 1,
-    headline: "PERSONAL SERVICE",
-    content:
-      "Our attorneys are committed to you and will work vigorously to obtain the best possible recovery in your case.",
+    headline: "DENEYİMLİ KADRO",
+    content: "Tecrübeli ve yetkin kadromuz ile daima hizmetinizdeyiz.",
     iconName: (
       <Link
         size="60"
@@ -38,9 +38,9 @@ export const HomepageFeatures: FeaturesProps[] = [
   },
   {
     id: 2,
-    headline: "SCREENING FREE",
+    headline: "YÜKSEK PERFORMANS",
     content:
-      "At the our law Firm, you do not have to go through a call screen. You will get to speak to an attorney directly, preferably the one who will be handling your case.",
+      "Genç ve dinamik avukat kadromuz ile Çalışma Alanlarımız dahilinde ki konularda yardımcı olmaya hazırız.",
     iconName: (
       <Phone
         size="60"
@@ -50,9 +50,9 @@ export const HomepageFeatures: FeaturesProps[] = [
   },
   {
     id: 3,
-    headline: "ALWAYS RESPONSIVE",
+    headline: "ERİŞİLEBİLİRLİK VE ŞEFFAFLIK",
     content:
-      "Your attorney will address any problems quickly and respect your time by promptly replying to your inquiries.",
+      " Hukuki süreçler hakkında açık ve anlaşılır bilgiler sağlayarak, müvekkillerimizin bilinçli kararlar almasına yardımcı oluyoruz.",
     iconName: (
       <Coffee
         size="60"
@@ -62,9 +62,9 @@ export const HomepageFeatures: FeaturesProps[] = [
   },
   {
     id: 4,
-    headline: "CASE EXPERIENCE",
+    headline: "STRATEJİK VE PROAKTİF YAKLAŞIM",
     content:
-      "Our attorneys are experienced and can handle any type of injury case for you.",
+      " Yenilikçi ve stratejik hukuki çözümlerimizle, müvekkillerimizin hukuki ihtiyaçlarını öngörüyor ve proaktif stratejiler geliştiriyoruz.",
     iconName: (
       <BriefcaseBusiness
         size="60"
@@ -174,7 +174,7 @@ export const AttorneyPAList: FeaturesProps[] = [
   },
   {
     id: 3,
-    headline: "Business Law",
+    headline: "İş Hukuku",
     content:
       "Business laws are sometimes quite complex to figure out because of things become complicated when not sure about the laws. Robert is best when it comes to business law.",
     iconName: (
@@ -197,7 +197,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 1,
     link: "#",
-    PA: "Family Law",
+    PA: "Aile Hukuku",
     iconName: (
       <Scale size={60} className="h-14 w-16 border-2 border-none text-white" />
     ),
@@ -205,7 +205,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 2,
     link: "#",
-    PA: "Child Custody",
+    PA: "Miras Hukuku",
     iconName: (
       <PersonStanding
         size={60}
@@ -216,7 +216,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 3,
     link: "#",
-    PA: "Auto Accidents",
+    PA: "Sigorta Hukuku",
     iconName: (
       <CarFront
         size={60}
@@ -227,7 +227,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 4,
     link: "#",
-    PA: "Business Law",
+    PA: "İş Hukuku",
     iconName: (
       <PoundSterling
         size={60}
@@ -238,7 +238,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 5,
     link: "#",
-    PA: "Internet Fraud",
+    PA: "Sosyal Medya ve İnternet Hukuku",
     iconName: (
       <Tv size={60} className="h-14 w-16 border-2 border-none text-white" />
     ),
@@ -246,7 +246,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 6,
     link: "#",
-    PA: "Sports Injury",
+    PA: "Spor Hukuku",
     iconName: (
       <CircleGauge
         size={60}
@@ -257,7 +257,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 7,
     link: "#",
-    PA: "Emergency Law",
+    PA: "Sağlık Hukuku",
     iconName: (
       <Ambulance
         size={60}
@@ -268,7 +268,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 8,
     link: "#",
-    PA: "Drowning Law",
+    PA: "Ceza Hukuku",
     iconName: (
       <CirclePlay
         size={60}
@@ -283,25 +283,25 @@ export const StatsWithIcon: StatsWithIconProps[] = [
   {
     id: 1,
     amountPreText: "",
-    amount: 150,
+    amount: 50,
     amountPostText: "+",
-    text: "Customers",
+    text: "Dava ve Dosya Takibi",
     iconName: <Handshake size={72} className="border-2 p-4 text-white" />,
   },
   {
     id: 2,
-    amountPreText: "$",
-    amount: 23000000,
+    amountPreText: "+",
+    amount: 23,
     amountPostText: "",
-    text: "Recovered",
-    iconName: <DollarSign size={72} className="border-2 p-4 text-white" />,
+    text: "Hukuki Danışmanlık",
+    iconName: <SpeechIcon size={72} className="border-2 p-4 text-white" />,
   },
   {
     id: 3,
-    amountPreText: "",
+    amountPreText: "+",
     amount: 98,
-    amountPostText: "%",
-    text: "Success Rato",
+    amountPostText: "",
+    text: "Arabuluculuk İşlemleri",
     iconName: <ThumbsUp size={72} className="border-2 p-4 text-white" />,
   },
 ];

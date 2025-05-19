@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/assets/logo.jpeg";
-import ButtonCustom from "../global/button";
+
 import X from "@/public/assets/X.svg";
 import { Facebook, Youtube, LinkedinIcon, ChevronRight } from "lucide-react";
 
@@ -18,31 +18,27 @@ const Footer = () => {
                 </Link>
                 <div className="mt-5 pb-7">
                   <p className="text-sm leading-6 text-white">
-                    Lawyero is the ultimate theme for the attorneys and law
-                    firms that best suits their requirements. It is composed of
-                    large number of components and is made with love.
+                    Pusula Hukuk Bürosu, alanında seçkin, yetkin hukukçulardan
+                    oluşan kadrosu ve saygınlığından ödün vermeyen kurumsal
+                    yapısıyla hukukun farklı pek çok alanında faaliyet
+                    göstermektedir.
                   </p>
                 </div>
-                <ButtonCustom href="#" text="Buy Now" />
               </div>
             </div>
             <div className="basis-full lg:basis-1/3">
               <h3 className="mb-6 text-3xl font-bold text-white">
-                <span className="text-[#14cab4]">Legal</span> Advert
+                Faaliyet Alanlarımız
               </h3>
               <div className="mt-5 lg:pb-7">
-                <p className="text-sm leading-6 text-white">
-                  The information on this website is for general information
-                  purposes only. Nothing on this site should be taken as legal
-                  advice for any individual case or situation. This information
-                  is not intended to create, and receipt or viewing does not
-                  constitute, an attorney-client relationship.
-                </p>
+                <p className="text-sm leading-6 text-white">Aile Hukuku</p>
+                <p className="text-sm leading-6 text-white">İş Hukuku</p>
+                <p className="text-sm leading-6 text-white">Ceza Hukuku</p>
               </div>
             </div>
             <div className="basis-full lg:basis-1/3">
               <h3 className="mb-6 text-3xl font-bold text-white">
-                <span className="font-bold text-[#14cab4]">Opening </span> Hour
+                <span className="font-bold text-[#14cab4]">Bize </span> Ulaşın
               </h3>
               <ul className="text-sm leading-6 text-white">
                 <li className="relative my-2 flex pl-5">
@@ -103,7 +99,7 @@ const Footer = () => {
           <div className="flex flex-wrap items-center lg:flex-nowrap">
             <div className="basis-full lg:basis-1/2">
               <p className="mb-4 text-center text-sm leading-6 text-white lg:mb-0 lg:text-left">
-                &copy; Copyrights Lawyero 2024. All Rights Reserved.
+                &copy; Pusula Hukuk 2025. Tüm Hakları Saklıdır.
               </p>
             </div>
             <div className="basis-full lg:basis-1/2">

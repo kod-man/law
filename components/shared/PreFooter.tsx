@@ -8,7 +8,7 @@ const PreFooter = () => {
         <div className="flex flex-wrap lg:flex-nowrap">
           <div className="relative basis-full py-16 before:absolute before:-right-1/4 before:top-0 before:z-[-1] before:h-full before:w-[150vw] before:bg-grey before:content-[''] lg:basis-1/3 lg:py-24 lg:before:right-0 lg:before:w-[50vw]">
             <h3 className="relative mb-7 pb-5 text-3xl font-bold text-primary-main before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-[150px] before:bg-background before:content-[''] after:absolute after:bottom-0 after:left-0 after:z-[1] after:h-[3px] after:w-[40px] after:bg-primary-main after:content-['']">
-              Get In Touch
+              İletişime Geçin
             </h3>
             <ul>
               <li className="mb-[10px] flex items-center">
@@ -32,32 +32,36 @@ const PreFooter = () => {
             </ul>
             <div>
               <div className="mt-7">
-                <h3 className="mb-4 text-2xl font-bold text-[#333]">
-                  Head Office
-                </h3>
+                <h3 className="mb-4 text-2xl font-bold text-[#333]">Adres</h3>
                 <div className="flex">
                   <MapPin size={15} className="mt-1 text-background" />
                   <p className="pl-2 text-background">
-                    4th Floor ABC Plaza Downtown, March <br /> Street, Sydney.
+                    Yeni mah.Başkent sitesi 9.blok daire 2 <br />{" "}
+                    Kadıköy,İstanbul
                   </p>
                 </div>
               </div>
               <div className="mt-7">
+                <h3 className="mb-4 text-2xl font-bold text-[#333]">E-posta</h3>
+                <div className="flex">
+                  <MapPin size={15} className="mt-1 text-background" />
+                  <p className="pl-2 text-background">pusulahukuk@gmail.com</p>
+                </div>
+              </div>
+              <div className="mt-7">
                 <h3 className="mb-4 text-2xl font-bold text-[#333]">
-                  Regional Office
+                  Çalışma Saatleri
                 </h3>
                 <div className="flex">
                   <MapPin size={15} className="mt-1 text-background" />
-                  <p className="pl-2 text-background">
-                    4th Floor ABC Plaza Downtown, March <br /> Street, Sydney.
-                  </p>
+                  <p className="pl-2 text-background">Pazartesi-Cumartesi </p>
                 </div>
               </div>
             </div>
           </div>
           <div className="relative basis-full px-0 py-16 before:absolute before:-left-1/4 before:top-0 before:z-[-1] before:h-full before:w-[150vw] before:bg-lightgrey before:content-[''] lg:basis-2/3 lg:py-24 lg:pl-12 lg:pr-20 lg:before:left-0 lg:before:w-[80vw]">
             <h3 className="relative mb-7 pb-5 text-3xl font-bold text-primary-main before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-[150px] before:bg-background before:content-[''] after:absolute after:bottom-0 after:left-0 after:z-[1] after:h-[3px] after:w-[40px] after:bg-primary-main after:content-['']">
-              Schedule A Free Consultation
+              Danışmanlık Randevusu Alın
             </h3>
             <ContactForm />
           </div>

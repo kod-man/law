@@ -43,15 +43,6 @@ export interface TeamMembersProps {
   designation: string;
 }
 
-export interface TestimonialsProps {
-  id: number;
-  image: StaticImageData;
-  name: string;
-  text: string;
-  organization: string;
-  designation: string;
-}
-
 export interface PADataProps {
   id: number;
   href: string;

@@ -6,7 +6,7 @@ const FAQs = () => {
   return (
     <div className="bg-grey pb-11 pt-20">
       <div className="container">
-        <PrimaryHeadline text="Frequently Asked Questions" />
+        <PrimaryHeadline text="Sıkça Sorulan Sorular" />
         <div className="flex flex-wrap pt-3 ">
           {FAQData.map((item) => (
             <FAQItem

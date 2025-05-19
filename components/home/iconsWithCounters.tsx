@@ -1,8 +1,8 @@
 import { StatsWithIcon } from "@/lib/dataWithJSX";
-import Image from "next/image";
-import StatsCounterIconBox from "../shared/statsCounterIconBox";
 import library from "@/public/assets/library-home.jpg";
 import libraryicon from "@/public/assets/library-icon.svg";
+import Image from "next/image";
+import StatsCounterIconBox from "../shared/statsCounterIconBox";
 
 const IconsWithCounters = () => {
   return (
@@ -15,7 +15,6 @@ const IconsWithCounters = () => {
               <StatsCounterIconBox
                 key={`statbox${item.id}`}
                 iconName={item.iconName}
-                amount={item.amount}
                 amountPreText={item.amountPreText}
                 amountPostText={item.amountPostText}
                 text={item.text}

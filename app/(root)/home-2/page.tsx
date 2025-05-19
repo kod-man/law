@@ -7,7 +7,7 @@ import BlogPosts from "@/components/home/BlogPosts";
 import FAQs from "@/components/home/FAQs";
 import TeamMembers from "@/components/home/TeamMembers";
 import PreFooter from "@/components/shared/PreFooter";
-import Testimonials from "@/components/home/Testimonials";
+
 import Typewriter from "@/components/home/Typewriter";
 import { homeBannerTypewriter } from "@/lib/data";
 import Image from "next/image";
@@ -55,13 +55,13 @@ const Home = () => {
       <BlogPosts />
       <TeamMembers />
       <CTA
-        headline="We Treat Every Case Equally With Same Attention And Dedication Because Every Client Matters."
+        headline="Her Müvekkil Önemlidir, Çünkü Her Davaya Aynı Dikkat ve Özveriyle Eşit Yaklaşıyoruz."
         buttonLink="#"
         buttonText="Request Free Consultation"
         ctaType="withImage"
       />
       <FAQs />
-      <Testimonials />
+
       <PreFooter />
     </>
   );

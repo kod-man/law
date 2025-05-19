@@ -8,7 +8,7 @@ import FAQs from "@/components/home/FAQs";
 import TeamMembers from "@/components/home/TeamMembers";
 import Banner from "@/components/home/banner";
 import PreFooter from "@/components/shared/PreFooter";
-import Testimonials from "@/components/home/Testimonials";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,22 +24,22 @@ const Home = () => {
       <TwoColumnTextWithImage />
       <Features />
       <CTA
-        headline="Get the consultation For Most Complex Legal Issues."
+        headline="Hukuki sorunlarınız için danışmanlık alabilirsiniz."
         buttonLink="#"
-        buttonText="Contact Us"
+        buttonText="Bize Ulaşın"
         ctaType="withBg"
       />
       <PracticeAreas />
       <BlogPosts />
       <TeamMembers />
       <CTA
-        headline="We Treat Every Case Equally With Same Attention And Dedication Because Every Client Matters."
+        headline="Her Müvekkil Önemlidir, Çünkü Her Davaya Aynı Dikkat ve Özveriyle Eşit Yaklaşıyoruz."
         buttonLink="#"
-        buttonText="Request Free Consultation"
+        buttonText="Bize Danışın"
         ctaType="withImage"
       />
       <FAQs />
-      <Testimonials />
+
       <PreFooter />
     </>
   );
