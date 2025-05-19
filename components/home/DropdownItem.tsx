@@ -4,7 +4,7 @@ import Link from "next/link";
 const DropdownItem = ({ href, label }: { href: string; label: string }) => (
   <Link
     href={href}
-    className="group/subItem relative block px-5 py-4 transition-all hover:pl-7 hover:text-primary-main"
+    className="group/subItem relative block px-5 py-4 text-white transition-all hover:pl-7 hover:text-primary-main"
   >
     <ChevronRight
       size="15"

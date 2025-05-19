@@ -2,18 +2,17 @@ import logo from "@/public/assets/logo.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 import DesktopMenu from "./DesktopMenu";
-import HeaderTopBar from "./HeaderTopBar";
 import MobileMenu from "./MobileMenu";
 
 const HeaderMainBar = () => (
   <div className="relative bg-grey-bg ">
-    <div className="border-2 w-full flex">
+    <div className="w-full flex items-center">
       {/* 🔹 Desktop görünüm */}
-      <div className="hidden lg:flex items-start justify-between w-full py-4">
+      <div className="hidden lg:flex items-center justify-between w-full ">
         {/* Logo - Sol köşe */}
         <div className="shrink-0 pl-10">
           <Link href="/" className="block">
-            <Image src={logo} alt="Logo" width={166} height={30} />
+            <Image src={logo} alt="Logo" width={166} height={20} />
           </Link>
         </div>
 
@@ -23,9 +22,7 @@ const HeaderMainBar = () => (
         </div>
 
         {/* İletişim Bilgileri - Sağda dikey */}
-        <div className="flex flex-col items-end gap-2 text-sm pr-10">
-          <HeaderTopBar />
-        </div>
+        <div className="flex flex-col items-end gap-2 text-sm pr-10"></div>
       </div>
 
       {/* 🔸 Mobil görünüm */}
