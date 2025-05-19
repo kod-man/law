@@ -20,10 +20,10 @@ import DropdownItem from "./DropdownItem";
 
 const MobileMenu = () => (
   <Sheet>
-    <SheetTrigger className="block lg:hidden space-y-1">
-      <div className="h-[3px] w-7 bg-white rounded-md" />
-      <div className="h-[3px] w-7 bg-white rounded-md" />
-      <div className="h-[3px] w-7 bg-white rounded-md" />
+    <SheetTrigger className="block lg:hidden space-y-1  p-2">
+      <div className="h-[4px] w-7 bg-primary-main rounded-md" />
+      <div className="h-[4px] w-7 bg-primary-main rounded-md" />
+      <div className="h-[4px] w-7 bg-primary-main rounded-md" />
     </SheetTrigger>
     <SheetContent className="border-none p-0 text-white bg-background">
       <div className="p-6">

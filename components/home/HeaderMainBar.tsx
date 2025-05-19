@@ -26,7 +26,7 @@ const HeaderMainBar = () => (
       </div>
 
       {/* 🔸 Mobil görünüm */}
-      <div className="flex lg:hidden items-center justify-between min-h-[80px]">
+      <div className="flex lg:hidden items-center justify-between min-h-[80px] w-full mx-4">
         <Link href="/" className="shrink-0 py-5">
           <Image src={logo} alt="Logo" width={166} height={30} />
         </Link>
