@@ -67,7 +67,7 @@ export function ContactForm() {
             <FormItem>
               <FormControl>
                 <Input
-                  placeholder="First Name"
+                  placeholder="İsim"
                   {...field}
                   className="h-12 w-full rounded-none border-DEFAULT border-[#e8e6e6] bg-white px-4 py-2 font-bold text-background placeholder:text-base placeholder:font-normal placeholder:text-background focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                 />
@@ -84,7 +84,7 @@ export function ContactForm() {
             <FormItem>
               <FormControl>
                 <Input
-                  placeholder="Last Name"
+                  placeholder="Soyisim"
                   {...field}
                   className="h-12 w-full rounded-none border-DEFAULT border-[#e8e6e6] bg-white px-4 py-2 font-bold text-background placeholder:text-base placeholder:font-normal placeholder:text-background focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                 />
@@ -122,15 +122,12 @@ export function ContactForm() {
                   defaultValue={field.value}
                 >
                   <SelectTrigger className="h-12 w-full rounded-none border-DEFAULT border-[#e8e6e6] bg-white px-4 py-2 text-base text-background placeholder:font-normal placeholder:text-background focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">
-                    <SelectValue
-                      placeholder="Your Case Falls In?"
-                      className="font-normal"
-                    />
+                    <SelectValue placeholder="Konu" className="font-normal" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="family">Family Law</SelectItem>
-                    <SelectItem value="child">Child Custody</SelectItem>
-                    <SelectItem value="business">Business Fraud</SelectItem>
+                    <SelectItem value="family">Aile Hukuku</SelectItem>
+                    <SelectItem value="child">İş Hukuku</SelectItem>
+                    <SelectItem value="business">Ceza Hukuku</SelectItem>
                   </SelectContent>
                 </Select>
               </FormControl>
@@ -146,7 +143,7 @@ export function ContactForm() {
             <FormItem>
               <FormControl>
                 <Textarea
-                  placeholder="Type your message here."
+                  placeholder="Mesajınızı buraya yazın."
                   {...field}
                   className="h-48 w-full resize-none rounded-none border-DEFAULT border-[#e8e6e6] bg-white px-4 py-2 font-bold text-background placeholder:text-base placeholder:font-normal placeholder:text-background focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                 />
