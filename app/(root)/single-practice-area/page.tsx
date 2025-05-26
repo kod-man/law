@@ -21,7 +21,7 @@ const page = () => {
 
       <CTA
         bgClass="bg-primary-main"
-        headline="Get the consultation For Most Complex Legal Issues."
+        headline="Hukuki sorunlarınız için danışmanlık alabilirsiniz."
         buttonLink="#"
         buttonText="Contact Us"
         ctaType="withBg"

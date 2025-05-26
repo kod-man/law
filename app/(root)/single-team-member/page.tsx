@@ -24,7 +24,7 @@ const page = () => {
       <Stats />
 
       <CTA
-        headline="Get the consultation For Most Complex Legal Issues."
+        headline="Hukuki sorunlarınız için danışmanlık alabilirsiniz."
         buttonText="Contact Us"
         buttonLink="#"
         ctaType="withBg"

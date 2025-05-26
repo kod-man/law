@@ -78,9 +78,9 @@ export const HomepageFeatures: FeaturesProps[] = [
 export const WhyChooseUsData: FeaturesProps[] = [
   {
     id: 1,
-    headline: "FREE CONSULTATION",
+    headline: "UZMANLIK VE DENEYİM",
     content:
-      "We offer free consultation and you never need to worry about the fees for consultation.",
+      "İş, gayrimenkul ve ceza hukuku başta olmak üzere, farklı alanlardaki derin bilgi birikimimizle her davaya profesyonel yaklaşırız.",
     iconName: (
       <Handshake
         size={72}
@@ -90,9 +90,9 @@ export const WhyChooseUsData: FeaturesProps[] = [
   },
   {
     id: 2,
-    headline: "MOST QUALIFIED TEAM",
+    headline: "GÜVENİLİR VE ŞEFFAF YAKLAŞIM",
     content:
-      "At Lawyero we have the best team which understands your case and try to help you achieve desired results.",
+      "Müvekkillerimizle açık iletişim kurar, hukuki süreci en başından itibaren şeffaflıkla yürütürüz.",
     iconName: (
       <GraduationCap
         size={72}
@@ -102,9 +102,9 @@ export const WhyChooseUsData: FeaturesProps[] = [
   },
   {
     id: 3,
-    headline: "NO WIN NO FEES",
+    headline: "ÖNLEYİCİ VE ÇÖZÜM ODAKLI HİZMET",
     content:
-      "We have helped numerous clients in their complicated law matters and we are expert at this.",
+      "Yalnızca sorunları çözmekle kalmaz, olası hukuki risklere karşı da koruma sağlayarak proaktif destek sunarız.",
     iconName: (
       <PoundSterling
         size={72}
@@ -118,9 +118,9 @@ export const WhyChooseUsData: FeaturesProps[] = [
 export const WeAreBestData: FeaturesProps[] = [
   {
     id: 1,
-    headline: "WE UNDERSTAND LAW",
+    headline: "HER DAVAYA STRATEJİK YAKLAŞIM",
     content:
-      "We have helped numerous clients in their complicated law matters and we are expert at this.",
+      "Süreçleri sadece hukuki değil, stratejik bir bakış açısıyla ele alırız. Her adım önceden planlanır, her ihtimal hesaplanır.",
     iconName: (
       <Scale
         size={72}
@@ -130,9 +130,9 @@ export const WeAreBestData: FeaturesProps[] = [
   },
   {
     id: 2,
-    headline: "HAPPY CLIENTS",
+    headline: "SÖZDE DEĞİL, GERÇEKTE ULAŞILABİLİRİLİK",
     content:
-      "About 98% of our clients are satistied with the services they recieved and would be happy to recommend Lawyero to others.",
+      "Sorularınıza geç cevap veren değil, sizi gerçekten duyan ve yanıtlayan bir ekipten destek alırsınız. Her zaman ulaşabileceğiniz bir muhatabınız olur.",
     iconName: (
       <Smile
         size={72}
@@ -142,9 +142,9 @@ export const WeAreBestData: FeaturesProps[] = [
   },
   {
     id: 3,
-    headline: "WE LEAD YOU TO SUCCESS",
+    headline: "REHBERLİK EDEN BİR HUKUK ANLAYIŞI",
     content:
-      "Our ultimate goal is to help you and we believe that client is our asset.",
+      "Adımızdaki “pusula” gibi, karmaşık ve belirsiz durumlarda size yalnızca bilgi değil yön veririz. Kararlarınıza ışık tutacak netlikte hukuki rehberlik sunarız.",
     iconName: (
       <Volume2
         size={72}

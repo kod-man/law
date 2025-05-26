@@ -12,7 +12,7 @@ import PreFooter from "@/components/shared/PreFooter";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Welcome to Lawyero",
+  title: "Pusula Hukuk Bürosuna Hoşgeldiniz",
   description: "Your one stop solution for legal matters",
 };
 const Home = () => {
