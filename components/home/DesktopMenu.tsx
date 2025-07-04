@@ -18,8 +18,7 @@ export const navItems = [
     submenu: [
       { label: "Mustafa Koyuncu", href: "/single-team-member/" },
       { label: "Adil Küçük", href: "/single-team-member/" },
-      { label: "Mesut", href: "/single-team-member/" },
-      { label: "Adem Ayrancı", href: "/single-team-member/" },
+      { label: "İlhan Mesut Çeltikci", href: "/single-team-member/" },
     ],
   },
   {

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <InnerBanner text="Robert Darren" image={singleteambanner} />
+      <InnerBanner text="Mustafa Koyuncu" image={singleteambanner} />
 
       <MemberDetails />
 

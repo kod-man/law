@@ -4,10 +4,10 @@ import homeblog3 from "@/public/assets/home-blog-3.jpg";
 import homeblog4 from "@/public/assets/home-blog-4.jpg";
 import homeblog5 from "@/public/assets/home-blog-5.jpg";
 import homeblog6 from "@/public/assets/home-blog-6.jpg";
-import teammember1 from "@/public/assets/team-member-1.jpg";
-import teammember2 from "@/public/assets/team-member-2.jpg";
-import teammember3 from "@/public/assets/team-member-3.jpg";
-import teammember4 from "@/public/assets/team-member-4.jpg";
+
+import teammember2 from "@/public/assets/team-member-2.jpeg";
+import teammember3 from "@/public/assets/team-member-3.jpeg";
+import teammember4 from "@/public/assets/team-member-4.jpeg";
 
 import paimage1 from "@/public/assets/pa-img-1.jpg";
 import paimage2 from "@/public/assets/pa-img-2.jpg";
@@ -196,13 +196,6 @@ export const FAQData: FAQsProps[] = [
 // Data for Team Members
 export const TeamMembers: TeamMembersProps[] = [
   {
-    id: 1,
-    image: teammember1,
-    href: "#",
-    name: "Seyfullah Koyuncu",
-    designation: "Kurucu ve CEO",
-  },
-  {
     id: 2,
     image: teammember2,
     href: "#",
@@ -213,7 +206,7 @@ export const TeamMembers: TeamMembersProps[] = [
     id: 3,
     image: teammember3,
     href: "#",
-    name: "Mesut Ayrancı",
+    name: "İlhan Mesut Çeltikci",
     designation: "Avukat ve Arabulucu",
   },
   {
