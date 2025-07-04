@@ -8,9 +8,7 @@ export const navItems = [
   {
     label: "Faaliyet Alanlarımız",
     submenu: [
-      { label: "2 Column Layout", href: "/practice-areas-2-column/" },
       { label: "3 Column Layout", href: "/practice-areas-3-column-layout/" },
-      { label: "Individual Practice Area", href: "/single-practice-area/" },
     ],
   },
   {
@@ -23,12 +21,7 @@ export const navItems = [
   },
   {
     label: "Makaleler",
-    submenu: [
-      { label: "Blog With Sidebar", href: "/blog/" },
-      { label: "Blog Full page", href: "/blog-full-page/" },
-      { label: "Blog Chess Style", href: "/blog-chess-style/" },
-      { label: "Blog Grid", href: "/blog-grid/" },
-    ],
+    submenu: [{ label: "Makaleler", href: "/blog-grid/" }],
   },
   { label: "İletişim", href: "/contact/" },
 ];

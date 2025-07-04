@@ -158,16 +158,14 @@ export const WeAreBestData: FeaturesProps[] = [
 export const AttorneyPAList: FeaturesProps[] = [
   {
     id: 1,
-    headline: "Family Law",
-    content:
-      "Robert has been working as a family law attorney for more than 10 years and have solved tons of cases with his expertise.",
+    headline: "Aile Hukuku",
+    content: "",
     iconName: <Scale size={60} className="h-14 w-16 border-2 border-none" />,
   },
   {
     id: 2,
-    headline: "Child Custody",
-    content:
-      "One of the most difficult and emotional area of law is related to the children law. Robert uses his experience to get these matters solved.",
+    headline: "Ceza Hukuku",
+    content: "",
     iconName: (
       <PersonStanding size={60} className="h-14 w-16 border-2 border-none" />
     ),
@@ -175,17 +173,15 @@ export const AttorneyPAList: FeaturesProps[] = [
   {
     id: 3,
     headline: "İş Hukuku",
-    content:
-      "Business laws are sometimes quite complex to figure out because of things become complicated when not sure about the laws. Robert is best when it comes to business law.",
+    content: "",
     iconName: (
       <PoundSterling size={60} className="h-14 w-16 border-2 border-none" />
     ),
   },
   {
     id: 4,
-    headline: "Emergency Law",
-    content:
-      "Robert has done well in the past 10 years tackling with emergency situations and have successfully taken clients case which lead them to protection under law.",
+    headline: "Sağlık Hukuku",
+    content: "",
     iconName: (
       <Ambulance size={60} className="h-14 w-16 border-2 border-none" />
     ),
@@ -313,7 +309,7 @@ export const StatsWithIconTeam: StatsWithIconProps[] = [
     amountPreText: "",
     amount: 2000,
     amountPostText: "+",
-    text: "Happy Clients",
+    text: "Mutlu Müvekkiller",
     iconName: (
       <Smile
         size={72}
@@ -326,7 +322,7 @@ export const StatsWithIconTeam: StatsWithIconProps[] = [
     amountPreText: "",
     amount: 98,
     amountPostText: "%",
-    text: "Success Rato",
+    text: "Olumlu Sonuçlar",
     iconName: (
       <ThumbsUp
         size={72}
@@ -339,7 +335,7 @@ export const StatsWithIconTeam: StatsWithIconProps[] = [
     amountPreText: "$",
     amount: 20000000,
     amountPostText: "",
-    text: "Recovered",
+    text: "Sonuçlanan Tazminatlar",
     iconName: (
       <DollarSign
         size={72}

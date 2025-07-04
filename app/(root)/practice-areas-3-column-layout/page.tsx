@@ -12,13 +12,11 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <InnerBanner text="PRACTICE AREAS 3 COLUMN" />
+      <InnerBanner text="FAALİYET ALANLARIMIZ" />
 
       <HeadlineWithText
         headlineText="Faaliyet Alanlarımız"
-        text="At lawyero we practice almost all areas of life. Some of the most
-          notable practice areas in which we have helped number of our clients
-          to achieve their goals according to the laws are as follows:"
+        text="Pusula Hukuk olarak, hayatın pek çok alanına dokunan geniş bir hizmet yelpazesi sunmaktayız. Müvekkillerimizin hukuki hedeflerine ulaşmalarına katkı sağladığımız başlıca uygulama alanlarımızdan bazıları şunlardır:"
       />
 
       <PAList layout="3-column" />

@@ -312,43 +312,29 @@ export const PAData: PADataProps[] = [
 export const attorneyEducaton: attorneyEducatonProps[] = [
   {
     id: 1,
-    title: "Attorney of Law",
+    title: "Eğitim Bilgileri",
     details: [
       {
         id: 11,
-        text: "Texas Southern University – Thurgood Marshall School of Law, Juris Doctor (J.D.), Houston, TX",
+        text: "Okan Üniversitesi – Hukuk Fakültesi, İstanbul",
       },
       {
         id: 12,
-        text: "Paul Quinn College, Bachelor of Science (B.S.), Dallas, TX",
+        text: "Amasya Anadolu Öğretmen Lisesi, Amasya",
       },
     ],
   },
   {
     id: 2,
-    title: "Admission Bar",
+    title: "Baro Bilgileri",
     details: [
       {
         id: 21,
-        text: "State Bar of Texas, 2010",
+        text: "İstanbul Barosu",
       },
       {
         id: 22,
-        text: "U.S. District Court – Northern District of Texas",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Bar Membership",
-    details: [
-      {
-        id: 31,
-        text: "Texas Trial Lawyer’s Association",
-      },
-      {
-        id: 32,
-        text: "Dallas Association of Young Lawyers",
+        text: "Türkiye Barolar Birliği",
       },
     ],
   },

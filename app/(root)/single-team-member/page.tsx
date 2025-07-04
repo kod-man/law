@@ -25,7 +25,7 @@ const page = () => {
 
       <CTA
         headline="Hukuki sorunlarınız için danışmanlık alabilirsiniz."
-        buttonText="Contact Us"
+        buttonText="Bize Ulaşın"
         buttonLink="#"
         ctaType="withBg"
         bgClass="bg-primary-main"
@@ -34,14 +34,7 @@ const page = () => {
 
       <BackgroundAndPA />
 
-      <Quote
-        text="I was struggling to get my legal issues sorted out before i met
-              Mr. John at Lawyero. I was amazed by his attitude and attention to
-              detail and he sorted my case in no time understanding what i need
-              to get done. Thankyou Mr. John."
-        bgClass="bg-primary-main"
-        textClass="text-white"
-      />
+      <Quote text="" bgClass="bg-primary-main" textClass="text-white" />
 
       <PreFooter />
     </>

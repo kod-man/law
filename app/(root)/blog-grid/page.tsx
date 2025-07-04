@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <>
-      <InnerBanner text="Blog Grid" />
+      <InnerBanner text="Makaleler" />
       <div className="relative py-[90px]">
         <div className="container">
           <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-7 gap-2">
