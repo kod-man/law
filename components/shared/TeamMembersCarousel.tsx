@@ -17,8 +17,9 @@ export function TeamMembersCarousel({ textColor }: { textColor?: string }) {
         align: "start",
         loop: true,
       }}
+      className="w-full"
     >
-      <CarouselContent className="pt-3">
+      <CarouselContent className="pt-3 justify-center gap-8">
         {TeamMembers.map((item) => (
           <CarouselItem
             key={`team${item.id}`}
@@ -54,7 +55,10 @@ export function TeamMembersCarousel({ textColor }: { textColor?: string }) {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="flex w-full justify-center">
+      <div
+        id="carousel-actions"
+        className="flex w-full justify-center lg:hidden"
+      >
         <div className="absolute mt-14 h-12 w-28 pt-14">
           <CarouselPrevious className="left-0 size-12 rounded-none border-2 border-black bg-white text-black opacity-100 hover:bg-white  disabled:opacity-100" />
           <CarouselNext className="right-0 size-12 rounded-none border-2 border-black bg-white text-black opacity-100 hover:bg-white  disabled:opacity-100" />
