@@ -96,35 +96,11 @@ const Footer = () => {
       </div>
       <div className="bg-primary-main py-7">
         <div className="container">
-          <div className="flex flex-wrap items-center lg:flex-nowrap">
-            <div className="basis-full lg:basis-1/2">
-              <p className="mb-4 text-center text-sm leading-6 text-white lg:mb-0 lg:text-left">
+          <div className="flex flex-wrap items-center justify-center">
+            <div className="basis-full text-center">
+              <p className="text-sm leading-6 text-white">
                 &copy; Pusula Hukuk 2025. Tüm Hakları Saklıdır.
               </p>
-            </div>
-            <div className="basis-full lg:basis-1/2">
-              <ul className="flex items-center justify-center lg:justify-end">
-                <li className="ml-3 w-8">
-                  <Link href="#" target="_blank">
-                    <Facebook size={30} className="text-white" />
-                  </Link>
-                </li>
-                <li className="ml-3 w-8">
-                  <Link href="#" target="_blank">
-                    <Image src={X} alt="Follow us on Twitter" className="w-6" />
-                  </Link>
-                </li>
-                <li className="ml-3 w-8">
-                  <Link href="#" target="_blank">
-                    <LinkedinIcon size={30} className="text-white" />
-                  </Link>
-                </li>
-                <li className="ml-3 w-8">
-                  <Link href="#" target="_blank">
-                    <Youtube size={30} className="text-white" />
-                  </Link>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

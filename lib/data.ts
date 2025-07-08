@@ -4,19 +4,23 @@ import homeblog3 from "@/public/assets/home-blog-3.jpg";
 import homeblog4 from "@/public/assets/home-blog-4.jpg";
 import homeblog5 from "@/public/assets/home-blog-5.jpg";
 import homeblog6 from "@/public/assets/home-blog-6.jpg";
-import teammember1 from "@/public/assets/team-member-1.jpg";
-import teammember2 from "@/public/assets/team-member-2.jpg";
-import teammember3 from "@/public/assets/team-member-3.jpg";
-import teammember4 from "@/public/assets/team-member-4.jpg";
+
+import teammember2 from "@/public/assets/team-member-2.jpeg";
+import teammember3 from "@/public/assets/team-member-3.jpeg";
+import teammember4 from "@/public/assets/team-member-4.jpeg";
 
 import paimage1 from "@/public/assets/pa-img-1.jpg";
-import paimage2 from "@/public/assets/pa-img-2.jpg";
-import paimage3 from "@/public/assets/pa-img-3.jpg";
-import paimage4 from "@/public/assets/pa-img-4.jpg";
-import paimage5 from "@/public/assets/pa-img-5.jpg";
-import paimage6 from "@/public/assets/pa-img-6.jpg";
-import paimage7 from "@/public/assets/pa-img-7.jpg";
-import paimage8 from "@/public/assets/pa-img-8.jpg";
+import paimage2 from "@/public/assets/pa-img-2.jpeg";
+import paimage3 from "@/public/assets/pa-img-3.jpeg";
+import paimage4 from "@/public/assets/pa-img-4.jpeg";
+import paimage5 from "@/public/assets/pa-img-5.jpeg";
+import paimage6 from "@/public/assets/pa-img-6.jpeg";
+import paimage7 from "@/public/assets/pa-img-7.jpeg";
+import paimage8 from "@/public/assets/pa-img-8.jpeg";
+import paimage9 from "@/public/assets/pa-img-9.jpeg";
+import paimage10 from "@/public/assets/pa-img-10.jpeg";
+import paimage11 from "@/public/assets/pa-img-11.jpeg";
+import paimage12 from "@/public/assets/pa-img-12.jpeg";
 import homepageTypewriter from "@/public/assets/lawyer-ticker-min.jpg";
 import banner4 from "@/public/assets/banner/banner4.jpg";
 import banner5 from "@/public/assets/banner/banner5.jpg";
@@ -196,13 +200,6 @@ export const FAQData: FAQsProps[] = [
 // Data for Team Members
 export const TeamMembers: TeamMembersProps[] = [
   {
-    id: 1,
-    image: teammember1,
-    href: "#",
-    name: "Seyfullah Koyuncu",
-    designation: "Kurucu ve CEO",
-  },
-  {
     id: 2,
     image: teammember2,
     href: "#",
@@ -213,7 +210,7 @@ export const TeamMembers: TeamMembersProps[] = [
     id: 3,
     image: teammember3,
     href: "#",
-    name: "Mesut Ayrancı",
+    name: "İlhan Mesut Çeltikci",
     designation: "Avukat ve Arabulucu",
   },
   {
@@ -232,86 +229,86 @@ export const PAData: PADataProps[] = [
   {
     id: 1,
     href: "/single-practice-area",
-    title: "Family Law",
+    title: "Ceza Hukuku",
     text: "Family law involves a range of matters that are usually very personal, unique and emotionally challenging.",
     image: paimage1,
   },
   {
     id: 2,
     href: "/single-practice-area",
-    title: "Child Custody",
+    title: "Basın Hukuku",
     text: "Child custody involves a range of matters that are usually very personal, unique and emotionally challenging.",
     image: paimage2,
   },
   {
     id: 3,
     href: "/single-practice-area",
-    title: "Emergency Law",
+    title: "Gayrimenkul Hukuku",
     text: "Emergency law involves a range of matters that are usually very personal, unique and emotionally challenging.",
     image: paimage3,
   },
   {
     id: 4,
     href: "/single-practice-area",
-    title: "Criminal Law",
+    title: "Sosyal Medya Hukuku",
     text: "Criminal law involves a range of matters that are usually very personal, unique and emotionally challenging.",
     image: paimage4,
   },
   {
     id: 5,
     href: "/single-practice-area",
-    title: "Business Law",
+    title: "Trafik ve Sigorta Hukuku",
     text: "Business law involves a range of matters that are usually very personal, unique and emotionally challenging.",
     image: paimage5,
   },
   {
     id: 6,
     href: "/single-practice-area",
-    title: "Real Estate Law",
+    title: "Sözleşmeler Hukuku",
     text: "Real estate law involves a range of matters that are usually very personal, unique and emotionally challenging.",
     image: paimage6,
   },
   {
     id: 7,
     href: "/single-practice-area",
-    title: "Personal Injury",
+    title: "Tüketici Hukuku",
     text: "Personal injury involves a range of matters that are usually very personal, unique and emotionally challenging.",
     image: paimage7,
   },
   {
     id: 8,
     href: "/single-practice-area",
-    title: "Immigration Law",
+    title: "İcra ve İflas Hukuku",
     text: "Immigration law involves a range of matters that are usually very personal, unique and emotionally challenging.",
     image: paimage8,
   },
   {
     id: 9,
     href: "/single-practice-area",
-    title: "Family Law",
+    title: "Fikri Mlkiyet Hukuku",
     text: "Family law involves a range of matters that are usually very personal, unique and emotionally challenging.",
-    image: paimage1,
+    image: paimage9,
   },
   {
     id: 10,
     href: "/single-practice-area",
-    title: "Child Custody",
+    title: "İş Hukuku",
     text: "Child custody involves a range of matters that are usually very personal, unique and emotionally challenging.",
-    image: paimage2,
+    image: paimage10,
   },
   {
     id: 11,
     href: "/single-practice-area",
-    title: "Emergency Law",
+    title: "Aile Hukuku",
     text: "Emergency law involves a range of matters that are usually very personal, unique and emotionally challenging.",
-    image: paimage3,
+    image: paimage11,
   },
   {
     id: 12,
     href: "/single-practice-area",
-    title: "Criminal Law",
+    title: "Miras Hukuku",
     text: "Criminal law involves a range of matters that are usually very personal, unique and emotionally challenging.",
-    image: paimage4,
+    image: paimage12,
   },
 ];
 
@@ -319,43 +316,29 @@ export const PAData: PADataProps[] = [
 export const attorneyEducaton: attorneyEducatonProps[] = [
   {
     id: 1,
-    title: "Attorney of Law",
+    title: "Eğitim Bilgileri",
     details: [
       {
         id: 11,
-        text: "Texas Southern University – Thurgood Marshall School of Law, Juris Doctor (J.D.), Houston, TX",
+        text: "Okan Üniversitesi – Hukuk Fakültesi, İstanbul",
       },
       {
         id: 12,
-        text: "Paul Quinn College, Bachelor of Science (B.S.), Dallas, TX",
+        text: "Amasya Anadolu Öğretmen Lisesi, Amasya",
       },
     ],
   },
   {
     id: 2,
-    title: "Admission Bar",
+    title: "Baro Bilgileri",
     details: [
       {
         id: 21,
-        text: "State Bar of Texas, 2010",
+        text: "İstanbul Barosu",
       },
       {
         id: 22,
-        text: "U.S. District Court – Northern District of Texas",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Bar Membership",
-    details: [
-      {
-        id: 31,
-        text: "Texas Trial Lawyer’s Association",
-      },
-      {
-        id: 32,
-        text: "Dallas Association of Young Lawyers",
+        text: "Türkiye Barolar Birliği",
       },
     ],
   },

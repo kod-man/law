@@ -78,9 +78,9 @@ export const HomepageFeatures: FeaturesProps[] = [
 export const WhyChooseUsData: FeaturesProps[] = [
   {
     id: 1,
-    headline: "FREE CONSULTATION",
+    headline: "UZMANLIK VE DENEYİM",
     content:
-      "We offer free consultation and you never need to worry about the fees for consultation.",
+      "İş, gayrimenkul ve ceza hukuku başta olmak üzere, farklı alanlardaki derin bilgi birikimimizle her davaya profesyonel yaklaşırız.",
     iconName: (
       <Handshake
         size={72}
@@ -90,9 +90,9 @@ export const WhyChooseUsData: FeaturesProps[] = [
   },
   {
     id: 2,
-    headline: "MOST QUALIFIED TEAM",
+    headline: "GÜVENİLİR VE ŞEFFAF YAKLAŞIM",
     content:
-      "At Lawyero we have the best team which understands your case and try to help you achieve desired results.",
+      "Müvekkillerimizle açık iletişim kurar, hukuki süreci en başından itibaren şeffaflıkla yürütürüz.",
     iconName: (
       <GraduationCap
         size={72}
@@ -102,9 +102,9 @@ export const WhyChooseUsData: FeaturesProps[] = [
   },
   {
     id: 3,
-    headline: "NO WIN NO FEES",
+    headline: "ÖNLEYİCİ VE ÇÖZÜM ODAKLI HİZMET",
     content:
-      "We have helped numerous clients in their complicated law matters and we are expert at this.",
+      "Yalnızca sorunları çözmekle kalmaz, olası hukuki risklere karşı da koruma sağlayarak proaktif destek sunarız.",
     iconName: (
       <PoundSterling
         size={72}
@@ -118,9 +118,9 @@ export const WhyChooseUsData: FeaturesProps[] = [
 export const WeAreBestData: FeaturesProps[] = [
   {
     id: 1,
-    headline: "WE UNDERSTAND LAW",
+    headline: "HER DAVAYA STRATEJİK YAKLAŞIM",
     content:
-      "We have helped numerous clients in their complicated law matters and we are expert at this.",
+      "Süreçleri sadece hukuki değil, stratejik bir bakış açısıyla ele alırız. Her adım önceden planlanır, her ihtimal hesaplanır.",
     iconName: (
       <Scale
         size={72}
@@ -130,9 +130,9 @@ export const WeAreBestData: FeaturesProps[] = [
   },
   {
     id: 2,
-    headline: "HAPPY CLIENTS",
+    headline: "SÖZDE DEĞİL, GERÇEKTE ULAŞILABİLİRİLİK",
     content:
-      "About 98% of our clients are satistied with the services they recieved and would be happy to recommend Lawyero to others.",
+      "Sorularınıza geç cevap veren değil, sizi gerçekten duyan ve yanıtlayan bir ekipten destek alırsınız. Her zaman ulaşabileceğiniz bir muhatabınız olur.",
     iconName: (
       <Smile
         size={72}
@@ -142,9 +142,9 @@ export const WeAreBestData: FeaturesProps[] = [
   },
   {
     id: 3,
-    headline: "WE LEAD YOU TO SUCCESS",
+    headline: "REHBERLİK EDEN BİR HUKUK ANLAYIŞI",
     content:
-      "Our ultimate goal is to help you and we believe that client is our asset.",
+      "Adımızdaki “pusula” gibi, karmaşık ve belirsiz durumlarda size yalnızca bilgi değil yön veririz. Kararlarınıza ışık tutacak netlikte hukuki rehberlik sunarız.",
     iconName: (
       <Volume2
         size={72}
@@ -158,16 +158,14 @@ export const WeAreBestData: FeaturesProps[] = [
 export const AttorneyPAList: FeaturesProps[] = [
   {
     id: 1,
-    headline: "Family Law",
-    content:
-      "Robert has been working as a family law attorney for more than 10 years and have solved tons of cases with his expertise.",
+    headline: "Aile Hukuku",
+    content: "",
     iconName: <Scale size={60} className="h-14 w-16 border-2 border-none" />,
   },
   {
     id: 2,
-    headline: "Child Custody",
-    content:
-      "One of the most difficult and emotional area of law is related to the children law. Robert uses his experience to get these matters solved.",
+    headline: "Ceza Hukuku",
+    content: "",
     iconName: (
       <PersonStanding size={60} className="h-14 w-16 border-2 border-none" />
     ),
@@ -175,17 +173,15 @@ export const AttorneyPAList: FeaturesProps[] = [
   {
     id: 3,
     headline: "İş Hukuku",
-    content:
-      "Business laws are sometimes quite complex to figure out because of things become complicated when not sure about the laws. Robert is best when it comes to business law.",
+    content: "",
     iconName: (
       <PoundSterling size={60} className="h-14 w-16 border-2 border-none" />
     ),
   },
   {
     id: 4,
-    headline: "Emergency Law",
-    content:
-      "Robert has done well in the past 10 years tackling with emergency situations and have successfully taken clients case which lead them to protection under law.",
+    headline: "Sağlık Hukuku",
+    content: "",
     iconName: (
       <Ambulance size={60} className="h-14 w-16 border-2 border-none" />
     ),
@@ -313,7 +309,7 @@ export const StatsWithIconTeam: StatsWithIconProps[] = [
     amountPreText: "",
     amount: 2000,
     amountPostText: "+",
-    text: "Happy Clients",
+    text: "Mutlu Müvekkiller",
     iconName: (
       <Smile
         size={72}
@@ -326,7 +322,7 @@ export const StatsWithIconTeam: StatsWithIconProps[] = [
     amountPreText: "",
     amount: 98,
     amountPostText: "%",
-    text: "Success Rato",
+    text: "Olumlu Sonuçlar",
     iconName: (
       <ThumbsUp
         size={72}
@@ -339,7 +335,7 @@ export const StatsWithIconTeam: StatsWithIconProps[] = [
     amountPreText: "$",
     amount: 20000000,
     amountPostText: "",
-    text: "Recovered",
+    text: "Sonuçlanan Tazminatlar",
     iconName: (
       <DollarSign
         size={72}

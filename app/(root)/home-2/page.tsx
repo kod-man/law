@@ -46,9 +46,9 @@ const Home = () => {
       <TwoColumnTextWithImage />
       <Features />
       <CTA
-        headline="Get the consultation For Most Complex Legal Issues."
+        headline="Hukuki sorunlarınız için danışmanlık alabilirsiniz."
         buttonLink="#"
-        buttonText="Contact Us"
+        buttonText="BİZE ULAŞIN"
         ctaType="withBg"
       />
       <PracticeAreas />
