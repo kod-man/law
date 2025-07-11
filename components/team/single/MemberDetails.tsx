@@ -35,7 +35,7 @@ const MemberDetails = ({ name }: MemberDetailsProps) => {
       <div className="py-16 lg:py-20 mx-20">
         <div className="flex flex-wrap gap-8 lg:flex-nowrap justify-around w-full">
           <div className="basis-full lg:basis-[30%] flex flex-col justify-around h-full">
-            <div className="w-[700px] aspect-[3/2] relative">
+            <div className="w-[500px] aspect-[3/2] relative">
               <Image
                 src={mustafa}
                 alt="Home Firm Image"

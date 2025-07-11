@@ -1,9 +1,6 @@
-import homeblog1 from "@/public/assets/home-blog-1.jpg";
-import homeblog2 from "@/public/assets/home-blog-2.jpg";
-import homeblog3 from "@/public/assets/home-blog-3.jpg";
-import homeblog4 from "@/public/assets/home-blog-4.jpg";
-import homeblog5 from "@/public/assets/home-blog-5.jpg";
-import homeblog6 from "@/public/assets/home-blog-6.jpg";
+import homeblog1 from "@/public/assets/home-blog-1.png";
+
+import homeblog3 from "@/public/assets/home-blog-3.png";
 
 import teammember2 from "@/public/assets/team-member-2.jpeg";
 import teammember3 from "@/public/assets/team-member-3.jpeg";
@@ -72,28 +69,14 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/1",
-    title: "Kıdem Tazminatı Dava Süreçleri",
+    title: "İş Davaları Bilgi Notu",
     excerpt:
-      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
-    date: "2024-03-19T12:24:34",
-    author: "Lawyero",
+      "Çalışanlar ile işverenler arasında yaşanan uyuşmazlıklar, iş davalarının temelini oluşturur. Bu bilgi notunda, iş davalarının türlerinden dava süreçlerine kadar birçok önemli konu başlığını ele aldık. Hak kaybı yaşamamak adına dikkat edilmesi gereken noktalar sizler için derlendi.",
+    date: "2025-07-15T12:24:34",
+    author: "İlhan Mesut Çeltikci",
     comments: 1,
   },
-  {
-    id: 2,
-    featuredImage: {
-      node: {
-        mediaItem: homeblog2,
-      },
-    },
-    linkHref: "/blog/2",
-    title: "Emeklilikte Kıdem Tazminatı Hakkı",
-    excerpt:
-      "Every person have suffered from violence at work, home, school or any other place at least once in their life time. Most people dont share their experiences as they think this will be inappropriate to...",
-    date: "2024-03-19T12:24:34",
-    author: "Lawyero",
-    comments: 0,
-  },
+
   {
     id: 3,
     featuredImage: {
@@ -102,57 +85,12 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/3",
-    title: "İstanbul İş Mhkemesi Avukatı Nedir ve Neden Önemlidir ?",
+    title: "Seri Cinayetler Makalesi",
     excerpt:
-      "Emergency can be caused anywhere and can happen to anybody. People in the US have Emergency coverage provided by the government but it involves filling your case with great attention and need to be persuaded...",
-    date: "2024-03-19T12:24:34",
-    author: "Lawyero",
+      "Seri cinayetler, ardışık şekilde işlenen ve genellikle belirli bir kalıba oturan cinayetlerdir. Bu tür suçların ardındaki psikolojik motivasyonlar, fail profilleri ve toplum üzerindeki etkileri, adli bilimlerin en dikkat çeken konuları arasında yer alır. Makalemizde bu karanlık dünyayı detaylıca ele aldık.",
+    date: "2025-07-19T12:24:34",
+    author: "İlhan Mesut Çeltikci",
     comments: 0,
-  },
-  {
-    id: 4,
-    featuredImage: {
-      node: {
-        mediaItem: homeblog4,
-      },
-    },
-    linkHref: "/blog/4",
-    title: "Kıdem Tazminatı Dava Süreçleri",
-    excerpt:
-      "Whenever you are involved in an accident always avoid giving any statement before contacting you attorney. Legal advise is really important in these matters and your initial reaction can be make or break for your...",
-    date: "2024-03-19T12:24:34",
-    author: "Lawyero",
-    comments: 0,
-  },
-  {
-    id: 5,
-    featuredImage: {
-      node: {
-        mediaItem: homeblog5,
-      },
-    },
-    linkHref: "/blog/5",
-    title: "Emeklilikte Kıdem Tazminatı Hakkı",
-    excerpt:
-      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
-    date: "2024-03-19T12:24:34",
-    author: "Lawyero",
-    comments: 0,
-  },
-  {
-    id: 6,
-    featuredImage: {
-      node: {
-        mediaItem: homeblog6,
-      },
-    },
-    linkHref: "/blog/6",
-    title: "Kıdem Tazminatı Dava Süreçleri",
-    excerpt:
-      "Many people are not aware of their legal rights and dont pay attention to the helping hand they can get from legal advise. Therefore it is very important to know that you are aware of...",
-    date: "2024-03-19T12:24:34",
-    author: "Lawyero",
-    comments: 2,
   },
 ];
 
@@ -348,23 +286,23 @@ export const attorneyEducaton: attorneyEducatonProps[] = [
 export const blogCategories: blogCategoriesProps[] = [
   {
     id: 1,
-    title: "Attorney Law",
+    title: "İş Hukuku",
   },
   {
     id: 2,
-    title: "Family Law",
+    title: "Aile Hukuku",
   },
   {
     id: 3,
-    title: "Criminal Law",
+    title: "Borçlar Hukuku",
   },
   {
     id: 4,
-    title: "Real Estate Law",
+    title: "Ceza Hukuku",
   },
   {
     id: 5,
-    title: "Immigration Law",
+    title: "Trafik ve Sigorta Hukuku ",
   },
 ];
 
@@ -372,15 +310,15 @@ export const blogCategories: blogCategoriesProps[] = [
 export const blogTags: blogTagsProps[] = [
   {
     id: 1,
-    name: "Accident",
+    name: "#ÇalışanHakları",
   },
   {
     id: 2,
-    name: "Law",
+    name: "#TazminatHakları",
   },
   {
     id: 3,
-    name: "Attorney",
+    name: "#İşDavaları",
   },
 ];
 

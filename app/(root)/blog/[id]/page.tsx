@@ -5,7 +5,6 @@ import { blogCategories, blogPosts, blogTags } from "@/lib/data";
 import { formatDate } from "@/lib/utilFunctons";
 
 import Sidebar from "@/components/blog/Sidebar";
-import { Calendar, User, MessageCircle } from "lucide-react";
 
 import type { Metadata } from "next";
 
@@ -44,25 +43,17 @@ const Page = ({ params }: URLParams) => {
                         </h2>
                         <ul className="flex flex-wrap pb-6 sm:flex-nowrap">
                           <li className="mb-4 mr-5 flex basis-full items-center sm:mb-0 sm:basis-auto">
-                            <Calendar className="w-5" />
                             <span className="pl-2 text-base text-[#313131]">
                               {formatDate(filteredItem.date)}
                             </span>
                           </li>
                           <li className="mb-4 mr-5  flex basis-full items-center sm:mb-0 sm:basis-auto">
-                            <User className="w-5" />
                             <Link
                               className="pl-2 text-base text-[#313131] hover:text-primary-main"
                               href="#"
                             >
                               {filteredItem.author}
                             </Link>
-                          </li>
-                          <li className="mr-5 flex basis-full items-center  text-base text-[#313131] sm:basis-auto">
-                            <MessageCircle className="w-5" />
-                            <span className="pl-2">
-                              {filteredItem.comments} Comments
-                            </span>
                           </li>
                         </ul>
                         <ul className="flex flex-wrap pb-5 md:flex-nowrap">
@@ -80,50 +71,125 @@ const Page = ({ params }: URLParams) => {
                             </li>
                           ))}
                         </ul>
-                        <p className="mb-4 text-base leading-[1.62] text-[#333]">
-                          Many people are not aware of their legal rights and
-                          dont pay attention to the helping hand they can get
-                          from legal advise. Therefore it is very important to
-                          know that you are aware of your rights and seek legal
-                          help when needed.
-                        </p>
-                        <p className="mb-4 text-base leading-[1.62] text-[#333]">
-                          It is a long established fact that a reader will be
-                          distracted by the readable content of a page when
-                          looking at its layout. The point of using Lorem Ipsum
-                          is that it has a more-or-less normal distribution of
-                          letters, as opposed to using ‘Content here, content
-                          here’, making it look like readable English. Many
-                          desktop publishing packages and web page editors now
-                          use Lorem Ipsum as their default model text, and a
-                          search for ‘lorem ipsum’ will uncover many web sites
-                          still in their infancy. Various versions have evolved
-                          over the years, sometimes by accident, sometimes on
-                          purpose (injected humour and the like).
-                        </p>
                         <h3 className="mb-3 pr-0 text-[25px] font-bold text-[#333] sm:text-[32px] lg:pr-12">
-                          What To Do First When Encounter An Accident?
+                          İşçi ile işveren arasındaki davalar:
                         </h3>
                         <p className="mb-4 text-base leading-[1.62] text-[#333]">
-                          There are many variations of passages of Lorem Ipsum
-                          available, but the majority have suffered alteration
-                          in some form, by injected humour, or randomised words
-                          which don’t look even slightly believable. If you are
-                          going to use a passage of Lorem Ipsum, you need to be
-                          sure there isn’t anything embarrassing hidden in the
-                          middle of text. All the Lorem Ipsum generators on the
-                          Internet tend to repeat predefined chunks as
-                          necessary, making this the first true generator on the
-                          Internet. It uses a dictionary of over 200 Latin
-                          words, combined with a handful of model sentence
-                          structures, to generate Lorem Ipsum which looks
-                          reasonable. The generated Lorem Ipsum is therefore
-                          always free from repetition, injected humour, or
-                          non-characteristic words etc.
+                          <p>
+                            1- İşçilik Alacakları Davaları (Ücret, Kıdem, İhbar,
+                            Fazla Mesai, Haftalık Tatil, Yıllık İzin vs.)
+                          </p>
+                          <p>2- İşe İade Davası</p>
+                          <p>
+                            3- İş Kazası ve Meslek Hastalığı Nedeniyle Bedensel
+                            Zararlara İlişkin Maddi-Manevi Tazminat
+                          </p>
+                          <p>
+                            4- İş Kazası ve Meslek Hastalığından Kaynaklanan
+                            Ölüm Nedeniyle Destekten Yoksun Kalma Tazminatı
+                            (Ölenin maddi destek verdiği kişiler açabilir)
+                          </p>
+                        </p>
+                        <p className="mb-4 text-base leading-[1.62] text-[#333]">
+                          Arayan kişiden ilk almamız gereken bilgi halihazırda
+                          hangi durumda oldukları yani çalışmaya devam edip
+                          etmedikleri, iş kazası varsa ne durumda olduğu, işten
+                          çıkarıldıysa ne zaman ne sebeple çıkarıldığı; ikinci
+                          olarak ismini bilmeseler bile yukarıdaki davalardan
+                          hangisini açmak istedikleri yani işe geri dönmek mi
+                          istiyor yoksa henüz istifa etmemiş de istifa edip
+                          tazminatlarını mı almak istiyor vb.
+                        </p>
+                        <h3 className="mb-3 pr-0 text-[25px] font-bold text-[#333] sm:text-[32px] lg:pr-12">
+                          Bu iki bilgiyi aldıktan sonra ek bilgi olarak
+                        </h3>
+                        <p className="mb-4 text-base leading-[1.62] text-[#333]">
+                          <p>- kaç yıldır çalıştığı,</p>
+                          <p>
+                            - mesleğinin ve iş yerindeki görevinin ne olduğu,
+                          </p>
+                          <p>- nerede çalıştığı,</p>
+                          öğrenilebilir. Bu bilgileri aldıktan sonra avukatın
+                          kendisini arayacağı söylenebilir. Ama lazım olursa
+                          diye çok sorulan kısa hap bilgiler yazıyorum:{" "}
+                          <p>
+                            ● İşçi sözleşmeyi kendi feshetmeyi düşünüyorsa ihbar
+                            tazminatı alamaz. İhbar işten çıkartılana verilir.
+                          </p>{" "}
+                          <p>
+                            ● Fesih nedenleri genel olarak geçerli fesih
+                            nedenleri ve haklı fesih nedenleri olarak ikiye
+                            ayrılır. İşçinin sözleşmesi haklı nedenle
+                            feshedildiğinde iş akti bekleme süresi olmaksızın
+                            derhal sona erer ve tazminat hakkı doğmaz. Geçerli
+                            nedenle feshi, işçinin yeterliliği, işçinin
+                            davranışları ya da işletmenin, işyerinin veya işin
+                            gereklerinden kaynaklanan sebeplerle iş akdinin sona
+                            erdirilmesidir. Geçerli nedenle fesihte işçinin
+                            kıdem tazminatı dahil pek çok alacak hakkı bulunur.
+                          </p>
+                          <p>
+                            ● İş sözleşmeler belirli süreli ve belirsiz süreli
+                            olarak ikiye ayrılır. Eğer belirli süreli sözleşme
+                            varsa süre sonra erdiğinde kıdem ve ihbar tazminatı
+                            ödenmez.
+                          </p>
+                          <p>
+                            ● İş davası öncesi arabulucuya başvurmak zorunludur.
+                            Avukata vekalet verilmesi halinde süreci hızlıca
+                            halledebilir.
+                          </p>
+                          <p>
+                            ● Arabulucuda hızlı anlaşma ve ücretin bir kısmını
+                            tahsil imkanı olduğu için tercih edilebilir. Dava
+                            açıldığında 1,5-2 yıl kadar süreç uzamış olur.
+                          </p>
+                          <p>
+                            ● İş davası işyerinin bulunduğu yerleşim yerindeki
+                            iş mahkemesinde açılmalıdır. İş kazası varsa zararın
+                            meydana geldiği yer veya işçinin yerleşim yeri
+                            mahkemesi de seçilebilir.
+                          </p>
+                          <p>
+                            ● İş davası işyerinin bulunduğu yerleşim yerindeki
+                            iş mahkemesinde açılmalıdır. İş kazası varsa zararın
+                            meydana geldiği yer veya işçinin yerleşim yeri
+                            mahkemesi de seçilebilir.
+                          </p>
+                          <p>
+                            ● Haftalık 45 saatin üzerindeki çalışmalar fazla
+                            mesai olarak adlandırılır ve normal saatlik ücretin
+                            yüzde elli artırılarak ödenmesi gerekir.
+                          </p>
+                          <p>
+                            ● Kıdem tazminatına ancak bir yılını doldurmuş işçi
+                            hak kazanır.
+                          </p>
+                          <p>
+                            ● İhbar süresi işçinin kaç yıldır çalıştığına göre
+                            değişmektedir. Örneğin 1,5 yıldan az kıdemli işçi
+                            için dört hafta, 3 yıldan fazla kıdemi olan işçi
+                            için 8 haftadır. Bu sürelerde işçinin bildirimi
+                            yaptıktan sonra çalışmaya devam etmesi gerekir. Aksi
+                            halde ihbar tazminatı öder. Ancak fesih haklı nedene
+                            dayanıyorsa süre beklenmez ve tazminat ödeme
+                            zorunluluğu doğmaz.
+                          </p>
+                          <p>
+                            ● İş akdi işçi tarafından feshedilmişse kötü niyet
+                            tazminatı talep edilemez.
+                          </p>
+                          <p>
+                            {" "}
+                            ● İşe iade davası kabul edilirse işçiye 4 aya kadar
+                            ücreti tutarında tazminat kazanır. İşveren işçiyi
+                            başlatmaz ise 4-8 maaş arası işe başlatmama
+                            tazminatı daha doğar.
+                          </p>
                         </p>
                         <div>
                           <h3 className="mb-4 text-2xl font-bold text-[#333]">
-                            Tags:
+                            Etiketler:
                           </h3>
                           <ul className="flex">
                             {blogTags.map((item, index) => (
