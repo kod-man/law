@@ -21,7 +21,7 @@ const Sidebar = () => {
       </div>
       <div className="mt-12">
         <PrimaryHeadline
-          text="Categories"
+          text="Kategoriler"
           headlineType="h3"
           additionalClass="text-[32px] primary-headline-left"
         />
@@ -48,7 +48,7 @@ const Sidebar = () => {
 
       <div className="mt-12">
         <PrimaryHeadline
-          text="Recent Posts"
+          text="Güncel Makaleler"
           headlineType="h3"
           additionalClass="text-[32px] primary-headline-left text-background"
           formatTwoColor
@@ -75,7 +75,7 @@ const Sidebar = () => {
       </div>
       <div className="mt-8">
         <PrimaryHeadline
-          text="Recent Tags"
+          text="Güncel Etiketler"
           headlineType="h3"
           additionalClass="text-[32px] primary-headline-left text-background"
           formatTwoColor
@@ -95,19 +95,27 @@ const Sidebar = () => {
       </div>
       <div className="mt-12">
         <PrimaryHeadline
-          text="About Lawyero"
+          text="Pusula Hukuk Bürosu’na Dair"
           headlineType="h3"
           additionalClass="text-[32px] primary-headline-left text-background"
           formatTwoColor
         />
         <p className="text-base text-[#333]">
-          We never take that trust for granted. We learn our clients’ needs and
-          expectations; we communicate openly; we follow up frequently; we
-          respond timely; and we are always available. In short, we develop a
-          relationship with our clients. Our clients’ goals become our goals. We
-          provide aggressive and professional legal representation to every
-          client in order to ensure his or her issue is resolved in the best
-          possible manner.
+          Pusula Hukuk, bireysel ve kurumsal müvekkillerine şeffaf, güvenilir ve
+          çözüm odaklı hukuk hizmeti sunmak amacıyla kurulmuş bir hukuk
+          bürosudur. İş hukuku başta olmak üzere, ticaret hukuku, borçlar
+          hukuku, sosyal güvenlik hukuku ve tüketici hukuku gibi çeşitli
+          alanlarda danışmanlık ve dava takibi hizmetleri sunmaktayız. Her
+          müvekkilin ihtiyacına özel yaklaşım geliştirerek, hukuki süreci etkin
+          şekilde yönetmeyi ilke ediniyoruz.
+          <p>
+            Deneyimli ve dinamik ekibimiz, hukuki gelişmeleri yakından takip
+            ederek her dosyada en güncel bilgileri temel alır. Amacımız sadece
+            uyuşmazlık çözmek değil; müvekkillerimizin gelecekte
+            karşılaşabileceği riskleri de öngörerek proaktif çözümler
+            üretmektir. Etik değerlere bağlı, erişilebilir ve kalıcı çözümler
+            sunan bir hukuk anlayışıyla yanınızdayız.
+          </p>
         </p>
       </div>
     </div>

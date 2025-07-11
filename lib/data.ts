@@ -1,11 +1,9 @@
 import homeblog1 from "@/public/assets/home-blog-1.png";
-
+import homeblog2 from "@/public/assets/home-blog-2.png";
 import homeblog3 from "@/public/assets/home-blog-3.png";
-
 import teammember2 from "@/public/assets/team-member-2.jpeg";
 import teammember3 from "@/public/assets/team-member-3.jpeg";
 import teammember4 from "@/public/assets/team-member-4.jpeg";
-
 import paimage1 from "@/public/assets/pa-img-1.jpg";
 import paimage2 from "@/public/assets/pa-img-2.jpeg";
 import paimage3 from "@/public/assets/pa-img-3.jpeg";
@@ -69,6 +67,21 @@ export const blogPosts: blogPostsProps[] = [
       },
     },
     linkHref: "/blog/1",
+    title: "Trafik ve Sigorta Hukuku Hakkında Bilgi Notu",
+    excerpt:
+      "Trafik kazaları sonrası doğan maddi ve manevi zararlar, hem trafik hem de sigorta hukuku kapsamında değerlendirilir. Kazada kusur oranı, sigorta teminatları ve tazminat hakları gibi birçok önemli detay bu süreci doğrudan etkiler.",
+    date: "2025-07-15T12:24:34",
+    author: "Mustafa Koyuncu",
+    comments: 1,
+  },
+  {
+    id: 2,
+    featuredImage: {
+      node: {
+        mediaItem: homeblog2,
+      },
+    },
+    linkHref: "/blog/2",
     title: "İş Davaları Bilgi Notu",
     excerpt:
       "Çalışanlar ile işverenler arasında yaşanan uyuşmazlıklar, iş davalarının temelini oluşturur. Bu bilgi notunda, iş davalarının türlerinden dava süreçlerine kadar birçok önemli konu başlığını ele aldık. Hak kaybı yaşamamak adına dikkat edilmesi gereken noktalar sizler için derlendi.",
@@ -76,7 +89,6 @@ export const blogPosts: blogPostsProps[] = [
     author: "İlhan Mesut Çeltikci",
     comments: 1,
   },
-
   {
     id: 3,
     featuredImage: {
