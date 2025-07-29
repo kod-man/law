@@ -25,10 +25,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="basis-full lg:basis-1/3">
-              <h3 className="mb-6 text-3xl font-bold text-white">
+              <h3 className="mb-6 text-3xl font-bold text-white text-center">
                 Faaliyet Alanlarımız
               </h3>
-              <div className="mt-5 lg:pb-7">
+              <div className="mt-5 lg:pb-7 text-center">
                 <p className="text-sm leading-6 text-white">Aile Hukuku</p>
                 <p className="text-sm leading-6 text-white">İş Hukuku</p>
                 <p className="text-sm leading-6 text-white">Ceza Hukuku</p>
@@ -37,9 +37,19 @@ const Footer = () => {
                   Sosyal Medya ve İnternet Hukuku
                 </p>
                 <p className="text-sm leading-6 text-white">Sağlık Hukuku</p>
-                <p className="text-sm leading-6 text-white">TÜMÜNÜ GÖRÜNTÜLE</p>
+
+                {/* TÜMÜNÜ GÖRÜNTÜLE - Düz buton */}
+                <div className="mt-4">
+                  <a
+                    href="/faaliyet-alanlari"
+                    className="inline-block bg-white px-4 py-2 text-sm font-semibold text-black shadow hover:bg-yellow-300 transition"
+                  >
+                    TÜMÜNÜ GÖRÜNTÜLE
+                  </a>
+                </div>
               </div>
             </div>
+
             <div className="basis-full lg:basis-1/3">
               <h3 className="mb-6 text-3xl font-bold text-white">
                 <span className="font-bold text-[#14cab4]">Bize </span> Ulaşın
