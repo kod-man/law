@@ -1,7 +1,7 @@
-import Image from "next/image";
-import ButtonCustom from "../global/button";
 import { PAData } from "@/lib/data";
+import Image from "next/image";
 import Link from "next/link";
+import ButtonCustom from "../global/button";
 
 const PAList = ({ layout }: { layout: string }) => {
   let content;
@@ -49,12 +49,12 @@ const PAList = ({ layout }: { layout: string }) => {
         <div className="grid grid-rows-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
           {PAData.map((item) => (
             <div key={item.id}>
-              <div className="border-[1px] border-[#ccc] rounded overflow-hidden">
+              <div className="border-[1px] border-[#ccc] rounded overflow-hidden max-w-[400px]">
                 <div className="">
                   <Image
                     src={item.image}
                     alt="Practice Area Image"
-                    className="w-full"
+                    className="w-full h-[200px]"
                   />
                 </div>
                 <div className="p-5">

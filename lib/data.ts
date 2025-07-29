@@ -1,11 +1,14 @@
+import banner3 from "@/public/assets/banner/banner3.jpg";
+import banner4 from "@/public/assets/banner/banner4.jpg";
+import banner5 from "@/public/assets/banner/banner5.jpg";
 import homeblog1 from "@/public/assets/home-blog-1.png";
 import homeblog2 from "@/public/assets/home-blog-2.png";
 import homeblog3 from "@/public/assets/home-blog-3.png";
-import teammember1 from "@/public/assets/team-member-1.jpeg";
-import teammember2 from "@/public/assets/team-member-2.jpeg";
-import teammember3 from "@/public/assets/team-member-3.jpeg";
-import teammember4 from "@/public/assets/team-member-4.jpeg";
+import homepageTypewriter from "@/public/assets/lawyer-ticker-min.jpg";
 import paimage1 from "@/public/assets/pa-img-1.jpg";
+import paimage10 from "@/public/assets/pa-img-10.jpeg";
+import paimage11 from "@/public/assets/pa-img-11.jpeg";
+import paimage12 from "@/public/assets/pa-img-12.jpeg";
 import paimage2 from "@/public/assets/pa-img-2.jpeg";
 import paimage3 from "@/public/assets/pa-img-3.jpeg";
 import paimage4 from "@/public/assets/pa-img-4.jpeg";
@@ -14,13 +17,10 @@ import paimage6 from "@/public/assets/pa-img-6.jpeg";
 import paimage7 from "@/public/assets/pa-img-7.jpeg";
 import paimage8 from "@/public/assets/pa-img-8.jpeg";
 import paimage9 from "@/public/assets/pa-img-9.jpeg";
-import paimage10 from "@/public/assets/pa-img-10.jpeg";
-import paimage11 from "@/public/assets/pa-img-11.jpeg";
-import paimage12 from "@/public/assets/pa-img-12.jpeg";
-import homepageTypewriter from "@/public/assets/lawyer-ticker-min.jpg";
-import banner4 from "@/public/assets/banner/banner4.jpg";
-import banner5 from "@/public/assets/banner/banner5.jpg";
-import banner3 from "@/public/assets/banner/banner3.jpg";
+import teammember1 from "@/public/assets/team-member-1.jpeg";
+import teammember2 from "@/public/assets/team-member-2.jpeg";
+import teammember3 from "@/public/assets/team-member-3.jpeg";
+import teammember4 from "@/public/assets/team-member-4.jpeg";
 import {
   FAQsProps,
   PADataProps,
@@ -153,30 +153,42 @@ export const TeamMembers: TeamMembersProps[] = [
   {
     id: 1,
     image: teammember1,
-    href: "#",
     name: "Mert Can Yalçın",
     designation: "Avukat",
+    slug: "mert-can-yalcin",
+    info: "suluovada dogdu ve İstanbul'da doğdu. Avukat",
+    facebookLink: "https://www.facebook.com/mertcanyalcin.com/",
+    linkedinLink: "https://www.linkedin.com/in/mertcany",
   },
   {
     id: 2,
     image: teammember2,
-    href: "#",
     name: "Mustafa Koyuncu",
     designation: "Avukat ve Arabulucu",
+    slug: "mustafa-koyuncu",
+    info: "suluovada dogdu ve İstanbul'da doğdu. Avukat",
+    facebookLink: "https://www.facebook.com/mertcanyalcin.com/",
+    linkedinLink: "https://www.linkedin.com/in/mertcany",
   },
   {
     id: 3,
     image: teammember3,
-    href: "#",
     name: "İlhan Mesut Çeltikci",
     designation: "Avukat",
+    slug: "ilhan-mesut-celtikci",
+    info: "suluovada dogdu ve İstanbul",
+    facebookLink: "https://www.facebook.com/mertcanyalcin.com/",
+    linkedinLink: "https://www.linkedin.com/in/mertcany",
   },
   {
     id: 4,
     image: teammember4,
-    href: "#",
     name: "Adil Küçük",
     designation: "Avukat ve Arabulucu",
+    slug: "adil-kucuk",
+    info: "suluovada dogdu ve İstanbul'da doğdu. Avukat",
+    facebookLink: "https://www.facebook.com/mertcanyalcin.com/",
+    linkedinLink: "",
   },
 ];
 
