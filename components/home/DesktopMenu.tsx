@@ -14,6 +14,7 @@ export const navItems = [
     submenu: [
       { label: "Mustafa Koyuncu", href: "/single-team-member/mustafa-koyuncu" },
       { label: "Adil Küçük", href: "/single-team-member/adil-kucuk" },
+      { label: "Mert Can Yalçın", href: "/single-team-member/mert-can-yalcin" },
       {
         label: "İlhan Mesut Çeltikci",
         href: "/single-team-member/ilhan-mesut-celtikci",
@@ -22,7 +23,7 @@ export const navItems = [
   },
   {
     label: "Makaleler",
-    submenu: [{ label: "Makaleler", href: "/blog-grid/" }],
+    href: "/blog-grid/",
   },
   { label: "İletişim", href: "/contact/" },
 ];
