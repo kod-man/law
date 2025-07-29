@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/assets/logo.jpeg";
-
-import X from "@/public/assets/X.svg";
-import { Facebook, Youtube, LinkedinIcon, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -34,6 +32,12 @@ const Footer = () => {
                 <p className="text-sm leading-6 text-white">Aile Hukuku</p>
                 <p className="text-sm leading-6 text-white">İş Hukuku</p>
                 <p className="text-sm leading-6 text-white">Ceza Hukuku</p>
+                <p className="text-sm leading-6 text-white">Miras Hukuku</p>
+                <p className="text-sm leading-6 text-white">
+                  Sosyal Medya ve İnternet Hukuku
+                </p>
+                <p className="text-sm leading-6 text-white">Sağlık Hukuku</p>
+                <p className="text-sm leading-6 text-white">TÜMÜNÜ GÖRÜNTÜLE</p>
               </div>
             </div>
             <div className="basis-full lg:basis-1/3">
@@ -46,48 +50,56 @@ const Footer = () => {
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Mon</span>
-                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
+                  <span className="w-1/2 font-bold">Pazartesi</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
                 </li>
                 <li className="relative my-2 flex pl-5">
                   <ChevronRight
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Tues</span>
-                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
+                  <span className="w-1/2 font-bold">Salı</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
                 </li>
                 <li className="relative my-2 flex pl-5">
                   <ChevronRight
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Wed</span>
-                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
+                  <span className="w-1/2 font-bold">Çarşamba</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
                 </li>
                 <li className="relative my-2 flex pl-5">
                   <ChevronRight
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Thurs</span>
-                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
+                  <span className="w-1/2 font-bold">Perşembe</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
                 </li>
                 <li className="relative my-2 flex pl-5">
                   <ChevronRight
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Fri</span>
-                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
+                  <span className="w-1/2 font-bold">Cuma</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
                 </li>
                 <li className="relative my-2 flex pl-5">
                   <ChevronRight
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Sat - Sun</span>
-                  <span className="w-1/2 text-right">Closed</span>
+                  <span className="w-1/2 font-bold">Cumartesi</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
+                </li>
+                <li className="relative my-2 flex pl-5">
+                  <ChevronRight
+                    size={15}
+                    className="absolute left-0 top-1/2 -translate-y-1/2"
+                  />
+                  <span className="w-1/2 font-bold">Pazar</span>
+                  <span className="w-1/2 text-right">Kapalı</span>
                 </li>
               </ul>
             </div>
