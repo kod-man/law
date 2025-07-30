@@ -1,14 +1,13 @@
-import React from "react";
+import hakki from "@/public/assets/hakki.jpg";
+import Image from "next/image";
 import ButtonCustom from "../global/button";
 import PrimaryHeadline from "../global/primary-headline";
-import Image from "next/image";
-import hakki from "@/public/assets/hakki.jpg";
 
 const TwoColumnTextWithImage = () => {
   return (
     <div className="container py-16 sm:py-20">
       <div className="flex flex-wrap gap-8 lg:flex-nowrap">
-        <div className="basis-full lg:basis-[50%]">
+        <div className="basis-full lg:basis-1/2">
           <PrimaryHeadline text="Hakkımızda" />
           <div className="text-base text-[#333]">
             <p className="mb-6">
@@ -21,7 +20,7 @@ const TwoColumnTextWithImage = () => {
           </div>
           <ButtonCustom href="#" text="Devamını Oku" buttonType="secondary" />
         </div>
-        <div className="flex basis-full justify-center sm:text-center lg:block lg:basis-[50%]">
+        <div className="flex basis-full justify-center sm:text-center lg:block lg:basis-1/2">
           <Image src={hakki} alt="Home Firm Image" className="object-cover" />
         </div>
       </div>

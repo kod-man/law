@@ -7,7 +7,7 @@ export const navItems = [
   { label: "Hakkımızda", href: "/who-we-are/" },
   {
     label: "Faaliyet Alanlarımız",
-    href: "/practice-areas-3-column-layout/",
+    href: "/faaliyet-alanlarimiz/",
   },
   {
     label: "Avukatlarımız",
@@ -23,7 +23,7 @@ export const navItems = [
   },
   {
     label: "Makaleler",
-    href: "/blog-grid/",
+    href: "/makaleler/",
   },
   { label: "İletişim", href: "/contact/" },
 ];

@@ -49,23 +49,29 @@ const PAList = ({ layout }: { layout: string }) => {
         <div className="grid grid-rows-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
           {PAData.map((item) => (
             <div key={item.id}>
-              <div className="border-[1px] border-[#ccc] rounded overflow-hidden max-w-[400px]">
-                <div className="">
+              <div className="border-[1px] border-[#ccc] rounded overflow-hidden max-w-[400px] h-[450px] flex flex-col">
+                <div className="h-[200px] relative">
                   <Image
                     src={item.image}
                     alt="Practice Area Image"
-                    className="w-full h-[200px]"
+                    fill
+                    style={{ objectFit: "cover" }}
+                    className="rounded-t"
                   />
                 </div>
-                <div className="p-5">
+                <div className="p-5 flex flex-col grow items-center">
                   <Link
                     href={item.href}
                     className="text-2xl text-background font-bold hover:text-primary-main mb-2 inline-block"
                   >
                     {item.title}
                   </Link>
-                  <p className="text-sm text-[#333]">{item.text}</p>
-                  <div className="pt-4">
+
+                  <p className="text-sm text-[#333] line-clamp-4 mb-4 overflow-hidden">
+                    {item.text}
+                  </p>
+
+                  <div className="mt-auto">
                     <ButtonCustom
                       href={item.href}
                       buttonType="secondary"

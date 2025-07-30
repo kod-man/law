@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import logo from "@/public/assets/logo.jpeg";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -41,7 +41,7 @@ const Footer = () => {
                 {/* TÜMÜNÜ GÖRÜNTÜLE - Düz buton */}
                 <div className="mt-4">
                   <a
-                    href="/faaliyet-alanlari"
+                    href="/faaliyet-alanlarimiz"
                     className="inline-block bg-white px-4 py-2 text-sm font-semibold text-black shadow hover:bg-yellow-300 transition"
                   >
                     TÜMÜNÜ GÖRÜNTÜLE
