@@ -1,23 +1,28 @@
-import React from "react";
-import singlepabanner from "@/public/assets/single-practice-banner.jpg";
 import InnerBanner from "@/components/global/inner-banner";
+import PABottomContent from "@/components/practice-areas/single/PABottomContent";
 import PAContent from "@/components/practice-areas/single/PAContent";
 import CTA from "@/components/shared/CTA";
 import PreFooter from "@/components/shared/PreFooter";
-import PABottomContent from "@/components/practice-areas/single/PABottomContent";
+import { PAData, slugify } from "@/lib/data";
+
+import singlepabanner from "@/public/assets/single-practice-banner.jpg";
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Individual Practice Area - Lawyero",
   description: "Your one stop solution for legal matters",
 };
 
-const page = () => {
+const page = ({ params }: { params: { slug: string } }) => {
+  const area = PAData.find((l) => slugify(l.title) === params.slug);
+  if (!area) notFound();
+
   return (
     <>
-      <InnerBanner text="FAMILY LAW" image={singlepabanner} />
+      <InnerBanner text={area.title} image={singlepabanner} />
 
-      <PAContent />
+      <PAContent text={area.info} />
 
       <CTA
         bgClass="bg-primary-main"

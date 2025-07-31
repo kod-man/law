@@ -192,7 +192,7 @@ export const AttorneyPAList: FeaturesProps[] = [
 export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 1,
-    link: "#",
+    link: "/faaliyet-alanlarimiz/aile-hukuku",
     PA: "Aile Hukuku",
     iconName: (
       <Scale size={60} className="h-14 w-16 border-2 border-none text-white" />
@@ -200,7 +200,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   },
   {
     id: 2,
-    link: "#",
+    link: "/faaliyet-alanlarimiz/miras-hukuku",
     PA: "Miras Hukuku",
     iconName: (
       <PersonStanding
@@ -211,7 +211,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   },
   {
     id: 3,
-    link: "#",
+    link: "/faaliyet-alanlarimiz/trafik-ve-sigorta-hukuku",
     PA: "Sigorta Hukuku",
     iconName: (
       <CarFront
@@ -222,7 +222,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   },
   {
     id: 4,
-    link: "#",
+    link: "/faaliyet-alanlarimiz/is-hukuku",
     PA: "İş Hukuku",
     iconName: (
       <PoundSterling
@@ -233,7 +233,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   },
   {
     id: 5,
-    link: "#",
+    link: "/faaliyet-alanlarimiz/sosyal-medya-hukuku",
     PA: "Sosyal Medya ve İnternet Hukuku",
     iconName: (
       <Tv size={60} className="h-14 w-16 border-2 border-none text-white" />
@@ -241,7 +241,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   },
   {
     id: 6,
-    link: "#",
+    link: "/faaliyet-alanlarimiz/spor-hukuku",
     PA: "Spor Hukuku",
     iconName: (
       <CircleGauge
@@ -252,7 +252,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   },
   {
     id: 7,
-    link: "#",
+    link: "/faaliyet-alanlarimiz/saglik-hukuku",
     PA: "Sağlık Hukuku",
     iconName: (
       <Ambulance
@@ -263,7 +263,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   },
   {
     id: 8,
-    link: "#",
+    link: "/faaliyet-alanlarimiz/ceza-hukuku",
     PA: "Ceza Hukuku",
     iconName: (
       <CirclePlay
