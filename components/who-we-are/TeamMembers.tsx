@@ -1,5 +1,5 @@
 import PrimaryHeadline from "../global/primary-headline";
-import { TeamMembersCarousel } from "../shared/TeamMembersCarousel";
+import TeamMembersCarousel from "../shared/TeamMembersCarousel";
 
 const TeamMembers = () => {
   return (
@@ -9,7 +9,7 @@ const TeamMembers = () => {
           text="Avukatlarımız ve Ortaklarımız"
           additionalClass="secondary-headline"
         />
-        <TeamMembersCarousel textColor="text-white" />
+        <TeamMembersCarousel />
       </div>
     </div>
   );
