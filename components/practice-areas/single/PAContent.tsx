@@ -12,10 +12,7 @@ const PAContent = ({ text }: IPAConcent) => {
     <div className="container py-16 lg:py-24">
       <div className="flex flex-wrap gap-0 lg:flex-nowrap lg:gap-10">
         <div className="basis-full lg:basis-4/6">
-          <PrimaryHeadline
-            text="Overview"
-            additionalClass="primary-headline-left"
-          />
+          <PrimaryHeadline text="" additionalClass="primary-headline-left" />
           {text()}
         </div>
         <div className="basis-full pt-7 lg:basis-1/3 lg:pt-0">
