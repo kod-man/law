@@ -75,7 +75,7 @@ const PAList = ({ layout }: { layout: string }) => {
                     <ButtonCustom
                       href={item.href}
                       buttonType="secondary"
-                      text="Learn More"
+                      text="Devamını Oku"
                     />
                   </div>
                 </div>
