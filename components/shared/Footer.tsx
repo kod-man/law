@@ -1,3 +1,4 @@
+import { PAData, slugify } from "@/lib/data";
 import logo from "@/public/assets/logo.jpeg";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
@@ -11,7 +12,7 @@ const Footer = () => {
           <div className="flex flex-wrap gap-8 lg:flex-nowrap">
             <div className="basis-full lg:basis-1/3">
               <div>
-                <Link href="http://bsmthemes.com/demo/lawyero">
+                <Link href="/">
                   <Image src={logo} alt="Logo" width={166} height={30} />
                 </Link>
                 <div className="mt-5 pb-7">
@@ -28,25 +29,16 @@ const Footer = () => {
               <h3 className="mb-6 text-3xl font-bold text-white text-center">
                 Faaliyet Alanlarımız
               </h3>
-              <div className="mt-5 lg:pb-7 text-center">
-                <p className="text-sm leading-6 text-white">Aile Hukuku</p>
-                <p className="text-sm leading-6 text-white">İş Hukuku</p>
-                <p className="text-sm leading-6 text-white">Ceza Hukuku</p>
-                <p className="text-sm leading-6 text-white">Miras Hukuku</p>
-                <p className="text-sm leading-6 text-white">
-                  Sosyal Medya ve İnternet Hukuku
-                </p>
-                <p className="text-sm leading-6 text-white">Sağlık Hukuku</p>
-
-                {/* TÜMÜNÜ GÖRÜNTÜLE - Düz buton */}
-                <div className="mt-4">
+              <div className="grid grid-cols-2 gap-1">
+                {PAData.map((pa) => (
                   <a
-                    href="/faaliyet-alanlarimiz"
-                    className="inline-block bg-white px-4 py-2 text-sm font-semibold text-black shadow hover:bg-yellow-300 transition"
+                    key={pa.title}
+                    href={`/faaliyet-alanlarimiz/${slugify(pa.title)}`}
+                    className="p-2 text-sm text-gray-100 cursor-pointer relative inline-block transition-all duration-300 hover:underline hover:underline-offset-4"
                   >
-                    TÜMÜNÜ GÖRÜNTÜLE
+                    {pa.title}
                   </a>
-                </div>
+                ))}
               </div>
             </div>
 

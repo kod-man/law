@@ -1,5 +1,5 @@
-import { ContactForm } from "../global/ContactForm";
 import { MapPin, PhoneCallIcon } from "lucide-react";
+import { ContactForm } from "../global/ContactForm";
 
 const PreFooter = () => {
   return (
@@ -15,9 +15,9 @@ const PreFooter = () => {
                 <PhoneCallIcon size={15} className="text-background" />
                 <a
                   className="ml-2 inline-block text-base text-background"
-                  href="tel:123-456-7890"
+                  href="tel:+90 545 418 42 34"
                 >
-                  123-456-7890
+                  +90 545 418 42 34
                 </a>
               </li>
               <li className="mb-[10px] flex items-center">
@@ -26,7 +26,7 @@ const PreFooter = () => {
                   className="ml-2 inline-block text-base text-background"
                   href="#"
                 >
-                  123-456-7890
+                  +90 545 418 42 34
                 </a>
               </li>
             </ul>

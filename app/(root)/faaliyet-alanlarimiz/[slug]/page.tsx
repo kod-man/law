@@ -1,7 +1,5 @@
 import InnerBanner from "@/components/global/inner-banner";
-import PABottomContent from "@/components/practice-areas/single/PABottomContent";
 import PAContent from "@/components/practice-areas/single/PAContent";
-import CTA from "@/components/shared/CTA";
 import PreFooter from "@/components/shared/PreFooter";
 import { PAData, slugify } from "@/lib/data";
 
@@ -23,18 +21,6 @@ const page = ({ params }: { params: { slug: string } }) => {
       <InnerBanner text={area.title} image={singlepabanner} />
 
       <PAContent text={area.info} />
-
-      <CTA
-        bgClass="bg-primary-main"
-        headline="Hukuki sorunlarınız için danışmanlık alabilirsiniz."
-        buttonLink="#"
-        buttonText="Contact Us"
-        ctaType="withBg"
-        buttonType="dark"
-      />
-
-      <PABottomContent />
-
       <PreFooter />
     </>
   );

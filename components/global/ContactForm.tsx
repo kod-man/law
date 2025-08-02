@@ -1,8 +1,15 @@
 "use client";
 
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-
 import { z } from "zod";
 import {
   Form,
@@ -11,16 +18,11 @@ import {
   FormItem,
   FormMessage,
 } from "../ui/form";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
+
 import { Button } from "../ui/button";
+
 import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
 import { useToast } from "../ui/use-toast";
 
 const formSchema = z.object({
@@ -49,12 +51,38 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    toast({
-      title: "Form Submitted Successfully.",
-      className:
-        "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 bg-background text-white",
-    });
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const templateParams = {
+      first_name: values.firstName,
+      last_name: values.lastName,
+      email: values.email,
+      case_type: values.case,
+      message: values.yourMessage,
+    };
+
+    try {
+      await emailjs.send(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        templateParams,
+        "YOUR_PUBLIC_KEY"
+      );
+
+      toast({
+        title: "Mesajınız başarıyla gönderildi!",
+        className:
+          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 bg-green-600 text-white",
+      });
+
+      form.reset(); // formu sıfırla
+    } catch (error) {
+      toast({
+        title: "Bir hata oluştu. Lütfen tekrar deneyin.",
+        className:
+          "top-0 right-0 flex fixed md:max-w-[420px] md:top-4 md:right-4 bg-red-600 text-white",
+      });
+      console.error("EmailJS Error:", error);
+    }
   }
 
   return (

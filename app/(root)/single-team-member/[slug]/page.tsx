@@ -21,7 +21,7 @@ export default function LawyerPage({ params }: { params: { slug: string } }) {
       <CTA
         headline="Hukuki sorunlarınız için danışmanlık alabilirsiniz."
         buttonText="Bize Ulaşın"
-        buttonLink="#"
+        buttonLink="/contact"
         ctaType="withBg"
         bgClass="bg-primary-main"
         buttonType="dark"

@@ -40,21 +40,21 @@ export const bannerItems: bannerItemsType[] = [
     content: "Pusula Hukuk Yenilikçi ve Özgün Çözümler",
     linkText: "Bize Ulaşın",
     image: banner4,
-    linkHref: "#",
+    linkHref: "/contact",
   },
   {
     id: 2,
     content: "Pusula Hukuk Yenilikçi ve Özgün Çözümler",
     linkText: "Bize Ulaşın",
     image: banner5,
-    linkHref: "#",
+    linkHref: "/contact",
   },
   {
     id: 3,
     content: "Pusula Hukuk Yenilikçi ve Özgün Çözümler",
     linkText: "Bize Ulaşın",
     image: banner3,
-    linkHref: "#",
+    linkHref: "/contact",
   },
 ];
 
@@ -206,6 +206,192 @@ export function slugify(title: string): string {
     .replace(/\s+/g, "-"); // boşlukları tire ile değiştir
 }
 
+const CriminalLawInfo = () => {
+  return (
+    <div className="text-base text-[#333] space-y-6">
+      <section>
+        <h2 className="text-xl font-semibold mb-2">Ceza Hukuku Nedir?</h2>
+        <p>
+          Ceza hukuku; bireylerin, toplumun ya da kamu düzeninin zararına olan
+          davranışları suç olarak tanımlayan ve bu davranışlara uygulanacak
+          yaptırımları belirleyen kamu hukuku dalıdır. Diğer hukuk dallarından
+          farklı olarak ceza hukukunda yaptırım, doğrudan devletin cezalandırma
+          gücüyle uygulanır. Toplum düzenini ve birey haklarını korumak
+          amacıyla, ceza hukukunun en temel işlevi; hangi davranışların suç
+          sayıldığını belirlemek, suç işlendiğinde ise adil bir şekilde failin
+          sorumluluğunu ortaya koymaktır.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold mb-2">
+          Ceza Hukukunun Temel İlkeleri
+        </h2>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>
+            <strong>
+              Kanunsuz Suç ve Ceza Olmaz (nullum crimen, nulla poena sine lege):
+            </strong>{" "}
+            Yürürlükteki kanunlarla açıkça suç sayılmayan bir fiilden dolayı
+            kimse cezalandırılamaz.
+          </li>
+          <li>
+            <strong>Suçta ve Cezada Şahsilik:</strong> Ceza yalnızca suçu
+            işleyen kişiye uygulanır.
+          </li>
+          <li>
+            <strong>Masumiyet Karinesi:</strong> Bir kişi, suçu sabit olana
+            kadar suçsuz kabul edilir.
+          </li>
+          <li>
+            <strong>İnsan Onuruna Saygı:</strong> Ceza uygulamalarında insan
+            haklarına zarar verilmemesi esastır.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold mb-2">Ceza Hukukunun Dalları</h2>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>
+            <strong>Genel Ceza Hukuku:</strong> Suçun unsurları, kast, taksir,
+            teşebbüs gibi kavramları kapsar.
+          </li>
+          <li>
+            <strong>Özel Ceza Hukuku:</strong> Hangi fiillerin suç olduğunu ve
+            uygulanacak cezaları belirler.
+            <ul className="list-disc pl-5 mt-1">
+              <li>Kasten öldürme, yaralama</li>
+              <li>Hırsızlık, dolandırıcılık</li>
+              <li>Cinsel dokunulmazlığa karşı suçlar</li>
+              <li>Görevi kötüye kullanma</li>
+              <li>Terörle mücadele suçları</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold mb-2">Ceza Yargılaması Süreci</h2>
+        <ol className="list-decimal pl-5 space-y-2">
+          <li>
+            <strong>Soruşturma:</strong> Savcılık tarafından yürütülür. Deliller
+            toplanır, gerekirse tutuklama talep edilir.
+          </li>
+          <li>
+            <strong>Kovuşturma:</strong> Suç şüphesi güçlü ise dava açılır,
+            mahkeme süreci başlar.
+          </li>
+          <li>
+            <strong>Yargılama:</strong> Mahkeme delilleri değerlendirerek karar
+            verir.
+          </li>
+          <li>
+            <strong>Hüküm:</strong> Suç sabit görülürse ceza verilir; değilse
+            beraat edilir.
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold mb-2">
+          Ceza Avukatı Nedir? Ne Yapar?
+        </h2>
+        <p>
+          Ceza avukatı; şüpheli, sanık veya mağdurun ceza yargılamasındaki
+          haklarını koruyan, savunma veya müdahillik görevini üstlenen uzmandır.
+        </p>
+        <h3 className="font-semibold mt-4 mb-2">Ceza avukatının görevleri:</h3>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Gözaltı ve ifade alma sürecinde müvekkilin yanında olmak</li>
+          <li>Tutuklama taleplerine karşı savunma yapmak</li>
+          <li>
+            Delil toplanmasını ve hukuka uygun yargılama yapılmasını sağlamak
+          </li>
+          <li>Temyiz ve istinaf başvurularını yürütmek</li>
+          <li>Suç mağdurlarını ceza davasında temsil etmek</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold mb-2">
+          🔍 Soruşturma ve Kovuşturma Süreci
+        </h2>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>
+            <strong>Soruşturma:</strong> Savcılık tarafından başlatılır, ifade
+            alınır, tedbirler uygulanabilir.
+          </li>
+          <li>
+            <strong>Kovuşturma:</strong> Dava açılır, mahkeme süreci işler. Ceza
+            avukatının rolü bu aşamada kritiktir.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold mb-2">
+          ⚖️ Sık Görülen Ceza Davaları
+        </h2>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            <strong>Şahsa Karşı Suçlar:</strong> Kasten öldürme, yaralama,
+            tehdit, hakaret
+          </li>
+          <li>
+            <strong>Mal Varlığına Karşı Suçlar:</strong> Hırsızlık,
+            dolandırıcılık, yağma
+          </li>
+          <li>
+            <strong>Topluma Karşı Suçlar:</strong> Uyuşturucu ticareti, genel
+            güvenliği tehlikeye sokma
+          </li>
+          <li>
+            <strong>Kamu Düzenine Karşı Suçlar:</strong> Rüşvet, zimmet, terör
+            suçları
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold mb-2">
+          🛡️ Ceza Davasında Haklarınız
+        </h2>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Susma hakkı</li>
+          <li>Avukattan yararlanma hakkı</li>
+          <li>Adil yargılanma hakkı</li>
+          <li>Tercüman hakkı</li>
+          <li>İtiraz ve temyiz hakkı</li>
+        </ul>
+        <p>
+          Bu hakların ihlali, yargılamanın adilliğini zedeler ve kararların
+          bozulmasına neden olabilir.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold mb-2">
+          Ceza Hukuku Danışmanlığı Hizmetimiz
+        </h2>
+        <p>
+          Hukuki sürecin karmaşıklığı göz önüne alındığında, profesyonel destek
+          almak büyük önem taşır. Ofisimiz aşağıdaki alanlarda hizmet
+          vermektedir:
+        </p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Soruşturma dosyalarının takibi</li>
+          <li>Gözaltı ve tutuklamalarda 7/24 müdahale</li>
+          <li>Mahkeme süreçlerinde aktif savunma</li>
+          <li>Karar sonrası istinaf ve temyiz başvuruları</li>
+        </ul>
+      </section>
+    </div>
+  );
+};
+
+export default CriminalLawInfo;
+
 // Data for Faaliyet Alanlarımız
 export const PAData: PADataProps[] = [
   {
@@ -213,145 +399,7 @@ export const PAData: PADataProps[] = [
     href: "/faaliyet-alanlarimiz/ceza-hukuku",
     title: "Ceza Hukuku",
     text: "Ceza hukuku; bireylerin hak ve özgürlüklerini korumayı amaçlayan, toplum düzenini sağlayan en önemli hukuk dallarından biridir.",
-    info: () => {
-      return (
-        <>
-          <p className="mb-5 text-base text-[#333]">
-            <p>Ceza Hukuku Nedir?</p> Ceza hukuku; bireylerin, toplumun ya da
-            kamu düzeninin zararına olan davranışları suç olarak tanımlayan ve
-            bu davranışlara uygulanacak yaptırımları belirleyen kamu hukuku
-            dalıdır. Diğer hukuk dallarından farklı olarak ceza hukukunda
-            yaptırım, doğrudan devletin cezalandırma gücüyle uygulanır. Toplum
-            düzenini ve birey haklarını korumak amacıyla, ceza hukukunun en
-            temel işlevi; hangi davranışların suç sayıldığını belirlemek, suç
-            işlendiğinde ise adil bir şekilde failin sorumluluğunu ortaya
-            koymaktır.
-          </p>
-          <p className="mb-5 text-base text-[#333]">
-            <p>Ceza Hukukunun Temel İlkeleri</p> Ceza hukuku, hem birey
-            haklarını hem de kamu güvenliğini gözeten temel ilkeler üzerine inşa
-            edilmiştir:{" "}
-            <p>
-              1. Kanunsuz Suç ve Ceza Olmaz (nullum crimen, nulla poena sine
-              lege): Hiç kimse, yürürlükteki kanunlar tarafından açıkça suç
-              sayılmayan bir fiilden dolayı cezalandırılamaz. Aynı şekilde,
-              kanunen öngörülmemiş bir ceza da uygulanamaz.
-            </p>{" "}
-            <p>
-              2. Suçta ve Cezada Şahsilik: Ceza, yalnızca suçu işleyen kişiye
-              uygulanır. Kimse başkasının fiilinden dolayı sorumlu tutulamaz.
-            </p>{" "}
-            <p>
-              3. Masumiyet Karinesi: Bir kişi, suçu sabit olana kadar suçsuz
-              kabul edilir. Bu ilke, adil yargılanma hakkının temel taşıdır.
-            </p>{" "}
-            <p>
-              4. İnsan Onuruna Saygı: Ceza hukukunun uygulanmasında kişi
-              haklarına ve insan onuruna zarar verilmemesi esastır. İşkence,
-              kötü muamele gibi uygulamalar mutlak olarak yasaktır.
-            </p>
-          </p>
-          <p>
-            <p>Ceza Hukukunun Dalları</p> Ceza hukuku, iki ana başlık altında
-            incelenir:{" "}
-            <p>
-              1. Genel Ceza Hukuku: Ceza hukukunun temel prensiplerini, suçun ve
-              cezanın genel esaslarını düzenler. Suçun unsurları (maddi –
-              manevi), kast – taksir, teşebbüs, suça iştirak gibi kavramları
-              kapsar.
-            </p>{" "}
-            <p>
-              2. Özel Ceza Hukuku: Hangi fiillerin suç olduğunu ve her bir suç
-              için uygulanacak cezaları belirler. Türk Ceza Kanunu’nda yer alan
-              suç tipleri bu kapsamda düzenlenmiştir. Örnekler:
-            </p>{" "}
-            Kasten öldürme, yaralama Hırsızlık, dolandırıcılık Cinsel
-            dokunulmazlığa karşı suçlar Görevi kötüye kullanma Terörle mücadele
-            kapsamındaki suçlar <p>Ceza Yargılaması Süreci</p> Ceza yargılaması,
-            bir kişinin suç işlediği iddiasının araştırılması ve bu kişinin
-            suçlu olup olmadığının tespiti amacıyla yürütülen hukuki süreçtir.
-            Bu süreç şu aşamalardan oluşur:{" "}
-            <p>
-              Soruşturma: Suç şüphesiyle savcılık tarafından yürütülen ilk
-              aşamadır. Deliller toplanır, şüpheli ifadesi alınır, gerekiyorsa
-              tutuklama talep edilir.
-            </p>{" "}
-            <p>
-              Kovuşturma: Suç şüphesinin güçlü olduğu durumlarda iddianame
-              düzenlenerek dava açılır ve mahkeme süreci başlar.
-            </p>{" "}
-            <p>
-              Yargılama: Mahkeme, delilleri değerlendirerek sanığın suçlu olup
-              olmadığına karar verir.
-            </p>{" "}
-            <p>
-              Hüküm: Suç sabit görülürse ceza verilir; aksi durumda beraat
-              kararı verilir.
-            </p>
-          </p>
-          <p>
-            <h1> Ceza Avukatı Nedir? Ne Yapar?</h1> Ceza avukatı; şüpheli, sanık
-            veya mağdurun ceza yargılamasındaki haklarını koruyan, savunma veya
-            müdahillik görevini üstlenen uzman avukattır.{" "}
-            <h1>Ceza avukatının görevleri:</h1>{" "}
-            <p>Gözaltı ve ifade alma sürecinde müvekkilin yanında olmak,</p>{" "}
-            <p>Tutuklama taleplerine karşı savunma yapmak,</p>{" "}
-            <p>
-              Delil toplanmasını ve hukuka uygun yargılama yapılmasını sağlamak,
-            </p>{" "}
-            <p>Temyiz ve istinaf başvurularını yürütmek,</p>{" "}
-            <p>Suç mağdurlarını ceza davasında temsil etmek.</p> Ceza davaları
-            ciddi sonuçlar doğurabileceği için, erken aşamada uzman bir ceza
-            avukatına başvurulması büyük önem taşır.{" "}
-            <h1>2. 🔍 Soruşturma ve Kovuşturma Süreci Nasıl İşler?</h1> Ceza
-            yargılaması iki temel aşamadan oluşur:{" "}
-            <p>
-              1. Soruşturma Aşaması: Savcılık tarafından yürütülür. Suç ihbarı,
-              şikayet ya da kolluk tutanağı ile başlar. Şüphelinin ifadesi
-              alınır. Gözaltı, tutuklama, arama, el koyma gibi tedbirler
-              uygulanabilir.
-            </p>{" "}
-            <p>
-              2. Kovuşturma Aşaması: Savcılığın dava açmasıyla başlar. İddianame
-              hazırlanır ve mahkeme süreci başlar. Mahkeme delilleri
-              değerlendirir, tanıkları dinler. Suç sabit görülürse ceza verilir;
-              değilse beraat edilir. Ceza avukatının en kritik görevleri bu
-              aşamalarda ortaya çıkar.
-            </p>{" "}
-            <p>
-              3. ⚖️ Sık Görülen Ceza Davaları Ceza mahkemelerinde sıkça
-              karşılaşılan suç türlerinden bazıları şunlardır: Şahsa Karşı
-              Suçlar: Kasten öldürme, taksirle öldürme Yaralama (basit,
-              nitelikli) Tehdit, hakaret Mal Varlığına Karşı Suçlar: Hırsızlık,
-              dolandırıcılık Güveni kötüye kullanma Yağma (gasp) Topluma Karşı
-              Suçlar: Uyuşturucu ticareti veya kullanımı Genel güvenliğin
-              tehlikeye sokulması Çevreye zarar verme suçları Kamu Düzenine
-              Karşı Suçlar: Görevli memura mukavemet Rüşvet, zimmet Terörle
-              Mücadele Kanunu kapsamındaki suçlar Her bir suç tipi farklı ceza
-              yaptırımları ve usuller gerektirebilir.
-            </p>
-            <p>
-              {" "}
-              4. 🛡️ Ceza Davasında Haklarınız Ceza yargılamasında taraf olan
-              herkesin hukuki güvence altına alınmış hakları vardır: Susma
-              hakkı: İfade vermemek en temel haktır. Savunma hakkı: Dilediği
-              avukattan yardım alma hakkı. Adil yargılanma hakkı: Bağımsız
-              mahkeme önünde yargılanma. Tercüman hakkı: Anadili Türkçe olmayan
-              kişilere tercüman sağlanması. İtiraz ve temyiz hakkı: Kararlara
-              karşı üst mahkemeye başvuru. Bu hakların ihlali, yargılamanın
-              adilliğini zedeler ve kararların bozulmasına neden olabilir.
-            </p>{" "}
-            <h1>Ceza Hukuku Danışmanlığı Hizmetimiz</h1> Hukuki sürecin
-            karmaşıklığı göz önüne alındığında, hem şüpheli hem de mağdur
-            açısından erken aşamada profesyonel destek alınması çok önemlidir.
-            Ofisimiz; Soruşturma dosyalarının takibi Gözaltı ve tutuklamalarda
-            7/24 müdahale Mahkeme süreçlerinde aktif savunma Karar sonrası
-            istinaf ve temyiz başvuruları alanlarında ceza hukuku konusunda
-            deneyimli avukatlarıyla hizmet vermektedir.
-          </p>
-        </>
-      );
-    },
+    info: CriminalLawInfo,
     image: paimage1,
   },
   {
