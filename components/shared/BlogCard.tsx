@@ -17,7 +17,9 @@ const BlogCard = ({ imageURL, date, linkHref, title }: BlogCardProps) => {
           src={imageURL}
           alt="Home Blog Post"
           fill
-          style={{ objectFit: "contain" }}
+          style={{
+            width: "100%",
+          }}
         />
       </div>
 

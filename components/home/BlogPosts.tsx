@@ -6,7 +6,7 @@ import BlogCard from "../shared/BlogCard";
 const BlogPosts = () => {
   return (
     <div className="relative bg-grey sm:py-20">
-      <div className="mx-auto max-w-screen-2xl px-4 border-2">
+      <div className="mx-auto max-w-screen-2xl px-4 ">
         <PrimaryHeadline text="Makaleler" />
         <div className="grid gap-7 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((item) => (

@@ -1,10 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import { URLParams } from "@/types";
 import { blogCategories, blogPosts, blogTags } from "@/lib/data";
 import { formatDate } from "@/lib/utilFunctons";
-
-import Sidebar from "@/components/blog/Sidebar";
+import { URLParams } from "@/types";
+import Image from "next/image";
+import Link from "next/link";
 
 import type { Metadata } from "next";
 
@@ -35,7 +33,7 @@ const Page = ({ params }: URLParams) => {
                       <Image
                         src={filteredItem.featuredImage.node.mediaItem}
                         alt="Home BLog Post"
-                        className=""
+                        className="max-h-[400px] rounded-sm"
                       />
                       <div className=" bg-white">
                         <h2 className="my-6 text-[25px] font-bold capitalize leading-9 text-background sm:text-[32px]">
@@ -212,7 +210,6 @@ const Page = ({ params }: URLParams) => {
                   ))}
               </div>
             </div>
-            <Sidebar />
           </div>
         </div>
       </div>
