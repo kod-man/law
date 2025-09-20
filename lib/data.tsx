@@ -44,7 +44,7 @@ export const bannerItems: bannerItemsType[] = [
   },
   {
     id: 2,
-    content: "Pusula Hukuk Yenilikçi ve Özgün Çözümler",
+    content: "Pusula Hukuk Yenİlikçi ve Özgün Çözümler",
     linkText: "Bize Ulaşın",
     image: banner5,
     linkHref: "/contact",
@@ -113,7 +113,7 @@ export const FAQData: FAQsProps[] = [
     id: 1,
     question: "Neden Pusula Hukuku Seçmelisiniz?",
     answer:
-      "The answer of this question depends upon situation to situation. The best answer can only be achieved once you contact one of attorney who will guide you.",
+      "Pusula Hukuk, güçlü uzman kadrosu, çözüm odaklı yaklaşımı ve müvekkillerine sunduğu güvenilir hizmet anlayışıyla öne çıkar. Her müvekkil için özel stratejiler geliştirerek, haklarınızı en etkin şekilde savunur. Şeffaf iletişim, profesyonellik ve deneyim bir araya gelerek sizi doğru sonuca ulaştırır.",
   },
   {
     id: 2,
