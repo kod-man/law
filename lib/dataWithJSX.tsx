@@ -193,7 +193,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 1,
     link: "/faaliyet-alanlarimiz/aile-hukuku",
-    PA: "Aile Hukuku",
+    PA: "Basın Hukuku",
     iconName: (
       <Scale size={60} className="h-14 w-16 border-2 border-none text-white" />
     ),
@@ -212,7 +212,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 3,
     link: "/faaliyet-alanlarimiz/trafik-ve-sigorta-hukuku",
-    PA: "Sigorta Hukuku",
+    PA: "Trafik ve Sigorta Hukuku",
     iconName: (
       <CarFront
         size={60}
@@ -223,7 +223,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 4,
     link: "/faaliyet-alanlarimiz/is-hukuku",
-    PA: "İş Hukuku",
+    PA: "İcra ve İflas Hukuku",
     iconName: (
       <PoundSterling
         size={60}
@@ -234,7 +234,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 5,
     link: "/faaliyet-alanlarimiz/sosyal-medya-hukuku",
-    PA: "Sosyal Medya ve İnternet Hukuku",
+    PA: "Sosyal Medya ve Hukuku",
     iconName: (
       <Tv size={60} className="h-14 w-16 border-2 border-none text-white" />
     ),
@@ -242,7 +242,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 6,
     link: "/faaliyet-alanlarimiz/spor-hukuku",
-    PA: "Spor Hukuku",
+    PA: "Sözleşmeler Hukuku",
     iconName: (
       <CircleGauge
         size={60}
@@ -253,7 +253,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 7,
     link: "/faaliyet-alanlarimiz/saglik-hukuku",
-    PA: "Sağlık Hukuku",
+    PA: "Tüketici Hukuku",
     iconName: (
       <Ambulance
         size={60}
@@ -264,7 +264,7 @@ export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 8,
     link: "/faaliyet-alanlarimiz/ceza-hukuku",
-    PA: "Ceza Hukuku",
+    PA: "Gayrimenkul Hukuku",
     iconName: (
       <CirclePlay
         size={60}

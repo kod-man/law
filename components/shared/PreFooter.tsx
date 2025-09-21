@@ -15,15 +15,6 @@ const PreFooter = () => {
                 <PhoneCallIcon size={15} className="text-background" />
                 <a
                   className="ml-2 inline-block text-base text-background"
-                  href="tel:+90 545 418 42 34"
-                >
-                  +90 545 418 42 34
-                </a>
-              </li>
-              <li className="mb-[10px] flex items-center">
-                <PhoneCallIcon size={15} className="text-background" />
-                <a
-                  className="ml-2 inline-block text-base text-background"
                   href="#"
                 >
                   +90 545 418 42 34
@@ -36,8 +27,8 @@ const PreFooter = () => {
                 <div className="flex">
                   <MapPin size={15} className="mt-1 text-background" />
                   <p className="pl-2 text-background">
-                    Yeni mah.Başkent sitesi 9.blok daire 2 <br />{" "}
-                    Kadıköy,İstanbul
+                    Kozyatağı, Nevzat Bulut Sk. Birlik Apt. No: 3 A Blok Kat.1
+                    Daire:2, 34742, Kadıköy/İstanbul.
                   </p>
                 </div>
               </div>
