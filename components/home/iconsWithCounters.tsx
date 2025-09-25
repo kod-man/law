@@ -18,6 +18,7 @@ const IconsWithCounters = () => {
                 amountPreText={item.amountPreText}
                 amountPostText={item.amountPostText}
                 text={item.text}
+                amount={item.amount}
               />
             );
           })}

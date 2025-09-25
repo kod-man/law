@@ -1,7 +1,6 @@
-import InnerBanner from "@/components/global/inner-banner";
 import { ContactForm } from "@/components/global/ContactForm";
+import InnerBanner from "@/components/global/inner-banner";
 import PrimaryHeadline from "@/components/global/primary-headline";
-import Iframe from "@/components/shared/Iframe";
 import { MapPin, PhoneCallIcon } from "lucide-react";
 import { Metadata } from "next";
 
@@ -20,7 +19,7 @@ const page = () => {
           width="100%"
           height="400"
           style={{ border: 0 }}
-          allowFullScreen=""
+          allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>

@@ -11,7 +11,10 @@ interface BlogCardProps {
 
 const BlogCard = ({ imageURL, date, linkHref, title }: BlogCardProps) => {
   return (
-    <div className="group flex flex-col h-full bg-white shadow-lg rounded-none">
+    <Link
+      href={linkHref}
+      className="group flex flex-col h-full bg-white shadow-lg rounded-none cursor-pointer"
+    >
       <div className="relative w-full h-72 overflow-hidden">
         <Image
           src={imageURL}
@@ -20,6 +23,7 @@ const BlogCard = ({ imageURL, date, linkHref, title }: BlogCardProps) => {
           style={{
             width: "100%",
           }}
+          className="transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 
@@ -28,26 +32,18 @@ const BlogCard = ({ imageURL, date, linkHref, title }: BlogCardProps) => {
           <span className="mb-2 inline-block text-sm text-primary-main">
             {formatDate(date)}
           </span>
-          <h3 className="mb-4">
-            <Link
-              href={linkHref}
-              className="inline-block cursor-pointer text-lg font-semibold text-background hover:text-primary-main"
-            >
-              {title}
-            </Link>
+          <h3 className="mb-4 text-lg font-semibold text-background group-hover:text-primary-main">
+            {title}
           </h3>
         </div>
 
         <div className="flex justify-end mt-auto">
-          <Link
-            href={linkHref}
-            className="text-xs font-medium text-white bg-primary-main hover:bg-primary-dark transition px-3 py-1"
-          >
+          <span className="text-xs font-medium text-white bg-primary-main group-hover:bg-primary-dark transition px-3 py-1">
             Devamını Oku
-          </Link>
+          </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

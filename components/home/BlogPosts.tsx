@@ -20,7 +20,11 @@ const BlogPosts = () => {
           ))}
         </div>
         <div className="mt-12 text-center">
-          <ButtonCustom href="#" text="Tüm Makaleler" buttonType="dark" />
+          <ButtonCustom
+            href="/makaleler"
+            text="Tüm Makaleler"
+            buttonType="success"
+          />
         </div>
       </div>
     </div>

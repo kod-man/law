@@ -5,6 +5,7 @@ interface StatsCounterIconBoxProps {
   amountPreText: string;
   amountPostText: string;
   text: string;
+  amount: number;
 }
 
 const StatsCounterIconBox = ({ iconName, text }: StatsCounterIconBoxProps) => {

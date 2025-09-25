@@ -189,6 +189,7 @@ export const AttorneyPAList: FeaturesProps[] = [
 ];
 
 // Data for Homepage Practice Area
+
 export const HomepagePAs: HomepagePAsProps[] = [
   {
     id: 1,
@@ -267,6 +268,48 @@ export const HomepagePAs: HomepagePAsProps[] = [
     PA: "Gayrimenkul Hukuku",
     iconName: (
       <CirclePlay
+        size={60}
+        className="h-14 w-16 border-2 border-none text-white"
+      />
+    ),
+  },
+  // Yeni eklenenler
+  {
+    id: 9,
+    link: "/faaliyet-alanlarimiz/aile-hukuku",
+    PA: "Aile Hukuku",
+    iconName: (
+      <Scale size={60} className="h-14 w-16 border-2 border-none text-white" />
+    ),
+  },
+  {
+    id: 10,
+    link: "/faaliyet-alanlarimiz/ceza-hukuku",
+    PA: "Ceza Hukuku",
+    iconName: (
+      <PersonStanding
+        size={60}
+        className="h-14 w-16 border-2 border-none text-white"
+      />
+    ),
+  },
+  {
+    id: 11,
+    link: "/faaliyet-alanlarimiz/is-hukuku",
+    PA: "İş Hukuku",
+    iconName: (
+      <PoundSterling
+        size={60}
+        className="h-14 w-16 border-2 border-none text-white"
+      />
+    ),
+  },
+  {
+    id: 12,
+    link: "/faaliyet-alanlarimiz/saglik-hukuku",
+    PA: "Sağlık Hukuku",
+    iconName: (
+      <Ambulance
         size={60}
         className="h-14 w-16 border-2 border-none text-white"
       />

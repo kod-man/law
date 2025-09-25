@@ -1,12 +1,11 @@
-import React from "react";
 import InnerBanner from "@/components/global/inner-banner";
+import PAList from "@/components/practice-areas/PAList";
 import HeadlineWithText from "@/components/shared/HeadlineWithText";
 import PreFooter from "@/components/shared/PreFooter";
-import PAList from "@/components/practice-areas/PAList";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Faaliyet Alanlarımız 3 Columns - Lawyero",
+  title: "Faaliyet Alanlarımız - Lawyero",
   description: "Your one stop solution for legal matters",
 };
 const page = () => {

@@ -1,7 +1,6 @@
-import React from "react";
 import InnerBanner from "@/components/global/inner-banner";
-import HeadlineWithText from "@/components/shared/HeadlineWithText";
 import PAList from "@/components/practice-areas/PAList";
+import HeadlineWithText from "@/components/shared/HeadlineWithText";
 import PreFooter from "@/components/shared/PreFooter";
 import { Metadata } from "next";
 

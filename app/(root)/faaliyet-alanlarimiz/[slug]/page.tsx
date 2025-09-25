@@ -8,7 +8,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "Individual Practice Area - Lawyero",
+  title: "Faaliyet alanlarımız - Lawyero",
   description: "Your one stop solution for legal matters",
 };
 

@@ -37,21 +37,21 @@ import {
 export const bannerItems: bannerItemsType[] = [
   {
     id: 1,
-    content: "Pusula Hukuk Yenilikçi ve Özgün Çözümler",
+    content: "Yenilikçi ve Özgün Çözümler",
     linkText: "Bize Ulaşın",
     image: banner4,
     linkHref: "/contact",
   },
   {
     id: 2,
-    content: "Pusula Hukuk Yenİlikçi ve Özgün Çözümler",
+    content: "Güvenilir ve Etkin Hukuki Destek",
     linkText: "Bize Ulaşın",
     image: banner5,
     linkHref: "/contact",
   },
   {
     id: 3,
-    content: "Pusula Hukuk Yenilikçi ve Özgün Çözümler",
+    content: "Tecrübemizle Yanınızdayız",
     linkText: "Bize Ulaşın",
     image: banner3,
     linkHref: "/contact",
