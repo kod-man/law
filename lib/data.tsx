@@ -51,7 +51,7 @@ export const bannerItems: bannerItemsType[] = [
   },
   {
     id: 3,
-    content: "Tecrübemizle Yanınızdayız",
+    content: "Deneyim ve Bilgiyle Çözümler Sunuyoruz",
     linkText: "Bize Ulaşın",
     image: banner3,
     linkHref: "/contact",
