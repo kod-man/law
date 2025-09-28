@@ -13,7 +13,7 @@ export async function generateMetadata({
     .map((filteredItem) => filteredItem.name);
 
   return {
-    title: `${blogTagsTitle} - Lawyero`,
+    title: `${blogTagsTitle} - Pusula Hukuk`,
   };
 }
 const Page = ({ params }: URLParams) => {

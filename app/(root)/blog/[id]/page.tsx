@@ -14,7 +14,7 @@ export async function generateMetadata({
     .map((filteredItem) => filteredItem.title);
 
   return {
-    title: `${blogTitle} - Lawyero`,
+    title: `${blogTitle} - Pusula Hukuk`,
   };
 }
 

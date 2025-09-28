@@ -9,7 +9,7 @@ import PreFooter from "@/components/shared/PreFooter";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Who we are - Lawyero",
+  title: "Who we are - Pusula Hukuk",
   description: "Your one stop solution for legal matters",
 };
 const page = () => {

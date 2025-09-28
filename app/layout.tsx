@@ -15,7 +15,7 @@ const albertSans = Albert_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Welcome to Lawyero",
+  title: "Welcome to Pusula Hukuk",
   description: "Your one stop solution for legal matters",
 };
 

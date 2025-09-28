@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Page Not Found - Lawyero",
+  title: "Page Not Found - Pusula Hukuk",
   description: "Your one stop solution for legal matters",
 };
 const page = () => {

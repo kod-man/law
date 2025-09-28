@@ -13,7 +13,7 @@ export async function generateMetadata({
     .map((filteredItem) => filteredItem.title);
 
   return {
-    title: `${blogCategoriesTitle} - Lawyero`,
+    title: `${blogCategoriesTitle} - Pusula Hukuk`,
   };
 }
 

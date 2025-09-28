@@ -5,7 +5,7 @@ import { MapPin, PhoneCallIcon } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Lawyero",
+  title: "İletişim - Pusula Hukuk",
   description: "Your one stop solution for legal matters",
 };
 
