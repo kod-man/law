@@ -1,4 +1,4 @@
-import logo from "@/public/assets/logo.jpeg";
+import logo from "@/public/assets/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import DesktopMenu from "./DesktopMenu";

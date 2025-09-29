@@ -1,4 +1,4 @@
-import banner3 from "@/public/assets/banner/banner3.jpg";
+import hakkı from "@/public/assets/hakkı.jpg";
 import Image from "next/image";
 import ButtonCustom from "../global/button";
 import PrimaryHeadline from "../global/primary-headline";
@@ -21,7 +21,7 @@ const TwoColumnTextWithImage = () => {
           <ButtonCustom href="#" text="Devamını Oku" buttonType="secondary" />
         </div>
         <div className="flex basis-full justify-center sm:text-center lg:block lg:basis-1/2">
-          <Image src={banner3} alt="Home Firm Image" className="object-cover" />
+          <Image src={hakkı} alt="Home Firm Image" className="object-cover" />
         </div>
       </div>
     </div>
