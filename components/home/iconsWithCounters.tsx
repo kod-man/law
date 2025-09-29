@@ -14,7 +14,6 @@ const IconsWithCounters = () => {
             return (
               <StatsCounterIconBox
                 key={`statbox${item.id}`}
-                iconName={item.iconName}
                 amountPreText={item.amountPreText}
                 amountPostText={item.amountPostText}
                 text={item.text}
