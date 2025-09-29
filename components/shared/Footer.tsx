@@ -1,5 +1,5 @@
 import { PAData, slugify } from "@/lib/data";
-import logo from "@/public/assets/logo.jpeg";
+import logo from "@/public/assets/logo.svg";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
