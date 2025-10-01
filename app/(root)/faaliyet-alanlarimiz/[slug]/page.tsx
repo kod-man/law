@@ -1,9 +1,7 @@
-import InnerBanner from "@/components/global/inner-banner";
 import PAContent from "@/components/practice-areas/single/PAContent";
 import PreFooter from "@/components/shared/PreFooter";
 import { PAData, slugify } from "@/lib/data";
 
-import singlepabanner from "@/public/assets/single-practice-banner.jpg";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -18,9 +16,7 @@ const page = ({ params }: { params: { slug: string } }) => {
 
   return (
     <>
-      <InnerBanner text={area.title} image={singlepabanner} />
-
-      <PAContent text={area.info} />
+      <PAContent id={area.id} />
       <PreFooter />
     </>
   );

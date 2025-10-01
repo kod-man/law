@@ -1,15 +1,9 @@
-import Link from "next/link";
 import { blogPosts } from "@/lib/data";
-import Image from "next/image";
 import { formatDate } from "@/lib/utilFunctons";
+import { Calendar, ChevronLeft, ChevronRight, User } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import ButtonCustom from "../global/button";
-import {
-  Calendar,
-  ChevronLeft,
-  ChevronRight,
-  MessageCircle,
-  User,
-} from "lucide-react";
 
 const BlogListTwoColumns = ({ listStyle }: { listStyle?: string }) => {
   return (
@@ -62,10 +56,6 @@ const BlogListTwoColumns = ({ listStyle }: { listStyle?: string }) => {
                   >
                     {item.author}
                   </Link>
-                </li>
-                <li className="mr-5 flex basis-full items-center text-base text-[#313131] sm:basis-auto">
-                  <MessageCircle className="w-5" />
-                  <span className="pl-2">{item.comments} Comments</span>
                 </li>
               </ul>
               <p className="text-base text-[#333]">{item.excerpt}</p>

@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import React, { JSX } from "react";
+import React from "react";
 
 export interface bannerItemsType {
   id: number;
@@ -26,7 +26,6 @@ export interface blogPostsProps {
   excerpt: string;
   date: string;
   author: string;
-  comments: number;
 }
 
 export interface FAQsProps {
@@ -50,7 +49,6 @@ export interface PADataProps {
   id: number;
   href: string;
   title: string;
-  info: () => JSX.Element;
   text: string;
   image: StaticImageData;
 }

@@ -13,6 +13,7 @@ const IconsWithCounters = () => {
           {StatsWithIcon.map((item) => {
             return (
               <StatsCounterIconBox
+                iconName={item.iconName}
                 key={`statbox${item.id}`}
                 amountPreText={item.amountPreText}
                 amountPostText={item.amountPostText}

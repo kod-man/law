@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import hakkı from "@/public/assets/hakkı.jpg";
 import Image from "next/image";
 import ButtonCustom from "../global/button";
