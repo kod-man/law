@@ -150,13 +150,13 @@ export const FAQData: FAQsProps[] = [
 export const TeamMembers: TeamMembersProps[] = [
   {
     id: 1,
-    image: teammember1,
-    name: "Mert Can Yalçın",
-    designation: "Avukat",
-    slug: "mert-can-yalcin",
+    image: teammember4,
+    name: "Adil Küçük",
+    designation: "Avukat ve Arabulucu",
+    slug: "adil-kucuk",
     info: "İstanbul Barosu’na kayıtlı olan Av.Mustafa Koyuncu, Okan Üniversitesi Hukuk Fakültesi’nden mezun olmuştur. Kariyerine kurumsal hukuk bürolarında başlayan Koyuncu, özellikle ticaret hukuku, iş hukuku ve sözleşmeler hukuku alanlarında uzmanlaşmıştır.Mesleki deneyimi boyunca yerli ve yabancı birçok şirkete hukuki danışmanlık hizmeti vermiş, ayrıca bireysel müvekkillerine işçi-işveren uyuşmazlıkları, tazminat davaları ve aile hukuku konularında etkin destek sağlamıştır. Av. Koyuncu, müvekkillerine şeffaf, güvenilir ve etkin çözümler sunmayı ilke edinmiş; her dosyada en iyi sonuca ulaşmak için titizlikle çalışmaktadır.",
     facebookLink: "https://www.facebook.com/mertcanyalcin.com/",
-    linkedinLink: "https://www.linkedin.com/in/mertcany",
+    linkedinLink: "",
   },
   {
     id: 2,
@@ -178,15 +178,16 @@ export const TeamMembers: TeamMembersProps[] = [
     facebookLink: "https://www.facebook.com/mertcanyalcin.com/",
     linkedinLink: "https://www.linkedin.com/in/mertcany",
   },
+
   {
     id: 4,
-    image: teammember4,
-    name: "Adil Küçük",
-    designation: "Avukat ve Arabulucu",
-    slug: "adil-kucuk",
+    image: teammember1,
+    name: "Mert Can Yalçın",
+    designation: "Avukat",
+    slug: "mert-can-yalcin",
     info: "İstanbul Barosu’na kayıtlı olan Av.Mustafa Koyuncu, Okan Üniversitesi Hukuk Fakültesi’nden mezun olmuştur. Kariyerine kurumsal hukuk bürolarında başlayan Koyuncu, özellikle ticaret hukuku, iş hukuku ve sözleşmeler hukuku alanlarında uzmanlaşmıştır.Mesleki deneyimi boyunca yerli ve yabancı birçok şirkete hukuki danışmanlık hizmeti vermiş, ayrıca bireysel müvekkillerine işçi-işveren uyuşmazlıkları, tazminat davaları ve aile hukuku konularında etkin destek sağlamıştır. Av. Koyuncu, müvekkillerine şeffaf, güvenilir ve etkin çözümler sunmayı ilke edinmiş; her dosyada en iyi sonuca ulaşmak için titizlikle çalışmaktadır.",
     facebookLink: "https://www.facebook.com/mertcanyalcin.com/",
-    linkedinLink: "",
+    linkedinLink: "https://www.linkedin.com/in/mertcany",
   },
 ];
 

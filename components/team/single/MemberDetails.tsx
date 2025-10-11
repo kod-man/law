@@ -20,8 +20,8 @@ const MemberDetails = ({ lawyer }: MemberDetailsProps) => {
               <Image
                 src={lawyer?.image as StaticImageData}
                 alt="Home Firm Image"
-                fill
                 className="rounded-md object-cover"
+                style={{ maxHeight: "500px" }}
               />
             </div>
           </div>

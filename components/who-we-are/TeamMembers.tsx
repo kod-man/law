@@ -3,7 +3,7 @@ import TeamMembersCarousel from "../shared/TeamMembersCarousel";
 
 const TeamMembers = () => {
   return (
-    <div className="bg-background">
+    <div className="bg-slate-300">
       <div className="container pb-40 pt-20 lg:pb-52 lg:pt-28">
         <PrimaryHeadline
           text="Avukatlarımız ve Ortaklarımız"

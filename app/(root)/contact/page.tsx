@@ -1,7 +1,7 @@
 import { ContactForm } from "@/components/global/ContactForm";
 import InnerBanner from "@/components/global/inner-banner";
 import PrimaryHeadline from "@/components/global/primary-headline";
-import { MapPin, PhoneCallIcon } from "lucide-react";
+import { MailCheck, MapPin, PhoneCallIcon } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -73,7 +73,7 @@ const page = () => {
                     E-posta
                   </h3>
                   <div className="flex">
-                    <MapPin size={15} className="mt-1 text-primary-main" />
+                    <MailCheck size={15} className="mt-1 text-primary-main" />
                     <p className="pl-2 text-background">
                       pusula.hukuk.istanbul@gmail.com
                     </p>

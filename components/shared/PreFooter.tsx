@@ -1,4 +1,4 @@
-import { MapPin, PhoneCallIcon } from "lucide-react";
+import { Calendar, MailCheck, MapPin, PhoneCallIcon } from "lucide-react";
 import { ContactForm } from "../global/ContactForm";
 
 const PreFooter = () => {
@@ -35,7 +35,7 @@ const PreFooter = () => {
               <div className="mt-7">
                 <h3 className="mb-4 text-2xl font-bold text-[#333]">E-posta</h3>
                 <div className="flex">
-                  <MapPin size={15} className="mt-1 text-background" />
+                  <MailCheck size={15} className="mt-1 text-background" />
                   <p className="pl-2 text-background">
                     pusula.hukuk.istanbul@gmail.com
                   </p>
@@ -46,7 +46,7 @@ const PreFooter = () => {
                   Çalışma Saatleri
                 </h3>
                 <div className="flex">
-                  <MapPin size={15} className="mt-1 text-background" />
+                  <Calendar size={15} className="mt-1 text-background" />
                   <p className="pl-2 text-background">Pazartesi-Cumartesi </p>
                 </div>
               </div>
