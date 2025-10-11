@@ -15,7 +15,7 @@ const Footer = () => {
                 <Link href="/">
                   <Image src={logo} alt="Logo" width={166} height={30} />
                 </Link>
-                <div className="mt-5 pb-7">
+                <div className="mt-5 pb-8">
                   <p className="text-sm leading-6 text-white">
                     Pusula Hukuk Bürosu, alanında seçkin, yetkin hukukçulardan
                     oluşan kadrosu ve saygınlığından ödün vermeyen kurumsal
