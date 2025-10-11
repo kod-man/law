@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
-import { bannerItems } from "@/lib/data";
-import ButtonCustom from "../global/button";
 import { type CarouselApi } from "@/components/ui/carousel";
-import { useEffect, useState } from "react";
+import { bannerItems } from "@/lib/data";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import ButtonCustom from "../global/button";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
 const Banner = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -54,7 +54,7 @@ const Banner = () => {
               <div className="container">
                 <div className="carousel-caption">
                   <h2
-                    className={`mb-5 max-w-full text-3xl font-bold uppercase leading-tight transition delay-500 duration-1000 sm:w-full sm:text-4xl md:text-5xl lg:w-2/3 lg:text-6xl ${
+                    className={`mb-5 max-w-full text-3xl font-bold leading-tight transition delay-500 duration-1000 sm:w-full sm:text-4xl md:text-5xl lg:w-2/3 lg:text-6xl ${
                       current === item.id
                         ? "translate-y-0 opacity-100"
                         : "translate-y-10 opacity-0"

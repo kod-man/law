@@ -26,7 +26,6 @@ export interface blogPostsProps {
   excerpt: string;
   date: string;
   author: string;
-  comments: number;
 }
 
 export interface FAQsProps {
@@ -38,9 +37,12 @@ export interface FAQsProps {
 export interface TeamMembersProps {
   id: number;
   name: string;
-  href: string;
   image: StaticImageData;
   designation: string;
+  slug: string;
+  info: string;
+  facebookLink?: string;
+  linkedinLink?: string;
 }
 
 export interface PADataProps {

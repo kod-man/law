@@ -3,7 +3,7 @@ import InnerBanner from "@/components/global/inner-banner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Chess Style - Lawyero",
+  title: "Blog Chess Style - Pusula Hukuk",
   description: "Your one stop solution for legal matters",
 };
 

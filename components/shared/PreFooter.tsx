@@ -1,5 +1,5 @@
-import { ContactForm } from "../global/ContactForm";
 import { MapPin, PhoneCallIcon } from "lucide-react";
+import { ContactForm } from "../global/ContactForm";
 
 const PreFooter = () => {
   return (
@@ -15,18 +15,9 @@ const PreFooter = () => {
                 <PhoneCallIcon size={15} className="text-background" />
                 <a
                   className="ml-2 inline-block text-base text-background"
-                  href="tel:123-456-7890"
-                >
-                  123-456-7890
-                </a>
-              </li>
-              <li className="mb-[10px] flex items-center">
-                <PhoneCallIcon size={15} className="text-background" />
-                <a
-                  className="ml-2 inline-block text-base text-background"
                   href="#"
                 >
-                  123-456-7890
+                  +90 545 418 42 34
                 </a>
               </li>
             </ul>
@@ -36,8 +27,8 @@ const PreFooter = () => {
                 <div className="flex">
                   <MapPin size={15} className="mt-1 text-background" />
                   <p className="pl-2 text-background">
-                    Yeni mah.Başkent sitesi 9.blok daire 2 <br />{" "}
-                    Kadıköy,İstanbul
+                    Kozyatağı, Nevzat Bulut Sk. Birlik Apt. No: 3 A Blok Kat.1
+                    Daire:2, 34742, Kadıköy/İstanbul.
                   </p>
                 </div>
               </div>
@@ -45,7 +36,9 @@ const PreFooter = () => {
                 <h3 className="mb-4 text-2xl font-bold text-[#333]">E-posta</h3>
                 <div className="flex">
                   <MapPin size={15} className="mt-1 text-background" />
-                  <p className="pl-2 text-background">pusulahukuk@gmail.com</p>
+                  <p className="pl-2 text-background">
+                    pusula.hukuk.istanbul@gmail.com
+                  </p>
                 </div>
               </div>
               <div className="mt-7">

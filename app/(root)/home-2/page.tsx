@@ -14,7 +14,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Welcome to Lawyero - Home 2",
+  title: "Welcome to Pusula Hukuk - Home 2",
   description: "Your one stop solution for legal matters",
 };
 

@@ -15,7 +15,7 @@ const contactDetails = [
   },
   {
     icon: <MailIcon className="w-5 h-5" />,
-    content: <span>pusulahukuk@gmail.com</span>,
+    content: <span>pusula.hukuk.istanbul@gmail.com</span>,
   },
   {
     icon: <CalendarIcon className="w-5 h-5" />,

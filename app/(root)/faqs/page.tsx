@@ -6,7 +6,7 @@ import FAQsAccordion from "@/components/FAQs/FAQsAccordion";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions - Lawyero",
+  title: "Frequently Asked Questions - Pusula Hukuk",
   description: "Your one stop solution for legal matters",
 };
 

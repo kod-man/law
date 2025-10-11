@@ -1,12 +1,11 @@
-import InnerBanner from "@/components/global/inner-banner";
 import { ContactForm } from "@/components/global/ContactForm";
+import InnerBanner from "@/components/global/inner-banner";
 import PrimaryHeadline from "@/components/global/primary-headline";
-import Iframe from "@/components/shared/Iframe";
 import { MapPin, PhoneCallIcon } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Lawyero",
+  title: "İletişim - Pusula Hukuk",
   description: "Your one stop solution for legal matters",
 };
 
@@ -20,7 +19,7 @@ const page = () => {
           width="100%"
           height="400"
           style={{ border: 0 }}
-          allowFullScreen=""
+          allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
@@ -54,16 +53,7 @@ const page = () => {
                     className="ml-2 inline-block text-base text-background"
                     href="tel:1911-462-242"
                   >
-                    531-087-6275
-                  </a>
-                </li>
-                <li className="mb-[10px] flex items-center">
-                  <PhoneCallIcon size={15} className="text-primary-main" />
-                  <a
-                    className="ml-2 inline-block text-base text-background"
-                    href="#"
-                  >
-                    531-087-6276
+                    +90 545 418 42 34
                   </a>
                 </li>
               </ul>
@@ -85,7 +75,7 @@ const page = () => {
                   <div className="flex">
                     <MapPin size={15} className="mt-1 text-primary-main" />
                     <p className="pl-2 text-background">
-                      pusulahukuk@gmail.com
+                      pusula.hukuk.istanbul@gmail.com
                     </p>
                   </div>
                 </div>

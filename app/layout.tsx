@@ -4,10 +4,10 @@ import type { Metadata } from "next";
 import { Albert_Sans } from "next/font/google";
 import "./globals.css";
 
-import { Toaster } from "@/components/ui/toaster";
-import Header from "@/components/shared/Header";
-import React from "react";
 import Footer from "@/components/shared/Footer";
+import Header from "@/components/shared/Header";
+import { Toaster } from "@/components/ui/toaster";
+import React from "react";
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],
@@ -15,7 +15,7 @@ const albertSans = Albert_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Welcome to Lawyero",
+  title: "Welcome to Pusula Hukuk",
   description: "Your one stop solution for legal matters",
 };
 

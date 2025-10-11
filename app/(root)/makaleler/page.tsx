@@ -3,7 +3,7 @@ import InnerBanner from "@/components/global/inner-banner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Grid - Lawyero",
+  title: "Makaleler - Pusula Hukuk",
   description: "Your one stop solution for legal matters",
 };
 
@@ -13,7 +13,7 @@ const Page = () => {
       <InnerBanner text="Makaleler" />
       <div className="relative py-[90px]">
         <div className="container">
-          <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-7 gap-2">
+          <div className="">
             <BlogGrid />
           </div>
         </div>

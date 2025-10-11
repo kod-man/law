@@ -1,12 +1,12 @@
-import IconsWithCounters from "@/components/home/iconsWithCounters";
-import TwoColumnTextWithImage from "@/components/home/twoColumnTextWithImage";
-import Features from "@/components/home/Features";
-import CTA from "@/components/shared/CTA";
-import PracticeAreas from "@/components/home/PracticeAreas";
 import BlogPosts from "@/components/home/BlogPosts";
 import FAQs from "@/components/home/FAQs";
+import Features from "@/components/home/Features";
+import PracticeAreas from "@/components/home/PracticeAreas";
 import TeamMembers from "@/components/home/TeamMembers";
 import Banner from "@/components/home/banner";
+import IconsWithCounters from "@/components/home/iconsWithCounters";
+import TwoColumnTextWithImage from "@/components/home/twoColumnTextWithImage";
+import CTA from "@/components/shared/CTA";
 import PreFooter from "@/components/shared/PreFooter";
 
 import { Metadata } from "next";
@@ -25,7 +25,7 @@ const Home = () => {
       <Features />
       <CTA
         headline="Hukuki sorunlarınız için danışmanlık alabilirsiniz."
-        buttonLink="#"
+        buttonLink="/contact"
         buttonText="Bize Ulaşın"
         ctaType="withBg"
       />

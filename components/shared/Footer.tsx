@@ -1,9 +1,8 @@
+import { PAData, slugify } from "@/lib/data";
+import logo from "@/public/assets/logo.svg";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/assets/logo.jpeg";
-
-import X from "@/public/assets/X.svg";
-import { Facebook, Youtube, LinkedinIcon, ChevronRight } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,7 +12,7 @@ const Footer = () => {
           <div className="flex flex-wrap gap-8 lg:flex-nowrap">
             <div className="basis-full lg:basis-1/3">
               <div>
-                <Link href="http://bsmthemes.com/demo/lawyero">
+                <Link href="/">
                   <Image src={logo} alt="Logo" width={166} height={30} />
                 </Link>
                 <div className="mt-5 pb-7">
@@ -27,15 +26,22 @@ const Footer = () => {
               </div>
             </div>
             <div className="basis-full lg:basis-1/3">
-              <h3 className="mb-6 text-3xl font-bold text-white">
+              <h3 className="mb-6 text-3xl font-bold text-white text-center">
                 Faaliyet Alanlarımız
               </h3>
-              <div className="mt-5 lg:pb-7">
-                <p className="text-sm leading-6 text-white">Aile Hukuku</p>
-                <p className="text-sm leading-6 text-white">İş Hukuku</p>
-                <p className="text-sm leading-6 text-white">Ceza Hukuku</p>
+              <div className="grid grid-cols-2 gap-1">
+                {PAData.map((pa) => (
+                  <a
+                    key={pa.title}
+                    href={`/faaliyet-alanlarimiz/${slugify(pa.title)}`}
+                    className="p-2 text-sm text-gray-100 cursor-pointer relative inline-block transition-all duration-300 hover:underline hover:underline-offset-4"
+                  >
+                    {pa.title}
+                  </a>
+                ))}
               </div>
             </div>
+
             <div className="basis-full lg:basis-1/3">
               <h3 className="mb-6 text-3xl font-bold text-white">
                 <span className="font-bold text-[#14cab4]">Bize </span> Ulaşın
@@ -46,48 +52,56 @@ const Footer = () => {
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Mon</span>
-                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
+                  <span className="w-1/2 font-bold">Pazartesi</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
                 </li>
                 <li className="relative my-2 flex pl-5">
                   <ChevronRight
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Tues</span>
-                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
+                  <span className="w-1/2 font-bold">Salı</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
                 </li>
                 <li className="relative my-2 flex pl-5">
                   <ChevronRight
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Wed</span>
-                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
+                  <span className="w-1/2 font-bold">Çarşamba</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
                 </li>
                 <li className="relative my-2 flex pl-5">
                   <ChevronRight
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Thurs</span>
-                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
+                  <span className="w-1/2 font-bold">Perşembe</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
                 </li>
                 <li className="relative my-2 flex pl-5">
                   <ChevronRight
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Fri</span>
-                  <span className="w-1/2 text-right">9:00am - 5:00pm</span>
+                  <span className="w-1/2 font-bold">Cuma</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
                 </li>
                 <li className="relative my-2 flex pl-5">
                   <ChevronRight
                     size={15}
                     className="absolute left-0 top-1/2 -translate-y-1/2"
                   />
-                  <span className="w-1/2 font-bold">Sat - Sun</span>
-                  <span className="w-1/2 text-right">Closed</span>
+                  <span className="w-1/2 font-bold">Cumartesi</span>
+                  <span className="w-1/2 text-right">08:00 - 17:30</span>
+                </li>
+                <li className="relative my-2 flex pl-5">
+                  <ChevronRight
+                    size={15}
+                    className="absolute left-0 top-1/2 -translate-y-1/2"
+                  />
+                  <span className="w-1/2 font-bold">Pazar</span>
+                  <span className="w-1/2 text-right">Kapalı</span>
                 </li>
               </ul>
             </div>

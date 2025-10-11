@@ -7,6 +7,7 @@ import { Autoplay, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { HomepagePAs } from "@/lib/dataWithJSX";
+import ButtonCustom from "../global/button";
 import PrimaryHeadline from "../global/primary-headline";
 import IconCardWithLink from "../shared/IconCardWithLink";
 
@@ -16,13 +17,13 @@ const PracticeAreas = () => {
       <PrimaryHeadline text="Faaliyet Alanlarımız" />
       <Swiper
         modules={[FreeMode, Autoplay]}
-        loop={true} // 🔁 Baştan sona döngü
+        loop={true}
         spaceBetween={16}
         freeMode={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-          reverseDirection: false, // ⬅️ Bu false olduğunda sağa doğru akar
+          reverseDirection: false,
         }}
         breakpoints={{
           320: {
@@ -56,6 +57,13 @@ const PracticeAreas = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="mt-12 text-center">
+        <ButtonCustom
+          href="/faaliyet-alanlarimiz"
+          text="Tümünü Görüntüle"
+          buttonType="success"
+        />
+      </div>
     </div>
   );
 };

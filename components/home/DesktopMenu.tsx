@@ -7,13 +7,14 @@ export const navItems = [
   { label: "Hakkımızda", href: "/who-we-are/" },
   {
     label: "Faaliyet Alanlarımız",
-    href: "/practice-areas-3-column-layout/",
+    href: "/faaliyet-alanlarimiz/",
   },
   {
     label: "Avukatlarımız",
     submenu: [
       { label: "Mustafa Koyuncu", href: "/single-team-member/mustafa-koyuncu" },
       { label: "Adil Küçük", href: "/single-team-member/adil-kucuk" },
+      { label: "Mert Can Yalçın", href: "/single-team-member/mert-can-yalcin" },
       {
         label: "İlhan Mesut Çeltikci",
         href: "/single-team-member/ilhan-mesut-celtikci",
@@ -22,7 +23,7 @@ export const navItems = [
   },
   {
     label: "Makaleler",
-    submenu: [{ label: "Makaleler", href: "/blog-grid/" }],
+    href: "/makaleler/",
   },
   { label: "İletişim", href: "/contact/" },
 ];
